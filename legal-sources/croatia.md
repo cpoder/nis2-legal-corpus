@@ -108,7 +108,7 @@
    clearly separated generation-metadata footer, NOT inside the statutory form
    sections (the official form carries neither).
 
-## Supply chain, gouvernance et incidents — ZKS čl. 29, 30, 37
+## Supply chain, governance and incidents — ZKS čl. 29, 30, 37
 
 <!-- meta: theme=supply-chain,governance,incident; type=reference; date=2026-07-26; surfaces=data; guard=none -->
 
@@ -141,324 +141,324 @@ control.
   NOT asserted anywhere in our data.
 - Supervision, sanctions, and the registration mechanism.
 
-## Délais de notification d'incident — Uredba NN 135/2024, čl. 64 à 85
+## Incident notification deadlines — Uredba NN 135/2024, čl. 64 to 85
 
 <!-- meta: theme=incident; type=reference; date=2026-07-26; surfaces=data; guard=packages/regulatory-data/test/incident-conditional-stages.test.ts -->
 
 - **Source read:** full-text HTML, https://narodne-novine.nn.hr/clanci/sluzbeni/full/2024_11_135_2217.html
-- **Retrieved + read:** 2026-07-25 (čl. 64-72, 76, 85 lus).
+- **Retrieved + read:** 2026-07-25 (čl. 64-72, 76, 85 read).
 
-Le ZKS pose le devoir (čl. 37) ; **les délais vivent ici**. Ils étaient jusqu'à
-présent absents de nos données parce que non vérifiés — ils y sont désormais.
+The ZKS sets the duty (čl. 37); **the deadlines live here**. Until now they were
+absent from our data because they were not verified; they are in it now.
 
-| Acte | Délai | Où | Verbatim |
+| Act | Deadline | Where | Verbatim |
 |---|---|---|---|
-| Rano upozorenje (alerte précoce) | **24 h** depuis la connaissance | čl. 66. st. 1. | "bez odgode, a najkasnije u roku od 24 sata od trenutka **saznanja** za značajan incident" |
-| Početna obavijest (notification initiale) | **72 h** depuis la connaissance | čl. 67. st. 1. | "najkasnije u roku od 72 sata od trenutka saznanja" |
-| ⚠️ **Dérogation** — prestataires de services de confiance | **24 h** pour la notification initiale | čl. 68. | "Iznimno od članka 66. stavka 1. … i članka 67. stavka 1. … pružatelji usluga povjerenja dužni su … najkasnije u roku od 24 sata" |
-| Privremeno izvješće (rapport intermédiaire) | **sur demande** du CSIRT, délai fixé par lui, **min 48 h / max 7 jours** | čl. 69. st. 1.-3. | "ostavljeni rok ne može biti kraći od 48 sati niti duži od sedam dana od primitka zahtjeva" |
-| Završno izvješće (rapport final) | **30 jours** depuis la remise de la **notification initiale** | čl. 70. st. 1. | "najkasnije u roku od 30 dana od dana dostave **početne obavijesti**" |
-| Izvješće o napretku (rapport d'avancement) | remplace le rapport final si l'incident est **toujours en cours** | čl. 71. st. 1. | "U slučaju da je incident još u tijeku … umjesto završnog izvješća … dostaviti izvješće o napretku" |
-| Information des **destinataires des services** | **72 h** depuis la connaissance | čl. 85. st. 1. | "najkasnije u roku od 72 sata od saznanja … na jasan i lako dokaziv način" |
-| Données manquantes aux destinataires | **72 h** après l'envoi initial | čl. 85. st. 3. | "najkasnije u roku od 72 sata od slanja obavijesti" |
-| ↩︎ Retour du CSIRT vers le sujet | **24 h** après l'alerte précoce | čl. 76. st. 1. | "najkasnije u roku od 24 sata od primitka ranog upozorenja … dostaviti subjektu početne povratne podatke" |
+| Rano upozorenje (early warning) | **24 h** from awareness | čl. 66. st. 1. | "bez odgode, a najkasnije u roku od 24 sata od trenutka **saznanja** za značajan incident" |
+| Početna obavijest (initial notification) | **72 h** from awareness | čl. 67. st. 1. | "najkasnije u roku od 72 sata od trenutka saznanja" |
+| ⚠️ **Derogation**: trust service providers | **24 h** for the initial notification | čl. 68. | "Iznimno od članka 66. stavka 1. … i članka 67. stavka 1. … pružatelji usluga povjerenja dužni su … najkasnije u roku od 24 sata" |
+| Privremeno izvješće (intermediate report) | **on request** of the CSIRT, deadline set by it, **min 48 h / max 7 days** | čl. 69. st. 1.-3. | "ostavljeni rok ne može biti kraći od 48 sati niti duži od sedam dana od primitka zahtjeva" |
+| Završno izvješće (final report) | **30 days** from the submission of the **initial notification** | čl. 70. st. 1. | "najkasnije u roku od 30 dana od dana dostave **početne obavijesti**" |
+| Izvješće o napretku (progress report) | replaces the final report if the incident is **still ongoing** | čl. 71. st. 1. | "U slučaju da je incident još u tijeku … umjesto završnog izvješća … dostaviti izvješće o napretku" |
+| Informing the **recipients of the services** | **72 h** from awareness | čl. 85. st. 1. | "najkasnije u roku od 72 sata od saznanja … na jasan i lako dokaziv način" |
+| Missing data to the recipients | **72 h** after the initial sending | čl. 85. st. 3. | "najkasnije u roku od 72 sata od slanja obavijesti" |
+| ↩︎ Feedback from the CSIRT to the entity | **24 h** after the early warning | čl. 76. st. 1. | "najkasnije u roku od 24 sata od primitka ranog upozorenja … dostaviti subjektu početne povratne podatke" |
 
-### Quatre écarts par rapport à la trame NIS 2
+### Four departures from the NIS 2 pattern
 
-1. ⚠️ **CORRIGÉ plus bas** — j'avais écrit « cinq actes, pas trois » comme un écart croate. La directive en prévoit cinq elle-même (art. 23(4) a à e). Cinq actes (čl. 65) : rano upozorenje, početna
+1. ⚠️ **CORRECTED further down**: I had written "five acts, not three" as a Croatian departure. The directive itself provides for five (art. 23(4) a to e). Five acts (čl. 65): rano upozorenje, početna
    obavijest, privremeno izvješće, izvješće o napretku, završno izvješće.
-2. **Le rapport final se compte depuis la notification initiale**, pas depuis la
-   connaissance ni la clôture — et c'est **30 jours**, pas « un mois ».
-3. **Les prestataires de services de confiance passent à 24 h** pour la
-   notification initiale.
-4. **L'information des destinataires de services est un délai ferme de 72 h**
-   avec contenu obligatoire, là où NIS 2 art. 23(1) la prévoit « le cas échéant »
-   sans délai chiffré. C'est une obligation client-facing que beaucoup d'outils
-   ne modélisent pas.
+2. **The final report is counted from the initial notification**, not from
+   awareness nor from closure, and it is **30 days**, not « un mois ».
+3. **Trust service providers move to 24 h** for the initial
+   notification.
+4. **Informing the recipients of services is a firm 72 h deadline**
+   with mandatory content, where NIS 2 art. 23(1) provides for it « le cas échéant »
+   without a numeric deadline. It is a client-facing obligation that many tools
+   do not model.
 
-### Réconciliation des données internes (2026-07-25)
+### Reconciliation of the internal data (2026-07-25)
 
 `packages/regulatory-data/src/country-configs/transposition-references.ts`
-(`TRANSPOSITION_REFERENCES_HR`) affirmait, dans les cinq locales :
+(`TRANSPOSITION_REFERENCES_HR`) stated, in all five locales:
 
 > « Incident notification is **three-stage** … rano upozorenje within 24h,
 > početna obavijest within 72h, **završno izvješće within 30 days** — submitted
 > via the national **PiXi** platform »
 
-Trois écarts avec le texte officiel lu ci-dessus, tous corrigés :
+Three discrepancies with the official text read above, all corrected:
 
-1. **Trois actes → cinq** (čl. 65). Le privremeno izvješće (borné 48 h–7 jours
-   par le CSIRT, čl. 69. st. 3.) et l'izvješće o napretku (čl. 71.) étaient
-   absents. Un client qui lit « trois étapes » ne provisionne pas un rapport
-   intermédiaire exigible sous 48 h.
-2. **« 30 days » sans point de départ** → 30 jours **depuis la remise de la
-   početna obavijest** (čl. 70. st. 1.). Lu sans le point de départ, un client
-   compte depuis la connaissance et se trompe de 72 h.
-3. **Le čl. 85 était entièrement absent** — le délai ferme de 72 h pour informer
-   les destinataires des services. C'est l'obligation la plus exposée
-   commercialement (elle vise les clients du client, pas le régulateur) et elle
-   est désormais un bullet à part entière.
+1. **Three acts → five** (čl. 65). The privremeno izvješće (bounded 48 h–7 days
+   by the CSIRT, čl. 69. st. 3.) and the izvješće o napretku (čl. 71.) were
+   missing. A customer who reads "three stages" does not provision for an
+   intermediate report that can be demanded within 48 h.
+2. **« 30 days » without a starting point** → 30 days **from the submission of the
+   početna obavijest** (čl. 70. st. 1.). Read without the starting point, a customer
+   counts from awareness and is off by 72 h.
+3. **čl. 85 was entirely absent**: the firm 72 h deadline for informing
+   the recipients of the services. It is the most commercially exposed
+   obligation (it targets the customer's customers, not the regulator) and it
+   is now a bullet in its own right.
 
-**Correction de ma propre correction (2026-07-26).** J'avais écrit ici que la
-mention de la plateforme **PiXi** « n'est sourcée nulle part » et je l'avais
-retirée de trois fichiers. **C'était faux, et le retrait a été annulé.**
+**Correction of my own correction (2026-07-26).** I had written here that the
+mention of the **PiXi** platform "is not sourced anywhere" and I had
+removed it from three files. **That was wrong, and the removal has been reverted.**
 
-PiXi est le nom opérationnel donné par le CARNET à la plateforme nationale, et
-cette plateforme a une base légale explicite :
+PiXi is the operational name given by CARNET to the national platform, and
+that platform has an explicit legal basis:
 
-| Fait | Où | Verbatim | Statut |
+| Fact | Where | Verbatim | Status |
 |---|---|---|---|
-| La plateforme nationale est le **POINT D'ENTRÉE UNIQUE OBLIGATOIRE** des notifications des čl. 37 et 39 | čl. 43. st. 1. | "Obavještavanje na temelju članaka 37. i 39. ovoga Zakona … **obavlja se putem nacionalne platforme** za prikupljanje, analizu i razmjenu podataka o kibernetičkim prijetnjama i incidentima, kao **jedinstvene ulazne točke**" | ✅ |
-| Développement et gestion confiés au **CARNET** | čl. 43. st. 2. | "Razvoj i upravljanje nacionalnom platformom … u nadležnosti je **CARNET-a**." | ✅ |
-| Des **canaux de repli** sont prévus, renvoyés à l'Uredba | čl. 44. | "…uključujući **mogućnosti korištenja drugih načina dostave obavijesti** iz članaka 37. i 39. ovoga Zakona, propisuju se uredbom iz članka 24." | ✅ |
+| The national platform is the **MANDATORY SINGLE ENTRY POINT** for the notifications under čl. 37 and 39 | čl. 43. st. 1. | "Obavještavanje na temelju članaka 37. i 39. ovoga Zakona … **obavlja se putem nacionalne platforme** za prikupljanje, analizu i razmjenu podataka o kibernetičkim prijetnjama i incidentima, kao **jedinstvene ulazne točke**" | ✅ |
+| Development and management entrusted to **CARNET** | čl. 43. st. 2. | "Razvoj i upravljanje nacionalnom platformom … u nadležnosti je **CARNET-a**." | ✅ |
+| **Fallback channels** are provided for, referred to the Uredba | čl. 44. | "…uključujući **mogućnosti korištenja drugih načina dostave obavijesti** iz članaka 37. i 39. ovoga Zakona, propisuju se uredbom iz članka 24." | ✅ |
 
-En pratique, le CERT.hr indique qu'en cas d'indisponibilité de PiXi, l'incident
-se déclare par formulaires envoyés par courriel au CSIRT compétent.
+In practice, CERT.hr indicates that if PiXi is unavailable, the incident
+is reported through forms sent by e-mail to the competent CSIRT.
 
-**Ce que cet épisode enseigne.** J'avais conclu « non sourcé » à partir d'une
-absence dans les articles que j'avais lus (čl. 29, 30, 34, 35, 37, 65-72, 76,
-85, 101, 102, 9-11, 22-23). Le fait vivait au čl. 43, que je n'avais pas ouvert.
-C'est l'erreur **symétrique** de celle que ce balayage corrige partout ailleurs :
-au lieu d'affirmer sans source, j'allais **nier sur une absence de lecture**.
+**What this episode teaches.** I had concluded "unsourced" from an
+absence in the articles I had read (čl. 29, 30, 34, 35, 37, 65-72, 76,
+85, 101, 102, 9-11, 22-23). The fact lived in čl. 43, which I had not opened.
+It is the **mirror image** of the error this sweep corrects everywhere else:
+instead of asserting without a source, I was about to **deny on the basis of not having read**.
 
-Règle à retenir : « je ne l'ai pas trouvé » n'est pas « ce n'est pas là », sauf
-si la recherche a porté sur le **texte intégral** et est consignée comme telle.
-Les absences confirmées de ce dossier (données fournisseur au čl. 29-30, partage
-ex ante/ex post) l'ont été par recherche sur l'intégralité du texte, pas par
-lecture partielle — c'est ce qui les distingue.
+Rule to remember: "I did not find it" is not "it is not there", unless
+the search covered the **full text** and is recorded as such.
+The confirmed absences in this file (supplier data in čl. 29-30, ex ante/ex post
+split) were confirmed by searching the whole text, not by partial
+reading; that is what sets them apart.
 
-## Enregistrement, sanctions, seuils — ZKS NN 14/2024, čl. 9-11, 22-23, 101-102
+## Registration, sanctions, thresholds — ZKS NN 14/2024, čl. 9-11, 22-23, 101-102
 
 <!-- meta: theme=registration,sanctions,scoping; type=reference; date=2026-07-26; surfaces=data; guard=none -->
 
 - **Source read:** full-text HTML, https://narodne-novine.nn.hr/clanci/sluzbeni/full/2024_02_14_254.html
-- **Retrieved + read:** 2026-07-25 (čl. 9, 10, 11, 22, 23, 101, 102 lus verbatim).
+- **Retrieved + read:** 2026-07-25 (čl. 9, 10, 11, 22, 23, 101, 102 read verbatim).
 
-### 1. Enregistrement — čl. 22-23 : un modèle RÉACTIF, à l'inverse de la Pologne
+### 1. Registration — čl. 22-23: a REACTIVE model, the opposite of Poland
 
-| Fait | Article | Verbatim | Statut |
+| Fact | Article | Verbatim | Status |
 |---|---|---|---|
-| Le registre spécial vise **une liste nommée de services numériques**, dont les **prestataires de services de sécurité managés** | čl. 22. st. 1. | "– pružatelja usluga DNS-a – registra naziva vršne nacionalne internetske domene – registrara – pružatelja usluga računalstva u oblaku – pružatelja usluga podatkovnog centra – pružatelja mreža za isporuku sadržaja – **pružatelja upravljanih usluga** – **pružatelja upravljanih sigurnosnih usluga** – pružatelja internetskih tržišta – pružatelja internetskih tražilica i – pružatelja platformi za usluge društvenih mreža" | ✅ |
-| Registre tenu **indépendamment** de la liste des ključni/važni | čl. 22. st. 2. | "Registar … vodi se **neovisno o obvezi vođenja popisa** ključnih i važnih subjekata." | ✅ |
-| ⚠️ **Délai de 15 jours à compter de la RÉCEPTION D'UNE DEMANDE**, pas une auto-inscription | čl. 23. st. 2. | "Rok za dostavu podataka … je **15 dana od dana primitka zahtjeva** za dostavu podataka." | ✅ |
-| Changement de données : **trois mois** | čl. 23. st. 3. | "dužni su bez odgode, **u roku od tri mjeseca od datuma promjene** obavijestiti središnje državno tijelo" | ✅ |
-| Transmission à l'**ENISA**, sauf les plages IP | čl. 23. st. 4. | "dostavljaju se bez odgode, putem jedinstvene kontaktne točke, **Europskoj agenciji za kibernetičku sigurnost** … osim podataka iz stavka 1. podstavka 6." | ✅ |
+| The special register targets **a named list of digital services**, including **managed security service providers** | čl. 22. st. 1. | "– pružatelja usluga DNS-a – registra naziva vršne nacionalne internetske domene – registrara – pružatelja usluga računalstva u oblaku – pružatelja usluga podatkovnog centra – pružatelja mreža za isporuku sadržaja – **pružatelja upravljanih usluga** – **pružatelja upravljanih sigurnosnih usluga** – pružatelja internetskih tržišta – pružatelja internetskih tražilica i – pružatelja platformi za usluge društvenih mreža" | ✅ |
+| Register kept **independently** of the list of ključni/važni | čl. 22. st. 2. | "Registar … vodi se **neovisno o obvezi vođenja popisa** ključnih i važnih subjekata." | ✅ |
+| ⚠️ **15-day deadline counted from the RECEIPT OF A REQUEST**, not a self-registration | čl. 23. st. 2. | "Rok za dostavu podataka … je **15 dana od dana primitka zahtjeva** za dostavu podataka." | ✅ |
+| Change of data: **three months** | čl. 23. st. 3. | "dužni su bez odgode, **u roku od tri mjeseca od datuma promjene** obavijestiti središnje državno tijelo" | ✅ |
+| Transmission to **ENISA**, except the IP ranges | čl. 23. st. 4. | "dostavljaju se bez odgode, putem jedinstvene kontaktne točke, **Europskoj agenciji za kibernetičku sigurnost** … osim podataka iz stavka 1. podstavka 6." | ✅ |
 
-**L'écart structurant avec la Pologne.** La Croatie est **réactive** : l'entité
-répond sous 15 jours à une demande de l'autorité. La Pologne est **proactive** :
-l'entité dépose d'elle-même sous 6 mois à compter du jour où elle remplit les
-critères (art. 7c ust. 1). Et sur le changement de données, l'écart est de
-**trois mois contre quatorze jours**. Un produit qui modélise « le » délai
-d'enregistrement NIS 2 se trompe dans les deux pays.
+**The structural difference from Poland.** Croatia is **reactive**: the entity
+answers a request from the authority within 15 days. Poland is **proactive**:
+the entity files on its own initiative within 6 months from the day it meets the
+criteria (art. 7c ust. 1). And on the change of data, the gap is
+**three months versus fourteen days**. A product that models "the" NIS 2
+registration deadline gets it wrong in both countries.
 
-### 2. Seuils — čl. 9-11
+### 2. Thresholds — čl. 9-11
 
-| Fait | Article | Verbatim | Statut |
+| Fact | Article | Verbatim | Status |
 |---|---|---|---|
-| Ključni (cas général) : **dépasse** les plafonds de moyenne entreprise, définis par la **loi croate sur le malo gospodarstvo**, pas directement par la reco 2003/361/CE | čl. 9. al. 1 | "koji **prelaze gornje granice za srednje subjekte maloga gospodarstva** utvrđene zakonom kojim se uređuju osnove za primjenu poticajnih mjera gospodarske politike…" | ✅ |
-| Ključni **quelle que soit la taille** : prestataires de confiance qualifiés, registre TLD, DNS | čl. 9. al. 2 | "kvalificirani pružatelji usluga povjerenja, registar naziva vršne nacionalne internetske domene te pružatelji usluga DNS-a, **neovisno o njihovoj veličini**" | ✅ |
-| ⚠️ **Spécificité croate : les intermédiaires d'information de la facturation électronique B2B sont ključni quelle que soit leur taille** | čl. 9. al. 4 | "**informacijski posrednici u razmjeni elektroničkog računa među poduzetnicima, neovisno o njihovoj veličini**" | ✅ |
-| Entités critiques au titre de la loi sur les infrastructures critiques : ključni quelle que soit la taille | čl. 9. al. 5 | "subjekti koji su utvrđeni kao kritični subjekti … neovisno o njihovoj veličini" | ✅ |
-| Važni : annexe II à partir de la moyenne entreprise, ou annexe I non ključni mais moyenne entreprise | čl. 10. al. 1-2 | "koji predstavljaju srednji subjekt maloga gospodarstva … ili koji prelaze gornje granice…" | ✅ |
-| Dérogation aux seuils par critères spéciaux | čl. 11. | "Iznimno od članka 9. podstavka 1. i članka 10. podstavaka 1. i 2. …" | ✅ |
+| Ključni (general case): **exceeds** the medium-enterprise ceilings, defined by the **Croatian act on malo gospodarstvo**, not directly by Recommendation 2003/361/EC | čl. 9. al. 1 | "koji **prelaze gornje granice za srednje subjekte maloga gospodarstva** utvrđene zakonom kojim se uređuju osnove za primjenu poticajnih mjera gospodarske politike…" | ✅ |
+| Ključni **regardless of size**: qualified trust service providers, TLD registry, DNS | čl. 9. al. 2 | "kvalificirani pružatelji usluga povjerenja, registar naziva vršne nacionalne internetske domene te pružatelji usluga DNS-a, **neovisno o njihovoj veličini**" | ✅ |
+| ⚠️ **Croatian specificity: the information intermediaries of B2B electronic invoicing are ključni regardless of their size** | čl. 9. al. 4 | "**informacijski posrednici u razmjeni elektroničkog računa među poduzetnicima, neovisno o njihovoj veličini**" | ✅ |
+| Critical entities under the critical infrastructure act: ključni regardless of size | čl. 9. al. 5 | "subjekti koji su utvrđeni kao kritični subjekti … neovisno o njihovoj veličini" | ✅ |
+| Važni: Annex II from medium enterprise upwards, or Annex I not ključni but medium enterprise | čl. 10. al. 1-2 | "koji predstavljaju srednji subjekt maloga gospodarstva … ili koji prelaze gornje granice…" | ✅ |
+| Derogation from the thresholds through special criteria | čl. 11. | "Iznimno od članka 9. podstavka 1. i članka 10. podstavaka 1. i 2. …" | ✅ |
 
-L'intermédiaire de facturation électronique B2B n'existe pas dans NIS 2. C'est
-un ajout croate, et il vise une population entière de PME logicielles.
+The B2B electronic invoicing intermediary does not exist in NIS 2. It is
+a Croatian addition, and it targets an entire population of software SMEs.
 
 ### 3. Sanctions — čl. 101-102
 
-| Fait | Article | Verbatim | Statut |
+| Fact | Article | Verbatim | Status |
 |---|---|---|---|
-| Ključni : **10 000 € à 10 000 000 €** OU **0,5 % à 2 % max** du CA annuel mondial, **le plus élevé des deux** | čl. 101. st. 1. | "Novčanom kaznom u iznosu od 10.000,00 eura do 10.000.000,00 eura ili u iznosu od **0,5 % do najviše 2 %** ukupnog godišnjeg prometa dotičnog subjekta **na svjetskoj razini** … **ovisno o tome koji je iznos veći**" | ✅ |
-| **Personnes physiques responsables des mesures (čl. 29) : 1 000 € à 6 000 €** | čl. 101. st. 2. | "kaznit će se i fizičke osobe koje su sukladno članku 29. … odgovorne za upravljanje mjerama … novčanom kaznom u iznosu od **1000,00 do 6000,00 eura**" | ✅ |
-| Važni : **5 000 € à 7 000 000 €** OU **0,2 % à 1,4 % max**, le plus élevé | čl. 102. st. 1. | "od 5000,00 eura do 7.000.000,00 eura ili u iznosu od **0,2 % do najviše 1,4 %** … ovisno o tome koji je iznos veći" | ✅ |
-| Personnes responsables, važni : **500 € à 3 000 €** | čl. 102. st. 2. | "novčanom kaznom u iznosu od **500,00 do 3000,00 eura**" | ✅ |
-| **Le défaut d'information des destinataires de services (čl. 38) est nommément sanctionné** au plafond haut | čl. 101. st. 1. tiret 5 | "koji ne obavještava ili ne obavještava u roku **primatelje usluga** o značajnim incidentima…" | ✅ |
-| Le défaut de revizija / de rapport d'audit est sanctionné | čl. 101. st. 1. tirets 6-8 | "koji ne provede reviziju … najmanje jednom u dvije godine (članak 34.)" | ✅ |
-| Pour les važni, c'est le défaut de **samoprocjena** ou d'izjava/plan qui est sanctionné | čl. 102. st. 1. tirets 6-7 | "koji ne provede samoprocjenu … koji ne dostavi u propisanom roku **izjavu o sukladnosti ili plan daljnjeg postupanja**" | ✅ |
+| Ključni: **€10 000 to €10 000 000** OR **0.5 % to 2 % max** of worldwide annual turnover, **whichever is higher** | čl. 101. st. 1. | "Novčanom kaznom u iznosu od 10.000,00 eura do 10.000.000,00 eura ili u iznosu od **0,5 % do najviše 2 %** ukupnog godišnjeg prometa dotičnog subjekta **na svjetskoj razini** … **ovisno o tome koji je iznos veći**" | ✅ |
+| **Natural persons responsible for the measures (čl. 29): €1 000 to €6 000** | čl. 101. st. 2. | "kaznit će se i fizičke osobe koje su sukladno članku 29. … odgovorne za upravljanje mjerama … novčanom kaznom u iznosu od **1000,00 do 6000,00 eura**" | ✅ |
+| Važni: **€5 000 to €7 000 000** OR **0.2 % to 1.4 % max**, whichever is higher | čl. 102. st. 1. | "od 5000,00 eura do 7.000.000,00 eura ili u iznosu od **0,2 % do najviše 1,4 %** … ovisno o tome koji je iznos veći" | ✅ |
+| Responsible persons, važni: **€500 to €3 000** | čl. 102. st. 2. | "novčanom kaznom u iznosu od **500,00 do 3000,00 eura**" | ✅ |
+| **Failure to inform the recipients of services (čl. 38) is expressly sanctioned** at the upper ceiling | čl. 101. st. 1. indent 5 | "koji ne obavještava ili ne obavještava u roku **primatelje usluga** o značajnim incidentima…" | ✅ |
+| Failure to perform the revizija / to deliver the audit report is sanctioned | čl. 101. st. 1. indents 6-8 | "koji ne provede reviziju … najmanje jednom u dvije godine (članak 34.)" | ✅ |
+| For važni, it is the failure to perform the **samoprocjena** or to deliver the izjava/plan that is sanctioned | čl. 102. st. 1. indents 6-7 | "koji ne provede samoprocjenu … koji ne dostavi u propisanom roku **izjavu o sukladnosti ili plan daljnjeg postupanja**" | ✅ |
 
-**Deux écarts avec la directive.**
+**Two departures from the directive.**
 
-1. **La Croatie fixe un PLANCHER de pourcentage** (0,5 % pour les ključni,
-   0,2 % pour les važni) là où NIS 2 art. 34 ne fixe que des plafonds. Le
-   régulateur croate ne peut pas descendre en dessous s'il retient l'assiette
-   du chiffre d'affaires.
-2. **La responsabilité personnelle est plafonnée bas** : 6 000 € au maximum
-   pour un dirigeant d'entité essentielle. À comparer à la Pologne, où
-   l'art. 73a ust. 4 permet **300 % de la rémunération** du dirigeant. Pour un
-   dirigeant à 120 000 € annuels, l'exposition personnelle est de 6 000 € en
-   Croatie contre 360 000 € en Pologne. Même directive, facteur 60.
+1. **Croatia sets a percentage FLOOR** (0.5 % for ključni,
+   0.2 % for važni) where NIS 2 art. 34 sets only ceilings. The
+   Croatian regulator cannot go below it if it chooses the turnover
+   basis.
+2. **Personal liability is capped low**: €6 000 at most
+   for an executive of an essential entity. Compare with Poland, where
+   art. 73a ust. 4 allows **300 % of the executive's remuneration**. For an
+   executive on €120 000 a year, the personal exposure is €6 000 in
+   Croatia versus €360 000 in Poland. Same directive, a factor of 60.
 
-### 4. Surveillance — pas de distinction ex ante / ex post codifiée
+### 4. Supervision — no codified ex ante / ex post distinction
 
-Contrairement à la Pologne (art. 53 ust. 3, qui écrit noir sur blanc
-« prewencyjnym i następczym » pour les kluczowe et « następczym » pour les
-ważne), le ZKS **ne codifie pas** ce partage. Recherche faite sur le texte
-intégral : aucune occurrence d'une opposition prethodni/naknadni nadzor.
+Unlike Poland (art. 53 ust. 3, which writes in black and white
+« prewencyjnym i następczym » for the kluczowe and « następczym » for the
+ważne), the ZKS **does not codify** this split. Search done on the full
+text: no occurrence of a prethodni/naknadni nadzor opposition.
 
-Le tiering croate passe par un autre mécanisme, déjà vérifié plus haut : la
-**revizija** externe obligatoire pour les ključni (čl. 34) contre la
-**samoprocjena** pour les važni (čl. 35). C'est une différence de méthode, pas
-d'intensité, et il ne faut pas la présenter comme l'équivalent du partage
-polonais.
+Croatian tiering goes through another mechanism, already verified above: the
+mandatory external **revizija** for ključni (čl. 34) versus the
+**samoprocjena** for važni (čl. 35). It is a difference of method, not
+of intensity, and it must not be presented as the equivalent of the Polish
+split.
 
-### Reste à vérifier pour HR
+### Still to verify for HR
 
-Le détail des pouvoirs de nadzor (čl. 77-83) et les mesures correctives. Les
-quatre points prioritaires (enregistrement, sanctions, seuils, surveillance)
-sont couverts.
+The detail of the nadzor powers (čl. 77-83) and the corrective measures. The
+four priority points (registration, sanctions, thresholds, supervision)
+are covered.
 
-## Template natif ZKS — livré 2026-07-26
+## Native ZKS template — delivered 2026-07-26
 
 <!-- meta: theme=documents; type=delivery; date=2026-07-26; surfaces=doc-gen; guard=none -->
 
-Un rapport d'incident croate natif existe désormais
-(`apps/doc-gen/src/templates/incident-zsis.ts`), au même rang que l'ANSSI,
-l'ACN et l'UKSC polonais. Chaque citation vient de ce fichier.
+A native Croatian incident report now exists
+(`apps/doc-gen/src/templates/incident-zsis.ts`), on the same footing as the ANSSI,
+ACN and Polish UKSC ones. Every citation comes from this file.
 
-### Six types de rapport
+### Six report types
 
-| Type | Base | Délai |
+| Type | Basis | Deadline |
 |---|---|---|
-| `rano_upozorenje` | čl. 66. st. 1. | 24 h depuis la connaissance |
-| `pocetna_obavijest` | čl. 67. st. 1. | 72 h, **ou 24 h** pour les prestataires de confiance (čl. 68.) |
-| `privremeno_izvjesce` | čl. 69. | **sur demande** du CSIRT, borné **48 h–7 jours** |
-| `izvjesce_o_napretku` | čl. 71. st. 1. | **remplace** le rapport final tant que l'incident est en cours |
-| `zavrsno_izvjesce` | čl. 70. st. 1. | **30 jours depuis la remise de la početna obavijest** |
-| `obavijest_primateljima` | čl. 85. | **72 h fermes, envers les destinataires de services** |
+| `rano_upozorenje` | čl. 66. st. 1. | 24 h from awareness |
+| `pocetna_obavijest` | čl. 67. st. 1. | 72 h, **or 24 h** for trust service providers (čl. 68.) |
+| `privremeno_izvjesce` | čl. 69. | **on request** of the CSIRT, bounded **48 h–7 days** |
+| `izvjesce_o_napretku` | čl. 71. st. 1. | **replaces** the final report as long as the incident is ongoing |
+| `zavrsno_izvjesce` | čl. 70. st. 1. | **30 days from the submission of the početna obavijest** |
+| `obavijest_primateljima` | čl. 85. | **firm 72 h, towards the recipients of services** |
 
-Les cinq premiers sont les actes du čl. 65. Le sixième n'est pas une
-notification au régulateur : c'est l'obligation envers les **propres clients du
-client**, et c'est celle que presque aucun outil ne modélise.
+The first five are the acts of čl. 65. The sixth is not a
+notification to the regulator: it is the obligation towards the **customer's own
+customers**, and it is the one almost no tool models.
 
-### Le détail qui distingue le natif du générique
+### The detail that sets the native apart from the generic
 
-Pour `obavijest_primateljima`, la ligne « Adresat » ne dit pas « CSIRT ». Elle
-dit « primatelji usluge pogođene incidentom — obavijest se dostavlja
-korisnicima subjekta, a ne nadležnom tijelu ». Un template à trame directive
-n'aurait pas ce type de rapport du tout, et s'il l'avait, il l'adresserait au
-régulateur par défaut. Un test verrouille ce point.
+For `obavijest_primateljima`, the « Adresat » line does not say « CSIRT ». It
+says « primatelji usluge pogođene incidentom — obavijest se dostavlja
+korisnicima subjekta, a ne nadležnom tijelu ». A template built on the directive's
+pattern would not have this report type at all, and if it had it, it would address
+it to the regulator by default. A test locks this point.
 
-Le `privremeno_izvjesce` porte la borne 48 h–7 jours, qui est une règle
-**contraignant le régulateur** et non l'entité. C'est une information utile à
-un client sous pression : le CSIRT ne peut pas exiger le rapport sous 24 h.
+The `privremeno_izvjesce` carries the 48 h–7 days bound, which is a rule
+**binding the regulator** and not the entity. It is useful information for
+a customer under pressure: the CSIRT cannot demand the report within 24 h.
 
-### Reste à faire pour la Croatie
+### Still to do for Croatia
 
-Le câblage backend (`format=zsis` dans `authority-report`) et le bouton UI. Ils
-touchent la même région du code que le câblage polonais de la PR #519, non
-encore mergée ; les faire ici créerait un conflit. À enchaîner dès que #519 est
-sur `main`.
+The backend wiring (`format=zsis` in `authority-report`) and the UI button. They
+touch the same region of the code as the Polish wiring in PR #519, not
+yet merged; doing them here would create a conflict. To be done next as soon as #519 is
+on `main`.
 
-## Câblage backend + UI — 2026-07-26
+## Backend + UI wiring — 2026-07-26
 
 <!-- meta: theme=documents,incident; type=delivery; date=2026-07-26; surfaces=ui,doc-gen; guard=none -->
 
-`format=zsis` est accepté par `GET .../authority-report`, et `HR` y est mappé
-automatiquement. Trois des six actes croates ne sont **pas** atteignables depuis
-le vocabulaire de la directive : le privremeno izvješće (čl. 69), l'izvješće o
-napretku (čl. 71) et l'obavijest primateljima (čl. 85) n'ont aucun équivalent
-dans l'art. 23(4). Ils se demandent explicitement via `?reportType=`.
+`format=zsis` is accepted by `GET .../authority-report`, and `HR` is mapped to it
+automatically. Three of the six Croatian acts are **not** reachable from
+the directive's vocabulary: the privremeno izvješće (čl. 69), the izvješće o
+napretku (čl. 71) and the obavijest primateljima (čl. 85) have no equivalent
+in art. 23(4). They are requested explicitly via `?reportType=`.
 
-Cette asymétrie est l'argument du natif en une ligne : la moitié des obligations
-croates n'existe pas en amont.
+This asymmetry is the one-line case for the native: half of the Croatian
+obligations do not exist upstream.
 
-### Ce qui est laissé vide
+### What is left empty
 
-`competentCsirtName`. Le NCSC-HR couvre les entités publiques et critiques, le
-Nacionalni CERT les autres entités privées, et nous ne détenons pas cette
-répartition par organisation. Le template nomme donc l'obligation plutôt qu'un
-CSIRT possiblement faux — même règle que pour le CSIRT sectoriel polonais.
+`competentCsirtName`. The NCSC-HR covers public and critical entities, the
+Nacionalni CERT the other private entities, and we do not hold that
+allocation per organisation. The template therefore names the obligation rather than a
+possibly wrong CSIRT: the same rule as for the Polish sectoral CSIRT.
 
-### Le hint croate réécrit
+### The Croatian hint rewritten
 
-L'ancien texte annonçait un « modèle ZSIS natif sur la feuille de route » et
-renvoyait à un rapport générique. Il porte désormais les faits vérifiés : cinq
-actes, la borne 48 h–7 jours du privremeno izvješće, les 30 jours comptés depuis
-la remise de la početna obavijest, et l'obligation du čl. 85 envers les propres
-clients du client.
+The old text announced a "native ZSIS template on the roadmap" and
+pointed to a generic report. It now carries the verified facts: five
+acts, the 48 h–7 days bound of the privremeno izvješće, the 30 days counted from
+the submission of the početna obavijest, and the čl. 85 obligation towards the
+customer's own customers.
 
-## 🔴 Correction de ma propre analyse — « cinq actes » n'est PAS une déviation croate (2026-07-26)
+## 🔴 Correction of my own analysis — "five acts" is NOT a Croatian deviation (2026-07-26)
 
 <!-- meta: theme=incident; type=law-misread,deadline-model; date=2026-07-26; surfaces=data,docs; guard=packages/regulatory-data/test/incident-conditional-stages.test.ts -->
 
-J'ai écrit dans ce fichier, dans `deviations-nationales`, dans le template ZSIS,
-dans `transposition-references.ts` et dans un hint client que la Croatie prévoit
-« **cinq actes de notification, pas trois** », présenté comme un écart national.
+I wrote in this file, in `deviations-nationales`, in the ZSIS template,
+in `transposition-references.ts` and in a customer hint that Croatia provides for
+"**five notification acts, not three**", presented as a national departure.
 
-**C'est faux.** Vérification faite sur le texte officiel de la directive
-(EUR-Lex, CELEX 32022L2555, art. 23 §4, lu le 2026-07-26) :
+**That is wrong.** Verification done on the official text of the directive
+(EUR-Lex, CELEX 32022L2555, art. 23 §4, read on 2026-07-26):
 
-| Point | Contenu | Délai |
+| Point | Content | Deadline |
 |---|---|---|
-| a) | alerte précoce | 24 h après connaissance |
-| b) | notification d'incident | 72 h après connaissance |
-| c) | **rapport intermédiaire** | à la demande du CSIRT ou de l'autorité |
-| d) | rapport final | 1 mois après la notification du b) |
-| e) | **rapport d'avancement puis rapport final** si l'incident est en cours | 1 mois à compter du traitement |
+| a) | early warning | 24 h after awareness |
+| b) | incident notification | 72 h after awareness |
+| c) | **intermediate report** | at the request of the CSIRT or the authority |
+| d) | final report | 1 month after the notification under b) |
+| e) | **progress report then final report** if the incident is ongoing | 1 month from the handling |
 
 > « e) en cas d'incident en cours au moment de la présentation du rapport final
 > visé au point d), les États membres veillent à ce que les entités concernées
 > fournissent à ce moment-là un **rapport d'avancement** puis un rapport final
 > dans un délai d'un mois à compter du traitement de l'incident. »
 
-Et la dérogation que j'ai aussi présentée comme nationale :
+And the derogation I also presented as national:
 
 > « Par dérogation au premier alinéa, point b), un **prestataire de services de
 > confiance** notifie … dans les **24 heures** après avoir eu connaissance de
 > l'incident important. »
 
-**La directive prévoit donc cinq actes et la dérogation à 24 h.** La Croatie
-(Uredba čl. 65-71), la Belgique (art. 35 § 1er, 1° à 5°) et la Pologne
-(art. 11 ust. 1 pkt 4 à 4c) transposent fidèlement. Aucune des trois ne dévie
-sur ce point.
+**The directive therefore provides for five acts and the 24 h derogation.** Croatia
+(Uredba čl. 65-71), Belgium (art. 35 § 1er, 1° to 5°) and Poland
+(art. 11 ust. 1 pkt 4 to 4c) transpose it faithfully. None of the three deviates
+on this point.
 
-### Le vrai constat, plus large et plus grave
+### The real finding, broader and more serious
 
-Ce n'est pas que la Croatie ajoute deux actes. C'est que **Reglyze n'en modélise
-que trois sur cinq, pour tous les pays**, et que ce déficit est un écart avec la
-**directive**, pas avec un droit national.
+It is not that Croatia adds two acts. It is that **Reglyze models
+only three of the five, for every country**, and that this shortfall is a departure from the
+**directive**, not from a national law.
 
-Manquent partout : le rapport intermédiaire du point c), le rapport
-d'avancement du point e) avec son horloge décalée, et la dérogation à 24 h des
-prestataires de services de confiance.
+Missing everywhere: the intermediate report of point c), the progress
+report of point e) with its shifted clock, and the 24 h derogation for
+trust service providers.
 
-C'est le même motif que l'ancrage du rapport final corrigé en #516 : le
-framework portait un contenu juridique — ici « trois étapes » — et il était faux
-au niveau européen, donc faux partout à la fois.
+It is the same pattern as the final-report anchor corrected in #516: the
+framework carried legal content, here "three stages", and it was wrong
+at the European level, hence wrong everywhere at once.
 
-### Ce qui reste réellement spécifique à la Croatie
+### What actually remains specific to Croatia
 
-| Point | Statut |
+| Point | Status |
 |---|---|
-| Cinq actes | ❌ **directive**, pas croate |
-| Dérogation 24 h prestataires de confiance | ❌ **directive** (čl. 68 la transpose) |
-| Rapport final à 30 jours depuis la početna obavijest | ❌ conforme au point d) (« un mois ») |
-| **Borne 48 h – 7 jours** sur le délai que le CSIRT peut fixer (čl. 69. st. 3.) | ✅ **ajout croate** — la directive ne borne rien |
-| **72 h fermes envers les destinataires de services** avec contenu obligatoire (čl. 85.) | ✅ **ajout croate** — l'art. 23(1) dit « le cas échéant », sans délai |
-| Retour du CSIRT sous 24 h (čl. 76.) | ❌ art. 23(5) le prévoit déjà (« si possible dans les 24 heures ») |
+| Five acts | ❌ **directive**, not Croatian |
+| 24 h derogation for trust service providers | ❌ **directive** (čl. 68 transposes it) |
+| Final report at 30 days from the početna obavijest | ❌ consistent with point d) (« un mois ») |
+| **48 h – 7 days bound** on the deadline the CSIRT may set (čl. 69. st. 3.) | ✅ **Croatian addition**: the directive sets no bound |
+| **Firm 72 h towards the recipients of services** with mandatory content (čl. 85.) | ✅ **Croatian addition**: art. 23(1) says « le cas échéant », with no deadline |
+| CSIRT feedback within 24 h (čl. 76.) | ❌ art. 23(5) already provides for it (« si possible dans les 24 heures ») |
 
-Deux ajouts réels au lieu de six annoncés. La Croatie reste intéressante
-commercialement, mais pour les bonnes raisons.
+Two real additions instead of the six announced. Croatia remains interesting
+commercially, but for the right reasons.
 
-### Comment l'erreur s'est produite
+### How the error happened
 
-J'ai comparé le droit croate à **notre modèle produit** (trois étapes) en
-croyant comparer à la directive. Le modèle était l'erreur, pas la Croatie.
-`directive.yaml` y a contribué : son résumé dit « en trois temps » alors que sa
-propre liste d'obligations en contient quatre, et le point e) y manque.
+I compared Croatian law to **our product model** (three stages) believing
+I was comparing it to the directive. The model was the error, not Croatia.
+`directive.yaml` contributed to it: its summary says « en trois temps » while its
+own list of obligations contains four, and point e) is missing from it.
 
-Règle : avant de qualifier un fait national de « déviation », **lire l'article
-correspondant de la directive**, pas l'implémentation.
+Rule: before labelling a national fact a "deviation", **read the corresponding
+article of the directive**, not the implementation.
 
 
-## Corpus « legal frame » des documents générés (livré 2026-08-25)
+## Legal-frame corpus of the generated documents (delivered 2026-08-25)
 
 <!-- meta: theme=documents; type=delivery; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-Extension du « squelette validé » (voir docs/legal-sources/italy.md, entrée du
-2026-08-25) : la section « Pravni i normativni okvir » des documents générés pour ce pays est
-composée par `packages/regulatory-data/src/doc-corpus/legal-frames.ts` à partir
-des faits vérifiés de CET index et insérée verbatim par ai-service (placeholder
-`{{QUADRO_LEGALE}}`). Contenu du bloc : Zakon NN 14/2024 (EIF 15-02-2024) + Uredba NN 135/2024 : čl. 34. (ključni, revizija 2 ans), čl. 35. (važni, samoprocjena + izjava/plan + 8 jours), Prilozi I.-IV. Sanctions/notification : non vérifiées → absentes. Règle : tout fait absent de
-cet index est ABSENT du bloc ; enrichir = vérifier ici d'abord.
+Extension of the "validated skeleton" (see docs/legal-sources/italy.md, entry of
+2026-08-25): the « Pravni i normativni okvir » section of the documents generated for this country is
+composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
+the verified facts of THIS index and inserted verbatim by ai-service (placeholder
+`{{QUADRO_LEGALE}}`). Content of the block: Zakon NN 14/2024 (EIF 15-02-2024) + Uredba NN 135/2024: čl. 34. (ključni, revizija 2 years), čl. 35. (važni, samoprocjena + izjava/plan + 8 days), Prilozi I.-IV. Sanctions/notification: not verified → absent. Rule: any fact absent from
+this index is ABSENT from the block; enriching = verifying here first.

@@ -21,7 +21,7 @@ welcome as issues or pull requests and are ported back to the source. Last gener
 |---|---|
 | `legal-sources/<country>.md` | One file per jurisdiction (18 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 115 annotated sections, 21 of which record a defect we found in our own product and the test that now prevents it. |
 | `legal-sources/INDEX.md` | Generated cross-cutting view: by theme, by type of defect, open items. |
-| `legal-sources/TAXONOMY.md` | The meta-line vocabulary and why it exists (in French; the values are listed below). |
+| `legal-sources/TAXONOMY.md` | The meta-line vocabulary and why it exists. |
 | `data/nis2-transposition-tracker.json` | The dataset behind the public [transposition tracker](https://reglyze.com/en/nis2-tracker): stage, dates, statute, authority, sources, for 30 EU and EEA countries, each row saying how it was established. |
 | `data/scoping-rules.md`, `data/scoping-conformance-cases.json` | The NIS2 scope rules as written (the size ceilings with their "and/or", the closed list of size-independent types, the essential/important ladder, Slovenia's cumulative national test) and 33 conformance cases a classifier can be tested against. |
 | `tools/` | The index builder and the validator that CI runs. |
@@ -88,10 +88,9 @@ fact without reading the source.
 
 ## Languages
 
-The working language of a file is English or French, depending on who wrote it: Belgium, Croatia,
-France, Germany, the Netherlands and Poland are largely in French, the others in English. Quotes
-are always in the language of the gazette. A translation pass is welcome; a native reader's review
-of the glosses is worth more.
+The working language is English. Quotes are always in the language of the gazette, because a
+translation of a legal text is an interpretation and the corpus records what the text says. A
+French sentence left over from an earlier working language is a bug: report it.
 
 ## Contributing
 

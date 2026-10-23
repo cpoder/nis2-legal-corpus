@@ -66,74 +66,73 @@ self-assessment tool**, matched by control ID:
 - The official **DE** CyFun edition (for the German-speaking community).
 - Reconcile the EN tree against the newer NL tool (the 5 added controls + zero-padding).
 
-## Gouvernance et évaluation de conformité — Loi du 26 avril 2024 (vérifié 2026-07-26)
+## Governance and conformity assessment — Loi du 26 avril 2024 (verified 2026-07-26)
 
 <!-- meta: theme=governance; type=reference; date=2026-07-26; surfaces=data; guard=none -->
 
-- **Source read:** Moniteur belge du 17/05/2024, **numac 2024202344**, texte
-  intégral (194 078 caractères) via
+- **Source read:** Moniteur belge of 17 May 2024, **numac 2024202344**, full
+  text (194 078 characters) via
   `https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2024-05-17&numac=2024202344`
-- **Retrieved + read:** 2026-07-26 (art. 31, 39, 40, 41 lus verbatim)
-- **Accès :** ejustice bloque curl (ERR_CONNECTION_RESET) et les endpoints
-  `change_lg.pl` / `summary.pl` même sous Playwright. **Seul `article_body.pl`
-  répond**, et seulement depuis un vrai navigateur. Le CCB (`ccb.belgium.be`)
-  reste en 403 y compris sous Chromium. Retenir cette URL, c'est la seule qui
-  fonctionne.
+- **Retrieved + read:** 2026-07-26 (art. 31, 39, 40, 41 read verbatim)
+- **Access:** ejustice blocks curl (ERR_CONNECTION_RESET) and the endpoints
+  `change_lg.pl` / `summary.pl` even under Playwright. **Only `article_body.pl`
+  answers**, and only from a real browser. The CCB (`ccb.belgium.be`) stays
+  in 403 even under Chromium. Keep this URL, it is the only one that works.
 
-### Faits vérifiés
+### Verified facts
 
-| Fait | Où | Verbatim (officiel) | Statut |
+| Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
-| L'organe de direction **approuve** les mesures, **supervise** leur mise en œuvre et **est responsable de la violation** de l'art. 30 par l'entité | art. 31 § 1er | "Les organes de direction des entités essentielles et importantes **approuvent** les mesures de gestion des risques … **supervisent leur mise en oeuvre et sont responsables de la violation dudit article** par ces entités." | ✅ |
-| Formation : transposition **nue** de NIS 2 art. 20(2), **aucune certification** | art. 31 § 2 | "Les membres des organes de direction … **suivent une formation** pour que leurs connaissances et compétences soient suffisantes pour déterminer les risques et évaluer les pratiques de gestion des risques …" | ✅ |
-| Le rôle du CCB sur la formation est d'**encourager**, pas de certifier | art. sur les missions de l'autorité, 13° | "**faciliter et encourager** l'organisation de formations en matière de cybersécurité pour les membres du personnel des entités essentielles ou importantes" | ✅ |
-| ⚠️ **Seules les entités ESSENTIELLES** sont soumises à l'évaluation périodique, **avec un CHOIX entre deux voies** | art. 39 al. 1er | "**Les entités essentielles se soumettent** à une évaluation périodique de la conformité … : **1° Soit** en choisissant une évaluation périodique de la conformité visée à l'article 40 … **2° Soit** en se soumettant à une **inspection par l'autorité nationale de cybersécurité**" | ✅ |
-| L'évaluation de la voie 1° est faite par un **organisme AGRÉÉ**, pas par l'entité | art. 40 § 1er | "est effectuée par un **organisme d'évaluation de la conformité agréé par l'autorité nationale de cybersécurité** selon les conditions fixées par le Roi" | ✅ |
-| ⚠️ **Les entités IMPORTANTES : volontaire** | art. 41 | "Les entités importantes **peuvent, de manière volontaire**, se soumettre à une évaluation périodique de la conformité visée à l'article 39, alinéa 1er, 1°" | ✅ |
-| L'entité **choisit** son cadre de référence quand le Roi en fixe plusieurs | art. 39 dernier al. | "Lorsque le Roi détermine plusieurs cadres de référence, **les entités essentielles choisissent le cadre de référence** auquel ils se soumettent." | ✅ |
-| Habilitation de sécurité exigée pour contrôler les infrastructures critiques et l'administration | art. 40 § 1er al. 2 | "l'organisme d'évaluation de la conformité ainsi que les personnes physiques qui évaluent la conformité **disposent d'une habilitation de sécurité**" | ✅ |
+| The management body **approves** the measures, **oversees** their implementation and **is liable for the infringement** of art. 30 by the entity | art. 31 § 1er | "Les organes de direction des entités essentielles et importantes **approuvent** les mesures de gestion des risques … **supervisent leur mise en oeuvre et sont responsables de la violation dudit article** par ces entités." | ✅ |
+| Training: **bare** transposition of NIS 2 art. 20(2), **no certification** | art. 31 § 2 | "Les membres des organes de direction … **suivent une formation** pour que leurs connaissances et compétences soient suffisantes pour déterminer les risques et évaluer les pratiques de gestion des risques …" | ✅ |
+| The CCB's role on training is to **encourage**, not to certify | article on the authority's missions, 13° | "**faciliter et encourager** l'organisation de formations en matière de cybersécurité pour les membres du personnel des entités essentielles ou importantes" | ✅ |
+| ⚠️ **Only ESSENTIAL entities** are subject to the periodic assessment, **with a CHOICE between two routes** | art. 39 al. 1er | "**Les entités essentielles se soumettent** à une évaluation périodique de la conformité … : **1° Soit** en choisissant une évaluation périodique de la conformité visée à l'article 40 … **2° Soit** en se soumettant à une **inspection par l'autorité nationale de cybersécurité**" | ✅ |
+| The route 1° assessment is done by an **ACCREDITED body**, not by the entity | art. 40 § 1er | "est effectuée par un **organisme d'évaluation de la conformité agréé par l'autorité nationale de cybersécurité** selon les conditions fixées par le Roi" | ✅ |
+| ⚠️ **IMPORTANT entities: voluntary** | art. 41 | "Les entités importantes **peuvent, de manière volontaire**, se soumettre à une évaluation périodique de la conformité visée à l'article 39, alinéa 1er, 1°" | ✅ |
+| The entity **chooses** its reference framework when the King sets several | art. 39 last al. | "Lorsque le Roi détermine plusieurs cadres de référence, **les entités essentielles choisissent le cadre de référence** auquel ils se soumettent." | ✅ |
+| Security clearance required to audit critical infrastructures and the administration | art. 40 § 1er al. 2 | "l'organisme d'évaluation de la conformité ainsi que les personnes physiques qui évaluent la conformité **disposent d'une habilitation de sécurité**" | ✅ |
 
-### Absences confirmées sur le texte intégral
+### Absences confirmed on the full text
 
-| Terme | Occurrences |
+| Term | Occurrences |
 |---|---|
 | « Safeonweb » | **0** |
 | « CyberFundamentals » / « CyFun » | **0** |
 | « auto-évaluation » | **0** |
-| « certifié par le CCB » (formation) | **0** |
+| « certifié par le CCB » (training) | **0** |
 
-Les cadres de référence (CyFun, ISO/IEC 27001) et la cadence sont renvoyés au
-**Roi**, donc à l'arrêté royal du 09/06/2024 — pas à la loi.
+The reference frameworks (CyFun, ISO/IEC 27001) and the cadence are left to the
+**King**, hence to the royal decree of 9 June 2024, not to the act.
 
-### Les quatre claims produit, tranchés
+### The four product claims, settled
 
-| # | Ce qu'on affichait | Verdict |
+| # | What we displayed | Verdict |
 |---|---|---|
-| 1 | « management body training **certified by CCB** » | ❌ **FAUX.** L'art. 31 § 2 transpose l'art. 20(2) sans aucune certification, et la mission du CCB est de « faciliter et encourager » |
-| 2 | « **Mandatory annual self-assessment** … **in-scope entities** must submit … through the **CCB portal** » | ❌ **FAUX sur quatre points.** Ce n'est pas une auto-évaluation (organisme agréé, art. 40) ; ce n'est pas annuel mais « périodique », cadence fixée par le Roi ; ce ne sont pas toutes les entités du champ mais **les essentielles seulement** (art. 39), les importantes étant **volontaires** (art. 41) ; et aucun portail CCB n'est mentionné |
-| 3 | « CyFun … entities in scope **may request** a CyFun audit » | ⚠️ **À moitié faux.** Pour une entité **essentielle** ce n'est pas une faculté, c'est une obligation avec choix entre l'organisme agréé et l'inspection par l'autorité. CyFun n'est pas nommé dans la loi : les cadres sont fixés par le Roi et l'entité choisit parmi eux |
-| 4 | « Safeonweb@Work … single entry point for registration, incident notification, and audit submission » | ⚠️ **Non établi par la loi** (0 occurrence). La plateforme existe probablement en pratique, mais elle n'est pas instituée par le texte, et le « guichet unique pour les trois » n'y a aucun fondement |
+| 1 | « management body training **certified by CCB** » | ❌ **FALSE.** Art. 31 § 2 transposes art. 20(2) without any certification, and the CCB's mission is to « faciliter et encourager » |
+| 2 | « **Mandatory annual self-assessment** … **in-scope entities** must submit … through the **CCB portal** » | ❌ **FALSE on four points.** It is not a self-assessment (accredited body, art. 40); it is not annual but « périodique », cadence set by the King; it is not every entity in scope but **the essential ones only** (art. 39), the important ones being **voluntary** (art. 41); and no CCB portal is mentioned |
+| 3 | « CyFun … entities in scope **may request** a CyFun audit » | ⚠️ **Half false.** For an **essential** entity it is not an option, it is an obligation with a choice between the accredited body and the authority's inspection. CyFun is not named in the act: the frameworks are set by the King and the entity chooses among them |
+| 4 | « Safeonweb@Work … single entry point for registration, incident notification, and audit submission » | ⚠️ **Not established by the act** (0 occurrences). The platform probably exists in practice, but it is not instituted by the text, and the "single entry point for all three" has no basis in it |
 
-### Le fait belge à vendre
+### The Belgian fact worth selling
 
-L'art. 39 donne à l'entité essentielle un **choix** que peu de transpositions
-offrent : se faire évaluer par un organisme agréé, **ou** se soumettre à
-l'inspection de l'autorité nationale. C'est un arbitrage réel, avec un coût et
-un niveau d'exposition différents, et c'est exactement le genre de décision où
-un outil qui connaît le texte vaut quelque chose.
+Art. 39 gives the essential entity a **choice** that few transpositions offer:
+be assessed by an accredited body, **or** submit to the national authority's
+inspection. It is a real trade-off, with a different cost and a different level
+of exposure, and it is exactly the kind of decision where a tool that knows the
+text is worth something.
 
-Et l'art. 31 § 1er est un **cinquième modèle** de responsabilité du dirigeant :
-l'organe de direction est « **responsable de la violation** » de l'art. 30 par
-l'entité, sans plafond ni mécanisme chiffré dans la loi.
+And art. 31 § 1er is a **fifth model** of director liability: the management
+body is « **responsable de la violation** » of art. 30 by the entity, with no cap
+and no quantified mechanism in the act.
 
 
-## Corpus « legal frame » des documents générés (livré 2026-08-25)
+## Legal-frame corpus of the generated documents (delivered 2026-08-25)
 
 <!-- meta: theme=documents; type=delivery; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-Extension du « squelette validé » (voir docs/legal-sources/italy.md, entrée du
-2026-08-25) : la section « Cadre légal et normatif / Wettelijk en normatief kader (bilingue fr/nl) » des documents générés pour ce pays est
-composée par `packages/regulatory-data/src/doc-corpus/legal-frames.ts` à partir
-des faits vérifiés de CET index et insérée verbatim par ai-service (placeholder
-`{{QUADRO_LEGALE}}`). Contenu du bloc : Loi 26-04-2024 : art. 30, art. 31, art. 33 (sans délais — non épinglés), AR 09-06-2024 (CyFun + ISO 27001:2022, présomption), art. 39-41 par classification. Sanctions : NON vérifiées dans cet index → paragraphe absent. Règle : tout fait absent de
-cet index est ABSENT du bloc ; enrichir = vérifier ici d'abord.
+Extension of the "validated skeleton" (see docs/legal-sources/italy.md, entry of
+2026-08-25): the « Cadre légal et normatif / Wettelijk en normatief kader (bilingue fr/nl) » section of the documents generated for this country is
+composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
+the verified facts of THIS index and inserted verbatim by ai-service (placeholder
+`{{QUADRO_LEGALE}}`). Content of the block: Loi 26-04-2024: art. 30, art. 31, art. 33 (without deadlines, not pinned), AR 09-06-2024 (CyFun + ISO 27001:2022, presumption), art. 39-41 by classification. Sanctions: NOT verified in this index, so the paragraph is absent. Rule: any fact absent from
+this index is ABSENT from the block; enriching means verifying here first.

@@ -1,137 +1,137 @@
-# Taxonomie des index légaux
+# Taxonomy of the legal source files
 
-Chaque section `##` d'un fichier `legal-sources/<pays>.md` porte une ligne
-de métadonnées juste sous son titre :
+Every `##` section of a `legal-sources/<country>.md` file carries a metadata
+line right under its title:
 
 ```markdown
-## Titre de la section
+## Section title
 
 <!-- meta: theme=incident; type=law-misread; date=2026-07-26; surfaces=data,prompt,doc-gen; guard=packages/regulatory-data/test/incident-conditional-stages.test.ts -->
 ```
 
-Invisible au rendu, lisible par machine. `legal-sources/INDEX.md` est
-**généré** depuis ces lignes par `node tools/build-index.mjs`, et
-`packages/regulatory-data/test/legal-sources-taxonomy.test.ts` refuse une section
-sans métadonnées ou avec une valeur hors taxonomie.
+Invisible when rendered, readable by a machine. `legal-sources/INDEX.md` is
+**generated** from these lines by `node tools/build-index.mjs`, and
+`packages/regulatory-data/test/legal-sources-taxonomy.test.ts` rejects a section
+without metadata or with a value outside the taxonomy.
 
-## Pourquoi
+## Why
 
-Les fichiers étaient rangés **par pays uniquement**, en ajout chronologique. Ça
-répond bien à « que sait-on du droit polonais ? » et pas du tout à « où
-a-t-on déjà eu ce type de défaut ? ».
+The files were organised **by country only**, in chronological order of
+addition. That answers "what do we know about Polish law?" well and "where have
+we already had this kind of defect?" not at all.
 
-Le coût est concret. Le constat le plus utile du 2026-07-27 est un motif, pas un
-fait : *la prose est rigoureuse, les titres et les badges ne le sont pas*. Il est
-apparu sur l'Allemagne (badge « Frist: 6. März 2026 » contredisant son propre
-paragraphe) et il aurait prédit le badge autrichien (« Transposed & Enforced »
-sur une loi pas encore en vigueur). Mais l'un est dans `germany.md`, l'autre dans
-`austria.md`, et le motif reste invisible.
+The cost is concrete. The most useful finding of 2026-07-27 is a pattern, not a
+fact: *the prose is rigorous, the titles and badges are not*. It appeared on
+Germany (a "Frist: 6. März 2026" badge contradicting its own paragraph) and it
+would have predicted the Austrian badge ("Transposed & Enforced" on an act not
+yet in force). But one lives in `germany.md`, the other in `austria.md`, and the
+pattern stays invisible.
 
-**Ranger les faits par pays conserve les faits et perd les régularités.** Ce sont
-les régularités qui font gagner du temps la fois suivante.
+**Filing facts by country keeps the facts and loses the regularities.** The
+regularities are what save time the next time.
 
-## `theme` — de quoi parle la section
+## `theme`: what the section is about
 
-| Valeur | Portée |
+| Value | Scope |
 |---|---|
-| `statute` | Identité du texte : citation officielle, publication, entrée en vigueur, abrogations |
-| `scoping` | Qui est concerné : seuils, secteurs, classification essentielle/importante, champ d'application |
-| `registration` | Obligation d'enregistrement, registre, guichet, délais associés |
-| `incident` | Notification : destinataire, ancre, délais, actes de l'art. 23(4) |
-| `supply-chain` | Sécurité de la chaîne d'approvisionnement et obligations fournisseurs |
-| `governance` | Organe de direction : devoirs, formation, responsabilité personnelle |
-| `sanctions` | Amendes, bandes, surveillance, non-cumul |
-| `framework` | Référentiel technique national (ReCyF, CyFun, ENS, IT-Grundschutz, ZSIS, QNRCS, Misure ACN, NSC) |
-| `documents` | Templates doc-gen et documents natifs |
+| `statute` | Identity of the text: official citation, publication, entry into force, repeals |
+| `scoping` | Who is concerned: thresholds, sectors, essential/important classification, scope |
+| `registration` | Registration duty, register, portal, associated deadlines |
+| `incident` | Notification: recipient, anchor, deadlines, the acts of Art. 23(4) |
+| `supply-chain` | Supply-chain security and supplier obligations |
+| `governance` | Management body: duties, training, personal liability |
+| `sanctions` | Fines, bands, supervision, non-cumulation |
+| `framework` | National technical framework (ReCyF, CyFun, ENS, IT-Grundschutz, ZSIS, QNRCS, Misure ACN, NSC) |
+| `documents` | Doc-gen templates and native documents |
 
-## `type` — quelle est la nature de l'entrée
+## `type`: what kind of entry it is
 
-Séparé en deux familles, parce qu'elles ne se lisent pas pareil.
+Split into two families, because they are not read the same way.
 
-### Constats de référence
+### Reference findings
 
-| Valeur | Sens |
+| Value | Meaning |
 |---|---|
-| `reference` | Faits vérifiés à la source, aucun défaut produit associé |
-| `delivery` | Trace d'une livraison (template, câblage) adossée à ces faits |
-| `needs-check` | Identifié, **pas encore vérifié**, et **le produit s'en sert déjà**. Ne jamais promouvoir sans lecture de la source |
-| `lead` | Piste de repérage : nom du texte et référence au journal officiel, sans lecture de la source. **N'alimente aucune config.** |
+| `reference` | Facts verified at the source, no product defect attached |
+| `delivery` | Record of a delivery (template, wiring) resting on these facts |
+| `needs-check` | Identified, **not yet verified**, and **the product already uses it**. Never promote without reading the source |
+| `lead` | Scouting note: name of the text and gazette reference, without reading the source. **Feeds no configuration.** |
 
-### `needs-check` ou `lead` ? La question est : le produit s'en sert-il ?
+### `needs-check` or `lead`? The question is: does the product use it?
 
-C'est la distinction qui décide si une entrée peut être supprimée.
+That is the distinction that decides whether an entry can be deleted.
 
-- **`lead`** — cinq pays (BG, CY, DK, MT, SE) alimentent **zéro fichier de
-  configuration**. Les appeler des « faits » est abusif : ce sont des notes de
-  repérage. On peut les supprimer sans rien casser, au prix de re-trouver le nom
-  de la loi danoise le jour où le Danemark devient un marché. Elles sont donc
-  gardées, mais nommées pour ce qu'elles sont.
-- **`needs-check`** — les art. 30 et 32 du D.lgs 138/2024 apparaissent **cinq
-  fois** dans `acn-registration.ts`. Supprimer la note ne supprimerait pas
-  l'affirmation, elle supprimerait le fait qu'on la sait non vérifiée. Le produit
-  continuerait d'affirmer et plus personne ne saurait que c'est incontrôlé.
+- **`lead`**: five countries (BG, CY, DK, MT, SE) feed **zero configuration
+  files**. Calling them "facts" is an overstatement: they are scouting notes. They
+  can be deleted without breaking anything, at the price of finding the name of
+  the Danish act again the day Denmark becomes a market. So they are kept, but
+  named for what they are.
+- **`needs-check`**: Arts. 30 and 32 of D.lgs 138/2024 appear **five times** in
+  `acn-registration.ts`. Deleting the note would not delete the assertion, it
+  would delete the fact that we know it is unverified. The product would keep
+  asserting and nobody would know it is unchecked.
 
-**Règle : on ne peut pas supprimer un fait non vérifié si le produit l'affirme
-déjà.** La note n'est pas le problème, elle est le signalement du problème.
+**Rule: an unverified fact cannot be deleted while the product asserts it.** The
+note is not the problem, it is the report of the problem.
 
-### Défauts corrigés
+### Corrected defects
 
-| Valeur | Sens | Exemple vécu |
+| Value | Meaning | Lived example |
 |---|---|---|
-| `fabrication` | Affirmation sans aucune source | L'amende BSI de 850 000 € ; la « Loi n° 2024-1039 » |
-| `stale-statute` | Texte abrogé ou remplacé, cité comme en vigueur | DL 65/2021 présenté comme la transposition portugaise |
-| `wrong-citation` | Bon texte, mauvais article ou paragraphe | Quatre bullets allemands citant le mauvais § du BSIG |
-| `law-misread` | Le texte a été lu de travers | CSIRT NASK au lieu du CSIRT sektorowy |
-| `deadline-model` | Ancre, unité ou nombre d'actes faux | Trois actes sur cinq ; `detectedAt + 30 jours` |
-| `scope-error` | Erreur sur qui est concerné | L'ENS présenté comme s'appliquant à toute PME privée |
-| `status-error` | Étape législative fausse | L'Autriche « Transposed & Enforced » avant l'entrée en vigueur |
-| `surface-inconsistency` | La donnée est juste, l'affichage ment | Badge et meta contredisant le paragraphe voisin |
-| `i18n` | Défaut de langue ou de locale | Détail de tâche généré en anglais pour un client polonais |
-| `test-pinned` | **Un test épinglait l'erreur** | `toMatch(/Decreto-Lei 65\/2021/)` |
+| `fabrication` | Assertion with no source at all | The EUR 850,000 BSI fine; the "Loi n° 2024-1039" |
+| `stale-statute` | Repealed or replaced text cited as in force | DL 65/2021 presented as the Portuguese transposition |
+| `wrong-citation` | Right text, wrong article or paragraph | Four German bullets citing the wrong § of the BSIG |
+| `law-misread` | The text was read wrongly | CSIRT NASK instead of the CSIRT sektorowy |
+| `deadline-model` | Wrong anchor, unit or number of acts | Three acts out of five; `detectedAt + 30 days` |
+| `scope-error` | Error about who is concerned | The ENS presented as applying to every private SME |
+| `status-error` | Wrong legislative stage | Austria "Transposed & Enforced" before entry into force |
+| `surface-inconsistency` | The data is right, the display lies | Badge and meta contradicting the neighbouring paragraph |
+| `i18n` | Language or locale defect | Task detail generated in English for a Polish customer |
+| `test-pinned` | **A test pinned the error** | `toMatch(/Decreto-Lei 65\/2021/)` |
 
-`test-pinned` se cumule avec le défaut qu'il protégeait : `type=stale-statute,test-pinned`.
-Six occurrences le 2026-07-26/27, ce qui en fait la régularité la mieux établie
-du corpus et la raison d'avoir une valeur dédiée.
+`test-pinned` combines with the defect it protected: `type=stale-statute,test-pinned`.
+Six occurrences on 2026-07-26/27, which makes it the best-established regularity
+of the corpus and the reason for a dedicated value.
 
-## `surfaces` — où le défaut vivait
+## `surfaces`: where the defect lived
 
 `data`, `prompt`, `doc-gen`, `ui`, `marketing`, `mcp`, `i18n`, `test`, `docs`.
 
-Un défaut présent sur plusieurs surfaces les liste toutes. C'est ce qui rend
-visible le fait, établi le 2026-07-27, que **la couche `prompt` est le dernier
-endroit où une correction arrive** : trois défauts distincts y ont survécu après
-correction de la donnée.
+A defect present on several surfaces lists them all. That is what makes visible
+the fact, established on 2026-07-27, that **the `prompt` layer is the last place a
+correction reaches**: three distinct defects survived there after the data had
+been corrected.
 
-## `guard` — le test qui empêche le retour
+## `guard`: the test that prevents the return
 
-Chemin du test, ou `none` si aucun. Un garde-fou est un **test automatisé qui
-échoue si le défaut revient**. Sans lui, une correction tient jusqu'au prochain
-qui réécrit la phrase de bonne foi, ce qui est arrivé six fois le 2026-07-26/27.
+Path of the test, or `none` if there is none. A guard is an **automated test that
+fails if the defect comes back**. Without one, a correction holds until the next
+person rewrites the sentence in good faith, which happened six times on
+2026-07-26/27.
 
-## `debt` — l'absence assumée de garde-fou
+## `debt`: the accepted absence of a guard
 
-`guard=none` seul veut dire « pas encore fait ». `guard=none; debt=<raison>` veut
-dire « on a regardé, ce n'est pas mécanisable, et voici pourquoi ». L'INDEX les
-sépare, parce qu'une file d'attente mélangée à des cas insolubles cesse d'être
-une file d'attente.
+`guard=none` alone means "not done yet". `guard=none; debt=<reason>` means "we
+looked, it cannot be mechanised, and here is why". The INDEX separates them,
+because a queue mixed with unsolvable cases stops being a queue.
 
-Deux dettes assumées à ce jour : distinguer une citation verbatim d'une
-reformulation crédible sans disposer du texte source (aucune machine ne le fait),
-et croiser chaque § cité dans le produit avec l'index (possible mais lourd).
+Two accepted debts to date: telling a verbatim quote from a credible paraphrase
+without the source text at hand (no machine does it), and cross-checking every §
+cited in the product against the index (possible but heavy).
 
-## Mutation-tester ses propres garde-fous
+## Mutation-test your own guards
 
-Un test vert ne prouve rien tant qu'on ne l'a pas vu échouer. Réinjecter la faute
-d'origine et vérifier que le test tombe fait partie du travail.
+A green test proves nothing until it has been seen to fail. Re-injecting the
+original error and checking that the test falls is part of the job.
 
-Ce n'est pas une précaution théorique : le garde-fou portugais est **passé** à sa
-première mutation. Sa ligne contenait à la fois l'affirmation fautive et un
-« repeals » plus loin, et l'exclusion écrite pour le second avalait le premier.
-Corrigé en jugeant une fenêtre autour de la citation plutôt que la ligne entière.
+This is not a theoretical precaution: the Portuguese guard **passed** its first
+mutation. Its line contained both the faulty assertion and a "repeals" further
+on, and the exclusion written for the second swallowed the first. Fixed by
+judging a window around the citation rather than the whole line.
 
-## Ajouter une entrée
+## Adding an entry
 
-1. Écrire la section normalement, avec les citations verbatim et la date de relevé.
-2. Ajouter la ligne `<!-- meta: ... -->` sous le titre.
-3. `node tools/build-index.mjs` pour régénérer `INDEX.md`.
-4. `node tools/validate.mjs` valide la taxonomie.
+1. Write the section normally, with the verbatim quotes and the retrieval date.
+2. Add the `<!-- meta: ... -->` line under the title.
+3. `node tools/build-index.mjs` to regenerate `INDEX.md`.
+4. `node tools/validate.mjs` validates the taxonomy.

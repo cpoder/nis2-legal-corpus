@@ -47,7 +47,7 @@
 
 ## Correction of the 2026-06-07 version of this file (made 2026-07-27)
 
-<!-- meta: theme=statute; type=wrong-citation; date=2026-07-27; surfaces=docs; guard=none; debt=aucune machine ne distingue une citation exacte d'une reformulation crédible sans disposer du texte source ; se prévient par la relecture, pas par un test -->
+<!-- meta: theme=statute; type=wrong-citation; date=2026-07-27; surfaces=docs; guard=none; debt=no machine can tell an exact quote from a credible paraphrase without the source text at hand, so review prevents it, not a test -->
 
 The earlier fact table gave, in a column headed *Verbatim quote*:
 

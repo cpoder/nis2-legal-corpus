@@ -113,407 +113,404 @@ official annexes.
   Italian category titles from the Framework Nazionale ed. 2025 could enrich them
   in a later pass without changing ids.
 
-### Classification d'entité vs annexes ACN (piège, 2026-07-15)
+### Entity classification vs ACN annexes (trap, 2026-07-15)
 
-La qualification **essenziale / importante** découle des **Allegato I / Allegato II du D.Lgs 138/2024** (les annexes secteurs du décret). Les **Allegato 3 / Allegato 4** appartenus à la **Determinazione ACN 379907** et concernent UNIQUEMENT les typologies d'incident significatif de base (IS-1..IS-4 ; Allegato 3 = importanti, Allegato 4 = essenziali). NE JAMAIS attribuer l'Allegato 3/4 au décret ni à la classe d'entité. Bug MSP-A/Client-A : la page de garde du PCO citait « Soggetto Importante (Allegato 3, DLgs 138/2024) » — faux sur les deux plans. Gardé par la règle `pco-wrong-classification-annex` (pco-consistency.ts + doc-audit).
+The **essenziale / importante** qualification follows from **Allegato I / Allegato II of D.Lgs 138/2024** (the decree's sector annexes). **Allegato 3 / Allegato 4** belong to the **Determinazione ACN 379907** and concern ONLY the typologies of base significant incident (IS-1..IS-4; Allegato 3 = importanti, Allegato 4 = essenziali). NEVER attribute Allegato 3/4 to the decree or to the entity class. MSP-A/Client-A bug: the PCO cover page cited « Soggetto Importante (Allegato 3, DLgs 138/2024) », wrong on both counts. Guarded by the rule `pco-wrong-classification-annex` (pco-consistency.ts + doc-audit).
 
-## Balayage de vérification — carte article→sujet du D.Lgs 138/2024 (2026-07-15)
+## Verification sweep — article→subject map of D.Lgs 138/2024 (2026-07-15)
 
 <!-- meta: theme=statute; type=reference; date=2026-07-15; surfaces=docs; guard=none -->
 
-Balayage `verify-legal-source` des citations IT porteuses (rendues aux clients dans les docs générés), vérifiées contre les sources officielles ACN (FAQ NIS acn.gov.it) et la structure de la Gazzetta Ufficiale (GU 2024-10-01, 24G00155). **Aucune nouvelle erreur trouvée** au-delà du fix annexe du jour (voir section précédente).
+`verify-legal-source` sweep of the load-bearing IT citations (rendered to customers in the generated docs), verified against the official ACN sources (FAQ NIS acn.gov.it) and the structure of the Gazzetta Ufficiale (GU 2024-10-01, 24G00155). **No new error found** beyond the day's annex fix (see previous section).
 
-| Fait | Article | Vérification | Statut |
+| Fact | Article | Verification | Status |
 |---|---|---|---|
-| Responsabilité organes de direction / gouvernance | art. 23 (Capo IV) | ACN FAQ « organi di amministrazione » ; formazione non delegabile | ✅ |
-| Misure di sicurezza (10 domaines) | art. 24 (Capo IV) | ACN FAQ « misure di sicurezza » | ✅ |
-| Notifica di incidente (24h pre-allarme / 72h notifica / 1 mese relazione) | art. 25 (Capo IV) | ACN FAQ « notifica incidenti » ; transpose NIS2 art. 23(4) | ✅ |
-| Sanzioni | art. 38 (Capo V) | ACN FAQ « sanzioni » ; le code n'affirme AUCUN montant IT spécifique (pas d'erreur possible) | ✅ |
-| Registrazione / aggiornamento annuale | art. 7 (Capo I) | Gazzetta : art. 7 en Capo I Disposizioni generali ; art. 7 c. 1 : « Dal 1° gennaio al 28 febbraio » (GU relue le 2026-10-23) ; la fenêtre 1 mag–30 giu est celle de l'art. 30 (aggiornamento annuale), pas de l'art. 7 ; `acn-registration.ts` applique déjà 1 janvier–28 février | ✅ |
+| Responsibility of management bodies / governance | art. 23 (Capo IV) | ACN FAQ « organi di amministrazione »; formazione non delegabile | ✅ |
+| Misure di sicurezza (10 domains) | art. 24 (Capo IV) | ACN FAQ « misure di sicurezza » | ✅ |
+| Notifica di incidente (24h pre-allarme / 72h notifica / 1 mese relazione) | art. 25 (Capo IV) | ACN FAQ « notifica incidenti »; transposes NIS2 art. 23(4) | ✅ |
+| Sanzioni | art. 38 (Capo V) | ACN FAQ « sanzioni »; the code asserts NO IT-specific amount (no error possible) | ✅ |
+| Registrazione / aggiornamento annuale | art. 7 (Capo I) | Gazzetta: art. 7 in Capo I Disposizioni generali; art. 7 c. 1: « Dal 1° gennaio al 28 febbraio » (GU re-read on 2026-10-23); the 1 mag–30 giu window is that of art. 30 (aggiornamento annuale), not of art. 7; `acn-registration.ts` already applies 1 January–28 February | ✅ |
 
-Sources : ACN FAQ NIS (https://www.acn.gov.it/portale/faq/nis/), Gazzetta Ufficiale GU 2024-10-01 24G00155 (https://www.gazzettaufficiale.it/eli/id/2024/10/01/24G00155/SG). Montants NIS2 (essenziali 10M€/2%, importanti 7M€/1,4%) : dans directive.yaml + locale IT d'une déviation DE, correctement attribués ; le bloc IT n'assère pas de plafond IT autonome. Récupéré 2026-07-15.
+Sources: ACN FAQ NIS (https://www.acn.gov.it/portale/faq/nis/), Gazzetta Ufficiale GU 2024-10-01 24G00155 (https://www.gazzettaufficiale.it/eli/id/2024/10/01/24G00155/SG). NIS2 amounts (essenziali EUR 10M/2%, importanti EUR 7M/1.4%): in directive.yaml + the IT locale of a DE deviation, correctly attributed; the IT block asserts no autonomous IT ceiling. Retrieved 2026-07-15.
 
-Note : balayage CIBLÉ sur les citations porteuses, pas une relecture ligne-à-ligne exhaustive de chaque chaîne.
+Note: sweep TARGETED at the load-bearing citations, not an exhaustive line-by-line re-read of every string.
 
-## Sanctions — D.Lgs 138/2024, art. 38 (vérifié 2026-07-26)
+## Sanctions — D.Lgs 138/2024, art. 38 (verified 2026-07-26)
 
 <!-- meta: theme=sanctions; type=reference; date=2026-07-26; surfaces=data; guard=none -->
 
-- **Source read:** Gazzetta Ufficiale, texte de l'art. 38,
+- **Source read:** Gazzetta Ufficiale, text of art. 38,
   https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.codiceRedazionale=24G00155&art.idArticolo=38&art.dataPubblicazioneGazzetta=2024-10-01
-  (GU Serie generale n. 230 du 01/10/2024, 24G00155)
+  (GU Serie generale n. 230 of 01/10/2024, 24G00155)
 - **Retrieved + read:** 2026-07-26
 
-| Fait | Où | Verbatim (officiel) | Statut |
+| Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
-| Soggetti essenziali : **10 M€ ou 2 % du CA annuel mondial** | art. 38 c. 9 lett. a) | "euro 10.000.000 o del 2% del totale del fatturato annuo su scala mondiale" | ✅ |
-| Soggetti importanti : **7 M€ ou 1,4 %** | art. 38 c. 9 lett. b) | "euro 7.000.000 o dell'1,4% del totale del fatturato annuo su scala mondiale" | ✅ |
-| ⚠️ **Défaut d'enregistrement : bande SÉPARÉE et bien plus basse** — jusqu'à **0,1 %** du CA (essenziali) et **0,07 %** (importanti) | art. 38 c. 10-11 | "fino a un massimo dello **0,1%** del totale del fatturato annuo" / "fino a un massimo dello **0,07%**" | ✅ |
-| ⚠️ **AUCUNE sanction pécuniaire individuelle sur les dirigeants** | art. 38 c. 9 et 11 | les amendes des commi 9 et 11 frappent le **soggetto**, pas les personnes physiques | ✅ (absence confirmée sur l'article) |
-| La sanction visant les personnes physiques est une **incapacité à exercer des fonctions dirigeantes**, à titre **accessoire** | art. 38 c. 6 | "l'Autorità nazionale competente NIS può disporre nei confronti delle **persone fisiche** di cui al comma 5 … l'applicazione della **sanzione amministrativa accessoria della incapacità a svolgere funzioni dirigenziali** all'interno del medesimo soggetto" | ✅ |
+| Soggetti essenziali: **EUR 10 M or 2 % of worldwide annual turnover** | art. 38 c. 9 lett. a) | "euro 10.000.000 o del 2% del totale del fatturato annuo su scala mondiale" | ✅ |
+| Soggetti importanti: **EUR 7 M or 1.4 %** | art. 38 c. 9 lett. b) | "euro 7.000.000 o dell'1,4% del totale del fatturato annuo su scala mondiale" | ✅ |
+| ⚠️ **Failure to register: a SEPARATE and much lower band**, up to **0.1 %** of turnover (essenziali) and **0.07 %** (importanti) | art. 38 c. 10-11 | "fino a un massimo dello **0,1%** del totale del fatturato annuo" / "fino a un massimo dello **0,07%**" | ✅ |
+| ⚠️ **NO individual financial penalty on executives** | art. 38 c. 9 and 11 | the fines of commi 9 and 11 hit the **soggetto**, not natural persons | ✅ (absence confirmed on the article) |
+| The sanction aimed at natural persons is an **incapacity to hold management functions**, of an **accessory** nature | art. 38 c. 6 | "l'Autorità nazionale competente NIS può disporre nei confronti delle **persone fisiche** di cui al comma 5 … l'applicazione della **sanzione amministrativa accessoria della incapacità a svolgere funzioni dirigenziali** all'interno del medesimo soggetto" | ✅ |
 
-### Re-lecture 2026-10-14 — même article, trois faits de plus
+### Re-read 2026-10-14 — same article, three more facts
 
 <!-- meta: theme=sanctions; type=reference; date=2026-10-14; surfaces=data,docs; guard=live:lintSanctionTier -->
 
-Relu dans la Gazzetta, même URL et même codice redazionale (24G00155), parce
-qu'une présentation au conseil générée le 14/10/2026 pour un **soggetto
-importante** annonçait le plafond des essenziali (« EUR 7.000.000 oppure il
-**2%** »), sous un titre qui disait « per i soggetti importanti », et affirmait
-deux fois que les sanctions pécuniaires peuvent frapper les personnes
-physiques, membres de l'organe d'administration compris. Les deux affirmations
-sont fausses. Ce qui s'ajoute au tableau ci-dessus :
+Re-read in the Gazzetta, same URL and same codice redazionale (24G00155), because
+a board presentation generated on 14/10/2026 for a **soggetto importante**
+announced the essenziali ceiling (« EUR 7.000.000 oppure il
+**2%** »), under a heading that said « per i soggetti importanti », and stated twice that financial
+penalties can hit natural persons, members of the administrative body included.
+Both statements are false. What this adds to the table above:
 
-| Fait | Où | Verbatim (officiel) | Statut |
+| Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
-| Intitulé exact de l'article | art. 38 | « Sanzioni amministrative » | ✅ |
-| **Minimum** de la fourchette : un **vingtième** du maximum pour les essenziali, un **trentième** pour les importanti | art. 38 c. 9 | fourchette, pas un plafond sec | ✅ |
-| Administrations publiques de l'Allegato III (et certains soggetti de l'Allegato IV) : **25 000 à 125 000 €** si essenziali, **réduit d'un tiers** si importanti | art. 38 c. 9 | bande distincte, aucun pourcentage de CA | ✅ |
-| L'incapacité de l'art. 38 c. 6 est **conditionnée** à l'inexécution de la diffida | art. 38 c. 6 | « Qualora il soggetto non adempia nei termini stabiliti dalla **diffida di cui all'articolo 37, commi 6 e 7** » | ✅ |
-| ⚠️ Tension interne du décret sur le champ des personnes visées | art. 38 c. 5 vs c. 6 | le c. 5 ouvre sur « Qualsiasi persona fisica responsabile di un **soggetto essenziale** », le c. 6 nomme « dei soggetti essenziali **e dei soggetti importanti** » | ⏳ relevé, non tranché — ne pas affirmer dans un document que l'incapacité s'applique, ou ne s'applique pas, à un importante |
+| Exact title of the article | art. 38 | « Sanzioni amministrative » | ✅ |
+| **Minimum** of the range: one **twentieth** of the maximum for the essenziali, one **thirtieth** for the importanti | art. 38 c. 9 | a range, not a bare ceiling | ✅ |
+| Public administrations of Allegato III (and certain soggetti of Allegato IV): **EUR 25 000 to 125 000** if essenziali, **reduced by one third** if importanti | art. 38 c. 9 | distinct band, no percentage of turnover | ✅ |
+| The incapacity of art. 38 c. 6 is **conditional** on non-compliance with the diffida | art. 38 c. 6 | « Qualora il soggetto non adempia nei termini stabiliti dalla **diffida di cui all'articolo 37, commi 6 e 7** » | ✅ |
+| ⚠️ Internal tension in the decree on the scope of the persons covered | art. 38 c. 5 vs c. 6 | c. 5 opens with « Qualsiasi persona fisica responsabile di un **soggetto essenziale** », c. 6 names « dei soggetti essenziali **e dei soggetti importanti** » | ⏳ noted, not settled: do not state in a document that the incapacity applies, or does not apply, to an importante |
 
-Gardé en production depuis le 14/10/2026 par `lintSanctionTier`
-(`packages/shared/src/legal-citation-lint.ts`) : le chiffre de l'autre classe
-et toute sanction pécuniaire visant une personne physique déclenchent la passe
-corrective de génération, comme les règles de citation et d'allegato.
+Guarded in production since 14/10/2026 by `lintSanctionTier`
+(`packages/shared/src/legal-citation-lint.ts`): the other class's figure and
+any financial penalty aimed at a natural person trigger the corrective
+generation pass, like the citation and allegato rules.
 
-### Correction apportée à `transposition-references.ts` (IT)
+### Correction made to `transposition-references.ts` (IT)
 
-Le bullet affirmait : « the Italian transposition explicitly authorises ACN to
+The bullet stated: « the Italian transposition explicitly authorises ACN to
 impose **individual fines** on members of the management body, **in addition to**
 entity-level fines. The directive permits this; Italy has exercised the option. »
 
-C'est faux de la même manière qu'en France :
-- ce n'est pas une **amende** mais une **incapacité à exercer des fonctions
-  dirigeantes** (c. 6), et elle est qualifiée d'**accessoire** ;
-- elle n'est donc pas **en sus** de l'amende de l'entité, elle est accessoire à
-  une sanction principale et vise les personnes physiques du comma 5.
+This is false in the same way as in France:
+- it is not a **fine** but an **incapacity to hold management
+  functions** (c. 6), and it is qualified as **accessory**;
+- it is therefore not **on top of** the entity's fine, it is accessory to a
+  principal sanction and aims at the natural persons of comma 5.
 
-**C'était le même texte, mot pour mot, que le bullet français.** Rédigé par
-analogie entre pays, pas par lecture des deux textes. Les deux sont maintenant
-corrigés à partir de leur source respective.
+**It was the same text, word for word, as the French bullet.** Written by
+analogy between countries, not by reading the two texts. Both are now
+corrected from their respective source.
 
-### Pourquoi le balayage du 2026-07-15 ne l'avait pas vu
+### Why the 2026-07-15 sweep had not seen it
 
-Ce balayage concluait, pour l'art. 38 : « le code n'affirme AUCUN montant IT
-spécifique (pas d'erreur possible) ». La conclusion était **exacte sur les
-montants** — le bloc IT n'asserte effectivement aucun plafond autonome. Mais le
-bullet fautif ne porte **aucun chiffre** : il asserte un *mécanisme*. Un contrôle
-centré sur les nombres le laisse passer par construction.
+That sweep concluded, for art. 38: "the code asserts NO IT-specific amount (no error possible)".
+The conclusion was **correct on the amounts**: the IT block indeed asserts no
+autonomous ceiling. But the faulty bullet carries **no figure**: it asserts a
+*mechanism*. A check centred on numbers lets it through by construction.
 
-À retenir pour la méthode : vérifier aussi les affirmations qualitatives
-(« qui sanctionne », « quelle nature de sanction », « cumul ou séquence »), pas
-seulement les montants et les dates. Ce sont elles qui se propagent par
-copier-coller entre pays.
+To keep for the method: also check the qualitative statements
+("who sanctions", "what kind of sanction", "cumulation or sequence"), not
+only the amounts and the dates. They are the ones that propagate by copy-paste
+between countries.
 
-## ⏳ À vérifier — art. 30 et art. 32 D.lgs 138/2024 (relevé 2026-07-27)
+## ⏳ To verify — art. 30 and art. 32 D.lgs 138/2024 (noted 2026-07-27)
 
 <!-- meta: theme=scoping,registration; type=needs-check; date=2026-07-27; surfaces=data,docs; guard=none -->
 
-`packages/regulatory-data/src/country-configs/acn-registration.ts` s'appuie sur
-deux articles que **cet index ne couvre pas** :
+`packages/regulatory-data/src/country-configs/acn-registration.ts` relies on
+two articles that **this index does not cover**:
 
-| Affirmation dans la config | Article | Statut |
+| Statement in the config | Article | Status |
 |---|---|---|
-| Base normative citée pour une étape d'enregistrement | art. 30 DLgs 138/2024 | ⏳ needs-check |
+| Normative basis cited for a registration step | art. 30 DLgs 138/2024 | ⏳ needs-check |
 | « Allegato II sector + size thresholds OR Allegato I + smaller-than-essential. Subject to **ex-post supervision per art. 32** » | art. 32 DLgs 138/2024 | ⏳ needs-check |
 
-La surveillance ex post des soggetti importanti est **plausible** : elle reflète
-l'art. 33 de la directive, qui distingue la supervision ex ante des entités
-essentielles de la supervision ex post des entités importantes. Mais plausible
-n'est pas vérifié, et c'est précisément le raisonnement par analogie qui a produit
-la plupart des erreurs corrigées le 2026-07-27.
+Ex post supervision of the soggetti importanti is **plausible**: it mirrors
+art. 33 of the directive, which distinguishes the ex ante supervision of
+essential entities from the ex post supervision of important entities. But
+plausible is not verified, and it is precisely reasoning by analogy that
+produced most of the errors corrected on 2026-07-27.
 
-**Tentatives de récupération, pour épargner le temps du suivant :**
+**Retrieval attempts, to save the next person's time:**
 
 - `normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-04;138`
-  répond **200 mais renvoie un AUTRE texte** : une loi de délégation européenne
-  dont l'art. 31 s'intitule « Procedure per l'esercizio delle deleghe legislative »
-  et l'art. 32 « Principi e criteri direttivi generali di delega ». La variante
-  `!vig=` donne le même résultat.
-  ⚠️ **Ne pas lire les articles de ce document comme s'ils étaient ceux du D.lgs
-  138/2024** : les numéros coïncident, le contenu n'a rien à voir. C'est le piège
-  parfait pour fabriquer une citation.
-- `gazzettaufficiale.it/eli/id/2024/10/01/24G00155/sg` répond 200 mais ne rend
-  que 799 caractères (page de garde JS).
+  answers **200 but returns ANOTHER text**: a European delegation law whose
+  art. 31 is titled « Procedure per l'esercizio delle deleghe legislative »
+  and whose art. 32 is titled « Principi e criteri direttivi generali di delega ». The
+  `!vig=` variant gives the same result.
+  ⚠️ **Do not read the articles of that document as if they were those of D.lgs
+  138/2024**: the numbers coincide, the content has nothing to do with it. It is
+  the perfect trap for fabricating a citation.
+- `gazzettaufficiale.it/eli/id/2024/10/01/24G00155/sg` answers 200 but renders
+  only 799 characters (JS cover page).
 
-Piste pour la prochaine passe : la référence de publication connue est la
-**Gazzetta Ufficiale, Serie generale, n. 230 du 1er octobre 2024** ; viser le PDF
-de la Serie generale plutôt que la page ELI, ou vérifier la date de signature du
-décret avant de reconstruire une URN.
+Lead for the next pass: the known publication reference is the
+**Gazzetta Ufficiale, Serie generale, n. 230 of 1 October 2024**; aim for the
+Serie generale PDF rather than the ELI page, or check the decree's signature
+date before rebuilding a URN.
 
-**Rien n'est affirmé à tort en attendant** : les deux articles ne servent que de
-chaînes `basis` et d'un descriptif de classification, aucun délai ni aucune
-autorité n'en dépend.
+**Nothing is wrongly asserted in the meantime**: the two articles serve only as
+`basis` strings and as a classification description; no deadline and no
+authority depends on them.
 
-> ✅ **Résolu le 2026-08-25** — voir le balayage ci-dessous : art. 30 confirmé
-> (elencazione/catégorisation annuelle, la base citée était correcte) ; art. 32
-> = « Previsioni settoriali specifiche », la mention « ex-post supervision per
-> art. 32 » était FAUSSE (numéro copié de la directive) et a été corrigée vers
-> l'art. 36 c. 2 dans `acn-registration.ts`.
+> ✅ **Resolved on 2026-08-25**, see the sweep below: art. 30 confirmed
+> (annual elencazione/categorisation, the cited basis was correct); art. 32
+> = « Previsioni settoriali specifiche », the mention « ex-post supervision per
+> art. 32 » was FALSE (number copied from the directive) and was corrected to
+> art. 36 c. 2 in `acn-registration.ts`.
 
-## Carte vérifiée artt. 29–37 — D.Lgs 138/2024 (vérifié 2026-08-25)
+## Verified map artt. 29–37 — D.Lgs 138/2024 (verified 2026-08-25)
 
 <!-- meta: theme=statute,sanctions; type=reference; date=2026-08-25; surfaces=data,docs,prompt; guard=it-preamble-article-map -->
 
-**Déclencheur :** signalement MSP-A (Reviewer-A, mail 2026-08-25) — une PSSI
-générée pour Client-A citait « Art. 29, DLgs 138/2024 — Poteri di vigilanza e
-supervisione dell'ACN sui soggetti importanti ». Citation HALLUCINÉE par le
-modèle (le numéro n'existe nulle part dans nos données) ; le partenaire avait
-raison sur l'art. 29.
+**Trigger:** MSP-A report (Reviewer-A, mail 2026-08-25): a PSSI
+generated for Client-A cited « Art. 29, DLgs 138/2024 — Poteri di vigilanza e
+supervisione dell'ACN sui soggetti importanti ». Citation HALLUCINATED by the
+model (the number exists nowhere in our data); the partner was right about
+art. 29.
 
-- **Source read:** Gazzetta Ufficiale, texte article par article (GU Serie
-  generale n. 230 du 01/10/2024, 24G00155), URLs
-  `gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=<capo>&art.flagTipoArticolo=0&art.codiceRedazionale=24G00155&art.idArticolo=<n>&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-10-01&art.progressivo=0`
-  — ⚠️ le paramètre **`art.idGruppo` (numéro de Capo) est obligatoire** : sans
-  lui la page rend le stub « Gazzetta in fase di caricamento ». Les liens exacts
-  s'obtiennent depuis le sommaire `atto/vediMenuHTML?...` (script Playwright :
-  scratchpad `fetch-articles-menu.mjs`).
+- **Source read:** Gazzetta Ufficiale, text article by article (GU Serie
+  generale n. 230 of 01/10/2024, 24G00155), URLs
+  `gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=<capo>&art.flagTipoArticolo=0&art.codiceRedazionale=24G00155&art.idArticolo=<n>&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-10-01&art.progressivo=0`.
+  ⚠️ The **`art.idGruppo` parameter (Capo number) is mandatory**: without
+  it the page renders the stub « Gazzetta in fase di caricamento ». The exact
+  links are obtained from the table of contents `atto/vediMenuHTML?...` (Playwright
+  script: scratchpad `fetch-articles-menu.mjs`).
 - **Retrieved + read:** 2026-08-25
 
-| Article | Rubrica officielle (verbatim) | Statut |
+| Article | Official rubrica (verbatim) | Status |
 |---|---|---|
-| art. 24 | « Obblighi in materia di misure di gestione dei rischi per la sicurezza informatica » — c. 1 : « misure tecniche, operative e organizzative adeguate e **proporzionate**, secondo le modalità e i termini di cui agli articoli 30, 31 e 32 » (lu le 2026-08-25 : la proportionnalité des mesures peut donc légitimement citer l'art. 24, en plus de l'art. 31) | ✅ |
+| art. 24 | « Obblighi in materia di misure di gestione dei rischi per la sicurezza informatica »; c. 1: « misure tecniche, operative e organizzative adeguate e **proporzionate**, secondo le modalità e i termini di cui agli articoli 30, 31 e 32 » (read on 2026-08-25: the proportionality of the measures can therefore legitimately cite art. 24, in addition to art. 31) | ✅ |
 | art. 29 | « Banca dei dati di registrazione dei nomi di dominio » | ✅ |
-| art. 30 | « Elencazione, caratterizzazione e categorizzazione delle attività e dei servizi » (fenêtre annuelle « dal 1° maggio al 30 giugno di ogni anno », via la piattaforma de l'art. 7) | ✅ |
-| art. 31 | « Proporzionalità e gradualità degli obblighi » (c. 2 = l'ACN fixe termes/modalités/temps graduels — PAS de la vigilanza) | ✅ |
+| art. 30 | « Elencazione, caratterizzazione e categorizzazione delle attività e dei servizi » (annual window « dal 1° maggio al 30 giugno di ogni anno », via the piattaforma of art. 7) | ✅ |
+| art. 31 | « Proporzionalità e gradualità degli obblighi » (c. 2 = ACN sets graduated terms/modalities/timing, NOT about vigilanza) | ✅ |
 | art. 32 | « Previsioni settoriali specifiche » | ✅ |
 | art. 33 | « Coordinamento con la disciplina del perimetro di sicurezza nazionale cibernetica » | ✅ |
-| art. 34 | « Principi generali per lo svolgimento delle attività di vigilanza ed esecuzione » (c. 1 : vise essenziali ET importanti) | ✅ |
+| art. 34 | « Principi generali per lo svolgimento delle attività di vigilanza ed esecuzione » (c. 1: covers essenziali AND importanti) | ✅ |
 | art. 35 | « Monitoraggio, analisi e supporto » | ✅ |
-| art. 36 | « Verifiche e ispezioni » — **c. 2 verbatim : « Nei confronti dei soggetti importanti, i poteri di verifica e ispettivi si applicano unicamente qualora l'Autorità nazionale competente NIS acquisisca o riceva elementi di prova, indicazioni o informazioni che suggeriscano possibili violazioni del presente decreto. »** | ✅ |
+| art. 36 | « Verifiche e ispezioni »; **c. 2 verbatim: « Nei confronti dei soggetti importanti, i poteri di verifica e ispettivi si applicano unicamente qualora l'Autorità nazionale competente NIS acquisisca o riceva elementi di prova, indicazioni o informazioni che suggeriscano possibili violazioni del presente decreto. »** | ✅ |
 | art. 37 | « Misure di esecuzione » | ✅ |
-| art. 38 | « Sanzioni » (déjà vérifié 2026-07-26, section supra) | ✅ |
+| art. 38 | « Sanzioni » (already verified 2026-07-26, section supra) | ✅ |
 
-**Le fait porteur** : la distinction ex ante / ex post entre essenziali et
-importanti ne vit PAS dans des articles séparés comme dans la directive
-(art. 32/33 NIS2) — le décret a un Capo V unifié (artt. 34-38) et la
-restriction ex post des importanti est **l'art. 36, comma 2**. Toute citation
-« vigilanza ex ante art. 31 c. 2 » ou « ex post art. 32/34 » est un numéro de
-la directive ou une approximation plaqués sur le décret.
+**The load-bearing fact**: the ex ante / ex post distinction between essenziali
+and importanti does NOT live in separate articles as in the directive
+(art. 32/33 NIS2): the decree has a unified Capo V (artt. 34-38) and the
+ex post restriction for the importanti is **art. 36, comma 2**. Any citation
+« vigilanza ex ante art. 31 c. 2 » or « ex post art. 32/34 » is a directive
+number or an approximation pasted onto the decree.
 
-**Corrections apportées (2026-08-25) :**
-- `acn-registration.ts` : essenziale « ex ante art. 31 c. 2 » → art. 36 c. 1 ;
-  importante « ex post art. 32 » → art. 36 c. 2 (5 locales à chaque fois).
-- `tabletop-scenarios/it/scenarios.ts` : « vigilanza ex post art. 34 » →
+**Corrections made (2026-08-25):**
+- `acn-registration.ts`: essenziale « ex ante art. 31 c. 2 » → art. 36 c. 1;
+  importante « ex post art. 32 » → art. 36 c. 2 (5 locales each time).
+- `tabletop-scenarios/it/scenarios.ts`: « vigilanza ex post art. 34 » →
   art. 36, comma 2.
-- `packages/prompts/src/templates/it/documents.ts` (IT_PREAMBLE) : ajout de la
-  carte d'articles vérifiée + règle « cite UNIQUEMENT un numéro d'article ancré
-  dans le prompt ; en cas de doute, nomme la disposition SANS numéro ». C'est le
-  garde-fou contre la classe d'erreur signalée par MSP-A (numéro halluciné à
-  la génération, invisible dans nos données).
+- `packages/prompts/src/templates/it/documents.ts` (IT_PREAMBLE): added the
+  verified article map + the rule "cite ONLY an article number anchored in the prompt; when in doubt, name the provision WITHOUT a number". This is the
+  guard-rail against the error class reported by MSP-A (number hallucinated at
+  generation, invisible in our data).
 
-## Corpus « Quadro Legale » des documents générés (livré 2026-08-25)
+## « Quadro Legale » corpus of the generated documents (delivered 2026-08-25)
 
 <!-- meta: theme=documents; type=delivery; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/it-quadro-legale.test.ts -->
 
-« Squelette validé, chair générée » (maintainer's go 2026-08-25) : la section
-« Quadro Legale e Normativo » des documents générés misure-acn n'est PLUS
-écrite par le modèle. `packages/regulatory-data/src/doc-corpus/it-quadro-legale.ts`
-compose un bloc verbatim à partir des faits vérifiés de CET index (rubriche
-artt. 23-38, sanctions c. 9-11, fenêtre art. 30, Det. 379907/2025, entrée en
-vigueur 16/10/2024) ; le prompt fait émettre un placeholder
-(`{{QUADRO_LEGALE}}`) et ai-service (`lib/legal-frame.ts`) insère le bloc,
-avec fallback si le modèle ignore le contrat. PCO exclu pour l'instant
-(contrat 9 sections + gates dédiés). Toute évolution d'un fait légal doit
-passer par cet index PUIS par le module corpus — jamais l'inverse.
+"Validated skeleton, generated flesh" (maintainer's go 2026-08-25): the
+« Quadro Legale e Normativo » section of the generated misure-acn documents is NO LONGER
+written by the model. `packages/regulatory-data/src/doc-corpus/it-quadro-legale.ts`
+composes a verbatim block from the verified facts of THIS index (rubriche
+artt. 23-38, sanctions c. 9-11, art. 30 window, Det. 379907/2025, entry into
+force 16/10/2024); the prompt makes the model emit a placeholder
+(`{{QUADRO_LEGALE}}`) and ai-service (`lib/legal-frame.ts`) inserts the block,
+with a fallback if the model ignores the contract. PCO excluded for now
+(9-section contract + dedicated gates). Any change to a legal fact must
+go through this index and THEN through the corpus module, never the other way round.
 
-## Correction — le Framework Nazionale ed. 2025 A la fonction GV (2026-08-25)
+## Correction — the Framework Nazionale ed. 2025 DOES HAVE the GV function (2026-08-25)
 
 <!-- meta: theme=framework; type=reference; date=2026-08-25; surfaces=data,docs,prompt; guard=packages/regulatory-data/test/country-configs-doc-templates.test.ts -->
 
-Le pin « pas de Govern — le Framework ed. 2025 précède NIST CSF 2.0 » répété
-dans doc-templates, prompts IT, i18n et 5 fichiers de tests était une PRÉMISSE
-FAUSSE : la Determinazione ACN 379907/2025 (section supra) est explicitement
-adossée au Framework Nazionale ed. 2025 « adaptation italienne de NIST CSF
-2.0 », et `misure-acn.yaml` — généré verbatim des XLSX officiels — s'ouvre sur
-`GV — Governare` (GV.OC, GV.PO, GV.SC…, 76 occurrences). Témoin externe :
-Reviewer-A (MSP-A) cite GV.PO-01 dans son signalement du 25/08.
+The pin "no Govern: the Framework ed. 2025 predates NIST CSF 2.0" repeated
+in doc-templates, IT prompts, i18n and 5 test files was a FALSE
+PREMISE: the Determinazione ACN 379907/2025 (section supra) explicitly
+rests on the Framework Nazionale ed. 2025 "Italian adaptation of NIST CSF 2.0",
+and `misure-acn.yaml`, generated verbatim from the official XLSX, opens with
+`GV — Governare` (GV.OC, GV.PO, GV.SC…, 76 occurrences). External witness:
+Reviewer-A (MSP-A) cites GV.PO-01 in his report of 25/08.
 
-**Corrections :** PSSI → GV/GV.PO-01 (ID.GV-01 n'existe pas en CSF 2.0),
+**Corrections:** PSSI → GV/GV.PO-01 (ID.GV-01 does not exist in CSF 2.0),
 catena approvvigionamento → GV/GV.SC-01, fornitori critici → GV/GV.SC-04
-(doc-templates + bundle prompts, parité testée) ; label i18n `qnrcs.GV`
-(« Governare ») ; footnote picker « 5 fonctions sans Govern » corrigée en 10
-locales ; préambule runtime misure-acn « 6 funzioni » ; `ItAcnFunctionId` +
-`MISURE_ACN_FUNCTION_IDS` étendus. **Reste (suivi) :** la vue crosswalk du
-dashboard Misure ACN modélise toujours 5 fonctions (choix d'affichage,
-l'arbre d'assessment natif score déjà GV) — son extension à GV est un chantier
-séparé.
+(doc-templates + prompt bundle, parity tested); i18n label `qnrcs.GV`
+(« Governare »); footnote picker "5 functions without Govern" corrected in 10
+locales; misure-acn runtime preamble « 6 funzioni »; `ItAcnFunctionId` +
+`MISURE_ACN_FUNCTION_IDS` extended. **Remaining (follow-up):** the crosswalk view of the
+Misure ACN dashboard still models 5 functions (a display choice,
+the native assessment tree already scores GV); extending it to GV is a separate
+piece of work.
 
-## Art. 23 verbatim + revue MSP-A « final remarks on PSSI » (2026-08-27)
+## Art. 23 verbatim + MSP-A review « final remarks on PSSI » (2026-08-27)
 
 <!-- meta: theme=governance,documents; type=reference; date=2026-08-27; surfaces=data,prompt,doc-gen; guard=packages/shared/src/legal-citation-lint.test.ts -->
 
-**Déclencheur :** mail Reviewer-A (MSP-A) du 27/08 — 9 remarques sur la
-PSSI Client-A. Vérification art. 23 lu en Gazzetta (script fetch-articles-menu,
-retrieved 2026-08-27) + requisiti ACN dans misure-acn.yaml (verbatim XLSX).
+**Trigger:** mail from Reviewer-A (MSP-A) of 27/08: 9 remarks on the
+Client-A PSSI. Verification of art. 23 read in the Gazzetta (fetch-articles-menu script,
+retrieved 2026-08-27) + ACN requisiti in misure-acn.yaml (verbatim XLSX).
 
-| Fait | Où | Verbatim (officiel) | Statut |
+| Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
-| **L'art. 23 contient SEULEMENT les commi 1, 2, 3** — « comma 4 » n'existe pas | art. 23 | structure lue intégralement | ✅ |
-| Approbation des modalités d'implémentation | art. 23 c. 1 lett. a) | "approvano le modalità di implementazione delle misure di gestione dei rischi" | ✅ |
-| Sovrintendenza + responsabilité | art. 23 c. 1 lett. b)-c) | "sovrintendono all'implementazione" / "sono responsabili delle violazioni" | ✅ |
-| Formation des organes : **« sono tenuti a seguire una formazione »** — SANS « non delegabile », SANS fréquence | art. 23 c. 2 lett. a) | "sono tenuti a seguire una formazione in materia di sicurezza informatica" | ✅ |
-| Formation employés : promue, « periodica » (pas annuelle) | art. 23 c. 2 lett. b) | "promuovono l'offerta periodica di una formazione coerente" | ✅ |
-| Informativa incidents aux organes | art. 23 c. 3 | "sono informati su base periodica o, se opportuno, tempestivamente" | ✅ |
-| PR.AT-01 exige un plan de formation approuvé/documenté, **sans fréquence annuelle** | misure-acn.yaml PR.AT-01.R1-R2 | plan « definito, attuato, aggiornato e documentato », « approvato dagli organi » | ✅ |
-| Punto di contatto NIS + sostituto + Referente CSIRT + sostituti dans l'organisation sécurité | misure-acn.yaml GV.RR-02.R3 (art. 7 c. 6 decreto) | "sono inclusi il punto di contatto e il suo sostituto, il referente CSIRT e gli eventuali suoi sostituti" | ✅ |
+| **Art. 23 contains ONLY commi 1, 2, 3**: « comma 4 » does not exist | art. 23 | structure read in full | ✅ |
+| Approval of the implementation modalities | art. 23 c. 1 lett. a) | "approvano le modalità di implementazione delle misure di gestione dei rischi" | ✅ |
+| Sovrintendenza + responsibility | art. 23 c. 1 lett. b)-c) | "sovrintendono all'implementazione" / "sono responsabili delle violazioni" | ✅ |
+| Training of the bodies: **« sono tenuti a seguire una formazione »**, WITHOUT « non delegabile », WITHOUT a frequency | art. 23 c. 2 lett. a) | "sono tenuti a seguire una formazione in materia di sicurezza informatica" | ✅ |
+| Employee training: promoted, « periodica » (not annual) | art. 23 c. 2 lett. b) | "promuovono l'offerta periodica di una formazione coerente" | ✅ |
+| Informativa on incidents to the bodies | art. 23 c. 3 | "sono informati su base periodica o, se opportuno, tempestivamente" | ✅ |
+| PR.AT-01 requires an approved/documented training plan, **without an annual frequency** | misure-acn.yaml PR.AT-01.R1-R2 | plan « definito, attuato, aggiornato e documentato », « approvato dagli organi » | ✅ |
+| Punto di contatto NIS + sostituto + Referente CSIRT + sostituti in the security organisation | misure-acn.yaml GV.RR-02.R3 (art. 7 c. 6 decreto) | "sono inclusi il punto di contatto e il suo sostituto, il referente CSIRT e gli eventuali suoi sostituti" | ✅ |
 
-**Corrections appliquées (2026-08-27) :** « formazione non delegabile » retiré
-de 6 emplacements (IT_PREAMBLE, PSSI + formazione prompts, board deck, corpus
-Quadro Legale, tabletop) — le concept (participation personnelle) est gardé
-sans attribuer au décret une formule qu'il ne contient pas ; la ligne « ✅
-formazione non delegabile » du balayage 2026-07-15 supra est SUPERSEDED par
-cette entrée (l'ACN FAQ paraphrasait, le décret dit « sono tenuti a seguire »).
-Nouvelles règles génériques TOUS pays (prompt-builder) : statut BOZZA sans date
-d'approbation inventée ; distinction explicite exigence-réglementaire-citée vs
-« frequenza interna adottata dall'organizzazione » (les dates calculées depuis
-la date de génération = jalons internes, jamais des échéances ACN). Lint :
-plafond de commas art. 23 ≤ 3 (gate live + doc-audit) ; doc-audit
-`claimed-approval` (document généré qui prétend être déjà approuvé avec date).
-Rôles : RSI ≠ Punto di contatto NIS ≠ Referente CSIRT (cumul seulement si
-désignation formelle) — règle ajoutée au prompt misure-acn.
+**Corrections applied (2026-08-27):** « formazione non delegabile » removed
+from 6 places (IT_PREAMBLE, PSSI + formazione prompts, board deck, Quadro
+Legale corpus, tabletop); the concept (personal participation) is kept
+without attributing to the decree a wording it does not contain; the line « ✅
+formazione non delegabile » of the 2026-07-15 sweep supra is SUPERSEDED by
+this entry (the ACN FAQ paraphrased, the decree says « sono tenuti a seguire »).
+New generic rules for ALL countries (prompt-builder): BOZZA status without an
+invented approval date; explicit distinction between cited-regulatory-requirement and
+« frequenza interna adottata dall'organizzazione » (dates computed from
+the generation date = internal milestones, never ACN deadlines). Lint:
+ceiling of art. 23 commas ≤ 3 (live gate + doc-audit); doc-audit
+`claimed-approval` (generated document that claims to be already approved, with a date).
+Roles: RSI ≠ Punto di contatto NIS ≠ Referente CSIRT (combined only if
+formally designated); rule added to the misure-acn prompt.
 
-### Addendum revue MSP-A — 2e passe (2026-08-27, après régénération)
+### Addendum MSP-A review — 2nd pass (2026-08-27, after regeneration)
 
 <!-- meta: theme=governance; type=reference; date=2026-08-27; surfaces=prompt; guard=none -->
 
-La PSSI régénérée par MSP-A valide le pipeline : 8 points sur 9 résolus, le
-point 8 (rôles) « substantial improvement » mais la fiche RSI disait encore
-« mantiene i rapporti con ACN e CSIRT Italia ». Corrections (formulations
-suggérées par le partenaire, adoptées) : (1) l'RSI « supporta e coordina …
+The PSSI regenerated by MSP-A validates the pipeline: 8 points out of 9 resolved,
+point 8 (roles) « substantial improvement » but the RSI sheet still said
+« mantiene i rapporti con ACN e CSIRT Italia ». Corrections (wordings
+suggested by the partner, adopted): (1) the RSI « supporta e coordina …
 il Punto di contatto NIS e il Referente CSIRT, senza sostituirsi alle funzioni
-formalmente attribuite a tali ruoli » ; (2) le périmètre d'approbation CdA —
-l'art. 23 c. 1 lett. a) vise les modalità di implementazione, PAS chaque
-document opérationnel subordonné : la règle « OGNI politica e piano → CdA »
-du 25/08 sur-corrigeait, remplacée par la distinction politiques/plans
-(→ CdA) vs documents opérationnels (→ responsabilités internes). Les deux
-classes sont génériques → règles ajoutées au prompt-builder pour les 9 pays
-(rôles institutionnels ≠ rôle sécurité interne ; approbation du top-governance
-réservée aux documents que la loi lui assigne).
+formalmente attribuite a tali ruoli »; (2) the scope of CdA approval:
+art. 23 c. 1 lett. a) covers the modalità di implementazione, NOT every
+subordinate operational document: the rule « OGNI politica e piano → CdA »
+of 25/08 over-corrected, replaced by the distinction policies/plans
+(→ CdA) vs operational documents (→ internal responsibilities). Both
+classes are generic → rules added to the prompt-builder for the 9 countries
+(institutional roles ≠ internal security role; top-governance approval
+reserved for the documents the law assigns to it).
 
-### Addendum revue MSP-A — 3e passe : MFA risk-based (2026-08-27)
+### Addendum MSP-A review — 3rd pass: risk-based MFA (2026-08-27)
 
 <!-- meta: theme=framework; type=reference; date=2026-08-27; surfaces=prompt; guard=none -->
 
-Politica accessi logici : la matrice MFA (§8.1) était présentée comme « in
-compliance with the PR function » alors que **PR.AA-03 est risk-based** —
-verbatim misure-acn.yaml : PR.AA-03.R1 « le modalità di autenticazione …
-sono commisurate al rischio » ; PR.AA-03.R2 MFA « per almeno i sistemi …
+Politica accessi logici: the MFA matrix (§8.1) was presented as « in
+compliance with the PR function » whereas **PR.AA-03 is risk-based**;
+verbatim misure-acn.yaml: PR.AA-03.R1 « le modalità di autenticazione …
+sono commisurate al rischio »; PR.AA-03.R2 MFA « per almeno i sistemi …
 rilevanti, in accordo agli esiti della valutazione del rischio di cui alla
-misura ID.RA-05 ». Correction : formule d'introduction suggérée par le
-partenaire adoptée dans le prompt misure-acn (ancrage PR.AA-03 + ID.RA-05,
-choix plus restrictifs = scelte organizzative interne) + règle GÉNÉRIQUE
-9 pays dans prompt-builder : un contrôle rendu risk-based par le framework
-ne se présente JAMAIS comme matrice/calendrier prescrit — c'est l'approche
-d'implémentation de l'organisation dérivée de sa propre analyse de risque.
+misura ID.RA-05 ». Correction: introductory wording suggested by the
+partner adopted in the misure-acn prompt (anchoring PR.AA-03 + ID.RA-05,
+more restrictive choices = scelte organizzative interne) + GENERIC rule for
+9 countries in prompt-builder: a control made risk-based by the framework
+is NEVER presented as a prescribed matrix/calendar; it is the organisation's
+implementation approach derived from its own risk analysis.
 
-### Addendum revue MSP-A — 5e passe : Politica Asset (2026-08-30)
+### Addendum MSP-A review — 5th pass: Politica Asset (2026-08-30)
 
 <!-- meta: theme=governance,documents; type=reference; date=2026-08-30; surfaces=data,prompt; guard=none -->
 
-Le partenaire confirme que la distinction exigence/choix interne « repeatedly »
-présente dans le document — la boucle produit fonctionne. 4 corrections :
-(1) définition UNIQUE de l'RSI (« funzione organizzativa », interne ou
-esternalisée par nomination formelle — plus jamais « ruolo interno » dans les
-définitions et « esternalizzabile » dans le corps) + règle générique 9 pays
-« une définition par rôle, réutilisée partout ; ne jamais inventer de chaîne de
-désignation » ; (2)-(3) chaîne des rôles NIS adoptée sur indication du
-partenaire : CdA = governance ; **Punto di contatto NIS istituito sur la
-Piattaforma désigne le Referente CSIRT** (⏳ NEEDS-CHECK : épingler le verbatim
-de la Determinazione Piattaforma NIS ex art. 7 c. 6 — Det. 127437/2026 ? — les
-pages FAQ ACN ne portent pas la chaîne ; source actuelle = praticien MSP-A,
-fiable mais non officielle) ; notifications d'incident = Referente CSIRT, pas
-le Punto di contatto ; (4) art. 30 requalifié « riferimento normativo
-correlato » dans l'ancre asset de doc-templates (la base spécifique est
-l'art. 24 c. 2 lett. i + ID.AM).
+The partner confirms that the requirement/internal-choice distinction is « repeatedly »
+present in the document: the product loop works. 4 corrections:
+(1) a SINGLE definition of the RSI (« funzione organizzativa », internal or
+outsourced by formal appointment, never again « ruolo interno » in the
+definitions and « esternalizzabile » in the body) + generic rule for 9 countries
+"one definition per role, reused everywhere; never invent a designation chain";
+(2)-(3) chain of NIS roles adopted on the partner's
+indication: CdA = governance; **Punto di contatto NIS istituito on the
+Piattaforma designates the Referente CSIRT** (⏳ NEEDS-CHECK: pin the verbatim
+of the Determinazione Piattaforma NIS ex art. 7 c. 6 (Det. 127437/2026?); the
+ACN FAQ pages do not carry the chain; current source = MSP-A practitioner,
+reliable but not official); incident notifications = Referente CSIRT, not
+the Punto di contatto; (4) art. 30 requalified as « riferimento normativo
+correlato » in the asset anchor of doc-templates (the specific basis is
+art. 24 c. 2 lett. i + ID.AM).
 
-### Addendum revue MSP-A — 6e passe : codes de catégories ACN (2026-09-01)
+### Addendum MSP-A review — 6th pass: ACN category codes (2026-09-01)
 
 <!-- meta: theme=framework; type=reference; date=2026-09-01; surfaces=data,prompt,doc-gen; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-Politica di Crittografia : le document citait une catégorie « **PR.CR
-(Crittografia)** » — INEXISTANTE. Le catalogue des Specifiche ACN est FERMÉ à
-18 catégories (GV.OC/GV.PO/GV.RM/GV.RR/GV.SC, ID.AM/ID.IM/ID.RA,
-PR.AA/PR.AT/PR.DS/PR.IR/PR.PS, DE.CM, RS.CO/RS.MA, RC.CO/RC.RP — dérivé de
-misure-acn.yaml, verbatim des XLSX officiels) ; la crittografia rientre en
-**PR.DS** (PR.DS-01 dati at rest, PR.DS-02 in transito). Sources : « Guida
-alla lettura Specifiche di base » (PDF 09/01/2026, fournie par le partenaire —
-art. 24 c. 2 lett. h → PR.DS-01/02) + notre yaml. Corrections : gate live
-(`validCategoryCodes` dans le lint, test de parité liste↔yaml), copie
-doc-audit, catalogue épinglé dans le prompt misure-acn, rubrique --deep
-étendue aux codes de taxonomie inventés. Classe générique notée : tout
-framework à catalogue fermé (CyFun, QNRCS, ENS, ZSIS, KSC) peut recevoir le
-même gate au rythme des listes vérifiées.
+Politica di Crittografia: the document cited a category « **PR.CR
+(Crittografia)** », which does NOT EXIST. The catalogue of the Specifiche ACN is CLOSED at
+18 categories (GV.OC/GV.PO/GV.RM/GV.RR/GV.SC, ID.AM/ID.IM/ID.RA,
+PR.AA/PR.AT/PR.DS/PR.IR/PR.PS, DE.CM, RS.CO/RS.MA, RC.CO/RC.RP, derived from
+misure-acn.yaml, verbatim from the official XLSX); crittografia falls under
+**PR.DS** (PR.DS-01 dati at rest, PR.DS-02 in transito). Sources: « Guida
+alla lettura Specifiche di base » (PDF 09/01/2026, provided by the partner;
+art. 24 c. 2 lett. h → PR.DS-01/02) + our yaml. Corrections: live gate
+(`validCategoryCodes` in the lint, list↔yaml parity test), doc-audit
+copy, catalogue pinned in the misure-acn prompt, --deep rubric
+extended to invented taxonomy codes. Generic class noted: any
+closed-catalogue framework (CyFun, QNRCS, ENS, ZSIS, KSC) can receive the
+same gate at the pace of the verified lists.
 
-### Addendum revue MSP-A — 8e passe : Politica di Gestione delle Vulnerabilità (2026-09-07)
+### Addendum MSP-A review — 8th pass: Politica di Gestione delle Vulnerabilità (2026-09-07)
 
 <!-- meta: theme=framework; type=reference; date=2026-09-07; surfaces=prompt,doc-gen,corpus; guard=packages/regulatory-data/test/it-quadro-legale.test.ts -->
 
-Signalement Reviewer-A (mail 07/09 15:04 UTC), 6 points, tous vérifiés sur
-sources officielles locales avant correction :
+Report from Reviewer-A (mail 07/09 15:04 UTC), 6 points, all verified against
+local official sources before correction:
 
-| Fait | Source | Verbatim / détail | Statut |
+| Fact | Source | Verbatim / detail | Status |
 |---|---|---|---|
-| Categoria vulnerabilità | misure-acn.yaml (XLSX ufficiali) | sezione «g) Gestione delle vulnerabilità» porte ID.RA-01 et ID.RA-08 | ✅ |
-| Base importanti | Allegato 1 | ID.RA-01.R1 [EE, EI] : «Le informazioni di cui al punto 1 della misura ID.RA-08 sono utilizzate per identificare eventuali vulnerabilità» ; R2 (VA/PT periodici) et R3 (relazioni) = [EE] seulement | ✅ |
+| Categoria vulnerabilità | misure-acn.yaml (XLSX ufficiali) | sezione «g) Gestione delle vulnerabilità» carries ID.RA-01 and ID.RA-08 | ✅ |
+| Base importanti | Allegato 1 | ID.RA-01.R1 [EE, EI]: «Le informazioni di cui al punto 1 della misura ID.RA-08 sono utilizzate per identificare eventuali vulnerabilità»; R2 (VA/PT periodici) and R3 (relazioni) = [EE] only | ✅ |
 | ID.RA-08 punti | Allegato 1/2 | punti 1-4 [EE, EI] (canali CSIRT Italia/CERT/ISAC ; pronta risoluzione o rischio accettato ex ID.RA-06 ; piano di gestione ; approvazione organi) ; punto 5 (canali fornitori software critico) = [EE] | ✅ |
-| Revue annuelle des politiques = REQUISITO | Allegato 1/2 | GV.PO-02.R1 [EE, EI] : «riesaminate e, se opportuno, aggiornate periodicamente e comunque almeno con cadenza annuale, nonché qualora si verifichino evoluzioni del contesto normativo…, incidenti significativi, variazioni organizzative o mutamenti dell'esposizione» ; R3 (registro esiti) = [EE] | ✅ |
-| «Monitoraggio continuo» ≠ obbligo ACN | Allegato 1/2 | DE.CM-01 = sezione «o) Monitoraggio degli eventi di sicurezza» (rilevare incidenti) ; ID.RA-08.R1 = monitoraggio delle FONTI (canali CSIRT/CERT/ISAC). Le monitoring continu des vulnérabilités est une scelta operativa interna | ✅ |
+| Annual review of policies = REQUISITO | Allegato 1/2 | GV.PO-02.R1 [EE, EI]: «riesaminate e, se opportuno, aggiornate periodicamente e comunque almeno con cadenza annuale, nonché qualora si verifichino evoluzioni del contesto normativo…, incidenti significativi, variazioni organizzative o mutamenti dell'esposizione»; R3 (registro esiti) = [EE] | ✅ |
+| «Monitoraggio continuo» ≠ obbligo ACN | Allegato 1/2 | DE.CM-01 = sezione «o) Monitoraggio degli eventi di sicurezza» (rilevare incidenti); ID.RA-08.R1 = monitoraggio delle FONTI (canali CSIRT/CERT/ISAC). Continuous monitoring of vulnerabilities is a scelta operativa interna | ✅ |
 | Art. 24 c.2 lettere | GU (docs/research/eur-lex/it-dlgs-138-2024.txt, p. 19-20) | d) «sicurezza della catena di approvvigionamento, ivi compresi gli aspetti… diretti fornitori» ; e) «sicurezza dell'acquisizione, dello sviluppo e della manutenzione…, ivi comprese la gestione e la divulgazione delle vulnerabilità» ; h) «politiche e procedure relative all'uso della crittografia e, ove opportuno, della cifratura» | ✅ |
-| Det. vigente (point 1 Reviewer-A) | acn.gov.it (vérifié 04/09, re-confirmé) | n. 379907 EST la determinazione en vigueur ; le doc était correct sur le numéro. [Corrigé 08/09 : la date officielle est le 19-12-2025 (protocole, registre Atti generali ACN) ; le 18-12 = Tavolo + firma — Reviewer-A avait raison sur ce micro-point, round 9.] Réponse : citation auto-identifiante à la première occurrence (n° + date + applicabilité + abrogation 164179) dans le corpus it-quadro-legale + règle de citation | ✅ |
+| Det. vigente (Reviewer-A's point 1) | acn.gov.it (verified 04/09, re-confirmed) | n. 379907 IS the determinazione in force; the doc was correct on the number. [Corrected 08/09: the official date is 19-12-2025 (protocol, ACN Atti generali register); 18-12 = Tavolo + firma; Reviewer-A was right on this micro-point, round 9.] Answer: self-identifying citation at the first occurrence (no. + date + applicability + abrogation 164179) in the it-quadro-legale corpus + citation rule | ✅ |
 
-Erreur de classe corrigée en GÉNÉRIQUE (9 pays, prompt-builder) : la règle
-« internal-choice » citait « annual risk-assessment reviews » comme exemple de
-choix interne → le modèle a étiqueté « scelta organizzativa interna » une
-cadence de revue que GV.PO-02 IMPOSE. Nouvelle règle : avant d'étiqueter une
-cadence de revue comme choix interne, vérifier si une misura nommée dans le
-prompt l'impose ; seule une cadence PLUS stricte que l'obligation est un choix
-interne. Corrections IT : 3 bullets MISURE_ACN_OUTPUT_CITATION_RULE (GV.PO-02,
-mappa lettere art. 24 c.2, ancrage ID.RA-01/ID.RA-08 + règle monitoraggio),
-override vulnerability_management, template 15 requisiti 3/6.
+Class error corrected as GENERIC (9 countries, prompt-builder): the rule
+« internal-choice » cited « annual risk-assessment reviews » as an example of
+internal choice → the model labelled « scelta organizzativa interna » a
+review cadence that GV.PO-02 IMPOSES. New rule: before labelling a
+review cadence as an internal choice, check whether a misura named in the
+prompt imposes it; only a cadence STRICTER than the obligation is an internal
+choice. IT corrections: 3 bullets of MISURE_ACN_OUTPUT_CITATION_RULE (GV.PO-02,
+mappa lettere art. 24 c.2, anchoring ID.RA-01/ID.RA-08 + monitoraggio rule),
+vulnerability_management override, template 15 requisiti 3/6.
 
-### Addendum revue MSP-A — 9e passe (1/2) : date de la Det. 379907 (2026-09-08)
+### Addendum MSP-A review — 9th pass (1/2): date of Det. 379907 (2026-09-08)
 
 <!-- meta: theme=statute; type=reference; date=2026-09-08; surfaces=data,prompt; guard=packages/regulatory-data/test/it-quadro-legale.test.ts -->
 
-Micro-point de Reviewer-A (mail 08/09) VÉRIFIÉ ET CONFIRMÉ : la citation
-officielle est «Determinazione del Direttore generale dell'ACN **n. 379907
-del 19 dicembre 2025**» (registre Atti generali, acn.gov.it/portale/en/
-amministrazione-trasparente/atti-generali, consulté 08/09/2026). Le PDF
-signé (detacn_obblighi_2511-v3_signed) porte : «SENTITO il Tavolo per
-l'attuazione della disciplina NIS nella riunione del 18 dicembre 2025» ;
-«Roma, data del protocollo» ; firma numérique Bruno Frattasi 18.12.2025
-18:27:31 — le 18/12 est la date de firma/Tavolo, le 19/12 la date de
-protocole qui fait foi. Art. 9 c.1 verbatim : «La presente determinazione
+Reviewer-A's micro-point (mail 08/09) VERIFIED AND CONFIRMED: the official
+citation is «Determinazione del Direttore generale dell'ACN **n. 379907
+del 19 dicembre 2025**» (Atti generali register, acn.gov.it/portale/en/
+amministrazione-trasparente/atti-generali, consulted 08/09/2026). The signed
+PDF (detacn_obblighi_2511-v3_signed) reads: «SENTITO il Tavolo per
+l'attuazione della disciplina NIS nella riunione del 18 dicembre 2025»;
+«Roma, data del protocollo»; digital signature Bruno Frattasi 18.12.2025
+18:27:31; 18/12 is the firma/Tavolo date, 19/12 the protocol date
+that is authoritative. Art. 9 c.1 verbatim: «La presente determinazione
 **aggiorna e sostituisce** la determinazione ACN n. 164179 del 14 aprile
-2025» (pas «abroga») ; art. 9 c.3 : «si applica a decorrere dal 15 gennaio
-2026». Corrigé dans it-quadro-legale.ts, la règle de citation
-native-doc-prompts et les entrées supra.
+2025» (not «abroga»); art. 9 c.3: «si applica a decorrere dal 15 gennaio
+2026». Corrected in it-quadro-legale.ts, the native-doc-prompts citation rule
+and the entries supra.
 
-### Addendum revue MSP-A — 9e passe (2/2) : cohérence inter-documenti VDR ↔ Backup (2026-09-08)
+### Addendum MSP-A review — 9th pass (2/2): inter-document consistency VDR ↔ Backup (2026-09-08)
 
 <!-- meta: theme=documents; type=reference; date=2026-09-08; surfaces=prompt,doc-gen; guard=packages/shared/src/legal-citation-lint.test.ts -->
 
-Signalement Reviewer-A (nouveau fil 08/09, VDR «Metodologia e registro di
-valutazione dei rischi» générée le matin même croisée avec la Politica
-Backup) : (1) la VDR citait «Allegato 2» ~15 fois pour Client-A (importante →
-Allegato 1) — AUCUN hardcode dans les templates, le modèle choisissait seul ;
-(2) le Plan R-01 fixait «test di ripristino trimestrali» que la politique
-redéfinit en matrice mensile/trimestrale/semestrale ; (3) RPO/RTO et
-retention présentés comme «derivati dalla valutazione del rischio» alors que
-la VDR ne les contient pas ; (4) mappatura asset→classe de backup incomplète
-(configurations firewall/switch/VPN/hypervisor/auth/sistema di backup).
-Correctifs : gate déterministe `lintAllegatoClassification` (shared, branché
-sur la passe corrective de generate.routes avec la classification org ;
-fenêtres explicatives nommant les deux classes exclues) + règle de prompt
-SELEZIONE DELL'ALLEGATO ; règles CATENA DOCUMENTALE (IT + générique 9 pays) :
-la VDR formule l'esigenza et RINVIA à la politique pour le paramètre, une
-politique n'attribue jamais un valeur numérique à l'analyse de risque,
-retention justifiées par business/audit/conservation ; matrice asset→classe
-exigée dans le template backup. NB : la copie offline doc-audit ne porte pas
-encore le check allegato (elle n'a pas la classification org) — à ajouter si
-doc-audit reçoit un paramètre classification.
+Report from Reviewer-A (new thread 08/09, VDR «Metodologia e registro di
+valutazione dei rischi» generated that same morning, cross-read with the Politica
+Backup): (1) the VDR cited «Allegato 2» ~15 times for Client-A (importante →
+Allegato 1), NO hardcode in the templates, the model chose on its own;
+(2) Plan R-01 set «test di ripristino trimestrali», which the policy
+redefines as a mensile/trimestrale/semestrale matrix; (3) RPO/RTO and
+retention presented as «derivati dalla valutazione del rischio» whereas
+the VDR does not contain them; (4) incomplete asset→backup-class mappatura
+(firewall/switch/VPN/hypervisor/auth/sistema di backup configurations).
+Fixes: deterministic gate `lintAllegatoClassification` (shared, wired
+into the corrective pass of generate.routes with the org classification;
+explanatory windows naming the two excluded classes) + prompt rule
+SELEZIONE DELL'ALLEGATO; CATENA DOCUMENTALE rules (IT + generic 9 countries):
+the VDR states the esigenza and REFERS (RINVIA) to the policy for the parameter, a
+policy never assigns a numeric value to the risk analysis,
+retention justified by business/audit/conservation; asset→class matrix
+required in the backup template. NB: the offline doc-audit copy does not yet
+carry the allegato check (it lacks the org classification); to be added if
+doc-audit receives a classification parameter.
 
 ## Scope and classification: D.Lgs. 138/2024 Art. 3, Art. 4, Art. 6 and Allegati I to IV, read in full (2026-10-23)
 

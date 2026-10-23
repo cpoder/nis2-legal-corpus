@@ -264,17 +264,17 @@ runtime blocks: preamble, type-keyed prompts, per-card overrides).
   `QNRCS_ANNEX3_TEXTS_REVIEWED = false` until the native PT review
   (the customer's lead and the maintainer) signs them off.
 
-## Suivi exécuté — alignement de `transposition-references.ts` (2026-07-26)
+## Follow-up executed — alignment of `transposition-references.ts` (2026-07-26)
 
 <!-- meta: theme=statute; type=delivery; date=2026-07-26; surfaces=data; guard=none -->
 
-Le suivi consigné plus haut (« align `transposition-references.ts` PT block to
-the official text ») **n'avait jamais été fait**. Il l'est maintenant, et la
-raison du retard mérite d'être notée.
+The follow-up recorded higher up ("align `transposition-references.ts` PT block to
+the official text") **had never been done**. It is done now, and the
+reason for the delay deserves to be noted.
 
-### Pourquoi il n'avait pas été fait
+### Why it had not been done
 
-Le test `country-configs-transposition-references.test.ts` contenait :
+The test `country-configs-transposition-references.test.ts` contained:
 
 ```ts
 test("PT additionalNationalRequirements name the RNC registry", () => {
@@ -283,104 +283,104 @@ test("PT additionalNationalRequirements name the RNC registry", () => {
 });
 ```
 
-Le test **exigeait le fait faux**. Quiconque appliquait la correction déjà
-documentée dans ce fichier voyait la CI passer au rouge et, très
-vraisemblablement, revenait en arrière. L'erreur n'était pas seulement présente
-dans les données : elle était **protégée par la suite de tests**.
+The test **demanded the false fact**. Anyone who applied the correction already
+documented in this file saw CI turn red and, very
+probably, reverted. The error was not only present
+in the data: it was **protected by the test suite**.
 
-Test réécrit pour épingler la plateforme MyCiber et exiger la négation explicite
-du RNC. Règle retenue : **quand l'index `docs/legal-sources` contredit un test,
-c'est l'index qui gagne et le test qui est réécrit.** Un test qui fige un fait
-juridique ne vaut que ce que vaut le fait.
+Test rewritten to pin the MyCiber platform and to require the explicit negation
+of the RNC. Rule adopted: **when the `docs/legal-sources` index contradicts a test,
+the index wins and the test is rewritten.** A test that freezes a legal
+fact is worth only what the fact is worth.
 
-### Ce qui a été corrigé dans les bullets PT
+### What was corrected in the PT bullets
 
-1. « DL 125/2025 amends DL 65/2021 » → le décret **approuve un régime nouveau en
-   annexe** (art. 2.º) et modifie **d'autres lois** (art. 3.º à 7.º : Lei
+1. "DL 125/2025 amends DL 65/2021" → the decree **approves a new regime in
+   annex** (art. 2.º) and amends **other laws** (art. 3.º to 7.º: Lei
    53/2008, Lei 109/2009, Lei 16/2022).
 2. « Registo Nacional de Cibersegurança (RNC) » → **MyCiber** (myciber.gov.pt),
-   avec les fenêtres du Regulamento art. 8.º : **60 jours depuis la mise à
-   disposition de la plateforme le 22/06/2026**, soit une clôture prudente au
-   **21/08/2026**, et **30 jours** pour une entité qui démarre son activité
-   ensuite.
-3. « Four-month transitional period … to complete registration » → les 120 jours
-   et la fenêtre d'enregistrement sont **deux horloges distinctes**. Les 120
-   jours menaient à l'entrée en vigueur le 03/04/2026 ; l'enregistrement n'a
-   ouvert que le 22/06/2026. Les quatre mois servaient à se préparer, pas à
-   s'enregistrer.
+   with the windows of Regulamento art. 8.º: **60 days from the platform being
+   made available on 22 June 2026**, that is a prudent closing on
+   **21 August 2026**, and **30 days** for an entity that starts its activity
+   afterwards.
+3. "Four-month transitional period … to complete registration" → the 120 days
+   and the registration window are **two distinct clocks**. The 120
+   days led to entry into force on 3 April 2026; registration only
+   opened on 22 June 2026. The four months were for preparing, not for
+   registering.
 
-⚠️ **Le 21/08/2026 est dans moins d'un mois.** C'est le seul délai d'un pays
-couvert par Reglyze qui expire à court terme, et nos données annonçaient
-jusqu'ici une fenêtre close depuis avril.
+⚠️ **21 August 2026 is less than a month away.** It is the only deadline of a country
+covered by Reglyze that expires in the short term, and until now our data
+announced a window closed since April.
 
-## Le prompt tabletop citait encore la loi abrogée (trouvé 2026-07-27)
+## The tabletop prompt still cited the repealed law (found 2026-07-27)
 
 <!-- meta: theme=statute; type=stale-statute,test-pinned; date=2026-07-27; surfaces=prompt,test; guard=apps/ai-service/test/tabletop-prompt.test.ts -->
 
-`apps/ai-service/src/lib/tabletop-prompt.ts` maintenait à la main, dans son bloc
-méthodologie mis en cache, une table « autorité par pays » qui donnait pour le
-Portugal :
+`apps/ai-service/src/lib/tabletop-prompt.ts` maintained by hand, in its cached
+methodology block, an "authority per country" table which gave for
+Portugal:
 
 ```
 | Portugal| CNCS (Centro Nacional de Cibersegurança) | Decreto-Lei 65/2021 alterado |
 ```
 
-La transposition est **DL 125/2025 (RJC)**, vérifiée plus haut dans ce fichier —
-et correctement nommée par la config `TABLETOP_CONFIGS` **dix lignes plus bas
-dans le même fichier**. Le bloc en cache contredisait donc la config voisine.
+The transposition is **DL 125/2025 (RJC)**, verified higher up in this file,
+and correctly named by the `TABLETOP_CONFIGS` config **ten lines further down
+in the same file**. The cached block therefore contradicted the neighbouring config.
 
-Aggravant : le test `includes the FR/IT/PT/DE transposition statutes` asseyait
-`toMatch(/Decreto-Lei 65\/2021/)`. Ce test portait déjà, trois lignes au-dessus,
-le commentaire expliquant qu'il avait épinglé une loi française fabriquée. La
-passe qui avait corrigé la ligne française n'avait pas regardé la ligne suivante.
+Aggravating factor: the test `includes the FR/IT/PT/DE transposition statutes` asserted
+`toMatch(/Decreto-Lei 65\/2021/)`. That test already carried, three lines above,
+the comment explaining that it had pinned a fabricated French law. The
+pass that had corrected the French line had not looked at the next line.
 
-La table est désormais **dérivée** de `getTranspositionReferencesConfig()` au
-chargement du module — donc byte-identique d'une requête à l'autre (le bloc est
-mis en cache), mais incapable de diverger de l'index légal. Elle couvre les huit
-pays configurés au lieu de six : la Pologne et la Croatie étaient absentes alors
-qu'elles ont toutes deux une config tabletop.
+The table is now **derived** from `getTranspositionReferencesConfig()` at
+module load, so byte-identical from one request to the next (the block is
+cached), but unable to diverge from the legal index. It covers the eight
+configured countries instead of six: Poland and Croatia were missing although
+they both have a tabletop config.
 
-Corrigés au passage dans le même bloc : `23(4)(a)-(d)` → `(a)-(e)`, et la
-timeline qui ne publiait que les trois actes minutés sur cinq.
+Also corrected in passing in the same block: `23(4)(a)-(d)` → `(a)-(e)`, and the
+timeline that published only three of the five timed acts.
 
-## La loi abrogée avait survécu dans le prompt de remédiation (trouvé 2026-07-27)
+## The repealed law had survived in the remediation prompt (found 2026-07-27)
 
 <!-- meta: theme=statute; type=stale-statute; date=2026-07-27; surfaces=prompt,test; guard=packages/regulatory-data/test/pt-repealed-statute-not-the-transposition.test.ts -->
 
-Après la correction du tabletop le matin même, `remediation-prompt.ts` disait
-encore, dans son bloc de vocabulaire par pays :
+After the tabletop correction that same morning, `remediation-prompt.ts` still
+said, in its per-country vocabulary block:
 
 > `- **PT — Portugal.** Competent authority: CNCS. Transposition: **Decreto-Lei
 > n.º 65/2021 alterado para transpor a NIS2.**`
 
-Faux de deux façons. Le DL 125/2025 **n'amende pas** l'ancien texte NIS1 : son
-annexe approuve un régime nouveau, le RJC, et son art. 9 **abroge** la Lei
-n.º 46/2018 et le DL n.º 65/2021. Présenter le texte abrogé comme la
-transposition inverse la relation.
+Wrong in two ways. DL 125/2025 **does not amend** the old NIS1 text: its
+annex approves a new regime, the RJC, and its art. 9 **repeals** Lei
+n.º 46/2018 and DL n.º 65/2021. Presenting the repealed text as the
+transposition inverts the relationship.
 
-À noter, et c'est rassurant : la couche donnée était **correcte partout
-ailleurs**. `transposition-references.ts`, `regimes-interaction.yaml` et
-`countries/pt.yaml` disent tous explicitement « ABROGÉES par DL 125/2025 art. 9 »
-et « ancien régime NIS1 ». Seul le prompt avait gardé la vieille formulation, ce
-qui confirme que la couche prompt est le dernier endroit où les corrections
-arrivent.
+Worth noting, and reassuring: the data layer was **correct everywhere
+else**. `transposition-references.ts`, `regimes-interaction.yaml` and
+`countries/pt.yaml` all say explicitly "ABROGÉES par DL 125/2025 art. 9"
+and "ancien régime NIS1". Only the prompt had kept the old wording, which
+confirms that the prompt layer is the last place where corrections
+arrive.
 
-Corrigé aussi : `packages/prompts/test/templates.test.ts` portait une fixture
-`legalReferences: ["Decreto-Lei 65/2021"]`. Une fixture n'est pas rendue à un
-client, mais elle sert d'exemple à qui lit le test pour comprendre la forme
-attendue, et elle enseignait la mauvaise loi.
+Also corrected: `packages/prompts/test/templates.test.ts` carried a fixture
+`legalReferences: ["Decreto-Lei 65/2021"]`. A fixture is not rendered to a
+customer, but it serves as an example to whoever reads the test to understand the
+expected shape, and it taught the wrong law.
 
 
-## Corpus « legal frame » des documents générés (livré 2026-08-25)
+## Legal-frame corpus of the generated documents (delivered 2026-08-25)
 
 <!-- meta: theme=documents; type=delivery; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-Extension du « squelette validé » (voir docs/legal-sources/italy.md, entrée du
-2026-08-25) : la section « Enquadramento Legal e Normativo » des documents générés pour ce pays est
-composée par `packages/regulatory-data/src/doc-corpus/legal-frames.ts` à partir
-des faits vérifiés de CET index et insérée verbatim par ai-service (placeholder
-`{{QUADRO_LEGALE}}`). Contenu du bloc : DL 125/2025 (EIF 2026-04-03), QNRCS v2 (Anexo I Reg. 756/2026), MyCiber art. 8.º (60/30 jours), report des mesures art. 10.º(2) (~06-2028), coimas art. 61.º + dispensa 65.º + advertência 66.º(5). Gouvernance : article non vérifié → absent. Règle : tout fait absent de
-cet index est ABSENT du bloc ; enrichir = vérifier ici d'abord.
+Extension of the "validated skeleton" (see docs/legal-sources/italy.md, entry of
+2026-08-25): the « Enquadramento Legal e Normativo » section of the documents generated for this country is
+composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
+the verified facts of THIS index and inserted verbatim by ai-service (placeholder
+`{{QUADRO_LEGALE}}`). Content of the block: DL 125/2025 (EIF 2026-04-03), QNRCS v2 (Anexo I Reg. 756/2026), MyCiber art. 8.º (60/30 days), deferral of the measures art. 10.º(2) (~06-2028), coimas art. 61.º + dispensa 65.º + advertência 66.º(5). Governance: article not verified → absent. Rule: any fact absent from
+this index is ABSENT from the block; enriching means verifying here first.
 
 ## Scope and classification: RJC (annex to DL 125/2025) Arts. 3.º, 4.º, 6.º to 9.º and Anexos I to III, read in full (2026-10-23)
 

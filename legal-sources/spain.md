@@ -152,13 +152,13 @@ tender documents must require an ENS conformity declaration or certification.
 shipped, and its button sent the visitor to /es/registro, whose own button sent
 them back. 
 
-## Corpus « legal frame » des documents générés (livré 2026-08-25)
+## Legal-frame corpus of the generated documents (delivered 2026-08-25)
 
 <!-- meta: theme=documents; type=delivery; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-Extension du « squelette validé » (voir docs/legal-sources/italy.md, entrée du
-2026-08-25) : la section « Marco Legal y Normativo » des documents générés pour ce pays est
-composée par `packages/regulatory-data/src/doc-corpus/legal-frames.ts` à partir
-des faits vérifiés de CET index et insérée verbatim par ai-service (placeholder
-`{{QUADRO_LEGALE}}`). Contenu du bloc : ENS uniquement : RD 311/2022, ámbito art. 2, catégories BÁSICA/MEDIA/ALTA ; transposition NIS2 explicitement « pendiente » dans le bloc — aucun fait NIS2 asserté. Règle : tout fait absent de
-cet index est ABSENT du bloc ; enrichir = vérifier ici d'abord.
+Extension of the "validated skeleton" (see docs/legal-sources/italy.md, entry of
+2026-08-25): the « Marco Legal y Normativo » section of the documents generated for this country is
+composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
+the verified facts of THIS index and inserted verbatim by ai-service (placeholder
+`{{QUADRO_LEGALE}}`). Content of the block: ENS only: RD 311/2022, ámbito art. 2, categories BÁSICA/MEDIA/ALTA; NIS2 transposition explicitly « pendiente » in the block, no NIS2 fact asserted. Rule: any fact absent from
+this index is ABSENT from the block; enriching means verifying here first.

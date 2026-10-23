@@ -70,176 +70,176 @@ measure was taken. Note also Abs. 6: an ICT product may become unusable unless
 EU-certified, once the BMI issues the Rechtsverordnung — a supply-chain
 constraint worth tracking, adjacent to Poland's high-risk-supplier regime.
 
-## Enregistrement, surveillance, sanctions, gouvernance — BSIG 2025 (vérifié 2026-07-26)
+## Registration, supervision, sanctions, governance — BSIG 2025 (verified 2026-07-26)
 
-<!-- meta: theme=registration,sanctions,governance; type=reference,wrong-citation; date=2026-07-26; surfaces=data; guard=none; debt=un test croisant chaque § cité dans le produit avec l'index serait possible mais lourd ; les quatre § fautifs sont corrigés et couverts par les tests de citation existants -->
+<!-- meta: theme=registration,sanctions,governance; type=reference,wrong-citation; date=2026-07-26; surfaces=data; guard=none; debt=a test cross-checking every § cited in the product against the index would be possible but heavy, and the four faulty § are corrected and covered by the citation tests -->
 
-- **Source read:** texte consolidé officiel, https://www.gesetze-im-internet.de/bsig_2025/
-  (§§ 33, 38, 61, 65 lus intégralement ; sommaire complet relevé)
+- **Source read:** official consolidated text, https://www.gesetze-im-internet.de/bsig_2025/
+  (§§ 33, 38, 61, 65 read in full; complete table of contents noted)
 - **Retrieved + read:** 2026-07-26
 
-### Faits vérifiés
+### Verified facts
 
-| Fait | Où | Verbatim (officiel) | Statut |
+| Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
-| **Enregistrement : 3 mois GLISSANTS** à compter du jour où l'entité relève du régime | § 33 Abs. 1 | "sind verpflichtet, **spätestens drei Monate, nachdem sie erstmals oder erneut als eine der vorgenannten Einrichtungen gelten**, dem Bundesamt … folgende Angaben zu übermitteln" | ✅ |
-| Guichet **conjoint BSI + BBK** | § 33 Abs. 1 | "über eine **gemeinsam vom Bundesamt und dem Bundesamt für Bevölkerungsschutz und Katastrophenhilfe eingerichtete Registrierungsmöglichkeit**" | ✅ |
-| Les exploitants d'installations critiques s'enregistrent au titre d'un **AUTRE texte** | § 33 Abs. 2 | "Die Registrierung von Betreibern kritischer Anlagen erfolgt gemäß **§ 8 des KRITIS-Dachgesetzes**." | ✅ |
-| § 38 = devoir de la DIRECTION (mise en œuvre, surveillance, formation) | § 38 Abs. 1 et 3 | "Geschäftsleitungen … sind verpflichtet, die … nach § 30 zu ergreifenden Risikomanagementmaßnahmen **umzusetzen und ihre Umsetzung zu überwachen**" ; "müssen **regelmäßig an Schulungen teilnehmen**" | ✅ |
-| ⚠️ **Responsabilité CIVILE personnelle du dirigeant ENVERS SA PROPRE ENTITÉ**, par renvoi au droit des sociétés | § 38 Abs. 2 | "Geschäftsleitungen, die ihre Pflichten nach Absatz 1 verletzen, **haften ihrer Einrichtung für einen schuldhaft verursachten Schaden** nach den auf die Rechtsform der Einrichtung anwendbaren Regeln des **Gesellschaftsrechts**. Nach diesem Gesetz haften sie nur, wenn die … gesellschaftsrechtlichen Bestimmungen keine Haftungsregelung nach Satz 1 enthalten." | ✅ |
-| Surveillance : le BSI **ordonne des audits par des tiers indépendants**, il ne les mène pas lui-même | § 61 Abs. 1 | "Das Bundesamt kann … **anordnen, Audits, Prüfungen oder Zertifizierungen von unabhängigen Stellen** … durchführen zu lassen." | ✅ |
-| ⚠️ **Moratoire de 3 ans** pour les autres entités particulièrement importantes | § 61 Abs. 3 | "Das Bundesamt kann auch gegenüber **anderen** besonders wichtigen Einrichtungen **frühestens drei Jahre nach Inkrafttreten dieses Gesetzes** die Vorlage von Nachweisen … anordnen." | ✅ |
-| Amendes : **§ 65**, avec SIX bandes selon l'infraction | § 65 Abs. 5 | "bei besonders wichtigen Einrichtungen … **bis zu zehn Millionen Euro**, bei wichtigen Einrichtungen … **bis zu sieben Millionen Euro**" ; puis des bandes à **5 M**, **2 M**, **1 M**, **500 000** et **100 000 euros** selon le manquement | ✅ |
-| Pourcentages : **2 %** / **1,4 %** du Gesamtumsatz, par le canal du § 30 Abs. 2 Satz 2 OWiG | § 65 | "mit einer Geldbuße bis zu **2 Prozent des Gesamtumsatzes**" / "bis zu **1,4 Prozent des Gesamtumsatzes**" | ✅ |
-| ⚠️ **Non-cumul avec une amende RGPD**, sur le même comportement | § 65 Abs. 11 | "Verhängen die … Aufsichtsbehörden gemäß Artikel 58 Absatz 2 Buchstabe i der Verordnung (EU) 2016/679 eine Geldbuße, so **darf eine weitere Geldbuße für einen Verstoß nach diesem Gesetz, der sich aus demselben Verhalten ergibt** …, **nicht verhängt werden**." | ✅ |
+| **Registration: 3 ROLLING months** from the day the entity comes under the regime | § 33 Abs. 1 | "sind verpflichtet, **spätestens drei Monate, nachdem sie erstmals oder erneut als eine der vorgenannten Einrichtungen gelten**, dem Bundesamt … folgende Angaben zu übermitteln" | ✅ |
+| **Joint BSI + BBK** registration desk | § 33 Abs. 1 | "über eine **gemeinsam vom Bundesamt und dem Bundesamt für Bevölkerungsschutz und Katastrophenhilfe eingerichtete Registrierungsmöglichkeit**" | ✅ |
+| Operators of critical installations register under **ANOTHER act** | § 33 Abs. 2 | "Die Registrierung von Betreibern kritischer Anlagen erfolgt gemäß **§ 8 des KRITIS-Dachgesetzes**." | ✅ |
+| § 38 = duty of the MANAGEMENT (implementation, oversight, training) | § 38 Abs. 1 and 3 | "Geschäftsleitungen … sind verpflichtet, die … nach § 30 zu ergreifenden Risikomanagementmaßnahmen **umzusetzen und ihre Umsetzung zu überwachen**"; "müssen **regelmäßig an Schulungen teilnehmen**" | ✅ |
+| ⚠️ **Personal CIVIL liability of the executive TOWARDS THEIR OWN ENTITY**, by reference to company law | § 38 Abs. 2 | "Geschäftsleitungen, die ihre Pflichten nach Absatz 1 verletzen, **haften ihrer Einrichtung für einen schuldhaft verursachten Schaden** nach den auf die Rechtsform der Einrichtung anwendbaren Regeln des **Gesellschaftsrechts**. Nach diesem Gesetz haften sie nur, wenn die … gesellschaftsrechtlichen Bestimmungen keine Haftungsregelung nach Satz 1 enthalten." | ✅ |
+| Supervision: the BSI **orders audits by independent third parties**, it does not conduct them itself | § 61 Abs. 1 | "Das Bundesamt kann … **anordnen, Audits, Prüfungen oder Zertifizierungen von unabhängigen Stellen** … durchführen zu lassen." | ✅ |
+| ⚠️ **3-year moratorium** for the other particularly important entities | § 61 Abs. 3 | "Das Bundesamt kann auch gegenüber **anderen** besonders wichtigen Einrichtungen **frühestens drei Jahre nach Inkrafttreten dieses Gesetzes** die Vorlage von Nachweisen … anordnen." | ✅ |
+| Fines: **§ 65**, with SIX bands depending on the offence | § 65 Abs. 5 | "bei besonders wichtigen Einrichtungen … **bis zu zehn Millionen Euro**, bei wichtigen Einrichtungen … **bis zu sieben Millionen Euro**"; then bands at **5 M**, **2 M**, **1 M**, **500 000** and **100 000 euros** depending on the breach | ✅ |
+| Percentages: **2 %** / **1.4 %** of the Gesamtumsatz, via § 30 Abs. 2 Satz 2 OWiG | § 65 | "mit einer Geldbuße bis zu **2 Prozent des Gesamtumsatzes**" / "bis zu **1,4 Prozent des Gesamtumsatzes**" | ✅ |
+| ⚠️ **No cumulation with a GDPR fine**, for the same conduct | § 65 Abs. 11 | "Verhängen die … Aufsichtsbehörden gemäß Artikel 58 Absatz 2 Buchstabe i der Verordnung (EU) 2016/679 eine Geldbuße, so **darf eine weitere Geldbuße für einen Verstoß nach diesem Gesetz, der sich aus demselben Verhalten ergibt** …, **nicht verhängt werden**." | ✅ |
 
-### Quatre citations fausses corrigées dans `transposition-references.ts` (DE)
+### Four wrong citations corrected in `transposition-references.ts` (DE)
 
-Le bloc allemand portait cinq bullets. **Un seul citait le bon paragraphe.**
+The German block carried five bullets. **Only one cited the right paragraph.**
 
-| Ce qu'on affichait | Réalité |
+| What we displayed | Reality |
 |---|---|
-| « Three-month registration deadline (**§ 33** BSIG) » | ✅ **Correct.** Seul bullet juste. Enrichi (délai glissant, guichet conjoint BSI/BBK) |
-| « KRITIS obligations stack on NIS 2 (**§§ 8a, 8b** BSIG) » | ❌ **Ces paragraphes n'existent plus.** Le BSIG 2025 va du § 1 au § 66 sans 8a ni 8b ; § 8 traite de la défense contre les logiciels malveillants pour la technique de communication fédérale. L'enregistrement KRITIS relève désormais du **KRITIS-Dachgesetz** (§ 33 Abs. 2) |
-| « BSI on-site inspections without prior notice (**§ 32** BSIG) » | ❌ **§ 32 = Meldepflichten** (obligations de notification). Le pouvoir de contrôle est au **§ 61**, et il consiste à **ordonner des audits par des tiers**, pas à mener des visites inopinées. Aucune mention de Vor-Ort ni d'unangekündigt dans le § 61. Et le § 61 Abs. 3 pose un **moratoire de 3 ans** que nos données ignoraient |
-| « Designated **IT-Sicherheitsbeauftragter** (**§ 38** BSIG) … must be designated and reported to the BSI » | ❌ **§ 38 ne crée aucun poste de RSSI.** Il porte les devoirs de la direction : mise en œuvre, surveillance, formation. Et son Abs. 2 institue une **responsabilité civile personnelle du dirigeant envers son entité**, ce que nos données ne portaient pas du tout |
-| « Fine cap up to € 10 M / 2 % codified (**§ 64** BSIG) » | ❌ **§ 64 = Zuwiderhandlungen durch Institutionen der sozialen Sicherung.** Les amendes sont au **§ 65**, et elles sont **graduées en six bandes** (100 k, 500 k, 1 M, 2 M, 5 M, puis 10 M / 7 M), pas un plafond unique |
+| « Three-month registration deadline (**§ 33** BSIG) » | ✅ **Correct.** The only accurate bullet. Enriched (rolling deadline, joint BSI/BBK desk) |
+| « KRITIS obligations stack on NIS 2 (**§§ 8a, 8b** BSIG) » | ❌ **These paragraphs no longer exist.** The BSIG 2025 runs from § 1 to § 66 with neither 8a nor 8b; § 8 deals with defence against malware for the federal communication technology. KRITIS registration now falls under the **KRITIS-Dachgesetz** (§ 33 Abs. 2) |
+| « BSI on-site inspections without prior notice (**§ 32** BSIG) » | ❌ **§ 32 = Meldepflichten** (notification obligations). The supervisory power lies in **§ 61**, and it consists in **ordering audits by third parties**, not in conducting unannounced visits. No mention of Vor-Ort or unangekündigt in § 61. And § 61 Abs. 3 sets a **3-year moratorium** that our data ignored |
+| « Designated **IT-Sicherheitsbeauftragter** (**§ 38** BSIG) … must be designated and reported to the BSI » | ❌ **§ 38 creates no CISO position.** It carries the duties of the management: implementation, oversight, training. And its Abs. 2 establishes a **personal civil liability of the executive towards their entity**, which our data did not carry at all |
+| « Fine cap up to € 10 M / 2 % codified (**§ 64** BSIG) » | ❌ **§ 64 = Zuwiderhandlungen durch Institutionen der sozialen Sicherung.** The fines are in **§ 65**, and they are **graduated in six bands** (100 k, 500 k, 1 M, 2 M, 5 M, then 10 M / 7 M), not a single cap |
 
-### Le fait allemand qui mérite d'être vendu
+### The German fact worth selling
 
-Le § 38 Abs. 2 est un **quatrième modèle** de responsabilité du dirigeant, distinct
-des trois autres déjà vérifiés :
+§ 38 Abs. 2 is a **fourth model** of executive liability, distinct from
+the three others already verified:
 
-| Pays | Mécanisme | Envers qui |
+| Country | Mechanism | Towards whom |
 |---|---|---|
-| 🇵🇱 PL | Amende administrative jusqu'à **300 % de la rémunération** (art. 73a ust. 4) | L'État |
-| 🇭🇷 HR | Amende administrative **1 000 à 6 000 €** (čl. 101. st. 2.) | L'État |
-| 🇫🇷 FR / 🇮🇹 IT | **Interdiction / incapacité d'exercer** des fonctions dirigeantes | (sanction non pécuniaire) |
-| 🇩🇪 DE | **Responsabilité civile pour le dommage causé**, par renvoi au droit des sociétés | **Sa propre entité** |
+| 🇵🇱 PL | Administrative fine up to **300 % of the remuneration** (art. 73a ust. 4) | The State |
+| 🇭🇷 HR | Administrative fine of **1 000 to 6 000 €** (čl. 101. st. 2.) | The State |
+| 🇫🇷 FR / 🇮🇹 IT | **Ban / incapacity to exercise** management functions | (non-pecuniary sanction) |
+| 🇩🇪 DE | **Civil liability for the damage caused**, by reference to company law | **Their own entity** |
 
-L'Allemagne ne sanctionne pas le dirigeant, elle le rend **redevable envers sa
-société**. Le plafond n'est donc pas un montant légal mais le préjudice subi, ce
-qui peut dépasser de très loin les amendes administratives des autres pays.
+Germany does not punish the executive, it makes them **liable to their
+company**. The cap is therefore not a statutory amount but the loss suffered, which
+can exceed by very far the administrative fines of the other countries.
 
-### Note de méthode
+### Method note
 
-Le non-cumul RGPD apparaît maintenant dans **deux** transpositions vérifiées
-(FR art. 37 I dernier alinéa, DE § 65 Abs. 11). Ce n'est plus une singularité
-française, c'est un motif à chercher systématiquement dans les autres pays.
+The GDPR no-cumulation rule now appears in **two** verified transpositions
+(FR art. 37 I last subparagraph, DE § 65 Abs. 11). It is no longer a French
+singularity, it is a pattern to look for systematically in the other countries.
 
-## ⛔ Une amende BSI de 850 000 € était affirmée en public, et elle est fabriquée (2026-07-27)
+## ⛔ A BSI fine of € 850 000 was asserted in public, and it is fabricated (2026-07-27)
 
 <!-- meta: theme=sanctions; type=fabrication; date=2026-07-27; surfaces=marketing,ui; guard=apps/web/test/no-unsourced-enforcement-claims.test.ts -->
 
-Trois surfaces publiques affirmaient, comme un fait :
+Three public surfaces asserted, as a fact:
 
 > « The German Federal Office for Information Security (BSI) issued the first
 > significant NIS2 fine in Europe, EUR 850,000 against a mid-sized cloud service
 > provider for failing to implement adequate incident detection measures and for
 > late reporting of a security incident. This case sets a precedent for active
-> enforcement across the EU. » (février 2026)
+> enforcement across the EU. » (February 2026)
 
-Emplacements : `/[locale]/nis2-fines` (carte « Recent enforcement cases » +
-réponse de FAQ), et `/[locale]/tools/nis2-fine-calculator` (encadré rouge
-« Recent enforcement reality » **et le JSON-LD `FAQPage`**, donc la forme lue
-par les moteurs et les assistants).
+Locations: `/[locale]/nis2-fines` (« Recent enforcement cases » card +
+FAQ answer), and `/[locale]/tools/nis2-fine-calculator` (red box
+« Recent enforcement reality » **and the JSON-LD `FAQPage`**, hence the form read
+by search engines and assistants).
 
-**Aucune corroboration.** Ni bsi.bund.de, ni bmi.bund.de, ni heise, ni golem,
-qui couvriraient à coup sûr la première amende NIS2 d'Europe. Les deux trackers
-NIS2 allemands indépendants et exhaustifs, `openkritis.de` et `nisd2.eu`, ne
-recensent **que des sanctions théoriquement possibles**, aucune prononcée.
+**No corroboration.** Neither bsi.bund.de, nor bmi.bund.de, nor heise, nor golem,
+which would certainly cover the first NIS2 fine in Europe. The two independent and
+exhaustive German NIS2 trackers, `openkritis.de` and `nisd2.eu`, list
+**only theoretically possible sanctions**, none imposed.
 
-**Le piège à retenir.** Une recherche web a *paru* confirmer l'affirmation :
-le troisième résultat était la page de Reglyze elle-même, et le résumé
-automatique nous a resservi notre propre phrase comme preuve. **Une fabrication
-bien classée devient sa propre source.** Ne jamais accepter une confirmation
-sans regarder de quel domaine elle vient.
+**The trap to remember.** A web search *seemed* to confirm the claim:
+the third result was Reglyze's own page, and the automatic summary
+served our own sentence back to us as proof. **A well-ranked fabrication
+becomes its own source.** Never accept a confirmation
+without looking at which domain it comes from.
 
-Aggravant : Google classait cette page en **position 3,6 sur « first nis2
-fine »**, donc elle était servie précisément aux gens qui cherchaient à savoir
-si une amende avait eu lieu. 
+Aggravating factor: Google ranked this page at **position 3.6 on « first nis2
+fine »**, so it was served precisely to the people who were trying to find out
+whether a fine had taken place. 
 
-**Remplacé par** la réponse honnête (aucune amende vérifiable, et pourquoi ce
-n'est pas rassurant), adossée aux faits déjà vérifiés plus haut dans ce
-document : § 61 Abs. 1 (le BSI *ordonne* les audits, ne les mène pas),
-§ 61 Abs. 3 (moratoire de 3 ans pour les autres entités particulièrement
-importantes), § 33 Abs. 1 (enregistrement, 3 mois glissants, guichet conjoint
-BSI/BBK), § 38 Abs. 2 (responsabilité civile personnelle du dirigeant),
-§ 65 Abs. 11 (non-cumul avec une amende RGPD).
+**Replaced by** the honest answer (no verifiable fine, and why that is
+not reassuring), backed by the facts already verified higher up in this
+document: § 61 Abs. 1 (the BSI *orders* the audits, it does not conduct them),
+§ 61 Abs. 3 (3-year moratorium for the other particularly important
+entities), § 33 Abs. 1 (registration, 3 rolling months, joint BSI/BBK
+desk), § 38 Abs. 2 (personal civil liability of the executive),
+§ 65 Abs. 11 (no cumulation with a GDPR fine).
 
-**Gardé par** `apps/web/test/no-unsourced-enforcement-claims.test.ts`. La règle
-n'est pas « ne jamais parler d'amende » mais « ne jamais en affirmer une qu'on
-ne peut pas nommer ». Si une amende réelle est publiée : l'ajouter avec
-l'autorité, la date et la décision officielle, puis **étendre le test pour
-exiger cette citation**, pas le supprimer.
+**Guarded by** `apps/web/test/no-unsourced-enforcement-claims.test.ts`. The rule
+is not "never talk about fines" but "never assert one that we
+cannot name". If a real fine is published: add it with
+the authority, the date and the official decision, then **extend the test to
+require that citation**, do not delete it.
 
-## Le délai d'enregistrement était présenté comme fixe au 6 mars 2026 (corrigé 2026-07-27)
+## The registration deadline was presented as fixed at 6 March 2026 (corrected 2026-07-27)
 
 <!-- meta: theme=registration; type=deadline-model,surface-inconsistency; date=2026-07-27; surfaces=marketing,ui; guard=apps/web/test/de-registration-deadline-rolling.test.ts -->
 
-Le § 33 Abs. 1 BSIG, déjà vérifié plus haut, pose une horloge **glissante** :
+§ 33 Abs. 1 BSIG, already verified above, sets a **rolling** clock:
 
 > « sind verpflichtet, **spätestens drei Monate, nachdem sie erstmals oder erneut**
 > als eine besonders wichtige oder wichtige Einrichtung gelten »
 
-Le 6 mars 2026 n'est que trois mois après l'entrée en vigueur du NIS2UmsuCG
-(6 décembre 2025). C'est la bonne date pour les entités **déjà concernées ce
-jour-là**, et pour elles seulement. Une entité qui franchit un seuil, ou qui est
-désignée plus tard, dispose de trois mois à compter de son propre déclencheur.
+6 March 2026 is only three months after the entry into force of the NIS2UmsuCG
+(6 December 2025). It is the right date for the entities **already affected on
+that day**, and for them only. An entity that crosses a threshold, or that is
+designated later, has three months from its own trigger.
 
-**Le motif du défaut mérite d'être retenu**, parce qu'il se répète ailleurs :
-la prose allemande était **rigoureuse** (« für bereits am 6.12.2025 betroffene
-Einrichtungen **war** die Frist der 6. März 2026 », au passé et qualifié), et les
-éléments que l'œil accroche ne l'étaient **pas**. La nuance était écrite puis
-résumée à faux dans le badge, le titre et la meta.
+**The pattern of the defect is worth remembering**, because it repeats elsewhere:
+the German prose was **rigorous** (« für bereits am 6.12.2025 betroffene
+Einrichtungen **war** die Frist der 6. März 2026 », in the past tense and qualified), and the
+elements that catch the eye were **not**. The nuance was written and then
+summarised wrongly in the badge, the title and the meta.
 
-Corrigé sur cinq surfaces :
+Corrected on five surfaces:
 
-| Surface | Avant |
+| Surface | Before |
 |---|---|
-| Badge héros de `/de/bsi-registrierung` | « Frist: 6. März 2026 » en couleur primaire |
-| `metaDescription` de cette page | « …, Frist 6. März 2026, Ablauf über… » |
+| Hero badge of `/de/bsi-registrierung` | « Frist: 6. März 2026 » in primary colour |
+| `metaDescription` of that page | « …, Frist 6. März 2026, Ablauf über… » |
 | `ogDescription` | « Frist 6. März 2026, Ablauf über… » |
-| Titre d'alerte du diagnostic | « Registrierung beim BSI ausstehend — Frist 6. März 2026 » |
-| Trois étapes suivantes du diagnostic | « Beim BSI registrieren (§ 33) — Frist 6. März 2026. » |
+| Alert title of the diagnostic | « Registrierung beim BSI ausstehend — Frist 6. März 2026 » |
+| Three next steps of the diagnostic | « Beim BSI registrieren (§ 33) — Frist 6. März 2026. » |
 
-Au 27 juillet, cette date était **passée depuis quatre mois et demi**. Une
-entreprise entrant dans le champ en juillet lisait qu'elle avait déjà manqué
-l'échéance, alors que son horloge venait de démarrer. Pour un produit de
-conformité, fabriquer de la panique sur un fait vérifiable est la mauvaise erreur.
+As of 27 July, that date had been **past for four and a half months**. A
+company entering the scope in July read that it had already missed
+the deadline, while its clock had just started. For a compliance
+product, manufacturing panic over a verifiable fact is the wrong mistake to make.
 
-La date n'est pas bannie : elle reste juste pour la cohorte initiale, et les gens
-la cherchent. Ce qui est banni, c'est de la présenter **nue, comme l'échéance**,
-dans un titre, un badge ou une meta. Gardé par
-`apps/web/test/de-registration-deadline-rolling.test.ts`, qui exige un
-qualificatif sur la même ligne et vérifié par mutation.
+The date is not banned: it remains correct for the initial cohort, and people
+search for it. What is banned is presenting it **bare, as the deadline**,
+in a title, a badge or a meta. Guarded by
+`apps/web/test/de-registration-deadline-rolling.test.ts`, which requires a
+qualifier on the same line and is verified by mutation.
 
 
-## Corpus « legal frame » des documents générés (livré 2026-08-25)
+## Legal-frame corpus of the generated documents (delivered 2026-08-25)
 
 <!-- meta: theme=documents; type=delivery; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-Extension du « squelette validé » (voir docs/legal-sources/italy.md, entrée du
-2026-08-25) : la section « Rechtlicher Rahmen » des documents générés pour ce pays est
-composée par `packages/regulatory-data/src/doc-corpus/legal-frames.ts` à partir
-des faits vérifiés de CET index et insérée verbatim par ai-service (placeholder
-`{{QUADRO_LEGALE}}`). Contenu du bloc : BSIG 2025 : identité + EIF 06-12-2025, § 30 (+ Dokumentationspflicht), § 32 (Meldepflichten, sans délais — non épinglés ici), § 33 (3 mois, BSI+BBK, renvoi KRITIS-DachG), § 38 (Geschäftsleitung), § 61 (bwE seulement ; wE : § 62 NON vérifié → paragraphe absent), § 65 (bandes). Règle : tout fait absent de
-cet index est ABSENT du bloc ; enrichir = vérifier ici d'abord.
+Extension of the "validated skeleton" (see docs/legal-sources/italy.md, entry of
+2026-08-25): the « Rechtlicher Rahmen » section of the documents generated for this country is
+composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
+the verified facts of THIS index and inserted verbatim by ai-service (placeholder
+`{{QUADRO_LEGALE}}`). Content of the block: BSIG 2025: identity + EIF 06-12-2025, § 30 (+ Dokumentationspflicht), § 32 (Meldepflichten, without deadlines: not pinned here), § 33 (3 months, BSI+BBK, reference to KRITIS-DachG), § 38 (Geschäftsleitung), § 61 (bwE only; wE: § 62 NOT verified → paragraph absent), § 65 (bands). Rule: any fact absent from
+this index is ABSENT from the block; enriching = verifying here first.
 
-## § 32 (délais de notification) + §§ 61-62 (aufsicht par catégorie) — vérifié 2026-08-25
+## § 32 (notification deadlines) + §§ 61-62 (aufsicht by category) — verified 2026-08-25
 
 <!-- meta: theme=incident,sanctions; type=reference; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-- **Source read:** gesetze-im-internet.de (texte consolidé officiel du BSIG 2025),
+- **Source read:** gesetze-im-internet.de (official consolidated text of the BSIG 2025),
   pages `bsig_2025/__32.html`, `__61.html`, `__62.html`. **Retrieved:** 2026-08-25.
 
-| Fait | Où | Verbatim (officiel) | Statut |
+| Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
-| § 32 = « Meldepflichten » ; **frühe Erstmeldung 24 h** | § 32 | "unverzüglich, spätestens jedoch innerhalb von 24 Stunden nach Kenntniserlangung" | ✅ |
+| § 32 = « Meldepflichten »; **frühe Erstmeldung 24 h** | § 32 | "unverzüglich, spätestens jedoch innerhalb von 24 Stunden nach Kenntniserlangung" | ✅ |
 | **Meldung 72 h** | § 32 | "unverzüglich, spätestens jedoch innerhalb von 72 Stunden nach Kenntniserlangung" | ✅ |
-| **Abschlussmeldung : 1 mois après la Meldung** (pas après la connaissance) | § 32 | "spätestens einen Monat nach Übermittlung der Meldung des Sicherheitsvorfalls" | ✅ |
+| **Abschlussmeldung: 1 month after the Meldung** (not after becoming aware) | § 32 | "spätestens einen Monat nach Übermittlung der Meldung des Sicherheitsvorfalls" | ✅ |
 | § 61 = « Aufsichts- und Durchsetzungsmaßnahmen für **besonders wichtige** Einrichtungen » | § 61 (Überschrift) | verbatim | ✅ |
-| § 62 = « Aufsichts- und Durchsetzungsmaßnahmen für **wichtige** Einrichtungen » — **ex post sur éléments de fait** | § 62 | "Rechtfertigen Tatsachen die Annahme, dass eine wichtige Einrichtung Verpflichtungen … nicht oder nicht richtig umsetzt, so kann das Bundesamt deren Einhaltung überprüfen und Maßnahmen nach § 61 treffen." | ✅ |
+| § 62 = « Aufsichts- und Durchsetzungsmaßnahmen für **wichtige** Einrichtungen », **ex post on the basis of facts** | § 62 | "Rechtfertigen Tatsachen die Annahme, dass eine wichtige Einrichtung Verpflichtungen … nicht oder nicht richtig umsetzt, so kann das Bundesamt deren Einhaltung überprüfen und Maßnahmen nach § 61 treffen." | ✅ |
 
-Résout les deux lacunes notées dans l'entrée corpus du 2026-08-25 (délais § 32,
-§ 62) : le bloc corpus DE et les règles de lint peuvent maintenant les porter.
+Resolves the two gaps noted in the corpus entry of 2026-08-25 (§ 32 deadlines,
+§ 62): the DE corpus block and the lint rules can now carry them.

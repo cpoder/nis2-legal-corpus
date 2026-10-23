@@ -542,13 +542,13 @@ cannot be read with the method used here. It would need OCR or the et.gr copy.
   returns 153 items instead of 169.
 
 
-## Corpus « legal frame » des documents générés (livré 2026-08-25)
+## Legal-frame corpus of the generated documents (delivered 2026-08-25)
 
 <!-- meta: theme=documents; type=delivery; date=2026-08-25; surfaces=data,prompt; guard=packages/regulatory-data/test/legal-frames.test.ts -->
 
-Extension du « squelette validé » (voir docs/legal-sources/italy.md, entrée du
-2026-08-25) : la section « Νομικό και Κανονιστικό Πλαίσιο » des documents générés pour ce pays est
-composée par `packages/regulatory-data/src/doc-corpus/legal-frames.ts` à partir
-des faits vérifiés de CET index et insérée verbatim par ai-service (placeholder
-`{{QUADRO_LEGALE}}`). Contenu du bloc : ν. 5160/2024 (EIF 27-11-2024) + ΚΥΑ 1689/2025 : όργανα διοίκησης άρθρο 14 (formation annuelle employés), μέτρα άρθρο 15 §2, κοινοποίηση άρθρο 16 §4 (24h/72h/1 mois), κυρώσεις άρθρο 26 (article seul, montants non épinglés). Règle : tout fait absent de
-cet index est ABSENT du bloc ; enrichir = vérifier ici d'abord.
+Extension of the "validated skeleton" (see docs/legal-sources/italy.md, entry of
+2026-08-25): the « Νομικό και Κανονιστικό Πλαίσιο » section of the documents generated for this country is
+composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
+the verified facts of THIS index and inserted verbatim by ai-service (placeholder
+`{{QUADRO_LEGALE}}`). Content of the block: ν. 5160/2024 (EIF 27-11-2024) + ΚΥΑ 1689/2025 : όργανα διοίκησης άρθρο 14 (annual staff training), μέτρα άρθρο 15 §2, κοινοποίηση άρθρο 16 §4 (24h/72h/1 month), κυρώσεις άρθρο 26 (article only, amounts not pinned). Rule: any fact absent from
+this index is ABSENT from the block; enriching means verifying here first.
