@@ -1,0 +1,979 @@
+{
+  "_about": "NIS2 transposition status per EU and EEA country, as rendered by the public tracker at https://reglyze.com/en/nis2-tracker. Stages: not_transposed, draft, adopted, in_force, enforcing. `tier` says how a row was established: `verified` rows carry a statute identity verified at the official publication; `provisional` rows are either honest first drafts (lastVerifiedAt null) or sourced records (lastVerifiedAt and sources set) that still await a native reviewer. Every dated fact of a sourced or verified row traces to legal-sources/<country>.md. This file is the curated base layer shipped in the product's code; the live page merges on top of it a database overlay written by a weekly automated sweep of the official sources and by operator verifications, each change carrying its own citation. Dates are ISO 8601. Greece is EL.",
+  "_licence": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
+  "_source": "https://github.com/cpoder/nis2-legal-corpus",
+  "generatedAt": "2026-10-23",
+  "directiveDeadline": "2024-10-17",
+  "summary": {
+    "total": 30,
+    "inForce": 23,
+    "verified": 6,
+    "sourcedProvisional": 8
+  },
+  "countries": [
+    {
+      "country": "AT",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2025-12-23",
+        "enforcementDate": "2026-10-01",
+        "infringementOpen": true,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "NISG 2026 (BGBl. I Nr. 94/2025)",
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "RIS — BGBl. I Nr. 94/2025 (NISG 2026)",
+          "url": "https://www.ris.bka.gv.at/eli/bgbl/I/2025/94/20251223",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-10-22",
+      "notes": "In force since 2026-10-01: NISG 2026, published in BGBl. I Nr. 94/2025 (2025-12-23), substantive provisions §§ 2 to 50 in force since 2026-10-01 (§ 51). Registration with the Bundesamt für Cybersicherheit is due by 2026-12-31 (§ 29 Abs. 3). Directive deadline missed."
+    },
+    {
+      "country": "BE",
+      "tier": "verified",
+      "stage": "enforcing",
+      "maturityLevel": 4,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2024-04-26",
+        "enforcementDate": "2024-10-18",
+        "infringementOpen": false,
+        "registrationLive": true,
+        "nationalFrameworkPublished": true
+      },
+      "lawShortName": "Loi NIS2 — 26 avril 2024",
+      "lawCitation": "Moniteur belge / Belgisch Staatsblad, 17 mai 2024. Loi du 26 avril 2024 / Wet van 26 april 2024 (versions française et néerlandaise officielles).",
+      "targetDate": null,
+      "competentAuthority": {
+        "name": "Centre for Cybersecurity Belgium",
+        "abbreviation": "CCB",
+        "website": "https://ccb.belgium.be"
+      },
+      "sources": [
+        {
+          "label": "CCB — Centre for Cybersecurity Belgium",
+          "url": "https://ccb.belgium.be/en",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": true,
+      "lastVerifiedAt": "2026-06-03",
+      "notes": "Loi du 26 avril 2024 in force 2024-10-18 (ahead of the directive deadline); CCB Safeonweb@Work registration live; CyFun baseline framework."
+    },
+    {
+      "country": "BG",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2026-02-13",
+        "enforcementDate": "2026-02-13",
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "Cybersecurity Act amendment (ДВ бр. 17/2026)",
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "Държавен вестник бр. 17/2026 — Закон за киберсигурност (изм.)",
+          "url": "https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=241234",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-06-07",
+      "notes": "In force 2026-02-13 — amendment to the Cybersecurity Act, State Gazette (ДВ) бр. 17 of 2026-02-13. The act is silent on entry into force, so it takes effect on the promulgation date (ZNA default; the old 3-day rule was repealed in 2007); secondary '17 Feb' claims misapply the repealed rule."
+    },
+    {
+      "country": "CY",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2025-04-25",
+        "enforcementDate": "2025-04-25",
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "N. 60(I)/2025 (amends N. 89(I)/2020)",
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "CyLaw — Ν. 60(Ι)/2025 (Επίσημη Εφημερίδα Αρ. 5036)",
+          "url": "https://www.cylaw.org/nomoi/arith/2025_1_060.pdf",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-06-07",
+      "notes": "In force 2025-04-25 (Art. 57(1)) — Ν. 60(Ι)/2025 amending the NIS law Ν. 89(Ι)/2020; the Art. 7 registration mechanism is deferred to a Council-of-Ministers date."
+    },
+    {
+      "country": "CZ",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — New Cybersecurity Act reported in force; statute and dates pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "DE",
+      "tier": "verified",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2025-12-05",
+        "enforcementDate": "2025-12-06",
+        "infringementOpen": false,
+        "registrationLive": true,
+        "nationalFrameworkPublished": true
+      },
+      "lawShortName": "NIS2UmsuCG",
+      "lawCitation": "Bundesgesetzblatt Teil I 2025 Nr. 301 (5 Dec 2025); entered into force 6 December 2025. NIS2UmsuCG re-enacts the BSI-Gesetz (BSIG 2025).",
+      "targetDate": null,
+      "competentAuthority": {
+        "name": "Bundesamt für Sicherheit in der Informationstechnik",
+        "abbreviation": "BSI",
+        "website": "https://www.bsi.bund.de"
+      },
+      "sources": [
+        {
+          "label": "BSI — NIS-2-Umsetzung",
+          "url": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": true,
+      "lastVerifiedAt": "2026-06-03",
+      "notes": "NIS2UmsuCG in force 2025-12-06 (BGBl. I 2025 Nr. 301), ~14 months after the directive deadline."
+    },
+    {
+      "country": "DK",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2025-05-06",
+        "enforcementDate": "2025-07-01",
+        "infringementOpen": false,
+        "registrationLive": true,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "NIS2-loven (LOV nr 434 af 06/05/2025)",
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "Styrelsen for Samfundssikkerhed — NIS2 i dansk ret",
+          "url": "https://samsik.dk/nis2/implementering-af-nis-2-i-dansk-ret/",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-06-07",
+      "notes": "In force 2025-07-01 — NIS2-loven (LOV nr 434 af 06/05/2025); entity registration deadline 2025-10-01."
+    },
+    {
+      "country": "EE",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — Cybersecurity Act amendments reported in force; details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "EL",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — NIS2 transposition reported in force (Law 5160/2024); details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "ES",
+      "tier": "provisional",
+      "stage": "draft",
+      "maturityLevel": 1,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": true,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — Anteproyecto de Ley de Coordinación y Gobernanza de la Ciberseguridad — approved by the Council of Ministers 2025-01-14, not yet published in the BOE; directive deadline missed. Not yet verified against the official publication."
+    },
+    {
+      "country": "FI",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — Cybersecurity Act reported in force; details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "FR",
+      "tier": "verified",
+      "stage": "draft",
+      "maturityLevel": 1,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": true,
+        "registrationLive": false,
+        "nationalFrameworkPublished": true
+      },
+      "lawShortName": "Loi Résilience (en attente de promulgation)",
+      "lawCitation": "Projet de loi PRMD2412608L — adopté au Sénat le 12 mars 2025 (texte n° 78), transmis à l'Assemblée nationale le 13 mars 2025 ; rapport et texte de la commission spéciale adoptés le 10 septembre 2025. AUCUN vote en première lecture à l'Assemblée à ce jour (état vérifié le 26 juillet 2026). Texte NON promulgué, aucune référence JORF, aucune date de promulgation annoncée.",
+      "targetDate": null,
+      "competentAuthority": {
+        "name": "Agence nationale de la sécurité des systèmes d'information",
+        "abbreviation": "ANSSI",
+        "website": "https://www.ssi.gouv.fr"
+      },
+      "sources": [
+        {
+          "label": "ANSSI — La directive NIS 2",
+          "url": "https://cyber.gouv.fr/la-directive-nis-2",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": true,
+      "lastVerifiedAt": "2026-06-03",
+      "notes": "Draft — adopted by the Sénat on 2025-03-12; awaiting promulgation (projected July 2026). Directive deadline missed."
+    },
+    {
+      "country": "HR",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — Cybersecurity Act reported in force (early transposition); details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "HU",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — NIS2 transposition reported in force; details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "IE",
+      "tier": "provisional",
+      "stage": "draft",
+      "maturityLevel": 1,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": true,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — National Cyber Security Bill — pre-legislative; the NCSC states no implementation date can yet be given; directive deadline missed. Not yet verified against the official publication."
+    },
+    {
+      "country": "IT",
+      "tier": "verified",
+      "stage": "enforcing",
+      "maturityLevel": 4,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2024-10-16",
+        "enforcementDate": "2024-10-16",
+        "infringementOpen": false,
+        "registrationLive": true,
+        "nationalFrameworkPublished": true
+      },
+      "lawShortName": "D.lgs. 138/2024",
+      "lawCitation": "Gazzetta Ufficiale della Repubblica Italiana, Serie generale, n. 230 del 1° ottobre 2024 — entrato in vigore il 16 ottobre 2024.",
+      "targetDate": null,
+      "competentAuthority": {
+        "name": "Agenzia per la Cybersicurezza Nazionale",
+        "abbreviation": "ACN",
+        "website": "https://www.acn.gov.it/"
+      },
+      "sources": [
+        {
+          "label": "ACN — Agenzia per la Cybersicurezza Nazionale",
+          "url": "https://www.acn.gov.it/",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": true,
+      "lastVerifiedAt": "2026-06-03",
+      "notes": "In force 2024-10-16 (met the directive deadline); ACN registration operational; Misure ACN applicable from 2026-01-15."
+    },
+    {
+      "country": "LT",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — Cybersecurity law reported in force; details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "LU",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — NIS2 transposition reported in force; details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "LV",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — National Cybersecurity Law reported in force (early transposition); details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "MT",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2026-01-23",
+        "enforcementDate": "2026-01-23",
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "S.L. 460.41 (L.N. 22 of 2026)",
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "Legislation Malta — L.N. 22 of 2026 (S.L. 460.41)",
+          "url": "https://legislation.mt/eli/ln/2026/22/eng",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-06-07",
+      "notes": "In force 2026-01-23 — Measures for a High Common Level of Cybersecurity (Malta) Order (S.L. 460.41), commenced by L.N. 22 of 2026."
+    },
+    {
+      "country": "NL",
+      "tier": "provisional",
+      "stage": "adopted",
+      "maturityLevel": 2,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2026-07-10",
+        "enforcementDate": "2026-08-15",
+        "infringementOpen": true,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "Cyberbeveiligingswet (Stb. 2026, 187)",
+      "lawCitation": null,
+      "targetDate": "2026-08-15",
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "Staatsblad 2026, 187 — Cyberbeveiligingswet",
+          "url": "https://zoek.officielebekendmakingen.nl/stb-2026-187.html",
+          "retrievedAt": "2026-07-29"
+        },
+        {
+          "label": "Staatsblad 2026, 189 — Cyberbeveiligingsbesluit (art. 35: inwerkingtreding)",
+          "url": "https://zoek.officielebekendmakingen.nl/stb-2026-189.html",
+          "retrievedAt": "2026-07-29"
+        },
+        {
+          "label": "NCSC — Cyberbeveiligingswet",
+          "url": "https://www.ncsc.nl/cyberbeveiligingswet-nis2",
+          "retrievedAt": "2026-07-29"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-07-29",
+      "notes": "Cyberbeveiligingswet — Eerste Kamer 2026-07-07, signed 2026-07-08, Staatsblad 2026, 187 (10 July). In force 2026-08-15 per art. 35 Cyberbeveiligingsbesluit (Stb. 2026, 189), NOT per the law itself: art. 107 Cbw leaves commencement to a royal decree. Directive deadline was missed and the Commission procedure is not verified as closed, so infringementOpen stays true."
+    },
+    {
+      "country": "PL",
+      "tier": "verified",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2026-03-02",
+        "enforcementDate": "2026-04-03",
+        "infringementOpen": false,
+        "registrationLive": true,
+        "nationalFrameworkPublished": true
+      },
+      "lawShortName": "KSC amendment (Dz.U. 2026 poz. 252)",
+      "lawCitation": "Dz.U. 2026 poz. 252, ogłoszona 2 marca 2026 r.; art. 49 — wejście w życie po upływie miesiąca od dnia ogłoszenia, tj. 3 kwietnia 2026 r.",
+      "targetDate": null,
+      "competentAuthority": {
+        "name": "Minister właściwy do spraw informatyzacji (Ministerstwo Cyfryzacji)",
+        "abbreviation": "MC",
+        "website": "https://www.gov.pl/web/cyfryzacja"
+      },
+      "sources": [
+        {
+          "label": "Sejm — Dz.U. 2026 poz. 252 (ELI)",
+          "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/252",
+          "retrievedAt": "2026-06-12"
+        },
+        {
+          "label": "gov.pl — Narodowe Standardy Cyberbezpieczeństwa",
+          "url": "https://www.gov.pl/web/baza-wiedzy/narodowe-standardy-cyberbezpieczenstwa",
+          "retrievedAt": "2026-06-12"
+        }
+      ],
+      "verified": true,
+      "lastVerifiedAt": "2026-06-12",
+      "notes": "KSC amendment (Dz.U. 2026 poz. 252) published 2026-03-02, in force 2026-04-03 (art. 49); wykaz KSC registration open 2026-05-07 with window to 2026-10-03; art. 8 ust. 1 security-measures catalogue + NSC methodological standards."
+    },
+    {
+      "country": "PT",
+      "tier": "verified",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2025-12-04",
+        "enforcementDate": "2026-04-03",
+        "infringementOpen": false,
+        "registrationLive": true,
+        "nationalFrameworkPublished": true
+      },
+      "lawShortName": "DL 125/2025 (RJC)",
+      "lawCitation": "Diário da República n.º 234/2025, Série I, publicado em 4 de dezembro de 2025. Período transitório de 4 meses; entrada em aplicação em 3 de abril de 2026.",
+      "targetDate": null,
+      "competentAuthority": {
+        "name": "Centro Nacional de Cibersegurança",
+        "abbreviation": "CNCS",
+        "website": "https://www.cncs.gov.pt/"
+      },
+      "sources": [
+        {
+          "label": "CNCS — Centro Nacional de Cibersegurança",
+          "url": "https://www.cncs.gov.pt/",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": true,
+      "lastVerifiedAt": "2026-06-03",
+      "notes": "DL 125/2025 (RJC) published 2025-12-04; enforcement from 2026-04-03 (now in force). New regime — not an amendment of DL 65/2021."
+    },
+    {
+      "country": "RO",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — NIS2 transposition reported in force; details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "SE",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2025-12-11",
+        "enforcementDate": "2026-01-15",
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "Cybersäkerhetslag (SFS 2025:1506)",
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "Riksdagen — SFS 2025:1506 Cybersäkerhetslag",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/cybersakerhetslag-20251506_sfs-2025-1506/",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-06-07",
+      "notes": "In force 2026-01-15 — Cybersäkerhetslag (SFS 2025:1506), adopted by the Riksdagen 2025-12-10."
+    },
+    {
+      "country": "SI",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": "2025-06-04",
+        "enforcementDate": "2025-06-19",
+        "infringementOpen": false,
+        "registrationLive": true,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": "ZInfV-1 (Uradni list RS, št. 40/2025)",
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "PISRS: Zakon o informacijski varnosti (ZInfV-1), Uradni list RS, št. 40/2025",
+          "url": "https://pisrs.si/pregledPredpisa?id=ZAKO8934",
+          "retrievedAt": "2026-10-22"
+        },
+        {
+          "label": "URSIV: Obveznosti in podpora zavezancem po ZInfV-1",
+          "url": "https://www.gov.si/teme/obveznosti-in-podpora-zavezancem-po-zakonu-o-informacijski-varnosti-zinfv-1/",
+          "retrievedAt": "2026-10-22"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": "2026-10-22",
+      "notes": "In force since 2025-06-19: ZInfV-1, published in Uradni list RS, št. 40/2025 (2025-06-04), repealed the 2018 ZInfV (Art. 69) with a one-year survival of its rules for the operators it already covered (Art. 62). Significant incidents go to SI-CERT (SIGOV-CERT for public administration) since 2025-06-19, self-registration with URSIV is due within 30 days of qualifying (first window closed 2025-12-19), and the Art. 21-22 risk-management measures are due by 2026-12-19 for most entities (Art. 62(1); former operators of essential services, designated state bodies and e-communications operators had until 2026-06-19, Art. 62(2)-(3)). Commission infringement case closed 2026-01-30."
+    },
+    {
+      "country": "SK",
+      "tier": "provisional",
+      "stage": "in_force",
+      "maturityLevel": 3,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — Cybersecurity Act amendments reported in force; details pending verification. Not yet verified against the official publication."
+    },
+    {
+      "country": "NO",
+      "tier": "provisional",
+      "stage": "not_transposed",
+      "maturityLevel": 0,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — EEA state — NIS2 not yet incorporated into the EEA Agreement; national regime pending. Not yet verified against the official publication."
+    },
+    {
+      "country": "IS",
+      "tier": "provisional",
+      "stage": "not_transposed",
+      "maturityLevel": 0,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — EEA state — NIS2 not yet incorporated into the EEA Agreement; national regime pending. Not yet verified against the official publication."
+    },
+    {
+      "country": "LI",
+      "tier": "provisional",
+      "stage": "not_transposed",
+      "maturityLevel": 0,
+      "signals": {
+        "directiveDeadline": "2024-10-17",
+        "nationalLawDate": null,
+        "enforcementDate": null,
+        "infringementOpen": false,
+        "registrationLive": false,
+        "nationalFrameworkPublished": false
+      },
+      "lawShortName": null,
+      "lawCitation": null,
+      "targetDate": null,
+      "competentAuthority": null,
+      "sources": [
+        {
+          "label": "European Commission — NIS2 Directive",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+          "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "ENISA — National CSIRTs by country",
+          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "retrievedAt": "2026-06-07"
+        }
+      ],
+      "verified": false,
+      "lastVerifiedAt": null,
+      "notes": "Provisional — EEA state — NIS2 not yet incorporated into the EEA Agreement; national regime pending. Not yet verified against the official publication."
+    }
+  ]
+}

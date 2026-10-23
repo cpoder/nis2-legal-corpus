@@ -1,0 +1,60 @@
+name: Legal fact correction
+description: A fact in the corpus is wrong, incomplete or outdated, and you have the official source.
+title: "[country] what the fact should say"
+labels: ["correction"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File and section
+      placeholder: legal-sources/slovenia.md, section "Fines (Art. 52 and 53)"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What the corpus says now
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      description: The gazette, the legislature's record or EUR-Lex. A law-firm note or a news article is a lead, not a source.
+    validations:
+      required: true
+  - type: input
+    id: retrieved
+    attributes:
+      label: Date you read it
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: input
+    id: article
+    attributes:
+      label: Article or section of the text
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: Verbatim quote, in the original language
+    validations:
+      required: true
+  - type: textarea
+    id: gloss
+    attributes:
+      label: Your English gloss (optional)
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of correction
+      options:
+        - wrong fact
+        - outdated fact (text amended or repealed)
+        - missing fact
+        - misread gloss
+        - broken source link
+    validations:
+      required: true
