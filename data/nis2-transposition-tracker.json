@@ -2,7 +2,7 @@
   "_about": "NIS2 transposition status per EU and EEA country, as rendered by the public tracker at https://reglyze.com/en/nis2-tracker. Stages: not_transposed, draft, adopted, in_force, enforcing. `tier` says how a row was established: `verified` rows carry a statute identity verified at the official publication; `provisional` rows are either honest first drafts (lastVerifiedAt null) or sourced records (lastVerifiedAt and sources set) that still await a native reviewer. Every dated fact of a sourced or verified row traces to legal-sources/<country>.md. This file is the curated base layer shipped in the product's code; the live page merges on top of it a database overlay written by a weekly automated sweep of the official sources and by operator verifications, each change carrying its own citation. Dates are ISO 8601. Greece is EL.",
   "_licence": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
   "_source": "https://github.com/cpoder/nis2-legal-corpus",
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-10-24",
   "directiveDeadline": "2024-10-17",
   "summary": {
     "total": 30,
@@ -378,11 +378,16 @@
           "label": "ANSSI — La directive NIS 2",
           "url": "https://cyber.gouv.fr/la-directive-nis-2",
           "retrievedAt": "2026-06-07"
+        },
+        {
+          "label": "Assemblée nationale — dossier législatif DLR5L17N50731",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N50731",
+          "retrievedAt": "2026-10-24"
         }
       ],
       "verified": true,
-      "lastVerifiedAt": "2026-06-03",
-      "notes": "Draft — adopted by the Sénat on 2025-03-12; awaiting promulgation (projected July 2026). Directive deadline missed."
+      "lastVerifiedAt": "2026-10-24",
+      "notes": "Draft — adopted by the Sénat on 2025-03-12 (texte n° 78); at the Assemblée nationale the special committee adopted its text on 2025-09-10 and no first-reading vote has been scheduled since; no promulgation, no date can be announced. Directive deadline missed."
     },
     {
       "country": "HR",

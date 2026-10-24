@@ -13,13 +13,13 @@ got wrong are recorded next to the facts we got right.
 Maintained by [Reglyze](https://reglyze.com), the NIS2 compliance platform for European SMEs and
 MSPs. This repository is a generated mirror of the corpus that drives the product. Corrections are
 welcome as issues or pull requests and are ported back to the source. Last generated
-2026-10-23.
+2026-10-24.
 
 ## What is in here
 
 | path | content |
 |---|---|
-| `legal-sources/<country>.md` | One file per jurisdiction (18 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 115 annotated sections, 21 of which record a defect we found in our own product and the test that now prevents it. |
+| `legal-sources/<country>.md` | One file per jurisdiction (18 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 116 annotated sections, 22 of which record a defect we found in our own product and the test that now prevents it. |
 | `legal-sources/INDEX.md` | Generated cross-cutting view: by theme, by type of defect, open items. |
 | `legal-sources/TAXONOMY.md` | The meta-line vocabulary and why it exists. |
 | `data/nis2-transposition-tracker.json` | The dataset behind the public [transposition tracker](https://reglyze.com/en/nis2-tracker): stage, dates, statute, authority, sources, for 30 EU and EEA countries, each row saying how it was established. |
@@ -37,7 +37,7 @@ welcome as issues or pull requests and are ported back to the source. Last gener
 | [cyprus](legal-sources/cyprus.md) | N. 60(I)/2025 (amends N. 89(I)/2020) | 1 | 0 | 1 | 2026-06-07 |
 | [denmark](legal-sources/denmark.md) | NIS2-loven (LOV nr 434 af 06/05/2025) | 1 | 0 | 1 | 2026-06-07 |
 | [eu](legal-sources/eu.md) | Directive (EU) 2022/2555 Arts. 2 and 3, Annexes I and II; Recommendation 2003/361/EC | 12 | 1 | 0 | 2026-10-23 |
-| [france](legal-sources/france.md) | Loi Résilience (en attente de promulgation) | 6 | 1 | 0 | 2026-08-25 |
+| [france](legal-sources/france.md) | Loi Résilience (en attente de promulgation) | 7 | 2 | 0 | 2026-10-24 |
 | [germany](legal-sources/germany.md) | NIS2UmsuCG | 7 | 3 | 0 | 2026-08-25 |
 | [greece](legal-sources/greece.md) | Ν. 5160/2024 — transposition of NIS2 | 11 | 1 | 2 | 2026-08-25 |
 | [italy](legal-sources/italy.md) | D.lgs. 138/2024 | 11 | 0 | 1 | 2026-10-23 |

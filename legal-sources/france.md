@@ -118,6 +118,40 @@ decree of art. 14 (TITRE II) can only come after promulgation, so no
 - ReCyF (versioned PDF, the name carries date + version):
   https://messervices.cyber.gouv.fr/documents-ressources/20260317_NIS_V2_ReCyF_v2.5.pdf
 
+## PJL Résilience — legislative status re-verified 2026-10-24
+
+<!-- meta: theme=statute; type=reference,surface-inconsistency; date=2026-10-24; surfaces=marketing,data; guard=apps/web/test/transposition-dates-not-stale.test.ts -->
+
+- **Source read:** official legislative dossier of the Assemblée nationale,
+  https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N50731
+- **Retrieved + read:** 2026-10-24.
+
+### What the dossier shows
+
+| Date | Stage |
+|---|---|
+| 2025-09-10 | Text of the special committee deposited (n° 1779-A0) |
+| 2025-09-16 | Commission text put online ("Mise en ligne : mardi 16 septembre 2025 à 18h40"), the dossier's most recent entry |
+| — | No séance publique date at the Assemblée nationale |
+| — | No first-reading vote, no commission mixte paritaire, no promulgation |
+
+Unchanged since the 2026-07-25 reading: the text is stalled at the special
+committee stage. Secondary sources report that the text was taken off the
+agenda of 7 and 9 October 2026; the dossier does not record it, so it is not
+asserted here. No date can be announced.
+
+### Defect found on the way
+
+The July correction had reached the data files (`recyf.yaml`, `scope/fr.yaml`)
+and the date fields of the France page, but not two sentences of its prose:
+`countries-seo.ts` still told visitors the law was "awaiting promulgation,
+expected mid-2026" on 2026-10-24, and the tracker row still said "projected
+July 2026". Both rewritten to the verified stage with no date. The same scan
+found the Netherlands page still "expecting" in Q3 2026 an entry into force
+that happened on 15 August 2026. The guard now reads prose: a forward-looking
+word followed by a period that has ended fails the test, whatever the
+country's status.
+
 ## Obligations — texte n° 78 adopted by the Sénat (art. 14 to 16)
 
 <!-- meta: theme=scoping,governance; type=reference; date=2026-07-25; surfaces=data; guard=none -->
