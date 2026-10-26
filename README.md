@@ -13,7 +13,7 @@ got wrong are recorded next to the facts we got right.
 Maintained by [Reglyze](https://reglyze.com), the NIS2 compliance platform for European SMEs and
 MSPs. This repository is a generated mirror of the corpus that drives the product. Corrections are
 welcome as issues or pull requests and are ported back to the source. Last generated
-2026-10-24.
+2026-10-26.
 
 ## What is in here
 
