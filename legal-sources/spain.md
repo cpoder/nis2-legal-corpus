@@ -162,3 +162,100 @@ composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
 the verified facts of THIS index and inserted verbatim by ai-service (placeholder
 `{{QUADRO_LEGALE}}`). Content of the block: ENS only: RD 311/2022, ámbito art. 2, categories BÁSICA/MEDIA/ALTA; NIS2 transposition explicitly « pendiente » in the block, no NIS2 fact asserted. Rule: any fact absent from
 this index is ABSENT from the block; enriching means verifying here first.
+
+## The LCGC is an anteproyecto, the Cortes are dissolved, and Spain is before the Court of Justice (read 2026-10-28)
+
+<!-- meta: theme=statute; type=reference; date=2026-10-28; surfaces=data,marketing,ui,prompt; guard=packages/regulatory-data/test/nis2-transposition-status.test.ts -->
+
+- **Sources read, all on 2026-10-28 (page text extracted directly):**
+  - La Moncloa, Referencia del Consejo de Ministros, 14 January 2025:
+    https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2025/20250114-referencia-rueda-de-prensa-ministros.aspx
+  - La Moncloa, Referencia del Consejo de Ministros, 17 March 2026 (Interior,
+    Proyecto de Ley de Protección y Resiliencia de las Entidades Críticas):
+    https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260317-referencia-rueda-de-prensa-ministros.aspx
+  - BOE-A-2026-20742, Real Decreto 806/2026, «BOE» núm. 248, de 6 de octubre
+    de 2026: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742
+  - Real Decreto-ley 12/2018, consolidated text ("Última actualización
+    publicada el 30/03/2022"), art. 11:
+    https://www.boe.es/buscar/act.php?id=BOE-A-2018-12257
+  - Government answer to written question 184/28254 (Congreso, 17/09/2025):
+    https://www.congreso.es/entradap/l15p/e8/e_0085940_n_000.pdf
+  - European Commission referral of 2026-07-08 (see `eu.md`).
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| First-round approval of the anteproyecto | Moncloa, 14/01/2025 | "El Consejo de Ministros ha aprobado el anteproyecto de Ley de Coordinación y Gobernanza de la Ciberseguridad a propuesta conjunta de los ministerios del Interior, de Defensa y para la Transformación Digital y de la Función Pública." | ✅ |
+| A second round was still to come, after the reports | Moncloa, 14/01/2025 | "dar trámite administrativo de urgencia al anteproyecto, para que pueda ser aprobado por el Gobierno, en segunda vuelta, cuanto antes y dar de inmediato paso a su debate parlamentario" ; "junto al preceptivo dictamen del Consejo de Estado" | ✅ |
+| It transposes NIS 2 | Moncloa, 14/01/2025 | "la futura ley incorporará al ordenamiento jurídico español la Directiva (UE) 2022/2555" | ✅ |
+| Still with the Ministry of the Interior in March 2026 | Moncloa, 17/03/2026 | "la Ley de Coordinación y Gobernanza de la Ciberseguridad que tramita el Ministerio del Interior y cuyo anteproyecto fue aprobado por el Consejo de Ministros en enero" | ✅ ("en enero" = January 2025: no other approval was found) |
+| The bill's authorities: a Centro Nacional de Ciberseguridad and three control authorities | Moncloa, 14/01/2025 | "crea el Centro Nacional de Ciberseguridad, órgano de contacto único con la Unión Europea adscrito a la Secretaría General de Presidencia del Gobierno" ; "autoridades de control encargadas de las funciones de supervisión y ejecución: el Ministerio del Interior, a través de la Oficina de Coordinación de Ciberseguridad de la Secretaría de Estado de Seguridad, el Ministerio de Defensa, a través del Centro Criptológico Nacional, y el Ministerio para la Transformación Digital y de la Función Pública, a través de la Secretaría de Estado de Telecomunicaciones e Infraestructuras Digitales y de Digitalización e Inteligencia Artificial" | ✅ |
+| The Cortes are dissolved | RD 806/2026, art. 1 | "Quedan disueltos el Congreso de los Diputados y el Senado elegidos el día 23 de julio de 2023." | ✅ |
+| Election date | RD 806/2026, art. 2 | "Se convocan elecciones a ambas Cámaras, que se celebrarán el domingo 29 de noviembre de 2026." | ✅ |
+| The new chambers meet on 23 December | RD 806/2026, art. 5 | "las Cámaras resultantes se reunirán, en sesiones constitutivas, el día 23 de diciembre, a las diez horas" | ✅ |
+| In force on publication, 6 October 2026 | RD 806/2026, disposición final única | "El presente real decreto entrará en vigor el mismo día de su publicación en el «Boletín Oficial del Estado»." | ✅ |
+| The 2018 NIS law names INCIBE-CERT as the reference CSIRT for private entities | RDL 12/2018, art. 11 | INCIBE-CERT serves the operators "no incluidas en el ámbito subjetivo de aplicación" of Ley 40/2015, and the citizens and private-law entities | ✅ |
+
+A search of congreso.es found no proyecto de ley for the LCGC, and none of the
+Council's referencias read mentions a second-round approval. Neither absence is
+asserted anywhere: the product says only what the 17 March 2026 referencia says.
+
+The tracker row must be re-verified once the new chambers have met
+(`nis2-transposition-status.test.ts` fails after 2026-12-23 until it is).
+
+## Defect: a "partial transposition via Real Decreto-ley" and a bill "en tramitación parlamentaria" (found 2026-10-28)
+
+<!-- meta: theme=statute; type=status-error; date=2026-10-28; surfaces=data,ui,prompt,marketing; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts -->
+
+`TRANSPOSITION_REFERENCES_ES` (read by the national-requirements panel, the
+public compliance page, the training and incidents pages, and the tabletop
+prompt of ai-service) told customers:
+
+- "Partial transposition in force via Real Decreto-ley (reported by consistent
+  secondary sources; primary BOE identity pending verification by the weekly
+  regulatory watch)", in five languages. No such act was found in the BOE, and
+  the weekly watch is an AI sweep of a few official pages: it never verifies a
+  gazette identity. A fact flagged "pending verification" sat in a
+  customer-facing list for months.
+- `lawCitation`: "en tramitación parlamentaria; entrada en vigor estimada en
+  2026". The text never left the ministry as far as any official source shows,
+  and an entry into force in 2026 is now impossible with the Cortes dissolved.
+
+Both are replaced by the facts of the section above. The guard rejects the
+Real Decreto-ley claim, "tramitación parlamentaria" and any estimated entry
+into force in the ES entry.
+
+## Defect: the Spain page said the directive already binds Spanish companies, and called Spain the slowest (found 2026-10-28)
+
+<!-- meta: theme=statute; type=law-misread,fabrication; date=2026-10-28; surfaces=marketing; guard=apps/web/test/country-spain-fiche.test.ts -->
+
+`/eu/spain` said "Spanish organizations are still subject to the EU directive's
+principles — courts may apply direct effect", "Spanish organisations remain
+subject to the directive's principles" and, in an FAQ, "the directive's
+principles already apply". An untransposed directive creates no obligations for
+a private company by itself; the page's own enforcement note already said that
+direct effect runs against the State and that enforcement against private
+entities awaits the Spanish law. The page now says the 2018 NIS law (Real
+Decreto-ley 12/2018) is the regime in force.
+
+It also said "Spain has the slowest NIS2 transposition among major EU
+economies", with no source; France, a major economy, is at the same stage and
+was referred to the Court on the same day. Replaced by the referral itself.
+
+## Needs check: INCIBE presented as Spain's NIS 2 competent authority
+
+<!-- meta: theme=statute; type=needs-check; date=2026-10-28; surfaces=marketing,ui,data; guard=none -->
+
+The bill's official summary (section above) creates a Centro Nacional de
+Ciberseguridad and three control authorities (OCC of the Interior, CCN of
+Defence, SETID of Digital Transformation). It does not name INCIBE, and the
+Government's answer to written question 184/28254 lists the same three control
+authorities. INCIBE-CERT is the reference CSIRT for private entities under the
+2018 NIS law (RDL 12/2018, art. 11).
+
+The product still names INCIBE as the competent authority on several surfaces:
+the `/eu/spain` page ("INCIBE will be the primary competent authority", the
+Competent Authority card, the meta description), `SPAIN_ES.authority` in the
+national landing content, `primaryAuthorityName` in the country-config helpers,
+and the ES diagnostic. Correcting one of them alone would make the surfaces
+disagree (ADR 0041), so the correction is scheduled as one change across all of
+them.

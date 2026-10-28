@@ -2,7 +2,7 @@
   "_about": "Conformance cases for a NIS2 scoping classifier: Directive (EU) 2022/2555 Arts. 2 and 3 with the size ceilings of Recommendation 2003/361/EC, plus the national size test of Slovenia (ZInfV-1). Inputs use the Reglyze questionnaire ids; amounts are in euros; a missing annual_balance_sheet means the entity did not state one; `sector: \"manufacturing\"` stands for the Annex II point 5 manufacturing types (NACE C26 to C30 and medical devices), not manufacturing at large. `expected` is derived from the texts quoted in legal-sources/eu.md and legal-sources/slovenia.md; the Reglyze engine is checked against every case when this file is generated. Not modelled: domain-name registrars (Art. 2(4)), critical entities under Directive (EU) 2022/2557 (Art. 2(3)), partner and linked enterprises (Recommendation Annex Art. 6), Member-State extensions to local administration (Art. 2(5)), national sector rules such as the Polish MSSP rule.",
   "_licence": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
   "_source": "https://github.com/cpoder/nis2-legal-corpus",
-  "generatedAt": "2026-10-26",
+  "generatedAt": "2026-10-28",
   "classifications": [
     "essential",
     "important",

@@ -510,3 +510,92 @@ Still open after #760 (declared, not forgotten):
 - The stale `apps/web/src/lib/i18n/translations.ts.orig` and the
   `tools/es-i18n/chunks` extracts, read by nothing, still carry the old
   sentences.
+
+## Court of Justice referral of Ireland, Spain, France and the Netherlands (8 July 2026)
+
+<!-- meta: theme=statute; type=reference,status-error; date=2026-10-28; surfaces=data,marketing,ui,prompt; guard=packages/regulatory-data/test/nis2-transposition-status.test.ts -->
+
+- **Source read:** European Commission, Shaping Europe's digital future,
+  "Commission refers Ireland, Spain, France and the Netherlands to the Court of
+  Justice for failing to transpose the rules on cybersecurity", publication
+  08 July 2026, last update 9 July 2026.
+  https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules
+- **Retrieved + read:** 2026-10-28 (page text extracted directly; quotes below
+  are verbatim).
+
+| Fact | Verbatim (official) | Status |
+|---|---|---|
+| The decision and the four Member States | "The European Commission has decided to refer Ireland, Spain, France and the Netherlands to the Court of Justice of the European Union for failing to notify measures transposing the NIS2 Directive on securing network and information systems (Directive (EU) 2022/2555) into national law." | ✅ |
+| Why these four | "While most complied, Spain, France, Ireland and the Netherlands have yet to notify full transposition." | ✅ |
+| What is asked of the Court | "The referrals include a request to the Court to impose financial sanctions, consisting of a lump sum and daily penalties until notification of complete transposition." | ✅ |
+| The earlier steps | "The Commission sent letters of formal notice on 28 November 2024 and reasoned opinions on 7 May 2025." | ✅ |
+| Case numbers | None on the page (no INFR reference per country). | n/a |
+
+### What the product said until 2026-10-28
+
+The tracker rows of the four countries said "directive deadline missed" (FR, ES,
+IE) or "the Commission procedure is not verified as closed" (NL), and the France
+and Spain country pages said "infringement procedure". Each was true when
+written and stale for sixteen weeks: the referral is the step that changes what a
+reader should expect, a judgment and financial penalties, and the weekly AI sweep
+does not look for it. The four rows and both pages now cite it, and
+`nis2-transposition-status.test.ts` fails if a row stops naming it.
+
+The Netherlands was referred the day after its Eerste Kamer adopted the
+Cyberbeveiligingswet (2026-07-07) and before the law commenced (2026-08-15).
+The register, read later the same day (section below), shows the Commission
+closed the Dutch case on 2026-10-01, so `infringementOpen` is false.
+
+## NIS2 non-transposition infringement cases: the Commission's register, all member states (read 2026-10-28)
+
+<!-- meta: theme=statute; type=reference,status-error; date=2026-10-28; surfaces=data; guard=packages/regulatory-data/test/nis2-transposition-status.test.ts -->
+
+- **Source read:** European Commission, infringement decisions register,
+  https://ec.europa.eu/implementing-eu-law/search-infringement-decisions/ ,
+  through its JSON API (`POST /api/infringements` with
+  `{"langCode":"EN","refId":"INFR(2024)0xxx"}`), one call per case, for the 24
+  cases titled "Lack of transposition of Directive (EU) 2022/2555 on measures for
+  a high common level of cybersecurity across the Union by <member state>".
+- **Retrieved:** 2026-10-28. Belgium, Croatia and Italy have no such case.
+- Every case opened with a formal notice on 27/11/2024; the reasoned opinions
+  are dated 7/05/2025.
+
+| Member state | Case | Status | Last decision |
+|---|---|---|---|
+| Austria | INFR(2024)0254 | closed | 1/10/2026 Closing of the case |
+| Bulgaria | INFR(2024)0257 | closed | 1/10/2026 Closing of the case |
+| Cyprus | INFR(2024)0259 | closed | 8/10/2025 Closing of the case |
+| Czechia | INFR(2024)0261 | closed | 8/07/2026 Closing of the case |
+| Denmark | INFR(2024)0265 | closed | 30/01/2026 Closing of the case |
+| Estonia | INFR(2024)0267 | **open** | 7/05/2025 Reasoned opinion |
+| Finland | INFR(2024)0272 | **open** | 7/05/2025 Reasoned opinion |
+| France | INFR(2024)0274 | **open** | 8/07/2026 Referral to the Court of Justice (C-1089/26) |
+| Germany | INFR(2024)0263 | **open** | 7/05/2025 Reasoned opinion |
+| Greece | INFR(2024)0268 | closed | 12/02/2025 Closing of the case |
+| Hungary | INFR(2024)0277 | closed | 1/10/2026 Closing of the case |
+| Ireland | INFR(2024)0279 | **open** | 8/07/2026 Referral to the Court of Justice (C-1076/26) |
+| Latvia | INFR(2024)0284 | closed | 30/01/2026 Closing of the case |
+| Lithuania | INFR(2024)0280 | closed | 12/02/2025 Closing of the case |
+| Luxembourg | INFR(2024)0282 | closed | 8/07/2026 Closing of the case |
+| Malta | INFR(2024)0286 | closed | 8/10/2025 Closing of the case |
+| Netherlands | INFR(2024)0288 | closed | 1/10/2026 Closing of the case |
+| Poland | INFR(2024)0290 | closed | 1/10/2026 Closing of the case |
+| Portugal | INFR(2024)0292 | **open** | 7/05/2025 Reasoned opinion |
+| Romania | INFR(2024)0294 | closed | 8/10/2025 Closing of the case |
+| Slovakia | INFR(2024)0300 | closed | 8/10/2025 Closing of the case |
+| Slovenia | INFR(2024)0298 | closed | 30/01/2026 Closing of the case |
+| Spain | INFR(2024)0270 | **open** | 8/07/2026 Referral to the Court of Justice (C-1080/26) |
+| Sweden | INFR(2024)0296 | **open** | 7/05/2025 Reasoned opinion |
+
+### What the tracker said until 2026-10-28
+
+Seven rows disagreed with the register. Germany, Portugal, Sweden, Estonia and
+Finland said no procedure was open, while each case is still active at the
+reasoned-opinion stage, even where the national law has applied for months
+(Germany since 2025-12-06, Portugal since 2026-04-03, Sweden since 2026-01-15,
+Estonia since 2026-01-01). Austria and the Netherlands said a procedure was
+open, while the Commission closed both cases on 2026-10-01; the Netherlands had
+been referred to the Court of Justice on 2026-07-08 and the case was closed
+after the Cyberbeveiligingswet applied. The tracker now carries the register's
+status for every row, and the test pins it, with a clock: the snapshot must be
+re-read within 90 days.

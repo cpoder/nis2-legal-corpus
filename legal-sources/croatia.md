@@ -462,3 +462,22 @@ composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
 the verified facts of THIS index and inserted verbatim by ai-service (placeholder
 `{{QUADRO_LEGALE}}`). Content of the block: Zakon NN 14/2024 (EIF 15-02-2024) + Uredba NN 135/2024: čl. 34. (ključni, revizija 2 years), čl. 35. (važni, samoprocjena + izjava/plan + 8 days), Prilozi I.-IV. Sanctions/notification: not verified → absent. Rule: any fact absent from
 this index is ABSENT from the block; enriching = verifying here first.
+
+## Defect: the gazette URL's issue number was read as the publication date (found 2026-10-28)
+
+<!-- meta: theme=statute; type=law-misread; date=2026-10-28; surfaces=data,ui; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,apps/web/test/country-croatia-fiche.test.ts -->
+
+- **Source read:** https://narodne-novine.nn.hr/clanci/sluzbeni/2024_02_14_254.html
+  (and the `full/` text), retrieved 2026-10-28.
+- "Datum tiskanog izdanja: 7.2.2024." and "Ovaj Zakon stupa na snagu osmoga
+  dana od dana objave u »Narodnim novinama«." (signed "Zagreb, 1. veljače 2024";
+  adopted by the Sabor "26. siječnja 2024").
+
+`TRANSPOSITION_REFERENCES_HR.transposedAt` and the `/eu/croatia` page
+("Adopted / in force: 2024-02-14") carried 2024-02-14. That date is not in the
+gazette: it is the URL `2024_02_14_254`, which is year, month, issue number 14
+and document 254. The act was published on 2024-02-07 and is in force since
+2024-02-15, the eighth day after publication; the statute section above already
+said so ("07-02-2024 (na snazi od 15. veljače 2024.)"), the data did not. Both
+surfaces now carry 2024-02-07, and the tracker row, generic until now, cites the
+gazette page.

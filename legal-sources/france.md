@@ -320,3 +320,30 @@ composed by `packages/regulatory-data/src/doc-corpus/legal-frames.ts` from
 the verified facts of THIS index and inserted verbatim by ai-service (placeholder
 `{{QUADRO_LEGALE}}`). Content of the block: assumed PROVISIONAL: a "law not promulgated" banner at the top of the block; art. 14 (4 objectives), art. 15 (ReCyF presumption / reversed burden), art. 37 (commission des sanctions, no cumulation with the CNIL, ban on exercising management responsibilities). To be realigned at promulgation. Rule: any fact absent from
 this index is ABSENT from the block; enriching means verifying here first.
+
+## Defect: nine French pages still promised the loi Résilience for "été 2026" (found 2026-10-28)
+
+<!-- meta: theme=statute; type=status-error,surface-inconsistency; date=2026-10-28; surfaces=marketing; guard=apps/web/test/transposition-dates-not-stale.test.ts -->
+
+- **Source re-read:** Assemblée nationale, dossier législatif DLR5L17N50731,
+  retrieved 2026-10-28. Last step: "Texte de la commission, n° 1779-A0",
+  10 September 2025. No séance publique, no vote, no promulgation.
+
+On 2026-10-24 the English page and the tracker stopped forecasting a date. On
+2026-10-28, five weeks after summer ended, nine French surfaces still said the
+law was "attendue courant été 2026", one of them in the meta description of
+`/fr/faq` that search engines show: `/fr/faq`, `/fr/entites-essentielles-importantes`
+(FAQ, notice and a timeline item headed "Été 2026"),
+`/fr/notification-incident-anssi`, `/fr/diagnostic`, `/fr/msp-cybersecurite-france`,
+`/fr/mesures-recyf-conformite`, `/fr/tabletop`, and the native fiche
+(`lib/countries/france.ts`, fixed with the referral change).
+
+The guard of 2026-10-24 read the prose of `COUNTRIES_SEO`, which is English;
+the French pages are hand-written TSX it never saw. Its French counterpart reads
+the source of every page under `src/app/fr` and fails on a forward word
+("attendue", "prévue", "sera"...) followed by a period that has ended. It found
+`/fr/tabletop`, which a grep had missed because the sentence breaks across two
+lines, and it fails again when "attendue courant été 2026" is put back.
+
+The pages now say that no date can be announced, and the FAQ answers carry the
+Court of Justice referral of 8 July 2026 (see `eu.md`).
