@@ -47,6 +47,7 @@ export const TYPES = [
   "law-misread",
   "deadline-model",
   "scope-error",
+  "overclaim",
   "status-error",
   "surface-inconsistency",
   "i18n",

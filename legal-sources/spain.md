@@ -241,13 +241,16 @@ It also said "Spain has the slowest NIS2 transposition among major EU
 economies", with no source; France, a major economy, is at the same stage and
 was referred to the Court on the same day. Replaced by the referral itself.
 
-## Needs check: INCIBE presented as Spain's NIS 2 competent authority
+## INCIBE presented as Spain's NIS 2 competent authority (corrected 2026-10-28)
 
-<!-- meta: theme=statute; type=needs-check; date=2026-10-28; surfaces=marketing,ui,data; guard=none -->
+<!-- meta: theme=statute; type=law-misread,fabrication; date=2026-10-28; surfaces=marketing,ui; guard=apps/web/test/country-spain-fiche.test.ts -->
 
 The bill's official summary (section above) creates a Centro Nacional de
-Ciberseguridad and three control authorities (OCC of the Interior, CCN of
-Defence, SETID of Digital Transformation). It does not name INCIBE, and the
+Ciberseguridad and three control authorities: the Interior ministry through
+the OCC, Defence through the CCN, and Digital Transformation "a través de la
+Secretaría de Estado de Telecomunicaciones e Infraestructuras Digitales y de
+Digitalización e Inteligencia Artificial", that is, through its two
+secretariats of state, SETID and SEDIA. It does not name INCIBE, and the
 Government's answer to written question 184/28254 lists the same three control
 authorities. INCIBE-CERT is the reference CSIRT for private entities under the
 2018 NIS law (RDL 12/2018, art. 11).
@@ -259,3 +262,20 @@ national landing content, `primaryAuthorityName` in the country-config helpers,
 and the ES diagnostic. Correcting one of them alone would make the surfaces
 disagree (ADR 0041), so the correction is scheduled as one change across all of
 them.
+
+**Corrected on 2026-10-28, on every surface at once:**
+- `/eu/spain` (`apps/web/src/lib/countries-seo.ts`): the Competent Authority
+  card now names the three ministries (OCC, CCN, SETID, SEDIA) and links the
+  Moncloa reference; the overview, a key fact and the FAQ say what the bill
+  says and that INCIBE-CERT is the reference CSIRT for private entities.
+- The `es` fiche (`apps/web/src/lib/countries/spain.ts`): `authority` and the
+  registration note, same content in Spanish.
+- Removed as unsourced: "INCIBE has published an extensive FAQ and
+  preparatory guidance", "INCIBE's guidance helps Spanish organisations
+  self-assess", "the draft aligns closely with the directive minimum, with
+  some additions for critical infrastructure", and the claim that every
+  Annex I energy or water operator is an essential entity (only above the
+  medium-enterprise ceilings).
+- The `primaryAuthorityName` helper and the ES diagnostic, listed above, do not
+  name INCIBE as an authority (checked across line wraps); the incident
+  configuration names INCIBE-CERT as the CSIRT, which is right.

@@ -651,3 +651,26 @@ been notified, never look it up.
 - The ACN determinations under Art. 40 c. 4 lett. b) and c. 5 lett. a). By
   Art. 40 c. 6 they are not public, so no individual identification or
   designation can be verified from a public source.
+
+## Incident stages as art. 25 D.lgs. 138/2024 names them (verified 2026-10-28)
+
+<!-- meta: theme=incident; type=reference,wrong-citation; date=2026-10-28; surfaces=data,ui,prompt; guard=packages/regulatory-data/test/incident-stage-names-statutes.test.ts -->
+
+Read on Normattiva, `https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-04;138~art25`,
+retrieved 2026-10-28. The product called the 24-hour stage "Pre-allarme", the
+Italian wording of the directive; the decree says "pre-notifica", sends every
+stage to CSIRT Italia, and asks for a progress report every month.
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| Recipient: CSIRT Italia | art. 25, c. 5 | "i soggetti interessati trasmettono al CSIRT Italia:" | ✅ |
+| 24 h: "pre-notifica" | art. 25, c. 5, lett. a) | "senza ingiustificato ritardo, e comunque entro 24 ore da quando sono venuti a conoscenza dell'incidente significativo, una pre-notifica" | ✅ |
+| 72 h: "notifica dell'incidente" | art. 25, c. 5, lett. b) | "entro 72 ore da quando sono venuti a conoscenza dell'incidente significativo, una notifica dell'incidente" | ✅ |
+| On request: "relazione intermedia" | art. 25, c. 5, lett. c) | "su richiesta del CSIRT Italia, una relazione intermedia sui pertinenti aggiornamenti della situazione" | ✅ |
+| One month: "relazione finale" | art. 25, c. 5, lett. d) | "una relazione finale entro un mese dalla trasmissione della notifica dell'incidente di cui alla lettera b)" | ✅ |
+| Still running: a MONTHLY progress report | art. 25, c. 5, lett. e) | "in caso di incidente in corso al momento della trasmissione della relazione finale di cui alla lettera d), una relazione mensile sui progressi e una relazione finale entro un mese dalla conclusione della gestione dell'incidente" | ✅ |
+
+What the product does with it (2026-10-28): the IT incident config, the ACN
+adapter, the incident draft prompt and the Italian fiche use "pre-notifica"
+and name CSIRT Italia. The monthly cadence is stated in the progress label; the
+engine still models one progress report, so monthly reminders are not sent.

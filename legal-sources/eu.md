@@ -599,3 +599,22 @@ been referred to the Court of Justice on 2026-07-08 and the case was closed
 after the Cyberbeveiligingswet applied. The tracker now carries the register's
 status for every row, and the test pins it, with a clock: the snapshot must be
 re-read within 90 days.
+
+## Defect: three pages said "the class follows size, not the annex" (found and fixed 2026-10-29)
+
+<!-- meta: theme=scoping; type=law-misread; date=2026-10-29; surfaces=marketing; guard=apps/web/test/country-greece-fiche.test.tsx -->
+
+Found while writing the Greek fiches. The English chrome of every country
+page (`apps/web/src/app/[locale]/eu/[country]/page.tsx`), the HowTo of the
+scope checker (`apps/web/src/app/[locale]/tools/nis2-scope-checker/page.tsx`)
+and the Austrian FAQ in `countries-seo.ts` said that the class, essential or
+important, "follows size, not the annex". Section D above refutes the
+reading: Art. 3(1)(a) is limited to "entities of a type referred to in Annex
+I", so an Annex II entity is never essential by its size alone (row "An Annex
+II entity becomes essential by size alone", refuted). The Greek law says the
+same in its own words, art. 4 §1 α) of ν. 5160/2024 (greece.md, P0.2).
+
+The sentence replaced one that equated Annex I with essential and Annex II
+with important (#760); it corrected that error by overstating the opposite.
+All three now say that the class depends on the annex and the size together,
+and the guard fails on the old wording anywhere under `apps/web/src`.

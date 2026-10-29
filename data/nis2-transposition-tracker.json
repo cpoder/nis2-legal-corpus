@@ -2,7 +2,7 @@
   "_about": "NIS2 transposition status per EU and EEA country, as rendered by the public tracker at https://reglyze.com/en/nis2-tracker. Stages: not_transposed, draft, adopted, in_force, enforcing. `tier` says how a row was established: `verified` rows carry a statute identity verified at the official publication; `provisional` rows are either honest first drafts (lastVerifiedAt null) or sourced records (lastVerifiedAt and sources set) that still await a native reviewer. Every dated fact of a sourced or verified row traces to legal-sources/<country>.md. This file is the curated base layer shipped in the product's code; the live page merges on top of it a database overlay written by a weekly automated sweep of the official sources and by operator verifications, each change carrying its own citation. Dates are ISO 8601. Greece is EL.",
   "_licence": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
   "_source": "https://github.com/cpoder/nis2-legal-corpus",
-  "generatedAt": "2026-10-28",
+  "generatedAt": "2026-10-29",
   "directiveDeadline": "2024-10-17",
   "summary": {
     "total": 30,
@@ -21,7 +21,7 @@
         "nationalLawDate": "2025-12-23",
         "enforcementDate": "2026-10-01",
         "infringementOpen": false,
-        "registrationLive": false,
+        "registrationLive": true,
         "nationalFrameworkPublished": false
       },
       "lawShortName": "NISG 2026 (BGBl. I Nr. 94/2025)",
@@ -30,9 +30,24 @@
       "competentAuthority": null,
       "sources": [
         {
-          "label": "RIS — BGBl. I Nr. 94/2025 (NISG 2026)",
+          "label": "RIS: BGBl. I Nr. 94/2025 (NISG 2026)",
           "url": "https://www.ris.bka.gv.at/eli/bgbl/I/2025/94/20251223",
-          "retrievedAt": "2026-06-07"
+          "retrievedAt": "2026-10-28"
+        },
+        {
+          "label": "RIS: BGBl. II Nr. 290/2026 (NISV 2026)",
+          "url": "https://www.ris.bka.gv.at/eli/bgbl/II/2026/290",
+          "retrievedAt": "2026-10-28"
+        },
+        {
+          "label": "Bundesamt für Cybersicherheit: Registrierung",
+          "url": "https://www.bundesamt-cybersicherheit.gv.at/303/registrierung.html",
+          "retrievedAt": "2026-10-28"
+        },
+        {
+          "label": "Bundesamt für Cybersicherheit: Meldepflicht und Fristen",
+          "url": "https://www.bundesamt-cybersicherheit.gv.at/303/meldepflicht-und-fristen.html",
+          "retrievedAt": "2026-10-28"
         },
         {
           "label": "European Commission: infringement decisions register (NIS2 non-transposition cases)",
@@ -41,8 +56,8 @@
         }
       ],
       "verified": false,
-      "lastVerifiedAt": "2026-10-22",
-      "notes": "In force since 2026-10-01: NISG 2026, published in BGBl. I Nr. 94/2025 (2025-12-23), substantive provisions §§ 2 to 50 in force since 2026-10-01 (§ 51). Registration with the Bundesamt für Cybersicherheit is due by 2026-12-31 (§ 29 Abs. 3). Directive deadline missed; the Commission closed infringement case INFR(2024)0254 on 2026-10-01."
+      "lastVerifiedAt": "2026-10-28",
+      "notes": "In force since 2026-10-01: NISG 2026, published in BGBl. I Nr. 94/2025 (2025-12-23), substantive provisions §§ 2 to 50 in force since 2026-10-01 (§ 51). Entities register with the Bundesamt für Cybersicherheit through its NIS2-Services application on the Unternehmensserviceportal, within three months of entry into force (§ 29 Abs. 3): the authority counts that window to 2027-01-01, and to 2027-01-04 at the latest under § 33 Abs. 2 AVG. Since 2026-10-01 the NISV 2026 (BGBl. II Nr. 290/2026) applies the Annex of Implementing Regulation (EU) 2024/2690 to every entity type of Annexes 1 and 2 and adds criteria for a significant incident. Directive deadline missed; the Commission closed infringement case INFR(2024)0254 on 2026-10-01."
     },
     {
       "country": "BE",
@@ -385,8 +400,8 @@
         "registrationLive": false,
         "nationalFrameworkPublished": true
       },
-      "lawShortName": "Loi Résilience (en attente de promulgation)",
-      "lawCitation": "Projet de loi PRMD2412608L — adopté au Sénat le 12 mars 2025 (texte n° 78), transmis à l'Assemblée nationale le 13 mars 2025 ; rapport et texte de la commission spéciale adoptés le 10 septembre 2025. AUCUN vote en première lecture à l'Assemblée à ce jour (état vérifié le 26 juillet 2026). Texte NON promulgué, aucune référence JORF, aucune date de promulgation annoncée.",
+      "lawShortName": "Projet de loi Résilience (en cours d'examen)",
+      "lawCitation": "Projet de loi PRMD2412608L — adopté au Sénat le 12 mars 2025 (texte n° 78), transmis à l'Assemblée nationale le 13 mars 2025 ; rapport et texte de la commission spéciale adoptés le 10 septembre 2025. AUCUN vote en première lecture à l'Assemblée à ce jour (état vérifié le 28 octobre 2026). Texte NON promulgué, aucune référence JORF, aucune date de promulgation annoncée.",
       "targetDate": null,
       "competentAuthority": {
         "name": "Agence nationale de la sécurité des systèmes d'information",
@@ -609,7 +624,7 @@
       ],
       "verified": false,
       "lastVerifiedAt": "2026-10-28",
-      "notes": "In force since 2026-05-10: loi du 5 mai 2026 concernant des mesures destinées à assurer un niveau élevé de cybersécurité (Mémorial A n° 225, 2026-05-06), which repealed the 2019 NIS1 law. The ILR supervises (the CSSF for banking and financial market infrastructures, Art. 3), the HCPN is the single point of contact (Art. 5), and self-registration was due by 2026-07-10 (Art. 11(4)). The Commission closed infringement case INFR(2024)0282 on 2026-07-08."
+      "notes": "In force since 2026-05-10: loi du 5 mai 2026 concernant des mesures destinées à assurer un niveau élevé de cybersécurité (Mémorial A n° 225, 2026-05-06), which repealed the 2019 NIS1 law. The ILR supervises; the CSSF does for banking and financial market infrastructures, and for digital infrastructure and ICT service management as regards the activities it supervises (Art. 3). Incidents are notified to the competent authority, which forwards them to the CSIRT (Art. 14(1)); the HCPN is the single point of contact (Art. 5), and self-registration was due by 2026-07-10 (Art. 11(4)). The Commission closed infringement case INFR(2024)0282 on 2026-07-08."
     },
     {
       "country": "LV",

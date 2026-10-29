@@ -382,6 +382,26 @@ odstavka 37. člena". The act's word there is "odločba"; URSIV's act of
 2026-10-21 is called an "odredba". Whether pt 10 reaches it was not
 established.
 
+## Sector routing in the product: both halves of Art. 59 (2026-10-29)
+
+<!-- meta: theme=incident; type=surface-inconsistency; date=2026-10-29; surfaces=data,ui,mcp,doc-gen,prompt; guard=packages/regulatory-data/test/incident-recipients.test.ts,packages/regulatory-data/test/country-configs-incident-reporting.test.ts -->
+
+Art. 59 (quoted in the incident section above) gives SIGOV-CERT two remits:
+"subjektov javne uprave na državni in lokalni ravni" and "ponudnikov storitev
+zaupanja, ki jih izvajajo subjekti državne uprave". The configuration carried
+the first from 2026-10-22, routed on the whole public-administration sector, and
+only the document template read it, from 2026-10-28. The second was not
+modelled: a state-run trust service provider sits inside digital infrastructure,
+and an organisation records no entity type, so it cannot be routed
+automatically.
+
+Since 2026-10-29 both are entries of `INCIDENT_REPORTING_SI.sectorSpecificCsirts`,
+read through `resolveIncidentRecipients`: public administration routes to
+SIGOV-CERT automatically, and a digital-infrastructure entity keeps SI-CERT and
+is shown SIGOV-CERT as a condition to check. The channel is unchanged: e-mail to
+cert@gov.si or cert@cert.si, as URSIV's guidance of 2026-06-03 says. The legal
+basis shown for the national recipient is Art. 30(1) and Art. 59.
+
 ## Open items: not read in a primary source
 
 <!-- meta: theme=statute,incident,registration,sanctions; type=lead; date=2026-10-22; surfaces=docs; guard=none -->

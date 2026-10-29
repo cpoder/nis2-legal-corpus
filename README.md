@@ -13,13 +13,13 @@ got wrong are recorded next to the facts we got right.
 Maintained by [Reglyze](https://reglyze.com), the NIS2 compliance platform for European SMEs and
 MSPs. This repository is a generated mirror of the corpus that drives the product. Corrections are
 welcome as issues or pull requests and are ported back to the source. Last generated
-2026-10-28.
+2026-10-29.
 
 ## What is in here
 
 | path | content |
 |---|---|
-| `legal-sources/<country>.md` | One file per jurisdiction (28 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 134 annotated sections, 31 of which record a defect we found in our own product and the test that now prevents it. |
+| `legal-sources/<country>.md` | One file per jurisdiction (28 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 172 annotated sections, 52 of which record a defect we found in our own product and the test that now prevents it. |
 | `legal-sources/INDEX.md` | Generated cross-cutting view: by theme, by type of defect, open items. |
 | `legal-sources/TAXONOMY.md` | The meta-line vocabulary and why it exists. |
 | `data/nis2-transposition-tracker.json` | The dataset behind the public [transposition tracker](https://reglyze.com/en/nis2-tracker): stage, dates, statute, authority, sources, for 30 EU and EEA countries, each row saying how it was established. |
@@ -30,33 +30,33 @@ welcome as issues or pull requests and are ported back to the source. Last gener
 
 | file | statute | sections | defects recorded | open items | last dated entry |
 |---|---|---|---|---|---|
-| [austria](legal-sources/austria.md) | NISG 2026 (BGBl. I Nr. 94/2025) | 6 | 2 | 0 | 2026-09-29 |
-| [belgium](legal-sources/belgium.md) | Loi NIS2 — 26 avril 2024 | 3 | 0 | 0 | 2026-08-25 |
+| [austria](legal-sources/austria.md) | NISG 2026 (BGBl. I Nr. 94/2025) | 10 | 5 | 0 | 2026-10-29 |
+| [belgium](legal-sources/belgium.md) | Loi NIS2 — 26 avril 2024 | 8 | 5 | 0 | 2026-10-29 |
 | [bulgaria](legal-sources/bulgaria.md) | Cybersecurity Act amendment (ДВ бр. 17/2026) | 1 | 0 | 1 | 2026-06-07 |
 | [croatia](legal-sources/croatia.md) | Zakon o kibernetičkoj sigurnosti (NN 14/2024) | 11 | 2 | 0 | 2026-10-28 |
 | [cyprus](legal-sources/cyprus.md) | N. 60(I)/2025 (amends N. 89(I)/2020) | 1 | 0 | 1 | 2026-06-07 |
 | [czechia](legal-sources/czechia.md) | Zákon č. 264/2025 Sb., o kybernetické bezpečnosti (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
 | [denmark](legal-sources/denmark.md) | NIS2-loven (LOV nr 434 af 06/05/2025) | 1 | 0 | 1 | 2026-06-07 |
 | [estonia](legal-sources/estonia.md) | Küberturvalisuse seaduse ja teiste seaduste muutmise seadus, RT I, 30.12.2025, 4 (read 2026-10-28) | 1 | 1 | 0 | 2026-10-28 |
-| [eu](legal-sources/eu.md) | Directive (EU) 2022/2555 Arts. 2 and 3, Annexes I and II; Recommendation 2003/361/EC | 14 | 3 | 0 | 2026-10-28 |
+| [eu](legal-sources/eu.md) | Directive (EU) 2022/2555 Arts. 2 and 3, Annexes I and II; Recommendation 2003/361/EC | 15 | 4 | 0 | 2026-10-29 |
 | [finland](legal-sources/finland.md) | Kyberturvallisuuslaki 124/2025 (read 2026-10-28) | 1 | 1 | 0 | 2026-10-28 |
-| [france](legal-sources/france.md) | Loi Résilience (en attente de promulgation) | 8 | 3 | 0 | 2026-10-28 |
-| [germany](legal-sources/germany.md) | NIS2UmsuCG | 7 | 3 | 0 | 2026-08-25 |
-| [greece](legal-sources/greece.md) | Ν. 5160/2024 (ΦΕΚ Α΄ 195/27.11.2024) | 11 | 1 | 2 | 2026-08-25 |
+| [france](legal-sources/france.md) | Projet de loi Résilience (en cours d'examen) | 8 | 3 | 0 | 2026-10-28 |
+| [germany](legal-sources/germany.md) | NIS2UmsuCG | 8 | 4 | 0 | 2026-10-28 |
+| [greece](legal-sources/greece.md) | Ν. 5160/2024 (ΦΕΚ Α΄ 195/27.11.2024) | 19 | 3 | 2 | 2026-10-29 |
 | [hungary](legal-sources/hungary.md) | 2024. évi LXIX. törvény Magyarország kiberbiztonságáról (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
 | [ireland](legal-sources/ireland.md) | National Cyber Security Bill: a General Scheme, no bill in the Oireachtas (read 2026-10-28) | 1 | 1 | 0 | 2026-10-28 |
-| [italy](legal-sources/italy.md) | D.lgs. 138/2024 | 11 | 0 | 1 | 2026-10-23 |
+| [italy](legal-sources/italy.md) | D.lgs. 138/2024 | 12 | 1 | 1 | 2026-10-28 |
 | [latvia](legal-sources/latvia.md) | Nacionālās kiberdrošības likums, Latvijas Vēstnesis 128A, 2024-07-04 (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
 | [lithuania](legal-sources/lithuania.md) | Kibernetinio saugumo įstatymo pakeitimo įstatymas Nr. XIV-2902: located, NOT read (2026-10-28) | 1 | 0 | 1 | 2026-10-28 |
-| [luxembourg](legal-sources/luxembourg.md) | Loi du 5 mai 2026 concernant des mesures destinées à assurer un niveau élevé de cybersécurité (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
+| [luxembourg](legal-sources/luxembourg.md) | Statute: loi du 5 mai 2026 concernant des mesures destinées à assurer un niveau élevé de cybersécurité | 13 | 2 | 1 | 2026-10-29 |
 | [malta](legal-sources/malta.md) | S.L. 460.41 (L.N. 22 of 2026) | 1 | 0 | 1 | 2026-06-07 |
-| [netherlands](legal-sources/netherlands.md) | Cyberbeveiligingswet (Stb. 2026, 187) | 7 | 4 | 1 | 2026-07-30 |
+| [netherlands](legal-sources/netherlands.md) | Cyberbeveiligingswet (Stb. 2026, 187) | 8 | 5 | 1 | 2026-10-29 |
 | [poland](legal-sources/poland.md) | KSC amendment (Dz.U. 2026 poz. 252) | 11 | 4 | 0 | 2026-09-08 |
-| [portugal](legal-sources/portugal.md) | DL 125/2025 (RJC) | 10 | 3 | 0 | 2026-10-23 |
+| [portugal](legal-sources/portugal.md) | DL 125/2025 (RJC) | 14 | 6 | 0 | 2026-10-29 |
 | [romania](legal-sources/romania.md) | OUG nr. 155/2024, approved by Legea nr. 124/2025 (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
 | [slovakia](legal-sources/slovakia.md) | Zákon č. 366/2024 Z. z., amending zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
-| [slovenia](legal-sources/slovenia.md) | ZInfV-1 (Uradni list RS, št. 40/2025) | 12 | 0 | 1 | 2026-10-22 |
-| [spain](legal-sources/spain.md) | Real Decreto 311/2022 — Esquema Nacional de Seguridad (ENS) | 8 | 3 | 1 | 2026-10-28 |
+| [slovenia](legal-sources/slovenia.md) | ZInfV-1 (Uradni list RS, št. 40/2025) | 13 | 1 | 1 | 2026-10-29 |
+| [spain](legal-sources/spain.md) | Real Decreto 311/2022 — Esquema Nacional de Seguridad (ENS) | 8 | 4 | 0 | 2026-10-28 |
 | [sweden](legal-sources/sweden.md) | Cybersäkerhetslag (SFS 2025:1506) | 1 | 0 | 1 | 2026-06-07 |
 
 Depth differs by country and the files say so. Some statutes were read in full from the signed
@@ -89,7 +89,7 @@ fact without reading the source.
 ```
 
 - `theme`, what the section is about: `statute`, `scoping`, `registration`, `incident`, `supply-chain`, `governance`, `sanctions`, `framework`, `documents`.
-- `type`, how to read it: `reference`, `delivery`, `needs-check`, `lead`, `fabrication`, `stale-statute`, `wrong-citation`, `law-misread`, `deadline-model`, `scope-error`, `status-error`, `surface-inconsistency`, `i18n`, `test-pinned`. The first four are reference material; the others name a
+- `type`, how to read it: `reference`, `delivery`, `needs-check`, `lead`, `fabrication`, `stale-statute`, `wrong-citation`, `law-misread`, `deadline-model`, `scope-error`, `overclaim`, `status-error`, `surface-inconsistency`, `i18n`, `test-pinned`. The first four are reference material; the others name a
   class of defect that was found and corrected.
 - `date`, ISO, when the section was written or last re-verified.
 - `surfaces`, which parts of the product restate the fact: `data`, `prompt`, `doc-gen`, `ui`, `marketing`, `mcp`, `i18n`, `test`, `docs`.

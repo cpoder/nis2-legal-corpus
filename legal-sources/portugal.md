@@ -156,6 +156,13 @@ The previous model in `packages/regulatory-data/src/country-configs/pt-deadlines
 Incident notification (24h/72h/final report) is live since 2026-04-03 and
 NOT deferred — the repo already had this right (no change).
 
+> Corrected 2026-10-28: the date and the absence of deferral were right; the
+> "24h/72h/final report" shape was not. The RJC sets an initial notification at
+> 24 h, an update at 72 h only when necessary, an end-of-impact notification
+> 24 h after the impact ends, and a final report 30 working days after that
+> notification. See "Incident notification under the RJC: five acts, not the
+> directive's three" and "The RJC's incident regime in the product" below.
+
 ## Which QNRCS control anchors which generated document (decided 2026-10-03)
 
 <!-- meta: theme=documents; type=wrong-citation,test-pinned; date=2026-10-03; surfaces=data,prompt,doc-gen,test; guard=packages/regulatory-data/test/pt-template-anchors.test.ts -->
@@ -510,3 +517,233 @@ art. 2.º; *large* means above the medium-enterprise ceilings.
   meses após a publicação da regulamentação referida nos artigos 8.º, 14.º,
   26.º, 31.º, 32.º e 83.º do referido regime." Whether the Regulamento restates
   them under its own arts. 8.º and 10.º was not checked.
+
+## Incident notification under the RJC: five acts, not the directive's three (read 2026-10-28)
+
+<!-- meta: theme=incident; type=deadline-model; date=2026-10-28; surfaces=marketing,ui,data; guard=apps/web/test/pt-incident-timeline.test.ts -->
+
+- **Source read:** Decreto-Lei n.º 125/2025, Diário da República, 1.ª série,
+  n.º 234, 04-12-2025, official PDF
+  `https://files.diariodarepublica.pt/1s/2025/12/23400/0000400068.pdf`
+  (SHA-256 `9f6e95c33144fd70cbe1cac5377d374ba0fc7df8d06e51b07e123a11171b1108`),
+  arts. 40.º to 44.º and 7.º, 8.º, 25.º, 31.º to 33.º, 55.º, 61.º read in full.
+- **Retrieved:** 2026-10-28.
+
+| Fact | Article | Verbatim (official) | Status |
+|---|---|---|---|
+| Relevant public entities notify like essential and important ones | art. 40.º n.º 1 | "As entidades essenciais, importantes e públicas relevantes notificam qualquer incidente significativo à autoridade de cibersegurança competente." | verified |
+| Initial notification: **24 hours** from the entity's conclusion | art. 42.º n.º 1 | "assim que a entidade essencial, importante ou pública relevante concluir que existe, ou possa vir a existir, um incidente significativo, sem demora injustificada e até 24 horas após essa verificação" | verified |
+| The **72-hour** act is an update, **only when necessary** | art. 42.º n.º 3 | "Quando necessário, a entidade essencial, importante ou pública relevante envia à autoridade de cibersegurança competente uma atualização da notificação inicial até 72 horas após a verificação do incidente significativo" | verified |
+| End of significant impact: **24 hours** after the impact ends | art. 43.º n.º 1 | "A notificação do fim de impacto significativo do incidente deve ser submetida à autoridade de cibersegurança competente, sem demora injustificada e dentro do prazo de 24 horas após o fim do impacto." | verified |
+| Final report: **30 working days** from the end-of-impact notification | art. 44.º n.º 1 | "O relatório final deve ser submetido à autoridade de cibersegurança competente, no prazo de 30 dias úteis a contar da data da notificação do fim de impacto significativo do incidente." | verified |
+| Still running at the final-report deadline: **weekly interim reports, on request** | art. 44.º n.º 3 | "deve apresentar relatório intercalar a autoridade de cibersegurança competente, a pedido destas entidades e com periodicidade semanal até ao momento da apresentação do relatório final" | verified |
+| Resolved within **two hours** of detection: the end-of-impact notification only | art. 41.º n.º 2 | "Nos casos em que o incidente é resolvido nas duas horas após a sua deteção, as entidades referidas ficam apenas obrigadas ao envio da notificação do fim de impacto significativo." | verified |
+
+**What the product said.** The incident configuration (`INCIDENT_REPORTING_PT`)
+renders the directive's model: an "alerta precoce" at 24 hours, a mandatory
+"notificação" at 72 hours, and a final report "within 1 month of
+notification". A comment beside it already knew the final report runs 30
+working days from the end of impact and deferred the fix. The public page
+`/pt/notificacao-incidente-cncs` had the 30 working days right, but said the
+end-of-impact notification has "no numeric deadline" (it has 24 hours),
+presented the 72-hour update as mandatory, and described the directive's
+progress report instead of art. 44.º n.º 3. The two-hour rule appeared nowhere.
+
+**Relevant public entities (art. 7.º, 33.º, 55.º, 61.º), for the
+public-administration page.** Grupos A and B are defined by the decree itself,
+by headcount (Grupo A: direct administration of the State or the autonomous
+regions from 250 workers, indirect and autonomous administration above 250,
+public enterprises above the medium-enterprise ceilings, independent
+administrative bodies, the bodies of art. 7.º n.º 2 h); Grupo B: 75 to 249
+workers, medium public enterprises). Their security measures are set by CNCS
+regulation in proportion to the group (art. 33.º n.º 1 and 2); their
+supervision is the one of important entities (art. 33.º n.º 3, art. 55.º);
+very serious offences carry EUR 16 000 to 4 000 000 (Grupo A) and EUR 8 000
+to 350 000 (Grupo B) for a legal person (art. 61.º). The duties of arts. 25.º
+(management body), 31.º (cybersecurity officer) and 32.º (permanent contact
+point) are written for essential and important entities. The page
+`/pt/administracao-publica-municipios` said the opposite on six points (groups
+"by population", a threshold "to be fixed by CNCS regulation", Grupo A
+"equivalent to essential entities, ex ante supervision", IPSS and foundations
+in Grupo B, registration "within 20 working days (art. 8.º n.º 5)", the art. 21.º
+and 39.º citations), and carried an unsourced municipality count ("308 em
+Portugal continental + 11 nas Regiões Autónomas"), removed rather than
+replaced since no official count was read.
+
+## The RJC's incident regime in the product: acts, instants, readings (2026-10-28)
+
+<!-- meta: theme=incident; type=deadline-model,test-pinned; date=2026-10-28; surfaces=data,ui,prompt,doc-gen,mcp,i18n,test; guard=packages/regulatory-data/test/pt-incident-notification-model.test.ts,apps/core-api/test/incident-acts-pt.test.ts,apps/core-api/test/incident-deadlines-regression.test.ts,packages/regulatory-data/test/legal-frames.test.ts -->
+
+The section above records the five clocks of arts. 40.º to 44.º and the two
+public pages they corrected. This one records what the product computed, what
+it computes now, and the provisions the computation needs beyond the clocks.
+Same official PDF, read on the same day:
+https://files.diariodarepublica.pt/1s/2025/12/23400/0000400068.pdf, converted
+with `pdftotext`; PDF pages: art. 2.º b) p. 9; art. 15.º p. 21; art. 40.º
+n.º 1 p. 39; art. 40.º n.º 6, art. 41.º and the start of art. 42.º p. 40;
+art. 42.º n.º 3 and art. 43.º p. 41; art. 44.º p. 42.
+
+### The defect, and the test that held it
+
+Every country's deadlines came from one engine,
+`apps/core-api/src/lib/article23-deadlines.ts`: 24 h early warning, 72 h
+notification, final report one month after the notification. Portugal went
+through it like every other country, so a Portuguese entity, a municipality
+among them, was shown a mandatory notification at 72 hours, no end-of-impact
+notification at all, and a final report a month after a notification the RJC
+does not require. `packages/regulatory-data/test/country-configs-incident-reporting.test.ts`
+asserted 24 / 72 / 720 hours for every configuration, Portugal included, so the
+error was pinned by a test. The configuration's own comment had called the
+final report "a known approximation" since April, and quoted art. 44.º n.º 1 in
+quotation marks with words that are not in the decree ("30 dias úteis após a
+verificação da circunstância que pôs fim à situação de impacto significativo");
+the decree counts from the date of the end-of-impact NOTIFICATION.
+
+### Provisions the computation needs, beyond the five clocks
+
+| Fact | Article | Verbatim (official) | What it means for the product | Status |
+|---|---|---|---|---|
+| Who receives | RJC art. 2.º b); art. 15.º n.º 2 a) | "«Autoridade de cibersegurança competente», o Centro Nacional de Cibersegurança (CNCS), ou, quando aplicável, a autoridade nacional setorial de cibersegurança competente nos termos da alínea a) do n.º 2 do artigo 15.º, sem prejuízo das reservas de competência exclusiva de entidades públicas com responsabilidades em matéria de investigação criminal, de produção de informações e de ciberdefesa;" / "i) O Gabinete Nacional de Segurança (GNS), no que respeita aos serviços de confiança nas transações eletrónicas no mercado interno; ii) A Autoridade Nacional de Comunicações (ANACOM), no que respeita à matéria das comunicações eletrónicas e dos serviços postais;" | The act labels say "the CNCS, or the GNS or ANACOM in their sectors". | verified |
+| Channel | RJC art. 40.º n.º 6 | "As notificações devem ser submetidas na plataforma eletrónica referida no n.º 7 do artigo 8.º" | The entity files on the CNCS platform; Reglyze records the submission and sends nothing. | verified |
+| The mandatory acts | RJC art. 41.º n.º 1 | "Por cada incidente sujeito a notificação obrigatória, as entidades essenciais, importantes e públicas relevantes submetem: a) Uma notificação inicial, nos termos do artigo 42.º; b) Uma notificação de fim do impacto significativo, nos termos do artigo 43.º; c) Um relatório final, nos termos dos artigos 44.º" | Three mandatory acts walk the step machine; the 72-hour update and the interim report are not in the list. | verified |
+| An interim report can be requested | RJC art. 41.º n.º 3 | "Sem prejuízo do disposto no número anterior, as entidades essenciais, importantes e públicas relevantes podem ainda ser notificadas para apresentar um relatório intercalar, nos termos do artigo 44.º" | The interim report is a conditional stage with no clock until the authority asks. | verified |
+| The final report needs both instants | RJC art. 44.º n.º 2 a) and b) | "a) Data e hora em que o incidente assumiu o impacto significativo; b) Data e hora em que o incidente perdeu o impacto significativo;" | Why the incident records the end of the significant impact. | verified |
+| "Resolvido" is not "fim do impacto" | RJC art. 41.º n.º 2 read with art. 44.º n.º 3 | (the two quotes in the section above) | Art. 44.º n.º 3 has an incident still "em curso" after its significant impact ended, so the decree keeps resolution and end of impact apart. The two-hour relief is keyed on a separate resolution instant measured from detection, never inferred from the end of impact, which can come first and would grant the relief too often. | verified (reading) |
+| No trust-service-provider derogation | RJC arts. 40.º to 44.º; full-text search of the PDF | (absence) | The directive gives trust service providers 24 hours instead of 72 (art. 23(4), subparagraph after point (e)). The RJC needs no such rule, since every entity's initial notification is already due within 24 hours, and has none: the PDF mentions "serviços de confiança" only in the definitions, the scope (art. 3.º), the essential-entity list (art. 6.º), art. 15.º and Anexo I. The configuration carries `null`, and the incident page and the MCP tool no longer say "24 h instead of 72 h" for Portugal. | verified (absence established by full-text search of the PDF) |
+
+### What the product does with it
+
+- **Data:** `INCIDENT_REPORTING_PT.notificationModel` in
+  `packages/regulatory-data/src/country-configs/incident-reporting.ts` lists the
+  four timed acts in order, each with what starts its clock (the awareness
+  anchor, the end of impact, or the submission of another act), its period
+  (hours, or working days of the Portuguese calendar), whether it is mandatory
+  or sent only when necessary, and which acts remain due when the incident is
+  resolved within two hours of detection. The interim report is the
+  configuration's single conditional stage. A country without a
+  `notificationModel` keeps the directive's clocks, computed by the same
+  function with the same arguments as before.
+- **Engine:** `apps/core-api/src/lib/incident-acts.ts` reads that model without
+  knowing the country. The routes, the reminders, the MSP portfolio feed, the
+  incident page, the MCP tool and the tabletop facilitator read the engine or
+  the model, never a hard-coded 24 / 72 / 720.
+- **Generated documents:** `describeNotificationModel` words the same model in
+  Portuguese for the legal frame spliced into every Portuguese document
+  (`packages/regulatory-data/src/doc-corpus/legal-frames.ts`) and for the
+  QNRCS incident-plan prompt (`apps/ai-service/src/lib/native-doc-prompts.ts`),
+  which until then only said "remit to the notification obligations" and let
+  the model supply the directive's clocks. The deterministic template used
+  when AI generation fails (`apps/core-api/src/lib/document-generator.ts`)
+  builds its incident tables from the same model.
+- **Record:** `incidents.impact_ended_at` and `incidents.resolved_at`
+  (migration 0109), and the report type `end_of_impact`.
+- **Readings chosen so that no date shown is later than the law allows:** hour
+  periods run from the recorded instant (Código Civil art. 279.º b) and d),
+  next section, would allow more); before the end-of-impact notification is
+  submitted, the final report is shown as a ceiling computed as if that
+  notification were sent at its own deadline, exactly as the engine already
+  treats the directive's final report before the notification.
+
+### Not read, therefore not asserted
+
+- The CNCS technical instruction on the format and procedure of notification
+  and the incident taxonomy (RJC art. 41.º n.º 4) was not read; nothing in the
+  product depends on it.
+- The "Aviso CNCS sobre notificação de incidentes graves" of 4 December 2025,
+  recorded in `packages/regulatory-data/src/nis2-mappings/soft-law/pt.yaml` and
+  referenced by `INCIDENT_REPORTING_PT.softLawRefs`, was not found. Its entry
+  cites "RJC art. 32.º" for incident notification, and RJC art. 32.º is the
+  *ponto de contacto permanente*; the notification articles are 40.º to 44.º.
+  It stays a lead to check until someone reads the notice itself.
+
+## Working days for the RJC final report: Código do Trabalho art. 234.º, Código Civil art. 279.º, CPA art. 87.º (read 2026-10-28)
+
+<!-- meta: theme=incident; type=reference; date=2026-10-28; surfaces=data; guard=packages/regulatory-data/test/pt-working-days.test.ts -->
+
+The RJC counts the final report in *dias úteis* (art. 44.º n.º 1) and does not
+say how to count them. The three texts below do.
+
+- **Código do Trabalho** (Lei n.º 7/2009, de 12 de fevereiro), art. 234.º
+  "Feriados obrigatórios":
+  - n.º 1 in the wording of **Lei n.º 8/2016, de 1 de abril**, art. 2.º,
+    Diário da República, 1.ª série, N.º 64, 1 April 2016, p. 1112:
+    https://files.diariodarepublica.pt/1s/2016/04/06400/0111201112.pdf (fetched
+    with `curl`, read with `pdftotext`). Its art. 3.º: "A presente lei entra em
+    vigor no dia seguinte ao da sua publicação."
+  - n.º 2 and n.º 3, and the absence of any later change, read on the DRE
+    consolidated version,
+    https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475-73982045
+    (rendered with Playwright). It records the article as "Alterado pelo/a Artigo 2.º do/a Lei
+    n.º 8/2016 ... em vigor a partir de 2016-04-02" and, before that, by Lei
+    n.º 23/2012, and lists no later change to this article. The page itself warns that the
+    consolidated version "não tem valor legal".
+- **Código Civil**, art. 279.º "Cômputo do termo", DRE consolidated version,
+  https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1966-34509075-49784875
+  (rendered with Playwright; no change to the article recorded).
+- **Código do Procedimento Administrativo** (Decreto-Lei n.º 4/2015, de 7 de
+  janeiro), art. 87.º "Contagem dos prazos", Diário da República, 1.ª série,
+  N.º 4, 7 January 2015, pp. 69 and 70 of
+  https://files.dre.pt/1s/2015/01/00400/0005000087.pdf (the original
+  publication; later amendments of the CPA were not checked for this article).
+- **Retrieved and read:** 2026-10-28.
+
+| Fact | Provision | Verbatim quote (Portuguese) | English gloss | Status |
+|---|---|---|---|---|
+| The thirteen national public holidays | Código do Trabalho art. 234.º n.º 1 (Lei n.º 8/2016, art. 2.º) | "São feriados obrigatórios os dias 1 de janeiro, de Sexta-Feira Santa, de Domingo de Páscoa, 25 de abril, 1 de maio, de Corpo de Deus, 10 de junho, 15 de agosto, 5 de outubro, 1 de novembro, 1, 8 e 25 de dezembro." | Ten fixed dates and three movable feasts: Good Friday, Easter Sunday and Corpus Christi. | verified |
+| Good Friday may move locally | Código do Trabalho art. 234.º n.º 2 | "O feriado de Sexta-Feira Santa pode ser observado em outro dia com significado local no período da Páscoa." | A local observance; the national calendar keeps Good Friday. | verified (consolidated text) |
+| A specific law may move a holiday to the Monday | Código do Trabalho art. 234.º n.º 3 | "Mediante legislação específica, determinados feriados obrigatórios podem ser observados na segunda-feira da semana subsequente." | No such law is encoded. One would require the calendar to be updated. | verified (consolidated text) |
+| The day of the event is not counted | Código Civil art. 279.º b) | "Na contagem de qualquer prazo não se inclui o dia, nem a hora, se o prazo for de horas, em que ocorrer o evento a partir do qual o prazo começa a correr;" | The 30 working days start the day after the end-of-impact notification. | verified (consolidated text) |
+| 24 hours is a one-day period | Código Civil art. 279.º d) | "É havido, respectivamente, como prazo de uma ou duas semanas o designado por oito ou quinze dias, sendo havido como prazo de um ou dois dias o designado por 24 ou 48 horas;" | Read with b), this could carry a 24-hour act to the end of the next day. The product keeps the recorded instant plus 24 hours, which is never later. | verified (consolidated text) |
+| Administrative counting | CPA art. 87.º b), c), f), g) | "b) Não se inclui na contagem o dia em que ocorra o evento a partir do qual o prazo começa a correr; c) O prazo fixado suspende-se nos sábados, domingos e feriados; ... f) O termo do prazo que coincida com dia em que o serviço perante o qual deva ser praticado o ato não esteja aberto ao público, ou não funcione durante o período normal, transfere -se para o primeiro dia útil seguinte; g) Considera-se que o serviço não está aberto ao público quando for concedida tolerância de ponto, total ou parcial." | Same exclusion of the first day; Saturdays, Sundays and holidays are not counted. Where the CPA applies, a *tolerância de ponto* on the last day moves the end of the period later; the product does not apply that move. | verified (original publication) |
+
+**What the product computes**
+(`packages/regulatory-data/src/calendars/working-days.ts`):
+
+- A working day is Monday to Friday and not one of the thirteen days of
+  art. 234.º n.º 1.
+- The movable feasts are the ecclesiastical computation, which the law names
+  and does not define: Easter Sunday by the Gregorian computus, Good Friday two
+  days before it, Corpus Christi sixty days after it (the Thursday after
+  Trinity Sunday). Cross-check for 2026 against a government page, not the law:
+  the Embassy of Portugal in Ankara lists "03/04/2026 Sexta-feira Santa" and
+  "04/06/2026 Corpo de Deus"
+  (https://ancara.embaixadaportugal.mne.gov.pt/pt/a-embaixada/calendario-de-feriados).
+- The day of the notification is excluded and the period ends at 24:00 of the
+  thirtieth working day. The calendar date is taken in the earliest of the two
+  Portuguese time zones and the end of the day in the latest one to close
+  (Atlantic/Azores and Europe/Lisbon), so an entity in the Azores and one on the
+  mainland never see a later date than their own clock would give them.
+- Counted as working days, so that the date shown is never later than the law
+  allows: Carnival Tuesday, which art. 234.º n.º 1 does not list, municipal
+  holidays, the regional holidays of the Azores and Madeira, and days of
+  *tolerância de ponto*.
+
+## Incident routing by sector: the GNS, ANACOM and the CNCS platform (read 2026-10-29)
+
+<!-- meta: theme=incident; type=reference,surface-inconsistency; date=2026-10-29; surfaces=data,ui,mcp,doc-gen,prompt; guard=packages/regulatory-data/test/incident-recipients.test.ts,packages/regulatory-data/test/incident-recipient-reads.test.ts,apps/core-api/test/incident-recipients-routes.test.ts -->
+
+The row "Who receives" of the section on the RJC's incident regime (art. 2.º b)
+with art. 15.º n.º 2 a)) was recorded on 2026-10-28 and reached the act labels
+only. The configuration had no sector authority, so every surface that names a
+recipient named the CNCS, a postal operator included. Same official PDF
+(https://files.diariodarepublica.pt/1s/2025/12/23400/0000400068.pdf), read again
+on 2026-10-29 for what routing needs beyond the definition; PDF pages: art. 8.º
+pp. 17-18; art. 15.º p. 21; art. 40.º pp. 39-40; Anexo I p. 63; Anexo II p. 64.
+
+| Fact | Article | Verbatim (official) | What it means for the product | Status |
+|---|---|---|---|---|
+| The recipient is the competent cybersecurity authority | art. 40.º n.º 1 | "As entidades essenciais, importantes e públicas relevantes notificam qualquer incidente significativo à autoridade de cibersegurança competente." | Whoever art. 2.º b) designates for the entity's matter receives the notification: the CNCS, or the GNS or ANACOM in theirs. | verified |
+| One channel, whichever authority receives | art. 40.º n.º 6; art. 8.º n.º 1 | "As notificações devem ser submetidas na plataforma eletrónica referida no n.º 7 do artigo 8.º" / "As entidades previstas no artigo 3.º identificam-se em plataforma eletrónica disponibilizada pelo CNCS" | A postal operator notifies ANACOM on the CNCS platform. The channel of every Portuguese recipient is the CNCS's; no URL of ANACOM or of the GNS is asserted. | verified |
+| Notifying several authorities at once is a possibility, not a duty | art. 40.º n.º 7 | "Às entidades essenciais, importantes e públicas relevantes é assegurada a possibilidade de notificar um incidente, simultaneamente, à autoridade de cibersegurança competente, às autoridades especiais de cibersegurança, bem como às entidades previstas no n.º 5, através da plataforma prevista no n.º 7 do artigo 8.º, nos termos a definir por protocolo outorgado entre as referidas autoridades." | No parallel recipient is modelled: the special authorities of art. 15.º n.º 2 b) may be notified through the platform, and the decree does not require it. | verified |
+| The postal sector is one entity type, all of it postal services | Anexo II, sector 1 | "Serviços postais e de estafeta" / "Prestadores de serviços postais na aceção da Lei n.º 17/2012, de 26 de abril, na sua redação atual, incluindo prestadores de serviços de estafeta" | ANACOM's "serviços postais" (art. 15.º n.º 2 a) ii)) cover the whole sector, so `postal_and_courier` routes to ANACOM automatically. | verified (reading) |
+| Electronic communications and trust services are three of the nine digital-infrastructure entity types | Anexo I, sector 8 | "Prestadores de serviços de confiança" / "Fornecedores de redes públicas de comunicações eletrónicas" / "Prestadores de serviços de comunicações eletrónicas acessíveis ao público" (beside IXPs, DNS providers, TLD registries, cloud, data centres and CDNs) | An organisation records one sector and no entity type, so the GNS and ANACOM are conditional notes for `digital_infrastructure`, never a route. | verified |
+
+What the product does with it: `INCIDENT_REPORTING_PT.sectorCompetentAuthorities`
+carries three entries that `receivesNotification` (ANACOM for postal services,
+automatic; ANACOM for electronic communications and the GNS for trust services,
+both conditional), and `resolveIncidentRecipients` in
+`packages/regulatory-data/src/country-configs/incident-recipients.ts` reads them
+for the incident page and API, the reminder e-mail, the MSP feed, the document
+template, the tabletop facilitator and the MCP tool. The national recipient's
+legal basis is stated as art. 40.º n.º 1 and art. 2.º b), its channel as
+art. 40.º n.º 6.

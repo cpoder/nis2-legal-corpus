@@ -243,3 +243,28 @@ this index is ABSENT from the block; enriching = verifying here first.
 
 Resolves the two gaps noted in the corpus entry of 2026-08-25 (§ 32 deadlines,
 § 62): the DE corpus block and the lint rules can now carry them.
+
+## Incident stages as § 32 BSIG names them (verified 2026-10-28)
+
+<!-- meta: theme=incident; type=reference,wrong-citation; date=2026-10-28; surfaces=data,ui,marketing,prompt; guard=packages/regulatory-data/test/incident-stage-names-statutes.test.ts -->
+
+Read on gesetze-im-internet.de, `https://www.gesetze-im-internet.de/bsig_2025/__32.html`,
+retrieved 2026-10-28. The product called the 24-hour stage "Frühwarnung" (the
+directive's German wording, and the Austrian NISG's) and the last one
+"Abschlussbericht". The BSIG says otherwise.
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| Recipient: a joint reporting office of the BSI and the BBK | § 32 Abs. 1 Satz 1 | "folgende Informationen an eine vom Bundesamt und dem Bundesamt für Bevölkerungsschutz und Katastrophenhilfe eingerichtete gemeinsame Meldestelle zu melden" | ✅ |
+| 24 h: "frühe Erstmeldung" | § 32 Abs. 1 Nr. 1 | "unverzüglich, spätestens jedoch innerhalb von 24 Stunden nach Kenntniserlangung von einem erheblichen Sicherheitsvorfall, eine frühe Erstmeldung" | ✅ |
+| 72 h: "Meldung über diesen Sicherheitsvorfall" | § 32 Abs. 1 Nr. 2 | "unverzüglich, spätestens jedoch innerhalb von 72 Stunden nach Kenntniserlangung von einem erheblichen Sicherheitsvorfall, eine Meldung über diesen Sicherheitsvorfall" | ✅ |
+| On request: "Zwischenmeldung" | § 32 Abs. 1 Nr. 3 | "auf Ersuchen des Bundesamtes eine Zwischenmeldung über relevante Statusaktualisierungen" | ✅ |
+| One month: "Abschlussmeldung" | § 32 Abs. 1 Nr. 4 | "spätestens einen Monat nach Übermittlung der Meldung des Sicherheitsvorfalls gemäß Nummer 2, vorbehaltlich Absatz 2, eine Abschlussmeldung" | ✅ |
+| Still running: "Fortschrittsmeldung"; the Abschlussmeldung after final handling, with no period | § 32 Abs. 2 | "legt die betreffende Einrichtung statt einer Abschlussmeldung zu diesem Zeitpunkt eine Fortschrittsmeldung vor. Die Abschlussmeldung ist dem Bundesamt nach abschließender Bearbeitung des Sicherheitsvorfalls durch die betreffende Einrichtung vorzulegen." | ✅ |
+| The duty starts with the reporting channel | § 32 Abs. 1 Satz 2 | "Die Verpflichtung nach Satz 1 gilt frühestens ab Einrichtung des Meldewegs." | ✅ |
+
+What the product does with it (2026-10-28): the DE incident config, the German
+fiche and the `/de` pages use these names. § 32 Abs. 2 fixes no period for the
+Abschlussmeldung after a Fortschrittsmeldung; Reglyze keeps counting the
+directive's month (art. 23(4)(e)) and says so in the label. The app's generic
+German UI keeps "Frühwarnung", which is right for Austria.

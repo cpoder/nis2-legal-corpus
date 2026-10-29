@@ -84,6 +84,7 @@ note is not the problem, it is the report of the problem.
 | `law-misread` | The text was read wrongly | CSIRT NASK instead of the CSIRT sektorowy |
 | `deadline-model` | Wrong anchor, unit or number of acts | Three acts out of five; `detectedAt + 30 days` |
 | `scope-error` | Error about who is concerned | The ENS presented as applying to every private SME |
+| `overclaim` | The product says more than the source: an obligation, a deadline or a scope stated more broadly or more firmly than the text or the authority states it | Every Belgian essential entity told to certify CyFun Essential by 18 April 2027, where the CCB scopes it to the entities that must meet that level |
 | `status-error` | Wrong legislative stage | Austria "Transposed & Enforced" before entry into force |
 | `surface-inconsistency` | The data is right, the display lies | Badge and meta contradicting the neighbouring paragraph |
 | `i18n` | Language or locale defect | Task detail generated in English for a Polish customer |
