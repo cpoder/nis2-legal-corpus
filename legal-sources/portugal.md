@@ -518,6 +518,46 @@ art. 2.º; *large* means above the medium-enterprise ceilings.
   26.º, 31.º, 32.º e 83.º do referido regime." Whether the Regulamento restates
   them under its own arts. 8.º and 10.º was not checked.
 
+## Governance and training: RJC arts. 25.º, 27.º n.º 1 f) and 31.º, DL art. 10.º n.º 2 (verified 2026-10-29)
+
+<!-- meta: theme=governance; type=reference; date=2026-10-29; surfaces=data,doc-gen; guard=none -->
+
+- **Primary text read:** the PDF of the Diário da República recorded at the top
+  of this file, https://files.diariodarepublica.pt/1s/2025/12/23400/0000400068.pdf
+  (65 pages, sha256 `9f6e95c33144fd70cbe1cac5377d374ba0fc7df8d06e51b07e123a11171b1108`;
+  the file carries no digital signature), `pdftotext`. RJC art. 25.º is on PDF
+  page 31, art. 27.º on page 32, art. 31.º on pages 34 and 35; DL art. 10.º on
+  page 7.
+- **Amendments:** the DRE page « Análise Jurídica - Modificações » of DL
+  125/2025, rendered with Playwright on 2026-10-29,
+  https://diariodarepublica.pt/dr/analise-juridica/modificacoes/decreto-lei/125-2025-962603401,
+  reads « Em vigor » and « MODIFICAÇÕES PRODUZIDAS (6 associações) », the acts
+  it changes; it lists no act that changes DL 125/2025.
+- **Retrieved and read:** 2026-10-29.
+
+The RJC does not copy art. 20(2) of the directive. The management bodies
+**ensure** that cybersecurity training actions take place with a regular
+periodicity (art. 25.º n.º 1 d)); the training of the holders of the top
+management bodies is one of the security measures (art. 27.º n.º 1 f)), whose
+effect is deferred (DL art. 10.º n.º 2). The three lists of offences (arts.
+61.º to 63.º) do not name art. 25.º.
+
+| Fact | Article | Verbatim quote (Portuguese) | English gloss | Status |
+|---|---|---|---|---|
+| The bodies' four duties; **(d) is the training duty**: they ensure that training actions take place, with a regular periodicity | RJC art. 25.º n.º 1 | "1 — Os órgãos de gestão, direção e administração das entidades essenciais e importantes: a) Aprovam as medidas de gestão dos riscos de cibersegurança, adotadas em conformidade com o artigo 27.º; b) Supervisionam a aplicação das medidas de gestão dos riscos de cibersegurança; c) Asseguram o cumprimento das medidas de supervisão e de execução, a que se refere o capítulo vi; d) Asseguram a realização, com uma periodicidade regular, de ações de formação em cibersegurança, de forma a promover uma cultura de gestão interna sobre práticas de gestão dos riscos de cibersegurança." | The management, direction and administration bodies of essential and important entities (a) approve the risk-management measures adopted under art. 27, (b) supervise their application, (c) ensure compliance with the supervision and enforcement measures of chapter VI, (d) ensure that cybersecurity training actions are carried out with a regular periodicity, to promote an internal management culture on cyber risk-management practices. | verified (DR, 1.ª série, n.º 234, 2025-12-04, 2026-10-29) |
+| The holders' liability, and no delegation except to one of them | RJC art. 25.º n.os 2 and 3 | "2 — Os titulares dos órgãos de gestão, direção e administração podem responder por ação ou omissão, com dolo ou culpa grave, nos termos da legislação aplicável, pelas infrações previstas no presente decreto-lei. 3 — A responsabilidade e poderes necessários para o cumprimento das obrigações referidas no presente artigo não podem ser delegados, exceto num dos titulares dos órgãos de gestão, direção e administração." | The holders of these bodies may answer, for wilful or grossly negligent acts or omissions, for the infringements of the decree-law; the responsibility and powers for these obligations cannot be delegated, except to one of the holders of these bodies. | verified (DR, 1.ª série, n.º 234, 2025-12-04, 2026-10-29) |
+| The training of the holders of the top management bodies, and of workers, is one of the cybersecurity measures | RJC art. 27.º n.º 1 f) | "f) Práticas básicas de ciber-higiene e formação em cibersegurança, incluindo os titulares de órgãos máximos de gestão e trabalhadores;" | Basic cyber-hygiene practices and cybersecurity training, including the holders of the top management bodies and workers. | verified (DR, 1.ª série, n.º 234, 2025-12-04, 2026-10-29) |
+| ⚠️ **Deferred:** art. 27.º n.os 1 and 2 take effect 24 months after the publication of the regulations of arts. 8, 14, 26, 31, 32 and 83; art. 25.º is not in the list | DL art. 10.º n.º 2 | "2 — O disposto nos n.os 1 e 2 do artigo 27.º, nos artigos 28.º a 30.º, no artigo 33.º e nas alíneas b), c) e f) do n.º 1 do artigo 61.º do regime jurídico da cibersegurança, aprovado em anexo ao presente decreto-lei, produz efeitos 24 meses após a publicação da regulamentação referida nos artigos 8.º, 14.º, 26.º, 31.º, 32.º e 83.º do referido regime." | Art. 27(1) and (2), arts. 28 to 30, art. 33 and art. 61(1)(b), (c) and (f) of the RJC take effect 24 months after the publication of the regulations referred to in its arts. 8, 14, 26, 31, 32 and 83. The date is not computed here. | verified (DR, 1.ª série, n.º 234, 2025-12-04, 2026-10-29) |
+| The cybersecurity officer proposes the training actions of art. 25.º n.º 1 d) | RJC art. 31.º n.º 2 d) | "d) Contribuir para a promoção de uma cultura de cibersegurança na entidade, propondo, nomeadamente, as ações de formação em cibersegurança previstas na alínea d) do n.º 1 do artigo 25.º;" | Contribute to a cybersecurity culture in the entity, in particular by proposing the training actions of art. 25(1)(d). | verified (DR, 1.ª série, n.º 234, 2025-12-04, 2026-10-29) |
+
+**For a training record.** A Portuguese attestation cites art. 25.º, n.º 1,
+alínea d), of the RJC, approved in the annex to Decreto-Lei n.º 125/2025. Its
+words are that the bodies ensure that training actions take place with a
+regular periodicity; they do not say that each member attends. The members
+appear in art. 27.º n.º 1 f), "incluindo os titulares de órgãos máximos de
+gestão", which DL art. 10.º n.º 2 defers. No provision read sets an interval, a duration, a certificate
+or a provider.
+
 ## Incident notification under the RJC: five acts, not the directive's three (read 2026-10-28)
 
 <!-- meta: theme=incident; type=deadline-model; date=2026-10-28; surfaces=marketing,ui,data; guard=apps/web/test/pt-incident-timeline.test.ts -->
@@ -747,3 +787,83 @@ for the incident page and API, the reminder e-mail, the MSP feed, the document
 template, the tabletop facilitator and the MCP tool. The national recipient's
 legal basis is stated as art. 40.º n.º 1 and art. 2.º b), its channel as
 art. 40.º n.º 6.
+
+## The getting-started page still described the directive's model (fixed 2026-10-29)
+
+<!-- meta: theme=incident; type=surface-inconsistency,deadline-model; date=2026-10-29; surfaces=marketing,i18n; guard=apps/web/test/nis2-start-incident-terms.test.ts -->
+
+The correction of 2026-10-28 (arts. 41.º to 44.º, above) reached the incident
+configuration and `/pt/notificacao-incidente-cncs`. It did not reach the
+incident line of the NIS2 getting-started page, a page shared by every locale,
+whose Portuguese text told a reader under the RJC: « alerta precoce em 24 h,
+notificação completa em 72 h, relatório final em um mês ». That is the
+directive's model, and not even its Portuguese wording: the Portuguese version
+of art. 23(4)(a) says « alerta rápido » (EUR-Lex, read 2026-10-29).
+
+The line now states the RJC's acts with the verbatim above:
+- a « notificação inicial » up to 24 hours after the entity concludes that a
+  significant incident exists or may exist;
+- an update up to 72 hours, when necessary;
+- the « notificação do fim de impacto significativo » within 24 hours of the
+  end of the impact;
+- the final report within 30 working days of that notification.
+
+The same change gave the Italian, Polish, Croatian and Slovenian lines their
+own statutes' terms. The languages read in several member states keep the
+directive's terms.
+
+## Defect: an association and a Brazilian body were named as Portugal's authority (found 2026-11-05)
+
+<!-- meta: theme=governance; type=fabrication,surface-inconsistency; date=2026-11-05; surfaces=marketing,test; guard=apps/web/test/pt-authority-is-the-cncs.test.ts -->
+
+- **The fact, already in this file** (first section, fact table): "o Centro
+  Nacional de Cibersegurança (CNCS) reforça a sua função de autoridade nacional
+  de cibersegurança" (Decreto-Lei n.º 125/2025, preâmbulo). The CNCS is
+  Portugal's national cybersecurity authority.
+- **What three public pages said**, in up to five languages (17 lines):
+  - `/nis2-training`: content aligned with "national transpositions (ANSSI, BSI,
+    ACN, APDC)", and a sentence about curricula that regulators impose, with the
+    example "ANPD/APDC for Portuguese essential entities".
+  - `/nis2-msp`: "National authorities (ANSSI, BSI, ACN, CNCS, APDC) are now
+    asking MSPs to produce per-client evidence on demand", and the same list
+    for the authorities "wired in from day one".
+  - `/nis2-article-20-training`: "ANSSI in France, BSI in Germany, ACN in Italy,
+    APDC in Portugal".
+- **What those names are.** APDC is the Associação Portuguesa para o
+  Desenvolvimento das Comunicações, a trade association. ANPD is Brazil's
+  data-protection authority; nothing Portuguese bears that name.
+
+**How it got there.** `docs/research/msp-interviews-2026-05.md` lists the APDC
+member directory as a place to look for Portuguese interviewees. The acronym was
+later copied into page copy beside ANSSI, BSI and ACN, as if it were their
+Portuguese counterpart. No prompt, no service and no generated document carries
+either name: the search covered `packages/prompts`, `packages/regulatory-data`,
+every service and the training decks.
+
+**Corrected.** The lists name the CNCS; the invented Portuguese example is
+removed from the sentence about curricula, which keeps its two other examples.
+`apps/web/test/pt-authority-is-the-cncs.test.ts` refuses ANPD anywhere on the
+site and APDC anywhere it is not named as a member network. Run against the
+pages as they stood, it lists the 17 lines.
+
+**Left open.**
+
+- The sentence about curricula keeps "ANSSI for OIVs/OSEs in France" and
+  "BaFin/BSI for German finance" as examples of regulators that mandate a
+  curriculum. Neither is recorded in this corpus.
+- The claims those lists support ("are now asking MSPs to produce per-client
+  evidence on demand", "have begun publishing inspection criteria") are
+  marketing statements with no record here either.
+
+
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=reference; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+The engine read the directive's sentences. Art. 3.º n.º 3 puts every level in
+scope with no size condition, and art. 7.º has a third class the engine does not
+have. Each verdict now says that, and says what it stands for: essential at State
+level, which can overstate, and important at regional and local level, where the
+public-administration configuration gives a municipality Grupo A. Scoping a
+Portuguese public body is the MyCiber procedure of art. 8.º, not this check.

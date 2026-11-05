@@ -32,7 +32,7 @@ clause, does not. Cite it as Art. 32 prescribes.
 
 ## Scope and classification: the directive's size test, by reference
 
-<!-- meta: theme=scoping; type=reference; date=2026-10-28; surfaces=data,ui,marketing; guard=none -->
+<!-- meta: theme=scoping; type=reference; date=2026-10-29; surfaces=data,ui,marketing; guard=apps/web/test/lu-diagnostic.test.ts -->
 
 The size test is the directive's, applied by reference to Recommendation
 2003/361/CE. Nothing national departs from it, unlike Slovenia's cumulative test:
@@ -48,6 +48,13 @@ the deterministic scoping engine therefore needs no Luxembourg rule.
 | Sectoral EU acts with equivalent effect | Art. 1(8) | "[…] lorsque ces exigences ont un effet au moins équivalent à celui des obligations prévues par la présente loi, les dispositions pertinentes de la présente loi, y compris celles relatives à la supervision et à l’exécution prévues au chapitre 6, ne sont pas applicables auxdites entités." | verified |
 | Essential: large Annex I entities | Art. 11(1) 1° | "les entités d’un type visé à l’annexe I qui dépassent les plafonds applicables aux moyennes entreprises prévus à l’article 2, paragraphe 1er, de l’annexe de la recommandation 2003/361/CE […]" | verified |
 | Essential regardless of size | Art. 11(1) 2° | "les prestataires de services de confiance qualifiés et les registres de noms de domaine de premier niveau ainsi que les fournisseurs de services DNS, quelle que soit leur taille ;" | verified |
+| Essential: medium-sized public e-communications providers | Art. 11(1) 3° | "les fournisseurs de réseaux de communications électroniques publics ou de services de communications électroniques accessibles au public qui constituent des moyennes entreprises en vertu de l’article 2 de l’annexe de la recommandation 2003/361/CE de la Commission des Communautés européennes du 6 mai 2003 concernant la définition des micro, petites et moyennes entreprises ;" | verified (gazette PDF, 2026-10-29) |
+| Essential: public administration entities | Art. 11(1) 4° | "les entités de l’administration publique visées à l’article 1er, paragraphe 2, point 6° ;" | verified (gazette PDF, 2026-10-29) |
+| Essential: entities the authority identifies as such | Art. 11(1) 5° | "toute autre entité d’un type visé à l’annexe I ou II qui est identifiée par le biais d’une décision de l’autorité compétente en tant qu’entité essentielle en vertu de l’article 1er, paragraphe 2, points 2° à 5° ;" | verified (gazette PDF, 2026-10-29) |
+| Essential: critical entities | Art. 11(1) 6° | "les entités recensées en tant qu’entités critiques en vertu de la loi du 5 mai 2026 sur la résilience des entités critiques, visées à l’article 1er, paragraphe 3 ;" | verified (gazette PDF, 2026-10-29) |
+| Public administration in scope at any size, with no level named | Art. 1(2) 6° | "l’entité est une entité de l’administration publique telle que définie à l’article 2, point 34°." | verified (gazette PDF, 2026-10-29) |
+| The definition: three exclusions, four cumulative criteria | Art. 2, 34° | "« entité de l’administration publique » : toute entité, à l’exclusion des cours et tribunaux, de la Chambre des députés et de la Banque centrale du Luxembourg, qui satisfait aux critères suivants :" a) "elle a été créée pour satisfaire des besoins d’intérêt général et n’a pas de caractère industriel ou commercial ;" b) "elle est dotée de la personnalité juridique ou est juridiquement habilitée à agir pour le compte d’une autre entité dotée de la personnalité juridique ;" c) "elle est financée majoritairement par l’État, les autorités régionales ou d’autres organismes de droit public, sa gestion est soumise à un contrôle de la part de ces autorités ou organismes, ou son organe d’administration, de direction ou de surveillance est composé de membres dont plus de la moitié sont désignés par l’État, les autorités régionales ou d’autres organismes de droit public ;" d) "elle a le pouvoir d’adresser à des personnes physiques ou morales des décisions administratives ou réglementaires affectant leurs droits en matière de mouvements transfrontières des personnes, des biens, des services ou des capitaux ;" | verified (gazette PDF, 2026-10-29) |
+| Reading: every public administration entity is essential, whatever its level | Art. 1(2) 6° and Art. 11(1) 4°, against Dir. Art. 2(2)(f) as quoted in `eu.md` | (no new quote; reading of the quoted texts) | The directive’s size-independent case covers central government and, on a risk-based assessment, the regional level. The Luxembourg act names no level: an entity that meets the four criteria of Art. 2, 34° is in scope at any size and essential. Whether a given commune or communal body meets criteria a) to d) is not settled by the act’s text, so a self-check can say what follows from meeting them, not that they are met. | reading of verified texts |
 | Former operators of essential services stay essential | Art. 11(1) 7° | "les entités que les autorités compétentes ont identifiées avant l’entrée en vigueur de la présente loi comme des opérateurs de services essentiels conformément à la loi du 28 mai 2019 […]" | verified |
 | ... with a later cut-off than the directive's option | Dir. Art. 3(1)(g), quoted in `eu.md`: "if the Member State so provides, entities which that Member State identified before 16 January 2023 as operators of essential services […]" | Luxembourg uses the option and moves the cut-off to the act's entry into force (2026-05-10) | verified (both texts read) |
 | Everyone else in the annexes is important | Art. 11(2) | "Aux fins de la présente loi, les entités d’un type visé à l’annexe I ou II qui ne constituent pas des entités essentielles en vertu du paragraphe 1er du présent article sont considérées comme des entités importantes." | verified |
@@ -102,7 +109,7 @@ registration is sanctioned under Art. 25 (below), not Art. 26.
 
 ## Risk-management measures, the annual deliverables, and why there is no national baseline
 
-<!-- meta: theme=framework,governance,supply-chain; type=reference; date=2026-10-28; surfaces=data,ui,marketing,prompt; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts -->
+<!-- meta: theme=framework,governance,supply-chain; type=reference; date=2026-10-29; surfaces=data,ui,marketing,prompt; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts -->
 
 **Readiness verdict (2026-10-28): SUBSTRATE.** The act is in force, but no
 national technical baseline is adopted. Art. 12(2) lists ten measures in general
@@ -121,7 +128,8 @@ Austria do. Revisit when an ILR regulation under Art. 12(1) or 12(3) is publishe
 | **Essential entities NOTIFY their measures** (national) | Art. 12(3) | "Les mesures prises par les entités essentielles sur base des paragraphes 1er et 2 sont notifiées à l’autorité compétente. Les modalités de cette notification, le format et le délai, sont déterminées par l’autorité compétente concernée par voie de règlement ou de circulaire." | verified |
 | Corrective measures without undue delay | Art. 12(5) | "[…] lorsqu’une entité constate qu’elle ne se conforme pas aux mesures prévues au paragraphe 2, elle prenne, sans retard injustifié, toutes les mesures correctives nécessaires appropriées et proportionnées." | verified |
 | Management bodies | Art. 13(1) | "Les organes de direction des entités essentielles et importantes approuvent les mesures de gestion des risques en matière de cybersécurité prises par ces entités afin de se conformer à l’article 12, supervisent leur mise en œuvre et peuvent être tenus responsables de la violation dudit article par ces entités." | verified |
-| Training | Art. 13(2) | "Les membres des organes de direction des entités essentielles et importantes sont tenus de suivre régulièrement une formation et les entités essentielles et importantes offrent régulièrement une formation similaire aux membres de leur personnel […]" | verified |
+| Training: the members of the management bodies **regularly**, and the entities offer similar training to their staff regularly; no certificate, provider, duration or interval | Art. 13(2) | "(2) Les membres des organes de direction des entités essentielles et importantes sont tenus de suivre régulièrement une formation et les entités essentielles et importantes offrent régulièrement une formation similaire aux membres de leur personnel afin que ceux-ci acquièrent des connaissances et des compétences suffisantes pour déterminer les risques et évaluer les pratiques de gestion des risques en matière de cybersécurité et leur impact sur les services fournis par l’entité." | verified (Mémorial A n° 225, 2026-10-29) |
+| ⚠️ **Exit:** Arts. 12 to 15 and chapter 6 do not apply to the intelligence service, the defence services and the army | Art. 1(6) | "(6) Les articles 12, 13, 14 et 15 ainsi que le chapitre 6 ne s’appliquent pas : 1° au Service de renseignement de l’État visé par la loi modifiée du 5 juillet 2016 portant réorganisation du Service de renseignement de l’État ; 2° aux services du ministre ayant la Défense dans ses attributions ; 3° à l’Armée luxembourgeoise visée par la loi modifiée du 7 août 2023 sur l’organisation de l’Armée luxembourgeoise." | verified (Mémorial A n° 225, 2026-10-29) |
 | What the ILR expects every year from essential entities | ILR, "Security Measures" (EN) | "Essential entities are subject to ex ante and ex post supervision and must submit annually […]: Their description of the measures in place […] An analysis of the main cyber risk scenarios […] A multi-annual action plan […]" | verified |
 | Important entities do not file them | same page | "Important entities are subject to ex post supervision and are exempt from the regular submission of these deliverables, unless there is evidence, indications, or information suggesting that they are not complying with the NIS 2 Act." | verified |
 | The scenario analysis is not the risk analysis | same page, note 2 | "It does not exempt the entity from conducting its own risk analysis, in accordance with Article 12 of the NIS 2 Act, to identify and address all risks affecting the security of its networks and information systems." | verified |
@@ -130,6 +138,15 @@ Austria do. Revisit when an ILR regulation under Art. 12(1) or 12(3) is publishe
 | Extended to 2026-08-31, templates published | ILR news, 2026-08-03 | "[…] l’Institut luxembourgeois de régulation a décidé de prolonger la date initiale du 6 août 2026 jusqu’au 31 août 2026 !" ; "Les modèles sont proposés à titre de référence, pour accompagner les entités concernées dans leur préparation. Les échéances et les modalités techniques applicables sont précisées par les règlements de l’ILR." | verified |
 | Consultation CP/N26/1 closed, draft still undated | ILR consultation page | opening 06/07/2026, closing 31/08/2026, status "Closed"; "le projet de règlement ILR/N26/X du DD-MM-YYYY portant sur la notification des mesures de sécurité prises par les entités essentielles." | verified |
 | No adopted NIS 2 regulation in sight | ILR pages "Security Measures", "Incident notification" and the NISS legal-framework list, 2026-10-28 | the "legal framework" blocks of the NISS pages list only three sanction decisions taken under 2022 and 2023 regulations; no NIS 2 regulation is listed | verified as to what was shown (the list is rendered by script; absence read, not proven) |
+
+Art. 13(2) and Art. 1(6) and (8) re-read 2026-10-29 in the signed Mémorial
+A n° 225 (the PDF of the statute section, same sha256). `lu.yaml` quotes Art.
+13(2) up to « aux membres de leur personnel » and marks the rest: « Les membres
+des organes de direction des entités essentielles et importantes sont tenus de
+suivre régulièrement une formation et les entités essentielles et importantes
+offrent régulièrement une formation similaire aux membres de leur personnel […] ».
+Art. 1(8) sets aside the relevant provisions where a sector-specific Union act
+imposes measures of at least equivalent effect: « (8) Lorsque des actes juridiques sectoriels de l’Union européenne imposent à des entités essentielles ou importantes d’adopter des mesures de gestion des risques en matière de cybersécurité ou de notifier des incidents importants, et lorsque ces exigences ont un effet au moins équivalent à celui des obligations prévues par la présente loi, les dispositions pertinentes de la présente loi, y compris celles relatives à la supervision et à l’exécution prévues au chapitre 6, ne sont pas applicables auxdites entités. […] »
 
 Retrieved 2026-10-28: https://www.ilr.lu/en/sectors/niss/security-measures/,
 https://www.ilr.lu/en/actualite/consultations-publiques-concernant-les-projets-de-reglements-mesures-de-securite-notification-dincidents/,
@@ -343,3 +360,13 @@ facts of this file: the incident section (Art. 14(1), (3) and (4), SERIMA),
 the registration section (Art. 11(4), the ILR's deadline), the measures
 section (Art. 12, the ILR's annual deliverables), Art. 13 and the penalties
 section (Art. 25(1), 26(4), (5) and (7)).
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=scope-error; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+The engine gave a regional or local entity the class important, where this file
+reads every public administration entity as essential. It now gives that class at
+every level, with the sentence that the text does not settle whether a given
+commune meets the criteria. The quick diagnostic already routed every level to the
+central reading for that reason.

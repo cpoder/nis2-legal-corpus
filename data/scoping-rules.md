@@ -4,7 +4,28 @@
 
 Every statement below is quoted and sourced in [legal-sources/eu.md](../legal-sources/eu.md)
 (Directive (EU) 2022/2555, OJ L 333; Recommendation 2003/361/EC, OJ L 124) and in
-[legal-sources/slovenia.md](../legal-sources/slovenia.md) (ZInfV-1, Uradni list RS, št. 40/2025).
+[legal-sources/slovenia.md](../legal-sources/slovenia.md) (ZInfV-1, Uradni list RS, št. 40/2025),
+[legal-sources/estonia.md](../legal-sources/estonia.md) (KüTS, as amended by RT I, 30.12.2025, 4),
+[legal-sources/latvia.md](../legal-sources/latvia.md) (Nacionālās kiberdrošības likums, as amended by OP 2026/115.1),
+[legal-sources/bulgaria.md](../legal-sources/bulgaria.md) (Закон за киберсигурност, as amended by ДВ, бр. 17 от 2026 г.),
+[legal-sources/sweden.md](../legal-sources/sweden.md) (cybersäkerhetslagen, SFS 2025:1506),
+[legal-sources/czechia.md](../legal-sources/czechia.md) (zákon č. 264/2025 Sb. and vyhláška č. 408/2025 Sb.),
+[legal-sources/germany.md](../legal-sources/germany.md) (BSIG as replaced by the NIS2UmsuCG),
+[legal-sources/finland.md](../legal-sources/finland.md) (kyberturvallisuuslaki 124/2025 and laki 906/2019),
+[legal-sources/denmark.md](../legal-sources/denmark.md) (NIS 2-loven, LOV nr 434 af 06/05/2025),
+[legal-sources/cyprus.md](../legal-sources/cyprus.md) (Ν. 89(Ι)/2020 as amended by Ν. 60(Ι)/2025),
+[legal-sources/austria.md](../legal-sources/austria.md) (NISG 2026),
+[legal-sources/belgium.md](../legal-sources/belgium.md) (loi du 26 avril 2024),
+[legal-sources/greece.md](../legal-sources/greece.md) (ν. 5160/2024),
+[legal-sources/italy.md](../legal-sources/italy.md) (d.lgs. 138/2024),
+[legal-sources/luxembourg.md](../legal-sources/luxembourg.md) (loi du 5 mai 2026),
+[legal-sources/malta.md](../legal-sources/malta.md) (S.L. 460.41),
+[legal-sources/netherlands.md](../legal-sources/netherlands.md) (Cyberbeveiligingswet),
+[legal-sources/slovakia.md](../legal-sources/slovakia.md) (zákon č. 69/2018 Z. z.),
+[legal-sources/croatia.md](../legal-sources/croatia.md) (Zakon o kibernetičkoj sigurnosti, NN 14/2024),
+[legal-sources/poland.md](../legal-sources/poland.md) (ustawa o krajowym systemie cyberbezpieczeństwa),
+[legal-sources/portugal.md](../legal-sources/portugal.md) (Decreto-Lei n.º 125/2025) and
+[legal-sources/romania.md](../legal-sources/romania.md) (OUG nr. 155/2024).
 The machine-readable cases are in [scoping-conformance-cases.json](scoping-conformance-cases.json);
 a classifier that returns the expected verdict for every case reads the texts the way they are written.
 
@@ -59,15 +80,230 @@ employees and EUR 10 million (Art. 7(2) pt 3), important below (Art. 7(3)); stat
 administration is essential (Art. 7(2) pt 4), urban municipalities are important (Art. 6(3) pt 4,
 Art. 7(3)).
 
-## 5. Not modelled
+## 5. A national test that departs from the Recommendation: Estonia
+
+KüTS § 3 writes its own tests. The general one is **cumulative**: 50 or more employees **and** an
+annual balance sheet total or turnover **above** EUR 10 million ("ületab", exclusive), for the
+Annex I types § 3(3) lists (§ 3(4) point 8) and for the Annex II types (§ 3(5)). The essential one
+is cumulative too: 250 or more employees **and** a balance sheet total above EUR 43 million or a
+turnover above EUR 50 million, for the types § 3(3) lists. So 300 employees with EUR 5 million are
+not obliged by size, and no amount makes an entity essential below 250 employees. Public
+e-communications providers are essential from the general test (§ 3(2) point 8) and important
+below it (§ 3(4) point 9). A non-qualified trust service provider is important at any size
+(§ 3(4) point 7), since § 3(3) lists no trust service. A local government unit is essential at
+any size (§ 3(2) point 4). § 3 lists some sectors only in part: the record names which.
+
+## 6. A national test that departs from the Recommendation: Latvia
+
+The Nacionālās kiberdrošības likums defines its own operators, with **no headcount floor**. A
+large operator has at least 250 employees, **or** a turnover above EUR 50 million, **or** a
+balance sheet total above EUR 43 million (Art. 1(16); "or" between the two amounts since
+18 June 2026). A medium one has up to 249 employees and a turnover of EUR 10 to 50 million or a
+balance sheet total of EUR 10 to 43 million, bounds included (Art. 1(25)). Below 250 employees
+only money opens the act: 120 employees with EUR 6 million are not obliged by size, and 30
+employees with EUR 12 million are. A large operator of a type listed in Art. 20(8) is essential; a medium
+one is important (Art. 21(1)(1)); a medium or large operator of a type listed in Art. 21(1)(2)
+is important. Every electronic communications undertaking is essential at any size (Art. 20(3)),
+and so is every state institution, state security institutions excepted, and every derived public
+person, municipalities included (Art. 20(5) and (6)). A non-qualified trust service provider is
+important at any size
+(Art. 21(1)(6)).
+
+## 7. A national class of public administration: Bulgaria
+
+Bulgaria keeps the Recommendation's size test, reached through Art. 3(1) of its SME act (Закон за
+киберсигурност, Art. 4, т. 2): sections 1 to 3 apply to it unchanged, with one departure. Art. 4,
+т. 1 puts **administrative bodies** in scope with no condition of size, and Art. 4а(1), т. 4 makes
+them **essential entities**, at every level of government. An administrative body is a body that
+belongs to the executive power (supplementary provisions, § 3, т. 1). Under the directive alone,
+central government is essential, a regional entity is important, and local administration is left
+to the Member State. The act's Annex I has no public-administration sector: an administrative body
+comes in through Art. 4, т. 1 alone.
+
+Which body belongs to the executive power is read in the Constitution. In a municipality it is the
+mayor (Art. 139(1)); the municipal council is the body of local self-government (Art. 138). A
+region is governed by a regional governor whom the Council of Ministers appoints (Arts 142 and
+143). The regional case is a reading: the act that lists the bodies of executive power is not on
+the record.
+
+## 8. A national class of public administration: Sweden
+
+Sweden keeps the Recommendation's size test (cybersäkerhetslagen (2025:1506), 1 kap. 2 § 13):
+sections 1 to 3 apply to it unchanged, with one departure. Every region, municipality and
+kommunalförbund is under the act **whatever its size** (1 kap. 3 § 2), and a municipality or a
+region **larger than a medium enterprise** is an **essential entity** (1 kap. 9 § 2 a). Whoever
+is not essential is important (1 kap. 9 § second paragraph): a smaller municipality, and a
+kommunalförbund, which 9 § 2 a does not name. A state authority under the act is essential
+(1 kap. 9 § 1). Under the directive alone, a regional entity is important and local
+administration is left to the Member State.
+
+The government's bill reads "larger than a medium enterprise" as at least 250 persons, or a
+turnover above EUR 50 million and a balance sheet total above EUR 43 million. Neither the act nor
+the bill says how a municipality's or a region's figures are counted: the cases take the figures
+as given.
+
+## 9. A national class of public administration: Czechia
+
+Czech law regulates **services**, in two regimes, and does not use the directive's two classes.
+The explanatory memorandum of decree 408/2025 equates the regime of higher obligations with
+essential entities; § 18(4) of the act (zákon č. 264/2025 Sb.) pairs the regime of lower
+obligations with important entities. The size test is the Recommendation's by reference, so
+sections 1 to 3 apply unchanged, with one departure. Public administration is regulated **only
+where row 1.1 of the decree's annex lists the body**, with no size condition: central state
+administration bodies, the **regions** (kraje) and the capital city of Prague are in the regime
+of higher obligations (part I); a municipality with extended powers and Prague's districts 1 to
+22 are in the regime of lower obligations (part II). Under the directive alone a regional entity
+is important.
+
+No other municipality is listed. The inputs give the level of government, not the kind of
+municipality, so the local case assumes a listed one: the verdict can overstate, never
+understate.
+
+## 10. A national class of public administration: Germany
+
+The size tests of the federal act are the Recommendation's (§ 28 Abs. 1, 2 and 4 BSIG): sections 1
+to 3 apply to Germany unchanged, with one departure. Public administration is under the act **at
+federal level only**. § 29 names the bodies of the federal administration and applies the rules
+for particularly important entities to them, without §§ 38, 40(3), 61 and 65: the expected class
+is essential, with no size test. Neither Anlage of the act lists public administration.
+
+A **municipality** or a **Landkreis** is therefore outside the federal act as public
+administration, which the directive allows (Art. 2(5)(a)). A legally dependent unit of a territorial authority that offers goods
+or services for payment and belongs to a type listed in Anlage 1 or 2 is caught by its type and
+its size (§ 28 Abs. 1 Nr. 4, Abs. 2 Nr. 3). § 28 Abs. 4 does not apply the Recommendation's
+counting to such a unit and does not say what is counted instead: the cases take the figures as
+given. The expected verdict "out of scope" means outside the federal act, and nothing more.
+
+The federal act does not cover the administration of a **Land** either. The law of the sixteen
+Länder is not on the record, and a Land may bind its own administration and its municipalities.
+The regional case keeps the directive's reading, an important entity, and can overstate.
+
+## 11. A national class of public administration: Finland
+
+Finland keeps the Recommendation's size test by reference (kyberturvallisuuslaki 124/2025, § 3(1)):
+sections 1 to 3 apply to it unchanged, with one departure. Public administration is **not in the
+cyber act**: its § 1 sends point 10 of the directive's Annex I to laki julkisen hallinnon
+tiedonhallinnasta (906/2019), whose chapter 4 a was added by 125/2025. The bodies in that chapter's
+scope are essential entities of the sector; wellbeing services counties, their joint authorities
+and the City of Helsinki are important entities (§ 18 a(1)), with no size test. The inputs have no
+word for a wellbeing services county: the regional level is read as one.
+
+Chapter 4 a does not apply to municipal authorities (§ 3(3) point 4), Helsinki excepted for the
+tasks the law gives the wellbeing services counties, and the cyber act reaches a municipality only
+for its Annex I or II activities and as a critical entity (§ 4(6)). So a municipality with no other
+sector is out of scope whatever its size, and a sector it declares is decided by the size test.
+
+## 12. A national class of public administration: Denmark
+
+The Danish act writes its size tests itself (NIS 2-loven, §§ 4 and 5), and they read as the
+Recommendation's: sections 1 to 3 apply to it unchanged, with one departure. Central government is
+essential whatever its size (§ 4, stk. 3, nr. 2). A **region** is an Annex 1 type (Bilag 1,
+pkt. 10), and the act gives no any-size class to the regional level, so the size tests decide:
+essential from 250 persons, important from 50 persons, outside the act below. This is a reading of
+the text, which the bill does not discuss. A **municipality** is not in the annex, and § 1, stk. 7
+needs an executive order to bring local administration in; the bill L 141 says that a municipality
+carrying out an Annex activity, as a healthcare provider for example, is under the act on that
+ground, as a whole.
+
+## 13. A national class of public administration: Cyprus
+
+Cyprus keeps the Recommendation's size test: sections 1 to 3 apply to it unchanged. The classes are
+the directive's, and two levels are the law's own. Local public administration is **in**, where the
+directive leaves it optional (Art. 2Α(5)). The law has no regional level: the **wider public
+sector** stands in its place after a risk assessment (Art. 2Α(2)(στ)(ii)), and the cases read the
+regional input as that sector. Both are important entities unless designated essential (Art.
+27(2)). A Decision served on the entity confirms its class, after a list the Council of Ministers
+does not publish (Art. 27(7) and (8)).
+
+## 14. A national class of public administration: Austria
+
+The federal level is essential at any size (NISG 2026, § 24 Abs. 1 Z 1 lit. d). The Land level is
+important with no size test (§ 24 Abs. 2 Z 2 and Abs. 5). Municipalities and their associations are
+excluded from the sector (§ 24 Abs. 3), so a municipality with no other sector is out of scope, and
+an undertaking it runs in a listed sector is decided by its size.
+
+## 15. A national class of public administration: Belgium
+
+The federal level is essential (loi du 26 avril 2024, art. 3, § 3, 3°, a and art. 9, 4°). A body of
+a federated entity is in scope once the authority identifies it after a risk-based assessment
+(art. 3, § 3, 3°, b and art. 11, § 2), then important. At local level the act names the fire-rescue
+zones (art. 3, § 3, 3°, c). The cases assume the identification.
+
+## 16. A national class of public administration: Greece
+
+Central government is essential (ν. 5160/2024, art. 4 § 1 δ)). First-tier and second-tier local
+authorities are in scope with no size test, as important entities (art. 3 § 2 στ), art. 4 § 2). The
+provision on first-tier authorities takes effect on 27.11.2026 (ΚΥΑ 2267/2025), and the local case
+reads the act from that date.
+
+## 17. A national class of public administration: Italy
+
+The central administrations of Allegato III are essential (d.lgs. 138/2024, art. 6 c. 1 lett. e).
+Regions and autonomous provinces, and the local bodies Allegato III lists, are important unless ACN
+identifies them as essential (art. 6 c. 2 and 3). The inputs do not say whether a municipality is
+listed, so the local case assumes it: the verdict can overstate.
+
+## 18. A national class of public administration: Luxembourg
+
+The act names no level (loi du 5 mai 2026, Art. 1(2) 6°): an entity that meets the four criteria of
+Art. 2, 34° is in scope at any size and essential (Art. 11(1) 4°). This is a reading, and whether a
+given commune meets the criteria is not settled by the text.
+
+## 19. A national class of public administration: Malta
+
+A government entity is essential (S.L. 460.41, art. 4(1)(d)). A local council is in scope after a
+risk assessment (art. 3(3)(f)), then important (art. 4(2)). The cases assume a positive assessment.
+
+## 20. A national class of public administration: the Netherlands
+
+Ministries, provinces, municipalities and water boards are essential by operation of law, with no
+size test (Cyberbeveiligingswet, art. 8 lid 1 onder g en h). This departs from the directive at
+both the regional and the local level.
+
+## 21. A national class of public administration: Slovakia
+
+A central state body operates a critical essential service, the act's counterpart of an essential
+entity (zákon č. 69/2018 Z. z., § 17(1)(a) and § 18(1)(a)). A higher territorial unit and a town are
+under the act on a significance test (§ 17(1)(d) and (f)). The cases assume the test is met, and
+give the class important though the act has no such word.
+
+## 22. A national class of public administration: Croatia
+
+State administration bodies are essential whatever their size (Zakon o kibernetičkoj sigurnosti,
+čl. 12. st. 1.). Local and regional self-government units are important whatever their size,
+depending on an assessment of their importance (čl. 12. st. 3.). The cases assume a positive one.
+
+## 23. A national class of public administration: Poland
+
+A public entity of Annex 1 is essential at any size (art. 5 ust. 1 pkt 4 lit. d). Annex 1 writes a
+threshold of its own for a municipal office: at least 50 full-time staff on 1 January, inclusive. A
+smaller one is important where it carries out a public task with information systems, as a
+self-government budget unit (art. 5 ust. 2 pkt 8, Annex 2): the cases assume it does.
+
+## 24. A national class of public administration: Portugal
+
+Public administration is in scope with no size condition (Decreto-Lei n.º 125/2025, RJC, art. 3.º
+n.º 3). The decree has a third class, the relevant public entity, in two groups (art. 7.º), and the
+class comes from the art. 8.º procedure. This suite has three outcomes: the cases give essential at
+State level and important below, and neither stands for the third class.
+
+## 25. A national class of public administration: Romania
+
+Central public administration is essential at any size (OUG nr. 155/2024, Art. 5(1)(a), Annex 1,
+sector 10). Neither annex lists another level, so a regional or local body with no other sector is
+out of scope. The Romanian size test stays outside the suite: Legea nr. 346/2004 leaves a gap its
+record says a classifier must flag.
+
+## 26. Not modelled
 
 Domain-name registrars (Art. 2(4)), critical entities under Directive (EU) 2022/2557 (Art. 2(3)),
 the aggregation of partner and linked enterprises (Recommendation Annex Art. 6), Member-State
-extensions to local administration (Art. 2(5)) and national sector rules such as the Polish MSSP
-rule (UKSC art. 5 ust. 1 pkt 3) are outside the suite. A classifier that handles them goes beyond
-it, not against it.
+extensions to local administration (Art. 2(5)) other than those above, the law of the German
+Länder, the service rows of the Czech decree other than row 1.1, and national sector rules such
+as the Polish MSSP rule (UKSC art. 5 ust. 1 pkt 3) are outside the suite. A classifier that handles any of these goes beyond
+the suite, not against it.
 
-## 6. Conformance cases
+## 27. Conformance cases
 
 | id | country | case | expected | basis |
 |---|---|---|---|---|
@@ -80,6 +316,9 @@ it, not against it.
 | size-07 | DE | 250 employees, EUR 3M turnover, EUR 2M balance sheet, manufacturing | important | 250 staff exceeds the medium ceilings, but Art. 3(1)(a) covers Annex I only; a large Annex II entity is important (Art. 3(2)). |
 | size-08 | DE | 300 employees, EUR 5M turnover, EUR 4M balance sheet, energy | essential | Headcount alone exceeds the medium ceilings; a large Annex I entity is essential (Art. 3(1)(a)). |
 | size-09 | DE | 10 employees, exactly EUR 10M turnover and EUR 10M balance sheet, manufacturing | out_of_scope | 'Does not exceed EUR 10 million' (Recommendation Annex Art. 2(2)): the boundary value stays small. |
+| size-10 | DE | exactly 250 employees, EUR 5M turnover, EUR 4M balance sheet, energy | essential | 'Fewer than 250 persons' is the medium ceiling (Recommendation Annex Art. 2(1)): 250 staff exceeds it, whatever the money; a large Annex I entity is essential (Art. 3(1)(a)). |
+| size-11 | DE | 100 employees, exactly EUR 50M turnover, EUR 60M balance sheet, energy | important | 'Not exceeding EUR 50 million' (Recommendation Annex Art. 2(1)): the boundary value respects the turnover ceiling, and one financial ceiling suffices; a medium Annex I entity is important (Art. 3(2)). |
+| size-12 | DE | 100 employees, EUR 60M turnover, exactly EUR 43M balance sheet, energy | important | 'Not exceeding EUR 43 million' (Recommendation Annex Art. 2(1)): the boundary value respects the balance-sheet ceiling, and one financial ceiling suffices; a medium Annex I entity is important (Art. 3(2)). |
 | any-size-01 | DE | 5-person cloud computing provider | out_of_scope | Cloud computing is an Annex I digital-infrastructure activity but is not in the closed list of Art. 2(2)(a); the size test of Art. 2(1) applies. |
 | any-size-02 | DE | 5-person data-centre provider | out_of_scope | Same as cloud: an Annex I activity subject to the size test. |
 | any-size-03 | DE | 5-person content delivery network provider | out_of_scope | Same as cloud: an Annex I activity subject to the size test. |
@@ -104,3 +343,101 @@ it, not against it.
 | si-09 | SI | 5-person provider of public electronic communications networks | important | Art. 6(2) pt 1: in scope regardless of size; Art. 7(2) pt 3 reserves essential for 50 employees and EUR 10M; Art. 7(3) otherwise. |
 | si-10 | SI | urban municipality (mestna občina), 40 staff | important | Art. 6(3) pt 4 (urban municipalities) and Art. 7(3). |
 | si-11 | SI | state-level body, 40 staff | essential | Art. 6(2) pt 6 and Art. 7(2) pt 4. |
+| ee-01 | EE | 60 employees, EUR 5M turnover, EUR 4M balance sheet, manufacturing | out_of_scope | KüTS § 3(5) is cumulative: 50 or more employees AND an annual balance sheet total or turnover above EUR 10 million. The money limb fails, although the Recommendation's yardstick would make it a medium enterprise. |
+| ee-02 | EE | 40 employees, EUR 12M turnover, EUR 12M balance sheet, manufacturing | out_of_scope | Fails the 50-employee limb of KüTS § 3(5), although the directive's own yardstick would put it in scope. |
+| ee-03 | EE | exactly 50 employees and EUR 10M on both figures, manufacturing | out_of_scope | 'Ületab' (exceeds) is exclusive: exactly EUR 10 million does not pass the money limb of KüTS § 3(5). |
+| ee-04 | EE | 50 employees, EUR 10,000,001 turnover, EUR 1M balance sheet, manufacturing | important | One euro above EUR 10 million on one figure passes: the money limb is 'balance sheet total or turnover'. An Annex II type that meets the test is important (KüTS § 3(5)). |
+| ee-05 | EE | 300 employees, EUR 5M on both figures, energy | out_of_scope | The general test is cumulative (KüTS § 3(4) point 8): headcount alone does not oblige. Under the Recommendation's yardstick it is large, and essential under the directive. |
+| ee-06 | EE | 300 employees, EUR 20M on both figures, energy | important | Meets the general test but not the essential one, which needs 250 or more employees AND a balance sheet total above EUR 43 million or a turnover above EUR 50 million (KüTS § 3(3)): important (§ 3(4) point 8). |
+| ee-07 | EE | 250 employees, EUR 20M turnover, EUR 43,000,001 balance sheet, energy | essential | KüTS § 3(3): 250 or more employees and a balance sheet total above EUR 43 million; an Annex I type that § 3(3) lists is essential. |
+| ee-08 | EE | 249 employees, EUR 60M turnover, EUR 50M balance sheet, energy | important | KüTS § 3(3) is cumulative: no amount makes an entity essential below 250 employees. It meets the general test, so it is important (§ 3(4) point 8). |
+| ee-09 | EE | 60-person provider of public electronic communications, EUR 5M on both figures | important | Below the test of KüTS § 3(2) point 8 (50 or more employees and a balance sheet total or turnover above EUR 10 million): in scope regardless of size as an important entity (§ 3(4) point 9). The directive makes a medium-sized provider essential (Art. 3(1)(c)). |
+| ee-10 | EE | non-qualified trust service provider, 300 employees, EUR 60M turnover, EUR 50M balance sheet | important | KüTS § 3(4) point 7: important at any size. The types § 3(3) lists include no trust service, so no size makes it essential, where the directive makes a large one essential (Art. 3(1)(a)). |
+| ee-11 | EE | local government unit, 12 staff | essential | KüTS § 3(2) point 4: a local government unit is an essential entity regardless of size. The directive leaves local administration to the Member State (Art. 2(5)(a)). |
+| ee-12 | EE | 250 employees, exactly EUR 50M turnover and EUR 43M balance sheet, energy | important | 'Ületab' is exclusive in the essential test too: the boundary values do not pass KüTS § 3(3). It meets the general test, so it is important (§ 3(4) point 8). |
+| lv-01 | LV | managed service provider, 120 employees, EUR 6M turnover, EUR 3M balance sheet | out_of_scope | Neither a large operator (Nacionālās kiberdrošības likums Art. 1(16)) nor a medium one (Art. 1(25)): below 250 employees only a turnover or a balance sheet total of at least EUR 10 million opens the act. The Recommendation's yardstick would make it medium. |
+| lv-02 | LV | 30 employees, EUR 12M turnover, EUR 5M balance sheet, manufacturing | important | Medium under Art. 1(25): a turnover of at least EUR 10 million suffices, and the act sets no headcount floor. A medium operator of a type listed in Art. 21(1)(2) is important. The Recommendation would make it small. |
+| lv-03 | LV | 100 employees, EUR 60M turnover, EUR 5M balance sheet, energy | essential | Large under Art. 1(16) on turnover alone: the limbs are joined by 'vai' (or) since 18 June 2026. A large operator of a type listed in Art. 20(8) is essential. The Recommendation needs both financial figures. |
+| lv-04 | LV | 100 employees, exactly EUR 50M turnover and EUR 43M balance sheet, energy | important | 'Pārsniedz' (exceeds) is exclusive and 'nepārsniedz' inclusive: the boundary values are medium (Art. 1(25)). A medium operator of a type listed in Art. 20(8) is important (Art. 21(1)(1)). |
+| lv-05 | LV | 250 employees, EUR 1M on both figures, energy | essential | 'Vismaz 250' (at least 250) is inclusive: large on headcount alone (Art. 1(16)); a large operator of a type listed in Art. 20(8) is essential. |
+| lv-06 | LV | 249 employees, EUR 1M on both figures, energy | out_of_scope | Below 250 employees only money opens the act, and neither figure reaches EUR 10 million (Art. 1(25)). The Recommendation's yardstick would make it medium. |
+| lv-07 | LV | 300 employees, EUR 60M turnover, EUR 50M balance sheet, manufacturing | important | A large operator of a type listed in Art. 21(1)(2) stays important: Art. 20(8) does not list it. |
+| lv-08 | LV | 5-person provider of public electronic communications | essential | Art. 20(3): every electronic communications undertaking is an essential entity, whatever its size. The directive makes one below medium size important (Art. 3(2)). |
+| lv-09 | LV | non-qualified trust service provider, 300 employees, EUR 60M turnover, EUR 50M balance sheet | important | Art. 21(1)(6): important at any size; a qualified one is essential (Art. 20(4)). The types listed in Art. 20(8) include no trust service, where the directive makes a large provider essential (Art. 3(1)(a)). |
+| lv-10 | LV | municipality, 12 staff | essential | Art. 20(6): a municipality is a derived public person, an essential entity regardless of size. The directive leaves local administration to the Member State (Art. 2(5)(a)). |
+| lv-11 | LV | 30 employees, exactly EUR 10M turnover, EUR 1M balance sheet, manufacturing | important | 'Vismaz 10 miljoni' (at least EUR 10 million) is inclusive, on either figure alone: medium under Art. 1(25), and a medium operator of a type listed in Art. 21(1)(2) is important. |
+| bg-01 | BG | municipal administration headed by the mayor, 30 staff | essential | Закон за киберсигурност Art. 4, т. 1 puts administrative bodies in scope with no condition of size, and Art. 4а(1), т. 4 makes them essential entities. An administrative body is a body that belongs to the executive power (supplementary provisions, § 3, т. 1), and in a municipality that body is the mayor (Constitution, Art. 139(1)). The directive leaves local administration to the Member State (Art. 2(5)(a)). |
+| bg-02 | BG | regional administration headed by the regional governor, 30 staff | essential | Art. 4, т. 1 and Art. 4а(1), т. 4, as for bg-01. The Constitution has the region governed by a regional governor whom the Council of Ministers appoints, for state governance there (Arts 142 and 143): an administrative body on that reading. The act that lists the bodies of executive power is not on the record, and the record says so. Under the directive alone a regional entity is important (Art. 3(2)). |
+| bg-03 | BG | ministry, 8 staff | essential | Art. 4, т. 1 and Art. 4а(1), т. 4: the class the directive also gives central government (Art. 3(1)(d)), reached here through the act's own rule. |
+| bg-04 | BG | 80 employees, EUR 15M turnover, EUR 12M balance sheet, manufacturing | important | Art. 4, т. 2: an Annex I or II type that meets the medium test of Art. 3(1) of the Bulgarian SME act, whose ceilings are the Recommendation's (fewer than 250 staff; EUR 50M turnover and/or EUR 43M balance sheet). Not essential under Art. 4а(1), so important (Art. 4а(2)). |
+| bg-05 | BG | 30 employees, EUR 12M turnover, EUR 5M balance sheet, manufacturing | out_of_scope | Small under Art. 3(2) of the SME act: fewer than 50 staff and a turnover and/or a balance sheet total not exceeding EUR 10M, so one financial ceiling suffices, as in the Recommendation. Below the test of Art. 4, т. 2. |
+| se-01 | SE | municipality, 4,200 staff, EUR 480M turnover, EUR 390M balance sheet | essential | Cybersäkerhetslagen (2025:1506) puts every region, municipality and kommunalförbund under the act (1 kap. 3 § 2), and a municipality or a region larger than a medium enterprise is an essential entity (1 kap. 9 § 2 a). The directive leaves local administration to the Member State (Art. 2(5)(a)). |
+| se-02 | SE | municipality, 120 staff, EUR 14M turnover, EUR 11M balance sheet | important | Under the act whatever its size (1 kap. 3 § 2). Not larger than a medium enterprise, so not essential under 1 kap. 9 § 2 a, and whoever is not essential is important (1 kap. 9 § second paragraph). |
+| se-03 | SE | region, 12,000 staff, EUR 2.1bn turnover, EUR 1.4bn balance sheet | essential | 1 kap. 3 § 2 and 9 § 2 a: a region larger than a medium enterprise is an essential entity. Under the directive alone a regional entity is important unless the Member State identifies it as essential (Art. 3(2)). |
+| se-04 | SE | municipality, exactly 250 staff, EUR 1M on both figures | essential | The government's bill reads 'larger than a medium enterprise' as at least 250 persons, or a turnover above EUR 50 million and a balance sheet total above EUR 43 million: 250 persons suffice (1 kap. 9 § 2 a). Neither the act nor the bill says how a municipality's figures are counted; the figures are taken as given. |
+| se-05 | SE | municipality, 249 staff, EUR 60M turnover, exactly EUR 43M balance sheet | important | Below 250 persons both amounts must be exceeded, and the balance sheet total is not above EUR 43 million: not larger than a medium enterprise, so important (1 kap. 9 § second paragraph). |
+| se-06 | SE | state authority, 40 staff | essential | 1 kap. 9 § 1: a state authority under the act is an essential entity. The act covers one with the power to take decisions affecting rights in cross-border movement (1 kap. 3 § 1) and those the government designates (1 kap. 8 §); the case assumes one of them. |
+| cz-01 | CZ | region (kraj), 900 staff | essential | Annex to vyhláška č. 408/2025 Sb., row 1.1, part I, letter s: a region provides a regulated service in the regime of higher obligations, which the decree's explanatory memorandum equates with the directive's essential entities. Under the directive alone a regional entity is important unless the Member State identifies it as essential (Art. 3(2)). |
+| cz-02 | CZ | region (kraj), 30 staff | essential | Row 1.1 sets no size condition, and a territorial self-governing unit is not an enterprise for the size test (zákon č. 264/2025 Sb., § 7(b)): the regime does not depend on the figures. |
+| cz-03 | CZ | municipality with extended powers, 180 staff | important | Row 1.1, part II, letter e: a municipality with extended powers is in the regime of lower obligations, the counterpart of the directive's important entities (§ 18(4) of zákon č. 264/2025 Sb. pairs the two regimes with the two classes). The inputs cannot tell it from a municipality the row does not list, which does not provide the regulated service: the questionnaire asks the level of government, not the kind of municipality. |
+| de-01 | DE | federal authority, 40 staff | essential | § 29 Abs. 1 and 2 BSIG: the rules for particularly important entities apply to a body of the federal administration, with no size test. |
+| de-02 | DE | municipality, 900 staff, no other sector | out_of_scope | § 29 BSIG covers the federal level only and neither Anlage lists public administration; Art. 2(5)(a) leaves local administration to the Member State. |
+| de-03 | DE | Landkreis, 30 staff, no other sector | out_of_scope | § 29 BSIG covers the federal level only and neither Anlage lists public administration; Art. 2(5)(a) leaves local administration to the Member State. |
+| de-04 | DE | municipal unit selling drinking water, 300 staff | essential | § 28 Abs. 1 Nr. 4 BSIG and Anlage 1 Nr. 5.1.1: a legally dependent unit of a territorial authority that offers services for payment, at least 250 staff. |
+| de-05 | DE | municipal unit selling drinking water, 80 staff | important | § 28 Abs. 2 Nr. 3 BSIG and Anlage 1 Nr. 5.1.1: at least 50 staff, fewer than 250. |
+| de-06 | DE | municipal waste service, 20 staff, EUR 2M on both figures | out_of_scope | § 28 Abs. 2 Nr. 3 BSIG and Anlage 2 Nr. 2.1.1: below both tests, and the public administration of a municipality brings nothing in. |
+| de-07 | DE | administration of a Land, 5,000 staff | important | Art. 2(2)(f)(ii) and Art. 3(2): the directive's reading, kept because the federal act does not cover a Land (§ 29 BSIG) and the law of the Länder is not on the record. |
+| fi-01 | FI | state agency, 40 staff | essential | § 18 a(1) of laki 906/2019, chapter added by 125/2025: the bodies in the chapter's scope are essential entities of the sector, with no size test. |
+| fi-02 | FI | wellbeing services county, 9,000 staff | important | § 18 a(1), second sentence, of laki 906/2019: wellbeing services counties are important entities, whatever their size. |
+| fi-03 | FI | wellbeing services joint authority, 30 staff | important | § 18 a(1), second sentence, of laki 906/2019: joint authorities are important entities, whatever their size. |
+| fi-04 | FI | municipality, 900 staff, no other sector | out_of_scope | § 3(3) point 4 of laki 906/2019 leaves municipal authorities out of chapter 4 a, and § 4(6) of kyberturvallisuuslaki 124/2025 reaches a municipality only for its Annex activities and as a critical entity. |
+| fi-05 | FI | municipal waterworks, 300 staff | essential | § 4(6), § 3(1), § 27(2) and Annex I point 14 of kyberturvallisuuslaki 124/2025: the Annex activity is decided by the size test, and a large Annex I type is essential. |
+| fi-06 | FI | municipal waterworks, 80 staff | important | § 4(6), § 3(1) and Annex I point 14 of kyberturvallisuuslaki 124/2025: a medium Annex activity is under the act and is not essential. |
+| dk-01 | DK | central government body, 30 staff | essential | § 4, stk. 3, nr. 2 of the NIS 2-loven: central government is essential whatever its size. |
+| dk-02 | DK | region, 30,000 staff | essential | Bilag 1, pkt. 10 and § 4, stk. 1 of the NIS 2-loven: an Annex 1 type with 250 persons or more. |
+| dk-03 | DK | regional body, 120 staff | important | Bilag 1, pkt. 10 and § 5, stk. 1 of the NIS 2-loven: an Annex 1 type from 50 persons, not essential. |
+| dk-04 | DK | regional body, 20 staff, EUR 2M on both figures | out_of_scope | §§ 4 and 5 of the NIS 2-loven: below both tests, the act giving no any-size class to the regional level. |
+| dk-05 | DK | municipality, 2,000 staff, no other sector | out_of_scope | Bilag 1, pkt. 10 of the NIS 2-loven lists the central and regional levels, and § 1, stk. 7 needs an executive order for local administration. |
+| dk-06 | DK | municipality providing healthcare, 2,000 staff | essential | Bill L 141, remarks to § 1: a municipality acting as a healthcare provider is under the act as a whole; § 4, stk. 1 of the NIS 2-loven at 250 persons or more. |
+| cy-01 | CY | ministry, 60 staff | essential | Art. 2Α(2)(στ)(i) and Art. 27(1)(α)(iv) of Ν. 89(Ι)/2020 as amended by Ν. 60(Ι)/2025. |
+| cy-02 | CY | body of the wider public sector, 300 staff | important | Art. 2Α(2)(στ)(ii) and Art. 27(2) of Ν. 89(Ι)/2020 as amended: the wider public sector stands in the place of the regional level. |
+| cy-03 | CY | municipality, 30 staff | important | Art. 2Α(5) and Art. 27(2) of Ν. 89(Ι)/2020 as amended: the law takes in local administration, with no size test. |
+| at-01 | AT | federal authority, 40 staff | essential | § 24 Abs. 1 Z 1 lit. d NISG 2026: the federal level, whatever the size. |
+| at-02 | AT | office of a Land government, 30 staff | important | § 24 Abs. 2 Z 2 and Abs. 5 NISG 2026: the Land level, with no size test. |
+| at-03 | AT | municipality, 900 staff, no other sector | out_of_scope | § 24 Abs. 3 NISG 2026 excludes municipalities and their associations from the sector. |
+| at-04 | AT | municipal waterworks, 300 staff | essential | § 24 Abs. 1 Z 3 NISG 2026: a large undertaking of a type in Anlage 1. |
+| be-01 | BE | federal public service, 40 staff | essential | Art. 3, § 3, 3°, a and art. 9, 4° of the loi du 26 avril 2024. |
+| be-02 | BE | regional administration identified by the authority, 300 staff | important | Art. 3, § 3, 3°, b, art. 11, § 2 and art. 10, 1° of the loi du 26 avril 2024: identified, and not essential. |
+| be-03 | BE | fire-rescue zone, 30 staff | important | Art. 3, § 3, 3°, c and art. 10, 1° of the loi du 26 avril 2024. |
+| gr-01 | GR | ministry, 60 staff | essential | Art. 3 § 2 στ) στα) and art. 4 § 1 δ) of ν. 5160/2024. |
+| gr-02 | GR | region, second-tier local authority, 900 staff | important | Art. 3 § 2 στ) στγ) and art. 4 § 2 of ν. 5160/2024. |
+| gr-03 | GR | municipality, first-tier local authority, 30 staff | important | Art. 3 § 2 στ) στβ) and art. 4 § 2 of ν. 5160/2024, from 27.11.2026 by ΚΥΑ 2267/2025. |
+| it-01 | IT | ministry, 60 staff | essential | Art. 3 c. 6 and art. 6 c. 1 lett. e of d.lgs. 138/2024. |
+| it-02 | IT | region, 900 staff | important | Art. 3 c. 6, Allegato III c. 1 lett. b and art. 6 c. 3 of d.lgs. 138/2024. |
+| it-03 | IT | municipality above 100,000 inhabitants, 900 staff | important | Art. 3 c. 6, Allegato III c. 1 lett. c and art. 6 c. 3 of d.lgs. 138/2024. |
+| lu-01 | LU | ministry, 60 staff | essential | Art. 1(2) 6° and Art. 11(1) 4° of the loi du 5 mai 2026. |
+| lu-02 | LU | commune meeting the four criteria of Art. 2, 34°, 12 staff | essential | Art. 1(2) 6° and Art. 11(1) 4° of the loi du 5 mai 2026: the act names no level. |
+| lu-03 | LU | communal syndicate meeting the four criteria, 300 staff | essential | Art. 1(2) 6° and Art. 11(1) 4° of the loi du 5 mai 2026: the act names no level. |
+| mt-01 | MT | government entity, 60 staff | essential | Art. 3(3)(f) and art. 4(1)(d) of S.L. 460.41. |
+| mt-02 | MT | local council with a positive risk assessment, 30 staff | important | Art. 3(3)(f) and art. 4(2) of S.L. 460.41. |
+| mt-03 | MT | local council with a positive risk assessment, 300 staff | important | Art. 3(3)(f) and art. 4(2) of S.L. 460.41: no size test. |
+| nl-01 | NL | ministry, 60 staff | essential | Art. 8 lid 1 onder g Cyberbeveiligingswet. |
+| nl-02 | NL | province, 900 staff | essential | Art. 8 lid 1 onder h Cyberbeveiligingswet. |
+| nl-03 | NL | municipality, 60 staff | essential | Art. 8 lid 1 onder h Cyberbeveiligingswet: by operation of law, with no size test. |
+| sk-01 | SK | central state body, 40 staff | essential | § 17(1)(a) and § 18(1)(a) of zákon č. 69/2018 Z. z. |
+| sk-02 | SK | higher territorial unit with significant impact, 300 staff | important | § 17(1)(d) of zákon č. 69/2018 Z. z.: on a significance test, the act having no word for an important entity. |
+| sk-03 | SK | town with significant impact, 60 staff | important | § 17(1)(f) of zákon č. 69/2018 Z. z.: on a significance test, the act having no word for an important entity. |
+| hr-01 | HR | state administration body, 40 staff | essential | Čl. 12. st. 1. of the Zakon o kibernetičkoj sigurnosti (NN 14/2024). |
+| hr-02 | HR | county with a positive assessment, 300 staff | important | Čl. 12. st. 3. of the Zakon o kibernetičkoj sigurnosti: whatever the size, after an assessment. |
+| hr-03 | HR | municipality with a positive assessment, 12 staff | important | Čl. 12. st. 3. of the Zakon o kibernetičkoj sigurnosti: whatever the size, after an assessment. |
+| pl-01 | PL | ministry, 60 staff | essential | Art. 5 ust. 1 pkt 4 lit. d of the ustawa o krajowym systemie cyberbezpieczeństwa, Annex 1. |
+| pl-02 | PL | voivodeship budget unit, 30 staff | essential | Art. 5 ust. 1 pkt 4 lit. d, Annex 1, public entities, point 2. |
+| pl-03 | PL | municipal office, exactly 50 full-time staff | essential | Annex 1, public entities, point 4: a municipal office from 50 full-time staff on 1 January. |
+| pl-04 | PL | municipal office, 49 full-time staff | important | Art. 5 ust. 2 pkt 8 and Annex 2: below the Annex 1 threshold, as a self-government budget unit with a public task on information systems. |
+| pt-01 | PT | service of the State's direct administration, 300 staff | essential | RJC art. 3.º n.º 3 a) and art. 6.º n.º 1 d): the essential class is assumed, which can overstate. |
+| pt-02 | PT | service of an Autonomous Region, 300 staff | important | RJC art. 3.º n.º 3 b): the suite has no third class, so a relevant public entity reads as important. |
+| pt-03 | PT | municipality, 300 staff | important | RJC art. 3.º n.º 3 e): the suite has no third class, so a relevant public entity reads as important. |
+| ro-01 | RO | ministry, 60 staff | essential | OUG nr. 155/2024, Art. 5(1)(a) with Annex 1, sector 10. |
+| ro-02 | RO | county council, 900 staff, no other sector | out_of_scope | OUG nr. 155/2024, Art. 5(1)(a) and Annex 1, sector 10: the central level only. |
+| ro-03 | RO | municipality, 900 staff, no other sector | out_of_scope | OUG nr. 155/2024, Art. 5(1)(a) and Annex 1, sector 10: the central level only. |
+| cz-04 | CZ | central state administration body, 60 staff | essential | Row 1.1, part I, letter a: a central state administration body is in the regime of higher obligations, the class the directive also gives central government (Art. 3(1)(d)). |

@@ -80,7 +80,7 @@ the Netherlands are still `in_progress` and will pass through exactly this state
 
 ## Sections read for the product configuration (2026-09-18)
 
-<!-- meta: theme=statute,scoping,registration,incident,governance,sanctions; type=reference; date=2026-09-18; surfaces=data,ui,marketing; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,packages/regulatory-data/test/country-configs-incident-reporting.test.ts -->
+<!-- meta: theme=statute,scoping,registration,incident,governance,sanctions; type=reference; date=2026-10-29; surfaces=data,ui,marketing; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,packages/regulatory-data/test/country-configs-incident-reporting.test.ts -->
 
 Read for `TRANSPOSITION_REFERENCES_AT`, `INCIDENT_REPORTING_AT`, the German
 fiche `apps/web/src/lib/countries/austria.ts` and the `/de-at` marketing cluster.
@@ -105,7 +105,11 @@ fiche `apps/web/src/lib/countries/austria.ts` and the `/de-at` marketing cluster
 | Seven registration data items, electronic, secure channel | § 29 Abs. 2 | "haben sich bei der Cybersicherheitsbehörde zu registrieren und dieser im elektronischen Weg folgende Angaben über einen sicheren Kommunikationskanal strukturiert zu übermitteln: 1. den Namen der Einrichtung; 2. die Anschrift und aktuelle Kontaktdaten …; 3. den Sektor …; 4. die Mitgliedstaaten …; 5. gegebenenfalls die IP-Adressbereiche …; 6. die Anschrift der Hauptniederlassung …; 7. Informationen zu den in § 25 angeführten Schwellenwerten und darüber, ob es sich um eine wesentliche oder wichtige Einrichtung handelt." | ✅ |
 | Contact point: phone + e-mail | § 29 Abs. 6 | "eine Kontaktstelle bestehend aus zumindest einer Telefonnummer und E-Mailadresse" | ✅ |
 | **No portal or form named in the Act**; nis.gv.at shows none yet | § 29 Abs. 2 / nis.gv.at 2026-09-18 | The Act only says "im elektronischen Weg … über einen sicheren Kommunikationskanal". The authority's portal (nis.gv.at) listed no NISG-2026 registration form or date on 2026-09-18; it lists three incident platforms: nis.cert.at, nis.energy-cert.at, nis.govcert.gv.at. Secondary sources (WKO, Deloitte) speak of a form "durch Verordnung" and of the USP; **not asserted in the product**. | ⚠️ superseded 2026-10-28: the Act still names no portal, but the authority now runs registration and reporting through "NIS2-Services" on the Unternehmensserviceportal (see "After entry into force") |
-| Management: ensure, supervise, train; staff training | § 31 Abs. 1 and 2 | "Die Leitungsorgane … haben die Einhaltung der Risikomanagementmaßnahmen gemäß § 32 sicherzustellen und zu beaufsichtigen." / "müssen an für diese spezifisch gestalteten Cybersicherheitsschulungen teilnehmen. Die Einrichtungen haben den Mitarbeitern regelmäßig entsprechende Schulungen anzubieten" | ✅ |
+| Management: ensure and supervise the § 32 measures | § 31 Abs. 1 | "§ 31. (1) Die Leitungsorgane wesentlicher und wichtiger Einrichtungen haben die Einhaltung der Risikomanagementmaßnahmen gemäß § 32 sicherzustellen und zu beaufsichtigen." | verified (BGBl. I Nr. 94/2025, 2026-10-29) |
+| Management training: the management bodies attend training designed for them, with no interval; the entities offer their staff training regularly | § 31 Abs. 2 | "(2) Die Leitungsorgane wesentlicher und wichtiger Einrichtungen müssen an für diese spezifisch gestalteten Cybersicherheitsschulungen teilnehmen. Die Einrichtungen haben den Mitarbeitern regelmäßig entsprechende Schulungen anzubieten, damit diese ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken sowie Managementpraktiken im Bereich der Cybersicherheit und deren Auswirkungen auf die von der Einrichtung erbrachten Dienste erwerben können." | verified (BGBl. I Nr. 94/2025, 2026-10-29) |
+| Who the "Leitungsorgan" is | § 3 Z 11 | "11. „Leitungsorgan“ eine oder mehrere natürliche Personen oder Verwaltungsorgane, die nach Gesetz, Satzung oder Vertrag zur Führung der Geschäfte einer Einrichtung berufen sind;" | verified (BGBl. I Nr. 94/2025, 2026-10-29) |
+| Sector-specific Union acts: § 27 Abs. 1 names §§ 32 and 34 only, not § 31 (DORA entities: § 24 Abs. 7, in "§ 24 in full" below) | § 27 Abs. 1 | "§ 27. (1) Die Anforderungen gemäß den §§ 32 und 34 sind insoweit nicht anwendbar, […]" | verified (BGBl. I Nr. 94/2025, 2026-10-29) |
+| Since 2026-10-01 the Annex of Implementing Regulation (EU) 2024/2690 applies to every entity type of Anlagen 1 and 2 (§ 2 NISV 2026, in "After entry into force" below); its awareness programme includes the members of the management bodies and is repeated | Annex to Implementing Regulation (EU) 2024/2690, points 8.1.1 and 8.1.2 a) | "Für die Zwecke von Artikel 21 Absatz 2 Buchstabe g der Richtlinie (EU) 2022/2555 stellen die betreffenden Einrichtungen sicher, dass sich ihre Mitarbeitenden, einschließlich der Mitglieder von Leitungsorganen, sowie direkte Anbieter und Diensteanbieter der Risiken bewusst sind, über die Bedeutung der Cybersicherheit informiert werden und Verfahren im Bereich der Cyberhygiene anwenden." / "Für die Zwecke von Nummer 8.1.1 bieten die betreffenden Einrichtungen ihren Mitarbeitenden, den Mitgliedern ihrer Leitungsorgane sowie – soweit angemessen – direkten Anbietern und Diensteanbietern gemäß Nummer 5.1.4 ein Sensibilisierungsprogramm an, das a) zeitlich so geplant ist, dass die Maßnahmen wiederholt werden und neue Mitarbeitende erreichen;" | verified (EUR-Lex, OJ L, 2024/2690, 18.10.2024, 2026-10-29) |
 | Ten measure themes in the Act, regulation power for details | § 32 Abs. 4 lit. a to j, Abs. 5 | "zumindest folgende Inhalte zu umfassen: a) Konzepte in Bezug auf die Risikoanalyse und Sicherheit für Informationssysteme; b) Bewältigung von Cybersicherheitsvorfällen; c) Aufrechterhaltung des Betriebs …; d) Sicherheit der Lieferkette …; e) Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung …; f) Konzepte und Verfahren zur Bewertung der Wirksamkeit …; g) grundlegende Verfahren im Bereich der Cyberhygiene und Schulungen …; h) Konzepte und Verfahren für den Einsatz von Kryptografie …; i) Sicherheit des Personals, Konzepte für die Zugriffskontrolle und Management von Anlagen; j) Verwendung von Lösungen zur Multi-Faktor-Authentifizierung …" / "(5) Die Cybersicherheitsbehörde ist ermächtigt, durch Verordnung nähere Anforderungen an die Risikomanagementmaßnahmen gemäß Abs. 4 festzulegen." | ✅ |
 | Self-declaration within 12 months of the registration duty | § 33 Abs. 1 | "haben innerhalb von zwölf Monaten nach Eintritt der Registrierungspflicht gemäß § 29 Abs. 2 der Cybersicherheitsbehörde Informationen hinsichtlich umgesetzter Risikomanagementmaßnahmen gemäß § 32, insbesondere betreffend die genutzten Netz- und Informationssysteme und die Sicherheit der Lieferketten sowie die Ergebnisse der durchgeführten Risikoanalyse, nach den Vorgaben der Cybersicherheitsbehörde in strukturierter Form zu übermitteln (Selbstdeklaration)." | ✅ |
 | Independent proof: on request, first request ≥ 2 years after entry into force; essential 2 months; certificates admissible | § 33 Abs. 2 | "innerhalb von zwei Jahren nach Aufforderung durch die Cybersicherheitsbehörde … durch eine von einer unabhängigen Stelle … durchgeführten Prüfung … nachzuweisen, wobei der Nachweis der operativen sowie organisatorischen Umsetzung auch durch einschlägige gültige Zertifikate möglich ist. Davon abweichend haben wesentliche Einrichtungen … innerhalb von zwei Monaten nach Aufforderung … nachzuweisen. … Die erstmalige Aufforderung kann frühestens nach Ablauf von zwei Jahren ab Inkrafttreten dieses Bundesgesetzes erfolgen." | ✅ |
@@ -117,6 +121,26 @@ fiche `apps/web/src/lib/countries/austria.ts` and the `/de-at` marketing cluster
 | Offences carrying the main fine bands include the two training duties | § 45 Abs. 1 Z 1 to 6 | "1. seiner Verpflichtung, Cybersicherheitsschulungen für Leitungsorgane gemäß § 31 Abs. 2 vorzusehen, nicht nachkommt, 2. … für Mitarbeiter …, 3. Risikomanagementmaßnahmen gemäß § 32 nicht umsetzt, soweit dieser Umstand der Cybersicherheitsbehörde nicht nur aufgrund einer Selbstdeklaration gemäß § 33 Abs. 1 bekanntgeworden ist, 4. seiner Verpflichtung zur Meldung … nicht entspricht, 5. … Unterrichtung der Empfänger … nicht entspricht, oder 6. den … Durchsetzungsmaßnahmen nicht fristgerecht nachkommt" | ✅ |
 | Self-declaration omitted or knowingly false = separate offence | § 45 Abs. 4 Z 7 and 8 | "7. entgegen § 33 Abs. 1 seiner Verpflichtung zur Selbstdeklaration nicht fristgerecht nachkommt, 8. in einer Selbstdeklaration gemäß § 33 Abs. 1 wissentlich falsche Angaben über die Umsetzung …" | ✅ |
 | NISG 2018 §§ 2 to 31, NISV and QuaSteV repealed on the same day | § 51 Abs. 2 | "Gleichzeitig treten … die §§ 2 bis 31 NISG sowie die Netz- und Informationssystemsicherheitsverordnung (NISV), BGBl. II Nr. 215/2019, und die Verordnung über qualifizierte Stellen (QuaSteV), BGBl. II Nr. 226/2019, außer Kraft." | ✅ |
+
+> Re-read 2026-10-29 (§ 3 Z 11, § 27 Abs. 1, § 31) in the signed
+> Bundesgesetzblatt, BGBl. I Nr. 94/2025,
+> https://ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2025_I_94/BGBLA_2025_I_94.pdf,
+> the file of 2026-10-28 (sha256
+> `5d40e81ca95d1fca94441f799150c9a3a41a3125314de75b586eb74e9797f35a`). poppler's
+> `pdfsig` reports its PDF-AS signature as "Signature is Invalid"; the
+> Amtssignatur was not checked with the Austrian verification service, so § 31
+> was also compared with the Nationalrat text (308 d.B., sha256
+> `937e5cae4917c0a7bb9608ddfccfedb7c51840f305c2ba588daa772ddbf8194c`): the
+> same words. The Annex of Implementing Regulation (EU) 2024/2690 was read in
+> German, https://eur-lex.europa.eu/eli/reg_impl/2024/2690/oj/deu, through
+> headless Chromium; EUR-Lex lists corrigenda for its PL, SV and NL versions
+> and no amending act.
+>
+> For a training record: § 31 Abs. 2 asks the management bodies to attend
+> training "für diese spezifisch gestalteten", designed for them. It sets no
+> interval, certificate, provider or duration; "regelmäßig" belongs to the
+> sentence on staff. Failing to provide either training is an offence of its
+> own, § 45 Abs. 1 Z 1 and 2 (in the table above).
 
 ### What the product asserts, and what it does not
 
@@ -436,3 +460,59 @@ several sectors reports to each competent CSIRT ("Ist eine wesentliche oder
 wichtige Einrichtung in mehreren Sektoren tätig, müssen Meldungen auch an die
 jeweils zuständigen CSIRTs übermittelt werden"), because an organisation records
 one sector.
+
+## The authority is no longer printed as a recipient (2026-11-05)
+
+<!-- meta: theme=incident; type=surface-inconsistency; date=2026-11-05; surfaces=data,doc-gen,ui; guard=packages/regulatory-data/test/incident-authority-receives.test.ts,apps/core-api/test/document-fallback-national-recipients.test.ts,apps/web/test/incidents-page.test.tsx,packages/regulatory-data/test/incident-recipient-reads.test.ts -->
+
+§ 34 Abs. 1 sends the notification to the CSIRT, and "Das CSIRT leitet die
+Meldung unverzüglich an die Cybersicherheitsbehörde weiter" (rows above). Two
+surfaces still printed the authority as a body that receives.
+
+**The fallback documents**, produced when AI generation fails, printed both
+bodies in every recipient cell, "Initial notification to
+Cybersicherheitsbehörde / CERT.at", sent the final report "to
+Cybersicherheitsbehörde", and told the board that significant incidents "must
+be reported to" the Bundesamt für Cybersicherheit. Since 2026-11-05 the
+incident configuration says that the competent authority receives no report
+from the entity (`competentAuthorityReceives: false`), and the documents name
+the CSIRT alone: CERT.at, the HealthCERT for health, GovCERT for public
+administration. The same field was set that day for Slovenia, Malta, Poland
+and Bulgaria, each on the words of its own record.
+
+**The incident page**: its route sentence, "In your jurisdiction this is
+reported under {law} to {authority}", took the body from the server's
+recipients and, while that list had not loaded, from the national reference's
+competent authority. An Austrian organisation read "Cybersicherheitsbehörde"
+for a moment, then CERT.at or the HealthCERT. The same first paint named a
+body other than the national recipient in seven more countries, measured that
+day by comparing each reference's authority with the recipient: Belgium,
+Croatia, Czechia, Malta, Poland, Slovenia and Spain. Since 2026-11-05 the page
+asks `resolveIncidentRecipients` with the organisation's country and sector
+while the list loads, so both paints give the same answer.
+
+**The board's registration action** recopied the registration requirement in
+brackets and in lower case, about a thousand characters with "§ 29 abs. 3" and
+"1 january 2027". It now points to the national requirements printed above
+it, where the requirement stands as written.
+
+Not read on that day: whether the Belgian, Croatian and Spanish authorities
+receive the notification themselves. Their fallback template still prints
+both bodies, the directive's "the CSIRT or, where applicable, the competent
+authority" (Art. 23(4), `eu.md`); no organisation of those three countries
+receives a fallback document, because their national framework has none.
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=scope-error; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+The engine gave the directive's sentences: a Land body "where the member state
+so provides", and a municipality "only where the member state has extended the
+directive", as an important entity. § 24 settles all three levels.
+
+| Level stated | Verdict | Basis |
+|---|---|---|
+| Federal, or not stated | essential, whatever the size | § 24 Abs. 1 Z 1 lit. d |
+| Land | important, with no size test | § 24 Abs. 2 Z 2 and Abs. 5 |
+| Municipality or association, no other sector | out of scope, as outside the sector | § 24 Abs. 3 |
+| Municipality or association, a listed sector declared | that sector's class by size | § 24 Abs. 1 Z 3 and Abs. 2 Z 1 |

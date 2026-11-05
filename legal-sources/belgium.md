@@ -83,7 +83,7 @@ self-assessment tool**, matched by control ID:
 
 ## Governance and conformity assessment — Loi du 26 avril 2024 (verified 2026-07-26)
 
-<!-- meta: theme=governance; type=reference; date=2026-07-26; surfaces=data; guard=none -->
+<!-- meta: theme=governance; type=reference; date=2026-10-29; surfaces=data; guard=none -->
 
 - **Source read:** Moniteur belge of 17 May 2024, **numac 2024202344**, full
   text (194 078 characters) via
@@ -93,14 +93,28 @@ self-assessment tool**, matched by control ID:
   `change_lg.pl` / `summary.pl` even under Playwright. **Only `article_body.pl`
   answers**, and only from a real browser. The CCB (`ccb.belgium.be`) stays
   in 403 even under Chromium. Keep this URL, it is the only one that works.
+- **Re-read 2026-10-29 for art. 31 § 2 in both official languages:** the
+  Moniteur belge of 17 May 2024, numac 2024202344, in French,
+  https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2024-05-17&numac=2024202344
+  (sha256 `3bf92dd3829b7edc3560c00fe6d753ceac2ce1dfae0db420492da9a05c06e0c4`),
+  and in Dutch, the same URL with `language=nl` (sha256
+  `089033bbb701158a0fadafc6a263c9d6d33e9909bb4ce8cbbd9ccd1e323b2ba3`). The Justel
+  consolidation, « mise à jour au 19-01-2026 »,
+  https://www.ejustice.just.fgov.be/eli/loi/2024/04/26/2024202344/justel,
+  carries art. 31 § 2 with the same words. The German text is the unofficial
+  coordination of numac 2026007305 (section « The act in German » below), not an
+  official text. That day a plain `curl` with a browser User-Agent reached
+  `article_body.pl` and the Justel page.
 
 ### Verified facts
 
 | Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
 | The management body **approves** the measures, **oversees** their implementation and **is liable for the infringement** of art. 30 by the entity | art. 31 § 1er | "Les organes de direction des entités essentielles et importantes **approuvent** les mesures de gestion des risques … **supervisent leur mise en oeuvre et sont responsables de la violation dudit article** par ces entités." | ✅ |
-| Training: **bare** transposition of NIS 2 art. 20(2), **no certification** | art. 31 § 2 | "Les membres des organes de direction … **suivent une formation** pour que leurs connaissances et compétences soient suffisantes pour déterminer les risques et évaluer les pratiques de gestion des risques …" | ✅ |
-| The CCB's role on training is to **encourage**, not to certify | article on the authority's missions, 13° | "**faciliter et encourager** l'organisation de formations en matière de cybersécurité pour les membres du personnel des entités essentielles ou importantes" | ✅ |
+| Training: **bare** transposition of NIS 2 art. 20(2), **no certification**, no frequency, no provider, and no sentence on staff (the staff side is the authority's mission, next row) | art. 31 § 2 | FR (official): "§ 2. Les membres des organes de direction des entités essentielles et importantes suivent une formation pour que leurs connaissances et compétences soient suffisantes pour déterminer les risques et évaluer les pratiques de gestion des risques en matière de cybersécurité et leur impact sur les services fournis par l'entité." NL (official): "§ 2. De leden van de bestuursorganen van essentiële en belangrijke entiteiten volgen een opleiding zodat ze over voldoende kennis en vaardigheden beschikken om risico's te kunnen identificeren en risicobeheerspraktijken op het gebied van cyberbeveiliging en de gevolgen ervan voor de diensten die door de entiteit worden verleend, te kunnen beoordelen." DE (unofficial coordination of 23 October 2026, not an official text): "§ 2 - Mitglieder der Leitungsorgane wesentlicher und wichtiger Einrichtungen nehmen an Schulungen teil, um ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken und Managementpraktiken im Bereich der Cybersicherheit und deren Auswirkungen auf die von der Einrichtung erbrachten Dienste zu erwerben." | verified (Moniteur belge 17-05-2024, FR and NL, 2026-10-29) |
+| The CCB's role on training is to **encourage**, not to certify | art. 17, 13° | FR: "13° faciliter et encourager l'organisation de formations en matière de cybersécurité pour les membres du personnel des entités essentielles ou importantes;" NL: "13° het faciliteren en aanmoedigen van de organisatie van opleidingen rond cyberbeveiliging voor personeelsleden van essentiële of belangrijke entiteiten;" | verified (Moniteur belge 17-05-2024, FR and NL, 2026-10-29) |
+| ⚠️ **Exit:** the DORA banking and market-infrastructure entities are outside titles 3 to 5, art. 31 included | art. 6 § 3 | "§ 3. Les dispositions des titres 3 à 5 ne s'appliquent pas aux entités relevant des secteurs bancaire et infrastructures des marchés financiers au sens de l'annexe I qui tombent dans le champ d'application du règlement (UE) 2022/2554 […]" | verified (Moniteur belge 17-05-2024, FR, 2026-10-29) |
+| ⚠️ **Exit:** title 3, chapter 1 (arts. 30 to 33, art. 31 included) does not apply to the National Bank, its central securities depository excepted, nor to the financial institutions it supervises that are outside § 3 | art. 6 § 4 | "§ 4. Les dispositions du titre 3, chapitre 1er, du titre 4 et du titre 5 ne s'appliquent pas: 1° à la Banque Nationale de Belgique, exception faite de son activité de dépositaire central de titres à laquelle s'applique le paragraphe 3; 2° aux établissements financiers soumis à la supervision de la Banque Nationale de Belgique en vertu des articles 8 et 12bis de la loi du 22 février 1998 fixant le statut organique de la Banque Nationale de Belgique qui ne relèvent pas du paragraphe 3." | verified (Moniteur belge 17-05-2024, FR, 2026-10-29) |
 | ⚠️ **Only ESSENTIAL entities** are subject to the periodic assessment, **with a CHOICE between two routes** | art. 39 al. 1er | "**Les entités essentielles se soumettent** à une évaluation périodique de la conformité … : **1° Soit** en choisissant une évaluation périodique de la conformité visée à l'article 40 … **2° Soit** en se soumettant à une **inspection par l'autorité nationale de cybersécurité**" | ✅ |
 | The route 1° assessment is done by an **ACCREDITED body**, not by the entity | art. 40 § 1er | "est effectuée par un **organisme d'évaluation de la conformité agréé par l'autorité nationale de cybersécurité** selon les conditions fixées par le Roi" | ✅ |
 | ⚠️ **IMPORTANT entities: voluntary** | art. 41 | "Les entités importantes **peuvent, de manière volontaire**, se soumettre à une évaluation périodique de la conformité visée à l'article 39, alinéa 1er, 1°" | ✅ |
@@ -685,3 +699,605 @@ art. 34 and 35 and never 33, the fine of the entity's own class with art. 62)
 and `apps/ai-service/test/legal-frame-cyfun-languages.test.ts` (the heading
 each prompt variant asks for is the frame's heading, and the fallback splice
 finds it).
+
+## The CyFun Foundations course in French and German, and the Dutch course read against this record (2026-10-29)
+
+<!-- meta: theme=framework,incident,sanctions,governance; type=delivery,wrong-citation,overclaim,i18n; date=2026-10-29; surfaces=ui,data; guard=apps/web/test/cyfun-training-languages.test.ts -->
+
+Until this day the native CyFun Foundations course existed in Dutch only
+(`marketing/training/foundations-cyfun/`) and the catalogue listed it to every
+Belgian organisation, so a French- or German-speaking entity was handed Dutch
+slides. The course now exists in French (`foundations-cyfun-fr/`) and German
+(`foundations-cyfun-de/`): same four modules, same quiz question ids and answer
+key, written in each language from the facts of this file and nothing else, with
+the CCB's own words (`title_fr` / `title_de` and `label_fr` / `label_de` of
+`cyfun.yaml`, « niveau d'assurance », « Sicherheitsstufe », « Reifegrad » only for
+the 1 to 5 score). The German course names the act « Gesetz vom 26. April 2024 »
+and the CCB « Zentrum für Cybersicherheit Belgien », and says once that the French
+and Dutch texts are authentic and that its German terms come from the unofficial
+coordination of 23 October 2026. The catalogue offers the course in the user's
+language when one is published in it, Dutch otherwise, the rule the documents
+follow (`selectNativeTrainingLanguage`, `GET /api/training/courses?language=`).
+
+Before any Dutch claim was reused, the Dutch modules were read against this
+file. What they said, and what they say now:
+
+| Module | What the Dutch course said | What it says now | Where in this file |
+|---|---|---|---|
+| 1, 4 | « eindverslag binnen 1 maand »; « reken vanaf dat moment 24 uur, 72 uur en 1 maand » from awareness | the final report at the latest one month after the incident notification (art. 35 § 1, 4°), the intermediate report on request (3°), the progress report (5°); 24 hours for a trust service provider (art. 35 § 2) | « The act in German », arts. 34 to 36 |
+| 4 | the duty to notify laid down by the act « samen met het koninklijk besluit van 9 juni 2024 », « aan het CCB », « de bevoegde autoriteit en het nationaal contactpunt » | the act alone (art. 34 § 1): to the national CSIRT, whose tasks the national authority performs (art. 16), CERT.be, through the CCB's notification platform | arts. 16 and 34; « The CCB in German », notification |
+| 4 | a « content » column per stage (« compromisindicatoren », « werkelijke impact ») | removed: the contents of each report are not in this record | none |
+| 1, 4 | the CCB's 2026 and 2027 steps without the ISO/IEC 27001 route, without the 2027 step of the inspection route, without « an essential entity may justify Important » | route by route as the CCB writes it, with the condition on the 2027 Essential certification and art. 75 | « The CCB in German », the first conformity assessments |
+| 1 | no word on the management body or the fines; the recap announced « Module 2, de verplichtingen van het bestuur », which does not exist | a slide on art. 31 § 1 and § 2, the fines of art. 59, 4° and 5°, the doubling on recidivism, art. 62; the recap lists the real modules | arts. 31, 59, 62 |
+| 1 | the act applies to entities « waarvan een verstoring de samenleving of de economie zou raken » | art. 3 § 1 and § 3; art. 9, 4° for the public administration that depends on the federal State; registration within five months (art. 13 § 1) on Safeonweb@Work | arts. 3, 9, 13 |
+| 3 | the function GV « Besturen »; modules 1, 2 and 4 used the English function names (GOVERN … RECOVER) | « Beheren », and the six names of the NL tool's tabs everywhere | « CyFun 2025 tree reconciled… », « Where each language comes from » |
+| 3, 4 | category names of our own (« Rapportering en communicatie van de incidentrespons », « Incidentmitigatie », « Uitvoering van het herstelplan », « Analyse van ongunstige gebeurtenissen », …) | the 22 names as the NL tool prints them (« Incidentresponsrapportage en -Communicatie », « Incidentbeperking », « Uitvoering van het Incidentherstelplan », « Analyse van Ongewenste Gebeurtenissen », …) | same |
+| 1, 2, 3 | « vier assurance-niveaus »; « Basic omvat alles van Small »; Small « voor micro-organisaties, enkel zelfevaluatie »; « dezelfde 22 categorieën gelden op elk niveau »; a higher level asks « een strengere invulling » of the same requirement | three zekerheidsniveaus (the CCB's Dutch word), Basic, Important and Essential, preceded by the entry level Small; 34, 133 (34 + 99) and 218 (133 + 85) requirements, 13, 22 and 29 key measures; GV.SC, RS.MI and RC.CO start at Important, GV.OV and RS.AN are Essential only | « CyFun in German: the level word », the mapping counts |
+| 1, 2, 4 | « Het CCB beveelt Basic aan als baseline voor elke organisatie » | the CCB advises at least Basic to the organisations that may be in the supply chain of an entity in scope, and such an entity may impose a CyFun level on its direct suppliers | « The CCB in German », CyFun |
+
+**Found while delivering, outside the record.** Three of the four Dutch module
+READMEs carried no `- **Slug:**` line, the key of the content indexer
+(`apps/core-api/src/lib/training-admin.ts`), so `GET /api/training/courses/:slug`
+served no slides for modules 1 to 3; the indexer also resolved
+`foundations-cyfun/` to the locale `be`, a country. Both corrected. The Spanish
+(ENS, modules 2 and 3) and Polish (KSC, modules 2 to 4) courses lack the same line;
+not corrected here.
+
+Not live until somebody acts: the courses are seeded into the database, so the
+French and German courses, and the corrected Dutch one, reach users only after a
+production re-seed (`seed-foundations-native-course.ts --framework cyfun
+--publish`, which now seeds nl, fr and de). Until then every Belgian user keeps
+the Dutch rows, which the language choice falls back to.
+
+Guards: `apps/web/test/cyfun-training-languages.test.ts` (the facts and the
+vocabulary in the three languages, question parity, the counts against the tree;
+it fails 17 tests on the Dutch course as it stood),
+`apps/core-api/test/training-native-language.test.ts` (the seeder against a
+transient database, then the catalogue and the player for a Belgian organisation;
+13 failures against the route and indexer as they stood),
+`packages/regulatory-data/test/native-training-languages.test.ts` (the selection
+rule), and the existing `apps/web/test/be-citations-timeline.test.ts`, which now
+reads the three directories.
+
+## CyFun's levels as the CCB writes them: three assurance levels, preceded by an entry level (verified 2026-10-29)
+
+<!-- meta: theme=framework; type=reference,law-misread,i18n,test-pinned; date=2026-10-29; surfaces=marketing,ui,prompt,data,i18n,test,docs; guard=apps/web/test/cyfun-level-framing.test.ts -->
+
+The question: the Belgian surfaces counted CyFun's levels in two ways that
+cannot both be the CCB's. About thirty-four places said « four (cumulative)
+assurance levels », Small included (« vier assurance-niveaus », « quatre
+niveaux d'assurance », « four assurance levels »); about fifteen said three.
+The Dutch ones also wrote « assurance-niveau ». How many levels does the CCB
+name, is Small one of them, and what is its word for a level in each language?
+
+Read on 2026-10-29 in a visible Chromium (Playwright, no stealth plugin,
+nothing spoofed; cyfun.eu answers a headless browser with 403):
+
+- the four CyFun 2025 pages, `https://cyfun.eu/{nl,fr,en,de}/cyberfundamentals-framework-2025`,
+  and the overview pages they link to: the « Over » / « À propos » / « About »
+  / « Über » pages (`/nl/over`, `/fr/à-propos`, `/en/about`, `/de/ueber`), the
+  « CyFun® in België / en Belgique / In Belgium / in Belgien » pages
+  (`/{nl,fr,en,de}/about/CyFun®-in-Belgium`) and the home pages
+  (`/{nl,fr,en,de}`);
+- every 2025 booklet those pages link, in the four languages, and the
+  key-measures overview in Dutch and in English;
+- the introduction sheet of the self-assessment tools downloaded on
+  2026-10-28 (same files, SHA-256 in the section of that date);
+- for comparison, the four CyFun 2023 pages
+  (`/{nl,fr,en,de}/cyberfundamentals-framework-2023`) and the 2023 Small
+  booklet they link.
+
+The French and German booklets downloaded today have the SHA-256 recorded on
+2026-10-28. The files that are new to this record (URLs under
+`https://cyfun.eu/sites/default/files/`):
+
+| File | SHA-256 |
+|---|---|
+| `2026-10/CyFun2025_Booklet-BASIC_N.pdf` | `aa37ae2dd0d9cfb155a0560c6d76a7b87a2154af8abf967430619eb217452537` |
+| `2026-03/CyFun2025_Booklet-IMPORTANT_N.pdf` | `c7bcd8d7e2fa769bcfd2a97b97d6238b9ebc6e4e6f2238069879e204f9fdb82e` |
+| `2026-03/CyFun2025_Booklet-ESSENTIAL_N.pdf` | `e9e63390ccae2a92fd2984f1479dc8d031aaa3bb67e4e82cfab66991dea6c9f2` |
+| `2026-02/CyFun2025-Key_Measures_NL_1.pdf` | `dfe666236ca4fddbe9d2d17d2d26e127cfabbd5b18a2d0ed54ad6f4aafffad7b` |
+| `2026-03/CyFun2025_Booklet_BASIC_E.pdf` | `5782563b243a9dd0210ddb8e7a8ea2cb6b9b6c0448ece42a52aee7916abddf84` |
+| `2026-03/CyFun2025_Booklet_IMPORTANT_E.pdf` | `6d61bfebedea8aeb1b840272ec2e3497213d6be807e70f0a98aeccc36d70b38d` |
+| `2026-03/CyFun2025_Booklet_ESSENTIAL_E.pdf` | `1a52c71df4d9da762647ae764e39f547cca6940ca9b3e373b03135e1d3b673cc` |
+| `2026-03/CyFun2025-Key_Measures_EN.pdf` | `dccd4fe99f152b7af9fc3fbb89629d71183e4efa06ffe6f98da15e7b7d7ec11a` |
+| `2025-10/CyFun2025_Booklet-BASIC.pdf` (an earlier upload, Version 2025-10-01) | `e7310020e7bace72e3541e5a39b819a5d958b01dc9185a77831d53558ff9af67` |
+| `2025-11/CCB_CyFun2023_Booklet-SMALL_E.pdf` (Version 2023-03-01) | `e8a7acc34a59012d2c64c29b09a4b48066ec0187921cb09d2fe523ea4c1a7537` |
+
+### What the framework documents say, verbatim
+
+The booklets (Version 2025-10-01) print the same two sentences after the six
+functions, in BASIC, IMPORTANT and ESSENTIAL alike. The tools say it on their
+introduction sheet. Apostrophes are normalised; the Dutch BASIC and IMPORTANT
+booklets write « small » in lower case both times.
+
+| | Booklets | Self-assessment tools |
+|---|---|---|
+| nl | « Het CyberFundamentals Framework maakt gebruik van een proportioneel borgingsmodel met drie zekerheidsniveaus: Basic, Important en Essential, voorafgegaan door een instapniveau: small. » « Het instapniveau Small stelt een organisatie in staat een eerste beoordeling te maken. Het is bedoeld voor micro-organisaties of organisaties met beperkte technische kennis. » « Het zekerheidsniveau Basic omvat informatie- en cyberbeveiligingsvereisten die van toepassing zijn op alle organisaties. » | « (1) Zekerheidsniveaus: De CyberFundamentals-Self-Assessment is beschikbaar voor de drie zekerheidsniveaus: Basic, Important en Essential. » Column header « Zekerheidsniveau » (NL ESSENTIAL V1) |
+| fr | « Le cadre CyberFundamentals utilise un modèle d'assurance proportionnel avec trois niveaux d'assurance : Basic, Important et Essential, précédés d'un niveau d'entrée : Small. » « Le niveau d'entrée « Small » permet à une organisation de procéder à une évaluation initiale. Il est destiné aux micro-organisations ou aux organisations disposant de connaissances techniques limitées. » | « (1) Niveaux d'assurance: L'auto-évaluation CyberFundamentals est disponible pour les trois niveaux d'assurance : Basic, Important et Essential. » Column header « Niveau d'assurance » (FR BASIC v2_0, IMPORTANT v2, ESSENTIAL v1) |
+| en | « The CyberFundamentals Framework uses a proportional assurance model with three assurance levels: Basic, Important and Essential, preceded by an entry level: Small. » « The entry level Small allows an organisation to make an initial assessment. It is intended for micro-organisations or organisations with limited technical knowledge. » | « (1) Assurance levels: The CyberFundamentals self-assessment is available for the three assurance levels: Basic, Important and Essential. » Column header « Assurance level » (EN ESSENTIAL v3.1) |
+| de | « Der CyberFundamentals Framework verwendet ein proportionales Sicherheitsmodell mit drei Sicherheitsstufen: Basic, Important und Essential, dem eine Einstiegsstufe vorangestellt ist: Small. » « Die Einstiegsstufe Small ermöglicht es einer Organisation, eine erste Bewertung vorzunehmen. Sie ist für Mikro-Organisationen oder Organisationen mit begrenzten technischen Kenntnissen gedacht. » | none: no German tool exists, the German page links the English ones |
+
+The key-measures overviews (« CyFun 2025 Kernmaatregelen », « CyFun 2025 Key
+Measures ») count key measures for BASIC, IMPORTANT and ESSENTIAL, and for
+nothing else.
+
+So: **three assurance levels, Basic, Important and Essential, preceded by an
+entry level, Small.** In none of the four languages is Small an assurance
+level, and « four levels » appears nowhere.
+
+| | nl | fr | en | de |
+|---|---|---|---|---|
+| a level (Basic, Important, Essential) | zekerheidsniveau | niveau d'assurance | assurance level | Sicherheitsstufe |
+| Small | instapniveau | niveau d'entrée | entry level | Einstiegsstufe |
+| the 1 to 5 score of the tool | maturiteitsniveau | niveau de maturité | maturity level | Reifegrad |
+
+The level names stay in English in the four editions. The maturity row comes
+from the tools' sheet names (« Maturiteitsniveaus », « Niveaux de maturité »,
+« Maturity Levels ») and the German page (« Reifegrad der Politik »).
+
+### The CyFun 2025 pages, and Small
+
+The four 2025 pages say the same, and do not mention Small:
+
+- nl: « Het zekerheidsniveau Basic bevat de standaardmaatregelen voor
+  informatiebeveiliging voor alle ondernemingen. »; the key-measures overview
+  covers « de drie CyberFundamentals-zekerheidsniveaus »; « Er zijn drie
+  afzonderlijke Self-Assessment tools, één voor elk zekerheidsniveau: Basic,
+  Important, Essential ».
+- fr: « Le niveau d'assurance « Basic » comprend les mesures standard de
+  sécurité de l'information pour toutes les entreprises. »; « les trois
+  niveaux d'assurance CyberFundamentals »; « Il existe trois outils de
+  Self-Assessment distincts, un pour chaque niveau d'assurance ».
+- en: « The assurance level Basic contains the standard information security
+  measures for all enterprises. »; « the three CyberFundamentals assurance
+  levels »; « There are three separate self-assessment tools, one for each
+  assurance level ».
+- de: « Die Sicherheitsstufe „Basic" umfasst die Standardmaßnahmen zur
+  Informationssicherheit für alle Unternehmen. »; « der drei
+  CyberFundamentals-Sicherheitsstufen »; « Es gibt drei separate Tools zur
+  Selbstbewertung, eines für jede Sicherheitsstufe ».
+
+Each lists three booklets and three tools, BASIC, IMPORTANT and ESSENTIAL:
+**CyFun 2025 publishes no Small booklet and no Small tool.** The URL
+`https://cyfun.eu/sites/default/files/2025-10/CyFun2025_Booklet-SMALL.pdf`,
+which `frameworks/cyfun.yaml` listed as a CyFun 2025 booklet of the level
+Small « (publié 2025-10-01) », answers 404; the Basic booklet uploaded next to it
+(`2025-10/CyFun2025_Booklet-BASIC.pdf`) carries the same « three assurance
+levels ... preceded by an entry level: Small ». The only Small booklet on
+cyfun.eu is the 2023 edition's, linked from the 2023 pages (Version
+2023-03-01): « To respond to the severity of the threat that an organisation
+is exposed to, and in addition to the starting level Small, three assurance
+levels are also provided: Basic, Important and Essential. » The 2023 pages
+call it « startniveau », « niveau de départ », « starting level »,
+« Einstiegsstufe ». The CCB has not counted Small among its assurance levels
+in either edition.
+
+### Where the CCB's pages disagree with each other
+
+On the count they agree: every page that counts says three. On the word, the
+marketing pages do not:
+
+| Page | nl | fr | en | de |
+|---|---|---|---|---|
+| About | « CyFun® is opgebouwd rond drie zekerheidsniveaus – Basic, Important en Essential– » | « Conçu autour de trois niveaux de maturité (Basic, Important et Essential) » | « Built around three maturity levels – Basic, Important, and Essential – » | « CyFun® basiert auf drei Reifegraden − Basic, Important und Essential − » |
+| Home | « CyFun® is opgebouwd rond drie volwassenheidsniveaus – Basis, Important en Essential – » | as the About page | as the About page | as the About page |
+| CyFun in Belgium, step 1 | « bepaal uw zekerheidsniveau: Basic, Important of Essentieel » | « déterminez votre niveau d'assurance : Basic, Important ou Essential » | « determine your assurance level: Basic, Important, or Essential » | « bestimmen Sie Ihre Sicherheitsstufe: Basic, Important, oder Essential » |
+| CyFun in Belgium, « Conformiteit » | « verzekeringsniveaus BASIC en IMPORTANT », « verzekeringsniveau ESSENTIAL » | « niveaux d'assurance BASIC et IMPORTANT », « niveau d'assurance ESSENTIAL » | « assurance levels BASIC and IMPORTANT », « assurance level ESSENTIAL » | « Zuverlässigkeitsstufen BASIC und IMPORTANT », « Zuverlässigkeitsstufe ESSENTIAL » |
+
+The French 2025 page also writes once « les scores cibles (seuils) fixés pour
+chaque niveau de sécurité dans le Conformity Assessment Scheme (CAS) ». The
+booklets and the tools use one word per language and keep maturiteit,
+maturité, maturity and Reifegrad for the 1 to 5 score, so the product follows
+them: zekerheidsniveau, niveau d'assurance, assurance level, Sicherheitsstufe,
+and instapniveau, niveau d'entrée, entry level, Einstiegsstufe for Small.
+« assurance-niveau » and « assurantieniveau » are words of ours: no CCB text
+in Dutch uses them.
+
+### Presumption of conformity, on the same page
+
+The « Conformiteit » paragraph of the CyFun in Belgium page names three
+routes, none of them at Small:
+
+- nl: « In België kan het vermoeden van conformiteit met NIS2 worden verkregen
+  door middel van CyberFundamentals-verificatie (verzekeringsniveaus BASIC en
+  IMPORTANT), CyberFundamentals-certificering (verzekeringsniveau ESSENTIAL)
+  of ISO/IEC 27001-certificering (op voorwaarde dat het toepassingsgebied en
+  het statement of applicability aanvaardbaar worden bevonden door het CCB). »
+- fr: « En Belgique, la présomption de conformité à la norme NIS2 peut être
+  obtenue par le biais de la vérification CyberFundamentals (niveaux
+  d'assurance BASIC et IMPORTANT), de la certification CyberFundamentals
+  (niveau d'assurance ESSENTIAL) ou de la certification ISO/IEC 27001 (à
+  condition que le champ d'application et le statement of applicability
+  soient jugés acceptables au CCB). »
+- en: « In Belgium, presumption of Conformity to NIS2 can be obtained through
+  CyberFundamentals verification (assurance levels BASIC and IMPORTANT),
+  CyberFundamentals certification (assurance level ESSENTIAL) or ISO/IEC
+  27001 certification (provided the scope and Statement of Applicability is
+  found acceptable by the CCB). »
+- de: « In Belgien kann die Konformitätsvermutung für NIS2 durch eine
+  CyberFundamentals-Verifizierung (Zuverlässigkeitsstufen BASIC und
+  IMPORTANT), eine CyberFundamentals-Zertifizierung (Zuverlässigkeitsstufe
+  ESSENTIAL) oder eine ISO/IEC 27001-Zertifizierung erlangt werden
+  (vorausgesetzt, der Geltungsbereich und die Anwendbarkeitserklärung werden
+  vom CCB für akzeptabel befunden). »
+
+A conformity statement or certificate « op het juiste assurance-niveau (Small,
+Basic, Important of Essential) », which the Dutch fiche wrote (and the French
+one « au bon niveau d'assurance (Small, Basic, Important ou Essential) »),
+therefore says more than the CCB: Small yields no presumption of conformity.
+
+### What the product said, and what it says now
+
+| | Said | Says now |
+|---|---|---|
+| The count | « vier (cumulatieve) zekerheidsniveaus », « vier assurance-niveaus », « quatre niveaux d'assurance (cumulatifs) », « Les 4 niveaux », « 4 cumulative assurance levels », « 4 kumulative Assurance-Stufen », and « 4 » in the dashboard's seven other locales | three assurance levels, Basic, Important and Essential, preceded by the entry level Small, in each language's words from the table above |
+| Small | listed among the assurance levels (« zekerheidsniveaus (Small, Basic, Important, Essential) », « assurance levels (Small, ...) »); a statement or certificate « op het juiste assurance-niveau (Small, ...) » giving a presumption of conformity; « Instapdiagnose », « Een lichte zelfevaluatie », « zonder waarde voor NIS2 »; in `frameworks/cyfun.yaml`, 7 controls, `self_assessment_only`, a list of practices (passwords, updates, backups, antivirus) and a « CyFun 2025 » Small booklet, and « ≈ 7 pour Small » in `countries/be.yaml` | the entry level, for an initial assessment, intended for micro-organisations or organisations with limited technical knowledge; no conformity assessment and no presumption of conformity; CyFun 2025 publishes no Small booklet or tool; no count |
+| The Dutch word | « assurance-niveau » (the Dutch fiche, the dashboard, the citation rule of the Dutch prompt, the `/nl-nl` pages), « assurantieniveau » (the Dutch prompt's preamble, the Dutch declared-level block of `graded-level.ts`, the noun of the declared-level card) | « zekerheidsniveau » |
+| The German word on the dashboard | « Assurance-Stufen » | « Sicherheitsstufen » |
+| The level names | « Petit », « Basique », « Essentiel » (`label_fr` in `cyfun.yaml`, read into `labelLocal` and rendered nowhere); « Mala / Osnovna / Važna / Ključna » on the Croatian dashboard | Small, Basic, Important and Essential, in English in every locale, as in the CCB's four editions |
+| The course | slide 4 « De vier treden van de schaal », « Les quatre paliers », « Die vier Stufen der Skala »; READMEs listing Small among the zekerheidsniveaus | « Het instapniveau en de drie zekerheidsniveaus », « Le niveau d'entrée et les trois niveaux d'assurance », « Die Einstiegsstufe und die drei Sicherheitsstufen » |
+
+The dashboard's « Essentiële entiteiten richten zich op Essential », listed
+above among the defects found on 2026-10-29 and not corrected, sat in the
+string rewritten here; it now names the condition and the CCB's « Important »
+justification, in the eleven locales.
+
+### Delivered on these facts (2026-10-29)
+
+- Dutch pages `/be`, `/be/assurance-niveaus-cyfun` (the URL is kept),
+  `/be/cyfun-conformiteit`, `/be/veelgestelde-vragen`, and their French twins
+  `/fr-be`, `/fr-be/niveaux-assurance-cyfun`, `/fr-be/conformite-cyfun`,
+  `/fr-be/questions-frequentes`: copy, meta descriptions, Open Graph and
+  Twitter cards, Article and FAQ JSON-LD. The German `/de-be` pages already
+  said it.
+- The Dutch-language pages of the Netherlands that compare it with CyFun
+  (`/nl-nl`, `/nl-nl/veelgestelde-vragen`, `/nl-nl/zorgplicht-maatregelen`):
+  « geen zekerheidsniveaus ».
+- The fiches `BELGIUM_BE` and `BELGIUM_FR` in `apps/web/src/lib/countries/belgium.ts`
+  (description, structure, the FAQ answer on the presumption); `BELGIUM_DE`
+  already said it. The English entry in `countries-seo.ts`.
+- The CyFun dashboard strings in `translations.ts`, eleven locales, then the
+  generated dictionaries.
+- The noun of the declared-level card for Belgium
+  (`packages/regulatory-data/src/country-configs/declared-level.ts`).
+- The Dutch CyFun prompt in `native-doc-prompts.ts` (preamble and citation
+  rule) and the Dutch block of `graded-level.ts` (« ## Zekerheidsniveau »).
+  The French, German and English prompts already named three levels.
+- `frameworks/cyfun.yaml` (header, proportionality, the Small entry, `label_fr`,
+  the publication list, the notes), `soft-law/be.yaml`, `countries/be.yaml`,
+  `scope/be.yaml`.
+- The CyFun Foundations course in the three languages: the three slide titles
+  and the READMEs.
+- Developer text: the shape check (`CYFUN_LEVELS`, its messages), the comments
+  of the pages, the dashboard, the shells and the sitemap, ADR 0042.
+
+Not live until somebody acts: the course is seeded into the database, so the
+slide titles reach users only after a re-seed
+(`seed-foundations-native-course.ts --framework cyfun --publish`).
+
+Guard: `apps/web/test/cyfun-level-framing.test.ts` reads every Belgian source
+(comments dropped) and fails on a count of four put on CyFun's levels in any
+of the product's languages, on Small called an assurance level, on
+« assurance-niveau », « assurantieniveau » or « verzekeringsniveau » outside a
+slug, and on a maturity word naming a level; it also checks the fiches, the
+English entry, the dashboard in eleven locales, the two Dutch prompts, the
+declared-level noun and the Small entry of `cyfun.yaml` field by field, and
+that this section still quotes the four booklets. Mutation-tested: against the
+files as they stood before this correction it fails 41 of its 183 tests, with
+findings from all four detectors (48 counts of four, 30 Small called an
+assurance level, 17 old Dutch words, 1 maturity word). Two tests had pinned the
+old Dutch word and were corrected with it:
+`apps/ai-service/test/graded-level.test.ts` (five assertions on
+« Assurantieniveau ») and `apps/web/test/declared-level-card.test.tsx`.
+
+### Found while reading, not corrected in this change
+
+- **Important is verified, not certified.** The « Conformiteit » paragraph
+  quoted above names a verification for Basic and Important and a
+  certification for Essential, and the CCB's timeline recorded above already
+  says « a verification at level Basic or Important ». Several surfaces still
+  describe Important as a certification: the Important cards of
+  `/be/assurance-niveaus-cyfun`, `/be/cyfun-conformiteit`,
+  `/fr-be/niveaux-assurance-cyfun` and `/fr-be/conformite-cyfun`
+  (« Certificering door een erkende CAB », « Certification par un CAB agréé »),
+  the Important summaries of `/be` and `/fr-be` (« Te certificeren door een
+  erkende CAB », « À faire certifier par un CAB agréé »), and
+  `target_attestation: "cab_certification_important"` with its note in
+  `frameworks/cyfun.yaml`.
+- **« Het CCB raadt Basic aan als basislijn voor elke organisatie ».** The
+  booklets say that Basic holds requirements « die van toepassing zijn op alle
+  organisaties »; the recommendation the record quotes (section « The CCB in
+  German ») is narrower: at least Basic for the organisations that may be in
+  the supply chain of an entity in scope. The Dutch course follows the narrower
+  wording since 2026-10-29; the Dutch and French pages, the fiches and the
+  dashboard keep the broad one.
+- **The maturity steering card of the multi-frame view** builds one group per
+  entry of `levels[]` (`getFrameworkGroups`), Small first. Small has no
+  crosswalk row (`framework_to_directive` covers Basic, Important and
+  Essential), so its group can never be scored. Read in the code, not seen
+  rendered.
+
+The first two were corrected the same day: see the next section. The third is
+still open.
+
+## Important is verified, not certified, and the CCB advises Basic to the supply chain (verified 2026-10-29)
+
+<!-- meta: theme=framework,supply-chain; type=law-misread,overclaim; date=2026-10-29; surfaces=marketing,ui,i18n,data,docs; guard=apps/web/test/cyfun-level-framing.test.ts -->
+
+The first two defects listed under « Found while reading, not corrected in
+this change » in the previous section, settled from the CCB's own pages and
+from the booklets. Read on 2026-10-29 between 08:41 and 08:42 UTC in a visible
+Chromium (Playwright, no stealth plugin, nothing spoofed): the CCB's NIS2 page
+on Safeonweb@Work in its four versions, `https://atwork.safeonweb.be/{nl,fr,de}/nis2`
+and `https://atwork.safeonweb.be/nis2` (English), and the four « CyFun® in
+België / en Belgique / In Belgium / in Belgien » pages
+(`https://cyfun.eu/{nl,fr,en,de}/about/CyFun®-in-Belgium`), whose
+« Conformiteit » paragraph the previous section quotes and which read the same
+today. The booklets are those of the previous section, same SHA-256, read again
+for two passages. Apostrophes are normalised.
+
+### The CAB verifies Basic and Important, and certifies Essential
+
+Four texts of the CCB say it, each in the four languages.
+
+- **The four steps of « CyFun® in België »**, steps 3 and 4:
+  - nl: « Selecteer een erkend CAB om uw zelfbeoordeling en de implementatie
+    van uw risicobeperkende maatregelen te verifiëren of te certificeren. »
+    « Vraag uw label aan (optioneel) [...] Zodra het
+    conformiteitsbeoordelingsproces met uw CAB is afgerond, kunt u, na
+    registratie en inloggen, uw CyFun®-label aanvragen in het
+    Safeonweb@work-portaal. »
+  - fr: « Sélectionnez un organisme d'évaluation de la conformité (CAB) agréé
+    pour vérifier ou certifier votre auto-évaluation et la mise en œuvre de
+    vos mesures d'atténuation. » « Demandez votre label (facultatif) [...]
+    Une fois le processus d'évaluation de la conformité avec votre CAB
+    terminé, vous pouvez, après vous être inscrit et connecté, demander votre
+    label CyFun® sur le portail Safeonweb@work. »
+  - en: « Select an authorised Conformity Assessment Body (CAB) to verify or
+    certify your self-assessment and the implementation of your mitigating
+    measures. » « Request your label (optional) [...] Once the Conformity
+    Assessment process is finalised with your CAB, you can request your CyFun®
+    label in the Safeonweb@work portal. »
+  - de: « Wählen Sie eine zugelassene Konformitätsbewertungsstelle (CAB), um
+    Ihre Selbstbewertung und die Umsetzung abmildernde Maßnahmen verifizieren
+    oder zertifizieren zu lassen. » « Fordern Sie Ihr Label an (optional)
+    [...] Sobald der Konformitätsbewertungsprozess mit Ihrer CAB abgeschlossen
+    ist, können Sie Ihr CyFun®Label im Safeonweb@work-Portal anfordern. »
+
+  Step 1 says how the level is chosen: « Beoordeel uw cyberrisico en bepaal uw
+  zekerheidsniveau: Basic, Important of Essentieel. Gebruik de CyFun®
+  Selection Tool om het juiste niveau voor uw organisatie te vinden. » (fr
+  « Utilisez l'outil de sélection CyFun® pour trouver le niveau adapté à votre
+  organisation. »). The label is asked for in the portal once the CAB is done;
+  the CAB does not hand it out.
+- **The supervision paragraph of the NIS2 page**, the first of the three
+  options of an essential entity:
+  - nl: « Een CyberFundamentals (CyFun®)-certificering (niveau Essential) of
+    -verificatie (niveau Important of Basic) met het relevante
+    toepassingsgebied, toegekend door een conformiteitsbeoordelingsinstantie
+    (CAB) die is goedgekeurd door het CCB na accreditatie door BELAC; »
+  - fr: « Une certification (niveau essentiel) ou une vérification (niveau
+    important ou basic) des CyberFundamentals (CyFun®) avec le champ
+    d'application correspondant, délivrée par un organisme d'évaluation de la
+    conformité (CAB) approuvé par le CCB après accréditation de BELAC ; »
+  - en: « A CyberFundamentals (CyFun®) certification (level essential) or
+    verification (level important or basic) with the relevant scope of
+    application, granted by a conformity assessment body (CAB) authorised by
+    the CCB after accreditation from BELAC; »
+  - de: « Eine CyberFundamentals (CyFun®)-Zertifizierung (Level Essential)
+    oder Verifizierung (Level Important oder Basic) mit dem entsprechenden
+    Anwendungsbereich, ausgestellt von einer durch das ZCB zugelassene
+    Konformitätsbewertungsstelle (CAB) nach Akkreditierung durch BELAC; »
+
+  The same paragraph on important entities: « Deze entiteiten kunnen zich
+  echter vrijwillig onderwerpen aan hetzelfde regime als essentiële entiteiten
+  en krijgen als zodanig ook een vermoeden van conformiteit. » (fr « Toutefois,
+  ces entités peuvent se soumettre volontairement au même régime que les
+  entités essentielles et, à ce titre, bénéficient également d'une présomption
+  de conformité. », en « However, these entities may voluntarily submit to the
+  same regime as essential entities and as such also receive a presumption of
+  conformity. », de « Diese Einrichtungen können sich jedoch freiwillig der
+  gleichen Regelung wie die wesentlichen Einrichtungen unterwerfen und
+  erhalten somit ebenfalls eine Konformitätsvermutung. »).
+- **The timeline of the same page** (« Tijdlijn », « Calendrier »,
+  « Timeline »), of which the section « The act in German » quotes the German
+  version: an entity that must meet Important has until 18 April 2026 to obtain
+  « ofwel een Basic of een Important verificatie » (fr « une vérification par
+  un OEC (CAB) accrédité et agréé », en « either obtain a Basic or an Important
+  verification by an accredited and authorised CAB »), and only Essential is
+  certified: « een zekerheidsniveau Essential certificering », « une
+  certification au niveau d'assurance Essential », « an Essential
+  certification ». The Dutch, French and English timelines say what the German
+  one says, route by route. For registration the English page repeats the
+  German one's misprint, « until 18th March 2024 at the latest »; the Dutch and
+  French pages say 18 March 2025 (« uiterlijk tot 18 maart 2025 », « au plus
+  tard pour le 18 mars 2025 »).
+- **The booklets** tie the certification audits to Essential, in the IMPORTANT
+  booklet as well as in the ESSENTIAL one (Version 2025-10-01; the BASIC
+  booklet has no such sentence):
+  - en: « Controls related to management aspects [icon] have to be reviewed
+    during every certification audit – whether it is an initial audit, a
+    surveillance audit, or a recertification audit – when auditing the CyFun® "Essential" assurance level. These controls correspond to the management
+    system principles that ISO/IEC 17021-1 requires certification bodies to
+    assess when auditing any type of management system. »
+  - fr: « Les contrôles relatifs aux aspects de management [icône] doivent
+    être évalués lors de chaque audit de certification, qu'il s'agisse d'un
+    audit initial, d'un audit de surveillance ou d'un audit de recertification,
+    lorsque le niveau d'assurance CyFun® Essential est audité. Ces contrôles
+    s'alignent sur les principes des systèmes de management que les organismes
+    de certification doivent obligatoirement appliquer conformément à
+    l'ISO/IEC 17021-1, quel que soit le type de système de management
+    certifié. »
+  - nl: « Controles met betrekking tot managementaspecten [icoon] moeten
+    tijdens elke certificeringsaudit worden beoordeeld – ongeacht of het gaat
+    om een initiële audit, een surveillance-audit of een hercertificeringsaudit
+    – wanneer het CyFun®-zekerheidsniveau Essential wordt geaudit. »
+  - de: « Kontrollen in Bezug auf Managementaspekte [Symbol] müssen bei jedem
+    Zertifizierungsaudit – unabhängig davon, ob es sich um ein Erstaudit, ein
+    Überwachungsaudit oder ein Rezertifizierungsaudit handelt – überprüft
+    werden, wenn die CyFun®-Sicherheitsstufe „Essential" auditiert wird. »
+
+  An icon marks those controls; the text extraction leaves a gap in its place
+  and, in two booklets, interleaves the two columns, so the sentences are read
+  back in the order of the page. The IMPORTANT booklet lists those controls for
+  its own level in an annex (« ANNEX C: List of controls linked to the
+  management aspects for the assurance level 'Important' »), and still ties the
+  certification audit to Essential.
+
+### The CCB advises Basic to the supply chain; the booklets say what Basic holds
+
+- **The NIS2 page**, under « Niet in het toepassingsgebied? Vergeet
+  identificatie en toeleveringsketen niet! » (fr « Pas dans le champ
+  d'application ? N'oubliez pas l'identification et la chaîne
+  d'approvisionnement ! », en « Not in scope? Don't forget identification and
+  supply chain! »):
+  - nl: « In deze context adviseert het Centrum voor Cybersecurity België alle organisaties die zich in de toeleveringsketen van een NIS2-entiteit kunnen bevinden, om ten minste te voldoen aan de maatregelen die zijn uiteengezet in het CyberFundamentals (CyFun®) Framework level Basic. Een NIS2-entiteit zou theoretisch de naleving van een bepaald CyFun®-niveau kunnen opleggen aan haar directe leveranciers of dienstverleners. »
+  - fr: « Dans ce contexte, le Centre pour la Cybersécurité Belgique conseille à toutes les organisations susceptibles de se trouver dans la chaîne d'approvisionnement d'une entité NIS2 de se conformer au moins aux mesures énoncées dans le niveau Basic du CyberFundamentals (CyFun®) Framework. Une entité NIS2 pourrait théoriquement imposer le respect d'un certain niveau CyFun® à ses fournisseurs directs ou à ses prestataires de services. »
+  - en: « In this context, the Centre for Cybersecurity Belgium advises all organisations that may find themselves in the supply chain of a NIS2 entity, to at least comply with the measures set out in the CyberFundamentals (CyFun®) Framework level Basic. A NIS2 entity could theoretically impose the compliance with a certain CyFun® level onto its direct suppliers or service providers. »
+  - de: quoted in the section « The act in German » (« The CCB in German »),
+    word for word the same on today's reading.
+
+  That is the whole of the CCB's Basic advice on these pages. To NIS2 entities
+  it advises CyFun as a framework (« adviseert het Centrum voor Cybersecurity
+  België alle NIS2-entiteiten gebruik te maken van het CyberFundamentals
+  (CyFun®) Framework »), and an entity determines its level on its risk
+  assessment (« Entiteiten die op basis van hun risicobeoordeling bepalen dat
+  ze moeten voldoen aan het zekerheidsniveau Basic [...] », the timeline).
+- **The booklets**, all three (the Dutch sentence is also in the previous
+  section):
+  - nl: « Het zekerheidsniveau Basic omvat informatie- en cyberbeveiligingsvereisten die van toepassing zijn op alle organisaties. »
+  - fr: « Le niveau d'assurance « Basic » comprend les exigences en matière d'information et de cybersécurité applicables à toutes les organisations. »
+  - en: « The assurance level Basic includes information and cyber security requirements applicable for all organisations. » (the IMPORTANT booklet writes « cybersecurity »)
+  - de: « Die Sicherheitsstufe Basic umfasst Anforderungen an die Informations- und Cybersicherheit, die für alle Organisationen gelten. »
+
+  A description of what Basic contains, not a recommendation that every
+  organisation take it.
+
+### The attack-coverage figures
+
+`frameworks/cyfun.yaml` gave each level a share of the common attacks it
+covers, « ≈ 82 % (chiffres CCB 2024) » for Basic, « ≈ 94 % » for Important and
+« ≈ 100 % » for Essential, with `coverage_basis: "Évaluation CCB 2024 contre
+les profils d'attaque CERT-courants"`. The twelve 2025 booklets and the two
+key-measures overviews of the previous section contain no percentage of attacks
+covered, and no percentage sign at all; neither do the CyFun 2025 and 2023
+pages, the « About », « CyFun® in Belgium » and home pages in the four
+languages, or the NIS2 page in its four versions. The figures are removed. None
+reached a page or a prompt: the loader reads only the ids, labels, order and
+applicability of the levels.
+
+### What the product said, and what it says now
+
+| | Said | Says now |
+|---|---|---|
+| Important | « Certificering door een erkende CAB », « Certification par un CAB agréé » on the Important cards of `/be/assurance-niveaus-cyfun`, `/be/cyfun-conformiteit` and their French twins; « Te certificeren door een erkende CAB », « À faire certifier par un CAB agréé » in the Important summaries of `/be` and `/fr-be`; `target_attestation: "cab_certification_important"`, its note « Certification délivrée par un CAB agréé (BELAC + habilitation CCB). Surveillance + recertification cycles conformes à ISO/IEC 17021-1. » | a self-assessment, then a verification by a recognised CAB, as for Basic; only Essential is certified. `cab_verification_important`, its note quoting the CCB and tying the certification audits and ISO/IEC 17021-1 to Essential, as the booklets do |
+| Basic | « Zelfevaluatie of een Basic-label van een erkende CAB », « Auto-évaluation ou label Basic délivré par un CAB agréé »; `self_assessment_or_cab_label_basic`, « Le label CAB Basic (« CyberFundamentals Basic Label ») est délivré par un CAB agréé après audit complet » | a self-assessment, then a verification by a CAB, after which the CyFun label may be asked for on Safeonweb@work. `cab_verification_basic` |
+| Important entities | « Belangrijke entiteiten kunnen vrijwillig certificeren », « ook voor wie vrijwillig certificeert », « Les entités importantes peuvent se faire certifier volontairement », « y compris à qui se fait certifier volontairement » | they may submit voluntarily to the same regime as essential entities (art. 41), the CCB's words |
+| The presumption | « Een conformiteitsverklaring of certificaat op het juiste zekerheidsniveau (Basic, Important of Essential) », « Une déclaration de conformité ou un certificat au bon niveau d'assurance » and the same for the MSPs (the fiches); « la certification CyFun par un CAB agréé bénéficie de la présomption de conformité » (`soft-law/be.yaml`); « entités certifiées par un CAB agréé sur l'un OU l'autre référentiel », « la PRÉSOMPTION DE CONFORMITÉ la plus forte » for Essential (`cyfun.yaml`) | a CyberFundamentals verification (Basic, Important) or certification (Essential) by a recognised CAB, as the « Conformiteit » paragraph says; one presumption, art. 42, whatever the level |
+| The CAB in marketing copy | « klaar voor de CAB-certificering », « prêt pour la certification par un CAB », « de zelfevaluatie of de CAB-certificering », « l'auto-évaluation ou la certification par un CAB »; the keywords « CAB certificering », « certification CAB » | « de verificatie of de certificering door een CAB », « la vérification ou la certification par un CAB », the CCB's « te verifiëren of te certificeren »; « CAB verificatie », « vérification CAB » |
+| Basic advice | « Het CCB raadt Basic aan als (geloofwaardige) basislijn voor elke (Belgische) organisatie », with « Important voor verhoogde risico's »; « De door het CCB aanbevolen basislijn »; « Voor elke Belgische organisatie is Basic de aanbevolen basislijn »; the badge « De aanbevolen basislijn »; « Telt mee voor NIS2 als basislijn »; « Het CCB beveelt Basic aan als baseline »; the French twins (« base de référence (crédible) pour toute organisation (belge) », « socle »); the dashboard in eleven locales; in `cyfun.yaml`, « Le CCB recommande typiquement Basic comme baseline pour toute organisation belge ; Important pour les EE de moindre criticité [...] ; Essential pour les EE des secteurs critiques » and « Toute organisation cherchant un baseline crédible » | Basic holds the requirements applicable to all organisations (booklets); the CCB advises at least Basic to the organisations that may be in the supply chain of a NIS2 entity, and such an entity could impose a CyFun level on its direct suppliers; an entity determines its level on its risk assessment, with the CCB's Selection Tool |
+| Coverage | ≈ 82 %, ≈ 94 %, ≈ 100 % (« chiffres CCB 2024 ») | removed |
+
+### Delivered on these facts (2026-10-29)
+
+- The Dutch pages `/be`, `/be/assurance-niveaus-cyfun`, `/be/cyfun-conformiteit`,
+  `/be/veelgestelde-vragen`, `/be/cyfun-maatregelen`, `/be/hosting-beveiliging`
+  and their French twins `/fr-be`, `/fr-be/niveaux-assurance-cyfun`,
+  `/fr-be/conformite-cyfun`, `/fr-be/questions-frequentes`,
+  `/fr-be/mesures-cyfun`, `/fr-be/securite-hebergement`: level cards and
+  summaries, banners, FAQ answers (hence their FAQ JSON-LD), keywords, calls to
+  action, `dateModified`.
+- The fiches `BELGIUM_BE` and `BELGIUM_FR` (`apps/web/src/lib/countries/belgium.ts`):
+  description, structure, the supply-chain sector, the FAQ answer on CyFun;
+  both now cite the Dutch and French NIS2 pages read today. `BELGIUM_DE` and
+  the `/de-be` pages already said both things the CCB's way, and the English
+  entry in `countries-seo.ts` says neither wrong thing.
+- The CyFun dashboard (`app.dashboard.cyfun.assurance.body`) in the eleven
+  locales of `translations.ts`, then the generated dictionaries.
+- `frameworks/cyfun.yaml` (header, proportionality, the Basic, Important and
+  Essential entries, the notes of the mapping to the directive, the ISO/IEC
+  27001 basis) and `soft-law/be.yaml`.
+- Unchanged, because they said neither thing: the document prompts, the legal
+  frame of the documents, the three CyFun Foundations courses (the Dutch one
+  has followed the CCB's supply-chain wording since the morning) and the
+  seeded course descriptions.
+
+Guard: `apps/web/test/cyfun-level-framing.test.ts`, extended. It reads the
+Belgian sources it already read, each unit now tagged with the level of the
+card or YAML entry it sits in, and fails, in any of the product's languages, on
+a certification put on Basic or Important (bound to the level by the syntax,
+named inside a Basic or Important card or entry, or a CAB certification with no
+verification beside it), on an important entity that « certifies »
+voluntarily, on a CyFun label issued by a CAB, and on Basic as every
+organisation's baseline or the CCB recommending it so outside the supply chain.
+It checks the level cards, the YAML attestations and notes, the fiches and the
+dashboard field by field, and that this section quotes the CCB. Mutation-tested:
+against the product sources as they stood before this correction (this section
+and the guard kept), it fails 29 of its 302 tests, 16 sources among them, with
+findings from all four new detectors: 39 Basic baselines, 23 certifications on
+Basic or Important, 10 voluntary certifications, 5 labels from a CAB. One test
+pinned the Dutch fiche's sources and was extended with the two pages read
+today: `apps/web/test/country-belgium-de-fiche.test.ts`.
+
+### Found while reading, not corrected in this change
+
+- ~~`/be/cyfun-conformiteit` and `/fr-be/conformite-cyfun` count « 34 »,
+  « 117 » and « 140 » measures « op hoofdniveau » / « de premier niveau ».~~
+  **Corrected 2026-10-29:** 34 / 133 / 218 requirements, of which 13 / 22 /
+  29 key measures (« kernmaatregelen », « mesures clés »), from the mapping
+  above. `cyfun.yaml` no longer keeps the 2023 count as a second « view »
+  (guard: `apps/web/test/cyfun-control-counts.test.ts`).
+- The Essential cards (« monitoring (SOC), EDR/XDR/SIEM, red teaming, een
+  jaarlijkse onafhankelijke audit en bestuur op directieniveau ») and the
+  Important ones (« Dekt de tien NIS2-maatregelen van art. 21(2)(a-j) »)
+  describe content this record has not read; so does the ISO/IEC 27001 block of
+  `cyfun.yaml` (« Surveillance annuelle + recertification triennale
+  conformément à ISO/IEC 27006 », « ≈ 90 % de recouvrement »). The NIS2 page
+  sets its own conditions on ISO/IEC 27001: a certification issued by a CAB
+  accredited by a signatory of the EA or IAF mutual recognition agreement and
+  authorised by the CCB, with a scope and Statement of Applicability the CCB
+  finds acceptable.
+- ~~The dashboard's « Incidenten worden binnen 72 u bij het CCB gemeld », in
+  eleven locales, leaves out the early warning within 24 hours (art. 35 § 1,
+  1°).~~ **Corrected 2026-10-29:** each locale names the three stages in the
+  official terms of its language version of art. 23(4), read on EUR-Lex the
+  same day (nl « vroegtijdige waarschuwing », pt « alerta rápido », es
+  « alerta temprana », hr « rano upozorenje », el « έγκαιρη προειδοποίηση »,
+  sl « zgodnje opozorilo », pl « wczesne ostrzeżenie », it « preallarme »);
+  the French and German use the Belgian law's own « alerte précoce » and
+  « Frühwarnung ».
+- ~~The English entry of `countries-seo.ts` says the three levels are « mapped
+  to entity criticality ».~~ **Corrected 2026-10-29:** each entity determines
+  its level on its own risk assessment, with the CCB's selection tool, and an
+  essential entity may justify Important.
+- `cyfun.yaml`, note of the mapping for Basic: « Pour Reglyze : recommander
+  Basic aux clients BE EI ou micro-organisations qui ne savent pas par où
+  commencer ». The booklets intend the entry level Small for
+  micro-organisations. **Corrected 2026-10-29:** the note now points a
+  micro-organisation at Small and says an NIS2 entity's level follows from its
+  risk assessment.
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=scope-error; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+The engine read the regional and local levels on the directive's sentences. The
+law was read again in the Moniteur (the source of this file) on 2026-11-05.
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| Three kinds of public administration, at any size | art. 3, § 3 | "3° l'entité est une entité de l'administration publique: a) qui dépend de l'Etat fédéral; b) qui dépend des entités fédérées, identifiée conformément à l'article 11, § 2; c) qui est une zone de secours au sens de l'article 14 de la loi du 15 mai 2007 relative à la sécurité civile ou le Service d'incendie et d'aide médicale urgente de la Région de Bruxelles-Capitale" | ✅ |
+| Only the federal level is essential by name | art. 9 | "4° les entités de l'administration publique qui dépendent de l'Etat fédéral;" | ✅ |
+| The rest is important | art. 10 | "1° les entités d'un type visé à l'annexe I ou II qui ne sont pas qualifiées d'entités essentielles sur la base de l'article 9;" | ✅ |
+| The identification | art. 11, § 2 | "En ce qui concerne les entités qui dépendent des entités fédérées, l'autorité nationale de cybersécurité identifie les administrations publiques qui, à la suite d'une évaluation basée sur les risques, fournissent des services dont la perturbation pourrait avoir un impact important sur des activités sociétales ou économiques critiques." | ✅ |
+
+| Level stated | Verdict | Basis |
+|---|---|---|
+| Federal, or not stated | essential, whatever the size | art. 3, § 3, 3°, a; art. 9, 4° |
+| Regional | important, identification assumed | art. 3, § 3, 3°, b; art. 11, § 2; art. 10, 1° |
+| Local | important, identification assumed, or a fire-rescue zone | art. 3, § 3, 3°, c; art. 10, 1° |
+
+**Open.** Whether a commune or a province "depends on a federated entity" in the
+sense of art. 3, § 3, 3°, b is not settled by the text: the verdict assumes it,
+which can overstate.

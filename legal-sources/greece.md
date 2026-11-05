@@ -27,7 +27,7 @@
 
 ## Ν. 5160/2024 — transposition of NIS2
 
-<!-- meta: theme=statute; type=reference; date=2026-08-06; surfaces=docs; guard=none -->
+<!-- meta: theme=statute,governance; type=reference; date=2026-10-29; surfaces=docs; guard=none -->
 
 - **Official citation:** Νόμος 5160/2024, «Ενσωμάτωση της Οδηγίας (ΕΕ) 2022/2555
   … (Οδηγία NIS 2) και άλλες διατάξεις» — ΦΕΚ **Α΄ 195/27.11.2024**, 52 pages.
@@ -36,6 +36,17 @@
 - **Retrieved + read:** 2026-08-06. Full PDF text extracted with
   `pdftotext -enc UTF-8` (column mode — see the extraction warning at the bottom
   of this file) and read directly. Quotes below are verbatim from that text.
+- **Re-read 2026-10-29 for Άρθρο 14 §2 in the Εθνικό Τυπογραφείο's copy:**
+  search.et.gr's record of ΦΕΚ Α΄ 195/2024 (issue date 27/11/2024, released
+  28/11/2024, 52 pages) and the store its search results link to,
+  https://ia37rg02wpsa01.blob.core.windows.net/fek/01/2024/20240100195.pdf
+  (sha256 `4ca9de617393773ee50b4c275f38ea4d11b33bb2dff3bfa68b9ca3b66aa929b7`,
+  `pdfsig`: "Signature is Valid."). Άρθρα 14, 26 §9 and 30 §12 read the same
+  in the Authority's copy above, fetched again the same day (sha256
+  `76dcd319264145e0365f90f8f8dc70da00bab17f060a1fbc796baeeac161f879`). From the
+  same store, each PDF signed and its signature valid: ΦΕΚ Α΄ 223/08.12.2025
+  (ν. 5256/2025), ΦΕΚ Β΄ 2186/06.05.2025 (ΚΥΑ 1689/2025) and ΦΕΚ Β΄
+  4250/05.08.2025 (ΥΑ 1899/2025).
 
 ### Verified facts
 
@@ -45,7 +56,12 @@
 | One sub-point deferred by 1 year (→ 27.11.2025) — **⚠️ SUPERSEDED, now 27.11.2026, see ΚΥΑ 2267/2025** | Άρθρο 45 §2 | "Η ισχύς της υποπερ. στβ) της περ. στ) της παρ. 2 του άρθρου 3 αρχίζει ένα (1) έτος από τη δημοσίευση του παρόντος" | ⚠️ superseded |
 | Entity terminology = **βασικές** / **σημαντικές** οντότητες | Άρθρο 4 (title) | "Βασικές και σημαντικές οντότητες (άρθρο 3 …)" | ✅ |
 | **Management body must approve the measures within 3 months of entry into force** (→ 27.02.2025). No such deadline in the directive. | Άρθρο 14 §1 | "Τα όργανα διοίκησης των βασικών και σημαντικών οντοτήτων εγκρίνουν, **εντός τριών (3) μηνών από την έναρξη ισχύος του παρόντος**, τα μέτρα διαχείρισης κινδύνων" | ✅ |
-| **Training is an obligation extended to employees, at least annually.** Directive art. 20(2) only says entities "shall encourage" it. | Άρθρο 14 §2 | "Τα μέλη των οργάνων διοίκησης … παρακολουθούν εκπαίδευση και **διασφαλίζουν ότι** οι βασικές και σημαντικές οντότητες **παρέχουν όμοια κατάρτιση στους υπαλλήλους τους τουλάχιστον σε ετήσια βάση**" | ✅ |
+| **Training is an obligation extended to employees, at least annually.** Directive art. 20(2) only says entities "shall encourage" it. Reading: « τουλάχιστον σε ετήσια βάση » closes the clause on the training the entities provide to their employees; the members' own clause, « παρακολουθούν εκπαίδευση », carries no interval of its own. | Άρθρο 14 §2 | "2. Τα μέλη των οργάνων διοίκησης των βασικών και σημαντικών οντοτήτων παρακολουθούν εκπαίδευση και διασφαλίζουν ότι οι βασικές και σημαντικές οντότητες παρέχουν όμοια κατάρτιση στους υπαλλήλους τους τουλάχιστον σε ετήσια βάση, προκειμένου να αποκτούν επαρκείς γνώσεις και δεξιότητες που τους επιτρέπουν να εντοπίζουν τους κινδύνους και να αξιολογούν τις πρακτικές διαχείρισης κινδύνων στον τομέα της κυβερνοασφάλειας και τον αντίκτυπό τους στις υπηρεσίες που παρέχει η οντότητα." | verified (ΦΕΚ Α΄ 195/27.11.2024, 2026-10-29) |
+| The procedure, the duration, the trainers' qualifications, the material and a possible certification by the Authority are left to a joint ministerial decision, which may also make the training mandatory for the employees in charge of cybersecurity | Άρθρο 30 §12 | "12. Με κοινή απόφαση των Υπουργών Ψηφιακής Διακυβέρνησης, Παιδείας, Θρησκευμάτων και Αθλητισμού και Εργασίας και Κοινωνικής Ασφάλισης, η οποία εκδίδεται μετά από γνώμη του Διοικητή της Εθνικής Αρχής Κυβερνοασφάλειας, καθορίζονται οι διαδικασίες, η διάρκεια εκπαίδευσης, τα προσόντα των εκπαιδευτών, το εκπαιδευτικό υλικό, η δυνατότητα χορήγησης πιστοποίησης από την Εθνική Αρχή Κυβερνοασφάλειας και κάθε άλλο θέμα σχετικό με την εφαρμογή της παρ. 2 του άρθρου 14. Με την ίδια απόφαση δύναται να καθίσταται υποχρεωτική η κατά τα ανωτέρω εκπαίδευση σε υπαλλήλους των βασικών και σημαντικών οντοτήτων που είναι αρμόδιοι, σύμφωνα με τα οικεία οργανογράμματά τους ή τις σχετικές αποφάσεις ανάθεσης καθηκόντων για την κυβερνοασφάλεια των εν λόγω οντοτήτων." | verified (ΦΕΚ Α΄ 195/27.11.2024, 2026-10-29); the decision itself not found, see "Still to pin", item 8 |
+| ΚΥΑ 1689/2025: the top management body follows a training programme periodically and ensures one for its staff | ΚΥΑ 1689/2025, Άρθρο 4 β. βε. | "βε. παρακολουθεί σε περιοδική βάση πρόγραμμα εκπαίδευσης για θέματα κυβερνοασφάλειας και διασφαλίζει ότι παρέχεται αντίστοιχο πρόγραμμα και στο προσωπικό της." | verified (ΦΕΚ Β΄ 2186/06.05.2025, 2026-10-29) |
+| ΚΥΑ 1689/2025: periodic training and awareness programmes for all staff and for the members of the top management body, with seven minimum topics (αα to αζ) | ΚΥΑ 1689/2025, Άρθρο 21 α. | "α. Η οντότητα διενεργεί, σε περιοδική βάση, προγράμματα εκπαίδευσης και ευαισθητοποίησης για το σύνολο του προσωπικού, καθώς και μελών του κατά περίπτωση ανώτατου οργάνου διοίκησης, σε θέματα κυβερνοασφάλειας. Τα ως άνω προγράμματα παρέχουν βασικές πρακτικές κυβερνοϋγιεινής στους χρήστες και περιλαμβάνουν τουλάχιστον: […]" | verified (ΦΕΚ Β΄ 2186/06.05.2025, 2026-10-29) |
+| The Υ.Α.Σ.Π.Ε. sees to the training of the members of the management bodies | ΥΑ 1899/2025, Άρθρο 6 §1 θ) | "θ) Η μέριμνα για την εκπαίδευση και ευαισθητοποίηση των μελών των οργάνων διοίκησης και των λοιπών στελεχών της Οντότητας, σχετικά με τους κινδύνους κυβερνοασφάλειας και τα μέτρα προστασίας που απαιτούνται σύμφωνα με την παρ. 2 του άρθρου 14 του ν. 5160/2024." | verified (ΦΕΚ Β΄ 4250/05.08.2025, 2026-10-29) |
+| ⚠️ **Exit since 08.12.2025:** Part A of ν. 5160/2024, Άρθρο 14 included, does not apply to the Higher Education Institutions | ν. 5256/2025, Άρθρο 30, adding Άρθρο 3 §8Α to ν. 5160/2024 (in force on publication, Άρθρο 49 §1) | "Στο άρθρο 3 του ν. 5160/2024 (Α’ 195), περί του πεδίου εφαρμογής του Μέρους Α’ του νόμου αυτού περί ενσωμάτωσης της Οδηγίας (ΕΕ) 2022/2555 του Ευρωπαϊκού Κοινοβουλίου και του Συμβουλίου της 14ης Δεκεμβρίου 2022 σχετικά με μέτρα για υψηλό κοινό επίπεδο κυβερνοασφάλειας σε ολόκληρη την Ένωση, προστίθεται παρ. 8Α ως εξής: «8Α. Το παρόν Μέρος δεν εφαρμόζεται στα Ανώτατα Εκπαιδευτικά Ιδρύματα»." | verified (ΦΕΚ Α΄ 223/08.12.2025, 2026-10-29) |
 | Risk-management measures = the directive's ten, α) to ι) | Άρθρο 15 §2 | "περιλαμβάνουν δε τουλάχιστον τα ακόλουθα: α) … ι)" | ✅ |
 | Supply-chain measure | Άρθρο 15 §2 δ) | "ασφάλεια της αλυσίδας εφοδιασμού, συμπεριλαμβανομένων των σχετικών με την ασφάλεια πτυχών που αφορούν τις σχέσεις μεταξύ κάθε οντότητας και των άμεσων προμηθευτών ή παρόχων υπηρεσιών της" | ✅ |
 | **Cryptography measure adds a national body** not present in the directive | Άρθρο 15 §2 η) | "πολιτικές και διαδικασίες σχετικά με τη χρήση κρυπτογραφίας …, **σε συνεργασία με την εθνική αρχή CRYPTO, όπου απαιτείται**" | ✅ |
@@ -55,6 +71,13 @@
 | **Two-CSIRT routing** — a national specificity | Άρθρο 16 §1 | "Οι οντότητες της περ. στ) της παρ. 2 του άρθρου 3 κοινοποιούν τα περιστατικά … στην CSIRT της **Εθνικής Υπηρεσίας Πληροφοριών** με ταυτόχρονη ενημέρωση της Εθνικής Αρχής Κυβερνοασφάλειας." | ✅ |
 | Art. 19 registry (digital-infrastructure subset), statutory deadline **17.01.2025** — **⚠️ extended to 30.09.2025**, see P0.1 | Άρθρο 19 §1 | "υποβάλλουν υποχρεωτικώς στην Εθνική Αρχή Κυβερνοασφάλειας, **το αργότερο έως τις 17 Ιανουαρίου 2025**" | ⚠️ superseded |
 | Changes to registered information: **3 months** — but only for the art. 19 §1 subset; the general rule is **2 weeks** (art. 4 §4) | Άρθρο 19 §2 | "αμελλητί και, σε κάθε περίπτωση, εντός τριών (3) μηνών από την ημερομηνία επέλευσης της μεταβολής" | ✅ |
+
+`gr.yaml` quotes Άρθρο 14 §2 with an omission: "Τα μέλη των οργάνων διοίκησης
+… παρακολουθούν εκπαίδευση και διασφαλίζουν ότι οι βασικές και σημαντικές
+οντότητες παρέχουν όμοια κατάρτιση στους υπαλλήλους τους τουλάχιστον σε ετήσια
+βάση". The whole paragraph is in the row above. For a training record, Άρθρο
+14 §2 sets no certificate, provider or duration; Άρθρο 30 §12 leaves those to
+a decision not found on 2026-10-29.
 
 ### ⚠️ Trap avoided — do not reuse the wrong 24 h/72 h
 
@@ -927,6 +950,23 @@ absent from those; et.gr and Diavgeia were not searched systematically.
    declared the Authority's CSIRT adequately resourced, which ends the General
    Staff unit's transitional role, is not on the index and was not found.
 
+8. **New: has the Άρθρο 30 §12 training decision been issued?** A full-text
+   search of the Εθνικό Τυπογραφείο (the API behind search.et.gr, years 2025
+   and 2026, all issues) for « παρ. 12 του άρθρου 30 του ν. 5160/2024 » on
+   2026-10-29 returned 20 ΦΕΚ issues, among them those of ΚΥΑ 1381/2025, ΚΥΑ
+   1689/2025, ΥΑ 1899/2025, ΚΥΑ 2267/2025 and ν. 5256/2025. Each was
+   downloaded from the store above and read with `pdftotext`: none cites
+   « παρ. 12 του άρθρου 30 » of ν. 5160/2024. Not found; absence not proven.
+   (The store's copy of ΦΕΚ Α΄ 85/2026, ν. 5305/2026, has a text layer, unlike
+   the Authority's copy of item 5.)
+9. **New: ν. 5256/2025 (ΦΕΚ Α΄ 223/08.12.2025) amends ν. 5160/2024 and is not
+   on the Authority's index.** Read 2026-10-29: its Άρθρο 30 adds Άρθρο 3 §8Α
+   (Part A does not apply to the Higher Education Institutions, row in the
+   first section), and its Άρθρο 31, « Διόρθωση παροραμάτων », rewrites
+   Άρθρο 24 §9, Άρθρο 26 §4 ("η λέξη «σημαντική» αντικαθίσταται από τη λέξη
+   «βασική»") and Άρθρο 26 §9 στ). The scope and sanctions sections of this
+   file read the 2024 text and do not carry it.
+
 ## Extraction notes (for whoever reads these PDFs next)
 
 <!-- meta: theme=statute; type=reference; date=2026-08-06; surfaces=docs; guard=none -->
@@ -1017,3 +1057,66 @@ What the fiches leave out, and why:
 - **The circulars' periods** (30, 90, 180 days, 10 months; 3, 14, 60 days) as
   deadlines: the first set has no stated start, the second is a set of
   recommended maxima for essential entities.
+
+## The Foundations course in Greek (delivered 2026-10-29)
+
+<!-- meta: theme=statute,registration,incident,governance,sanctions,framework; type=delivery; date=2026-10-29; surfaces=ui; guard=apps/web/test/epak-training-course.test.ts -->
+
+`marketing/training/foundations-epak/`: four modules in Greek, seeded with
+`framework_key='epak'` and locale `el` by
+`apps/core-api/scripts/seed-foundations-native-course.ts --framework epak`.
+Until 2026-10-29 Greece had no course at all: `hasNativeContent("training",
+"epak")` was false and a Greek organisation's catalogue was the empty "native
+pending" state. Every legal fact of the course rests on a line of this file,
+and the guard asserts each key fact twice, in the learner's text and as its
+verbatim line here, as the fiches' guard does.
+
+| Module | What it teaches | Lines of this file that carry it |
+|---|---|---|
+| 1. ν. 5160/2024 and the Authority | ΦΕΚ and entry into force; what was repealed; scope; βασικές and σημαντικές; the Authority, its CSIRT role and the ΕΥΠ's CERT; registration, its extensions and the two weeks for changes; the fines of art. 26 §§4, 5 and 8 | Official citation and Άρθρο 45 §1; "What the law repealed"; "Scope: Άρθρο 3 §§1 to 4" and P0.2; "Who is βασική besides the size test"; Ν. 5086/2024 Άρθρο 3 §1; Ν. 5160/2024 Άρθρο 23 §1; "The CSIRT"; "The registration duty", P0.1 and "How registration actually works"; P0.3 |
+| 2. ΚΥΑ 1689/2025 and the self-assessment | title, ΦΕΚ, purpose (Άρθρο 1), entry into force (Άρθρο 26), the legal basis; 22 requirement articles in two tiers, no maturity levels; proportionality and evidence (Άρθρο 3); thematic policies, pen tests, independent audit, suppliers; the annual self-assessment of Άρθρο 18 §1 δ); the Authority's tool as an aid | ΚΥΑ 1689/2025 section (official citation, structure, P0.5 structural pattern, "Requirements that go beyond the directive", Άρθρο 12); Ν. 5160/2024 Άρθρο 15 §2 η) (CRYPTO); "Public country fiches" (Άρθρο 1); P0.6 and its two cautions; "Still to pin", item 1 |
+| 3. The Υ.Α.Σ.Π.Ε. and governance | Άρθρο 14 §§1 and 2; the Υ.Α.Σ.Π.Ε. (Άρθρο 15 §5 α), ΥΑ 1899/2025: own executive or group, qualifications, criminal record, background checks, the two incompatibilities, sixteen duties, reporting line; ΚΥΑ Άρθρο 7 β)); the ενιαία πολιτική and the supervision fee; the asset inventory | "Verified facts" of Ν. 5160/2024 (Άρθρο 14); "Άρθρο 15 §5"; "ΥΑ 1899/2025"; "Requirements that go beyond the directive" (Άρθρο 7 β)); "How registration actually works" (Υπόδειγμα Ι §10); "Still to pin", item 2 |
+| 4. Incident notification | significance (Άρθρο 16 §3), no national threshold; recipients (Άρθρο 16 §1, Άρθρο 10 §1); the acts of Άρθρο 16 §4 under their statutory names and the trust-service derogation; the channel and the two forms; circular 28427 as a framework of guidance for βασικές | "The incident acts, all of art. 16 §§1, 3 and 4"; "The CSIRT"; "The Authority's incident page and its two report forms"; "Still to pin", item 4; "Εγκύκλιος 28427/30-07-2026"; the ΚΥΑ structure table (Άρθρα 17, 24, 25) |
+
+What the course leaves out, and why:
+
+- **"ΕΠΑΚ".** The ΚΥΑ never abbreviates its own title ("Public country
+  fiches"); the course names it by title and number. The guard fails on the
+  word.
+- **The undertaking clause of Άρθρο 26 §§4 and 5** (P0.3): the course states
+  the two ceilings and "ανάλογα με το ποιο είναι υψηλότερο", and leaves the
+  clause to a Greek lawyer, as the fiches do.
+- **The per-obligation amounts of Άρθρο 26 §9.** P0.3 lists the amount for
+  each obligation, but quotes only the amounts: whether each is a ceiling
+  ("έως") or a fixed sum is not in this file. Left out until the paragraph is
+  quoted in full.
+- **The registration platform's host name.** It contains "nis2"; the course
+  names the platform by its access route (gov.gr-ΕΨΠ, taxisnet) and the
+  e-mail route of ΚΥΑ 1381/2025, as the document context does.
+- **The sectors of Annexes I and II**, not read (the ΦΕΚ font carries no
+  Unicode map, "Public country fiches"): the course names no sector.
+- **Άρθρο 31 §1** (the General Staff unit as transitional CSIRT): the entity's
+  duty does not move with it ("The CSIRT"); the course names the Authority's
+  CSIRT and the e-mail channel only.
+- **The counts of P0.5** (108 lettered requirements, 164 items): a derived
+  measure, to be re-counted at ratification. The course states 22 requirement
+  articles and two tiers.
+- **Circular 20718/08-06-2026**: public-sector priority measures whose periods
+  have no stated starting point; not in the course.
+- **The 3, 14 and 60 days of circular 28427 as deadlines**: the course gives
+  them as the Authority's recommended maxima for βασικές entities, says that
+  the circular addresses no σημαντική entity, and that the link to Άρθρο 17 of
+  the ΚΥΑ is our reading, not the circular's.
+
+The review blocks of the four modules are unticked: the course ships
+`review_status='unreviewed'` until an el-GR native reviewer signs it off.
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=scope-error; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+The class of each level did not change. The sentences were the directive's. A
+local authority of either tier is now said to be in scope with no size test, as
+an important entity (art. 3 § 2 στ) and art. 4 § 2), and the sentence for a
+first-tier authority names the date of ΚΥΑ 2267/2025. The engine does not read
+the date: before 27.11.2026 its verdict for a municipality overstates.

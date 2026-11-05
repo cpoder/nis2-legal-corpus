@@ -631,12 +631,40 @@ of art. 4, the binding catalogue is the Annex of Implementing Regulation (EU)
 | Fact | Where | Verbatim | Status |
 |---|---|---|---|
 | The board approves the measures | art. 24 lid 1 Cbw | « De maatregelen, bedoeld in artikel 21, behoeven de goedkeuring van het bestuur van de essentiële entiteit of belangrijke entiteit. » | verified |
-| What each board member must be able to do | art. 24 lid 2 Cbw | « beschikt over kennis en vaardigheden om: a. risico’s voor de beveiliging van netwerk- en informatiesystemen te kunnen identificeren; b. risicobeheersmaatregelen op het gebied van cyberbeveiliging te kunnen beoordelen; en c. de gevolgen van de risico’s en risicobeheersmaatregelen voor de diensten die door de entiteit worden verleend te kunnen beoordelen. » | verified |
+| What each board member must be able to do | art. 24 lid 2 Cbw | « Ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit beschikt over kennis en vaardigheden om: a. risico’s voor de beveiliging van netwerk- en informatiesystemen te kunnen identificeren; b. risicobeheersmaatregelen op het gebied van cyberbeveiliging te kunnen beoordelen; en c. de gevolgen van de risico’s en risicobeheersmaatregelen voor de diensten die door de entiteit worden verleend te kunnen beoordelen. » | verified (wetten.overheid.nl, BWBR0052872, read 2026-10-29) |
 | Two years for every board member | art. 24 lid 3 Cbw | « Ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit voldoet binnen twee jaar na de inwerkingtreding van het tweede lid aan het bepaalde in het tweede lid. Indien een lid na de inwerkingtreding van het tweede lid wordt benoemd, voldoet dit lid binnen twee jaar na diens benoeming aan het bepaalde in het tweede lid. » | verified |
 | Kept up to date | art. 24 lid 4 Cbw | « Ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit houdt de kennis en vaardigheden, bedoeld in het tweede lid, aantoonbaar actueel. » | verified |
-| A certificate | art. 24 lid 5 Cbw | « bezit ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit een certificaat, waaruit de deelname blijkt aan een training die de onderwerpen, bedoeld in het tweede lid, behandelt » | verified |
+| A certificate, for every board member | art. 24 lid 5 Cbw | « 5. Met het oog op het aantonen van de kennis en vaardigheden bezit ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit een certificaat, waaruit de deelname blijkt aan een training die de onderwerpen, bedoeld in het tweede lid, behandelt. » | verified (Stb. 2026, 187, 2026-10-29) |
+| Rules on the training and the certificate, duration and level included, may be set by AMvB | art. 24 lid 6 Cbw | « 6. Bij of krachtens algemene maatregel van bestuur kunnen regels worden gesteld over de training en het certificaat, bedoeld in het vijfde lid, waaronder de duur en het niveau van de training. » | verified (Stb. 2026, 187, 2026-10-29) |
+| A legal person on the board: the duty falls on the natural persons who sit for it | art. 24 lid 7 Cbw | « 7. Indien een rechtspersoon het bestuur of een lid van het bestuur van een essentiële entiteit of belangrijke entiteit is, is het bepaalde bij of krachtens het tweede tot en met zesde lid van overeenkomstige toepassing op de natuurlijke persoon of natuurlijke personen die namens die rechtspersoon zitting heeft of hebben in het bestuur van de essentiële entiteit of belangrijke entiteit. » | verified (Stb. 2026, 187, 2026-10-29) |
+| One-tier board: the executive directors only; art. 105 will add arts. 44a and 291a Boek 2 BW once parts of the Wet bestuur en toezicht rechtspersonen enter into force | art. 24 lid 8 Cbw; art. 105 Cbw | « 8. Indien de essentiële entiteit of belangrijke entiteit toepassing heeft gegeven aan de artikelen 129a of 239a van Boek 2 van het Burgerlijk Wetboek, is het bepaalde bij of krachtens het eerste tot en met zesde lid uitsluitend van toepassing op de uitvoerende bestuurders van die essentiële entiteit of belangrijke entiteit. » / « Het achtste lid komt te luiden: 8. Indien de essentiële entiteit of belangrijke entiteit toepassing heeft gegeven aan de artikelen 44a, 129a, 239a of 291a van Boek 2 van het Burgerlijk Wetboek, is het bepaalde bij of krachtens het eerste tot en met zesde lid uitsluitend van toepassing op de uitvoerende bestuurders van die essentiële entiteit of belangrijke entiteit. » | verified (Stb. 2026, 187, 2026-10-29) |
+| ⚠️ **Exit:** art. 24 does not apply where art. 21 does not apply | art. 24 lid 13 Cbw | « 13. Dit artikel is niet van toepassing op een essentiële entiteit of belangrijke entiteit indien artikel 21 niet van toepassing is op die entiteit. » | verified (Stb. 2026, 187, 2026-10-29) |
+| ...and art. 21 does not apply where a sector-specific Union act imposes at least equivalent measures | art. 22 lid 1 Cbw | « 1. Indien sectorspecifieke rechtshandelingen van de Europese Unie voorschrijven dat een essentiële entiteit of belangrijke entiteit risicobeheersmaatregelen op het gebied van cyberbeveiliging neemt en indien deze verplichtingen ten minste gelijkwaardig zijn aan de verplichtingen, bedoeld in artikel 21, is artikel 21 niet van toepassing op die entiteit. » | verified (Stb. 2026, 187, 2026-10-29) |
+| Cbb: the purpose of the training | art. 20 Cbb | « De training, bedoeld in artikel 24, vijfde lid, van de wet, stelt het lid van het bestuur van de essentiële entiteit of belangrijke entiteit in staat om risico’s voor de beveiliging van netwerk- en informatiesystemen te kunnen identificeren en de gevolgen daarvan voor de diensten die door de entiteit worden verleend te kunnen beoordelen. Ook stelt de training het lid van het bestuur van de entiteit in staat om risicobeheersmaatregelen op het gebied van cyberbeveiliging en de gevolgen daarvan voor de diensten die door de entiteit worden verleend te kunnen beoordelen. » | verified (Stb. 2026, 189, 2026-10-29) |
+| Cbb: the training treats at least three risk topics and the ten measures of art. 21 lid 3 Cbw | art. 21 Cbb | « 1. Ten behoeve van het verkrijgen van kennis en vaardigheden om risico’s voor de beveiliging van netwerk- en informatiesystemen te kunnen identificeren als bedoeld in artikel 24, tweede lid, onderdeel a, van de wet en de gevolgen van deze risico’s te kunnen beoordelen, bedoeld in artikel 24, tweede lid, onderdeel c, van de wet, behandelt de training, bedoeld in artikel 24, vijfde lid, van de wet, daartoe in ieder geval de volgende onderwerpen: a. de soorten risico’s voor netwerk- en informatiesystemen; b. risicomanagementprocessen; en c. risicobeoordelingsmethodiek. 2. Ten behoeve van het verkrijgen van kennis en vaardigheden om risicobeheersmaatregelen op het gebied van cyberbeveiliging als bedoeld in artikel 24, tweede lid, onderdeel b, van de wet en de gevolgen van risicobeheersmaatregelen te kunnen beoordelen, bedoeld in artikel 24, tweede lid, onderdeel c, van de wet, behandelt de training, bedoeld in artikel 24, vijfde lid, van de wet, in ieder geval de onderwerpen, genoemd in artikel 21, derde lid, onderdelen a tot en met j, van de wet. » | verified (Stb. 2026, 189, 2026-10-29) |
+| **Cbb: what the certificate contains, at least, and its language** | art. 22 Cbb | « 1. Het certificaat van de training, bedoeld in artikel 24, vijfde lid, van de wet, bevat in ieder geval: a. de naam van het lid van het bestuur van de essentiële entiteit of belangrijke entiteit; b. de datum of data waarop de training is gevolgd; c. de behandelde onderwerpen in de training; en d. de naam van de aanbieder van de training. 2. Het certificaat van de training, bedoeld in artikel 24, vijfde lid, van de wet, is opgesteld in de Nederlandse taal of de Engelse taal. » | verified (Stb. 2026, 189, 2026-10-29) |
+| The certificate is required for the lid 5 training only; the training may be given in any language | Nota van toelichting, on art. 22 Cbb | « Hierbij dient te worden opgemerkt dat dit certificaat uitsluitend verplicht is in het kader van de verplichte training van artikel 24, vijfde lid, Cbw. Een certificaat met de in het Cbb opgenomen vereisten is niet verplicht voor het aantoonbaar actueel houden van de kennis en vaardigheden als bedoeld in artikel 24, vierde lid, Cbw. Leden van bestuur kunnen dat ook op andere wijze aantonen. Artikel 22, tweede lid, Cbb bevat het vereiste dat het certificaat is opgesteld in de Nederlandse of Engelse taal. Dit vereiste is noodzakelijk voor efficiënt en effectief toezicht op de verplichting voor bestuursleden om de training te volgen. Dit vereiste geldt alleen voor het certificaat en niet voor de taal van de training. De training mag in iedere taal worden gegeven. » | verified (Stb. 2026, 189, 2026-10-29) |
 | The Wbni is repealed | art. 106 Cbw | « De Wet beveiliging netwerk- en informatiesystemen wordt ingetrokken. » | verified |
 | A report made under the Wbni counts as an early warning | art. 95 lid 2 Cbw | the earlier report « wordt [...] aangemerkt als een vroegtijdige waarschuwing van een significant incident als bedoeld in artikel 26 » | verified |
+
+Art. 24 Cbw and chapter 5 of the Cbb re-read 2026-10-29 in the official
+publications, https://zoek.officielebekendmakingen.nl/stb-2026-187.html
+(sha256 `2ca4b77bde18b018b1fa07bd6ca79af7fe2f312feb05c9a13973b7276b8e129e`) and
+https://zoek.officielebekendmakingen.nl/stb-2026-189.html (sha256
+`cbac302ce875e0c00efa1acd8823f1894151ab2297e8e9dc4c2c3a4a706591e8`).
+wetten.overheid.nl, BWBR0052872 and BWBR0052875, « Geldend van 15-08-2026 t/m
+heden », « Geen andere versie om mee te vergelijken », carries the same words.
+
+**What a Dutch certificate is (2026-10-29).** Art. 22 Cbb asks four things of
+the certificate of art. 24 lid 5, at least: the board member's name, the date
+or dates on which the training was followed, the topics treated, and the name
+of the provider of the training; and it is drawn up in Dutch or English.
+Neither art. 24 Cbw nor arts. 20 to 22 Cbb say who may issue it, accredit a
+provider, or set a duration or a level, although art. 24 lid 6 allows rules on
+the last two. The training must treat at least the topics of art. 21 Cbb. A
+document that lacks one of the four items, or is in another language, does not
+meet art. 22 Cbb. Keeping the knowledge up to date (lid 4) needs no such
+certificate (Nota van toelichting).
 
 Art. 35 Cbb brings the whole act into force on 2026-08-15, art. 24 lid 2
 included, so the two years of lid 3 end on **2028-08-15**. That date is
@@ -711,3 +739,69 @@ names its registration body separately.
 - `org-identifiers.ts` takes the KvK number as the identifier of a Dutch public
   body. For registration, art. 27 lid 2 Cbb asks a body listed in the Register
   van Overheidsorganisaties for that register's code instead.
+
+## The Foundations course in Dutch (delivered 2026-10-29)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance,sanctions,supply-chain; type=delivery; date=2026-10-29; surfaces=ui; guard=apps/web/test/nl-training-course.test.ts,apps/core-api/test/training-nl-course.test.ts -->
+
+`marketing/training/foundations-nl/`: four modules in Dutch, seeded with
+`framework_key` NULL and locale `nl` by
+`apps/core-api/scripts/seed-foundations-course.ts --locale nl`. The
+Netherlands is a substrate country (no catalogue, no levels, no certification:
+"CORRECTION 2026-07-29"), so the course is the generic Foundations family (the
+four topic directories of `foundations-en/`) written in Dutch, with this file's
+facts in place of the other countries' examples. Because it teaches Dutch law,
+the catalogue offers it to Dutch organisations only (`substrateCourseCountry`
+in `packages/regulatory-data/src/native-content.ts`). It is not Belgium's
+CyFun course (`foundations-cyfun/`, also in Dutch, framework `cyfun`): a
+Belgian organisation is never offered this course, nor a Dutch one CyFun's.
+Every legal fact of the course rests on a line of this file, and the guard
+asserts each key fact twice, on the slide and as its verbatim line here.
+
+| Module | What it teaches | Sections of this file that carry it |
+|---|---|---|
+| 1. The Cbw and the Cbb | the titles, Stb. 2026, 187 and 189, issued 2026-07-10, art. 107 (no date in the act), art. 35 Cbb (in force 2026-08-15), the repeals (art. 106 Cbw, art. 34 Cbb); the sectors of bijlagen 1 and 2, art. 5 lid 1; essential and important by operation of law (arts. 8 and 12), designation (arts. 9 to 11 and 13), the municipality of 12 000 inhabitants, the logistics firm that transport does not bring into scope; the minister per sector (art. 15); the supervisors (art. 68); the CSIRTs (art. 16, art. 2 Cbb, Z-CERT, CERT-WM, the NCSC for municipalities until at least the end of 2026); the register on MijnNCSC (arts. 43 and 44, art. 27 Cbb); the fines (arts. 79, 80, 87, 91, 93) | "UPDATE 2026-07-27", "CORRECTION 2026-07-30" (art. 15), "Classification: local authorities are ESSENTIAL by operation of law", "Reading of chapters 6 to 10 of the Cbb" (art. 27 Cbb), and in "2026-10-29: the act in force": "The CSIRT depends on the sector", "Registration", "Who is essential, who is important", "Fines", "Governance, and the old law", "Supervisors", "What the English page said" |
+| 2. The bestuur | art. 24 lid 1 to 5 (approval, the three limbs of lid 2 verbatim, two years, kept up to date, a certificate), chapter 5 Cbb (arts. 20 to 22); 2028-08-15, marked computed; the bestuur of a public body (lid 12) against its legal representative (Gemeentewet art. 171, Provinciewet art. 176, Waterschapswet art. 95); the fine of art. 93 | "Governance, and the old law", "What the Cbb actually contains", "The MANAGEMENT BODY is named by the Cbw itself: art. 24 lid 12", "Verified facts (verbatim)" of 2026-07-30, "Fines" |
+| 3. The zorgplicht | art. 21 lid 1 verbatim, the ten measures of lid 3 as the NCSC lists them; art. 5 Cbb and the explanatory note (a minimum, the open norm leads); the themes of chapter 4; the eleven digital categories of art. 4 Cbb and the Annex of Implementing Regulation (EU) 2024/2690; art. 10 Cbb, two sentences, no interval; no catalogue, no levels, no certification, no ISO or NEN reference, the BIO for the sector overheid | "Cyberbeveiligingswet (Cbw)" (the NCSC's list), "What the Cbb actually contains", "Correct wording", "Who is essential, who is important" (arts. 21, 5 and 4), "2026-07-30: Cbb art. 10" |
+| 4. The meldplicht | the recipients (« aan » in art. 26, « bij » in arts. 27 and 29) and the one reporting point (art. 25 Cbb, MijnNCSC); the stages under the act's own names and their clocks (arts. 26 to 29), trust services at 24 h (art. 27 lid 2); « incidentmelding » is not the Cbw's word; the fields art. 24 Cbb adds to the early warning; the sectoral thresholds (art. 23 Cbb, the NCSC) and art. 23 lid 2 for digital infrastructure; the CSIRT per sector; the double DORA report (art. 30 Cbb); the fines | "Incident reporting: the articles, the stage names, the clocks", "The CSIRT depends on the sector", "Reading of chapters 6 to 10 of the Cbb", "Fines" |
+
+What the course leaves out, and why:
+
+- **The thresholds themselves.** The course says where they are (a ministerial
+  regulation per sector, the EU implementing regulation for digital
+  infrastructure) and quotes none: this file does not read the thresholds of
+  the sector regulations, and on 2026-07-29 most sectors had none yet.
+- **A deadline for the first registration.** The act sets none
+  ("Registration"); the course gives 2026-08-15 as the NCSC's reading, in the
+  NCSC's name.
+- **What arts. 21a and 30 Cbw contain**, and **arts. 76 to 78**: not read in
+  this file. The course cites art. 21a and art. 30 only as articles art. 80
+  lid 3 names, and quotes art. 79 as it stands.
+- **The content of the early warning under the act itself**: not quoted here.
+  The course gives the four fields of art. 24 Cbb as what the warning « also »
+  contains.
+- **The size thresholds of Recommendation 2003/361/EC**: not quoted in this
+  file. The course says « middelgrote onderneming » without numbers, and its
+  worked example states the size class, not a headcount.
+- **Who imposes the fines**, the board member's fine of art. 93 included: the
+  course says the act sets the fine, and names no imposing authority.
+- **Higher education** (arts. 11, 13 and 97; CSIRT and supervisor « ntb »)
+  and the **IBD and SURFcert** designations announced in July and not found on
+  2026-10-29: the course names art. 15 lid 3 only, and the NCSC for
+  municipalities until at least the end of 2026.
+- **Art. 95 lid 2** (a report made under the Wbni counts as an early warning):
+  transitional, not in a course that outlives it.
+
+2028-08-15 is computed from art. 24 lid 3 and art. 35 Cbb
+("Governance, and the old law") and the course says so. The review blocks of
+the four modules are unticked: the course ships `review_status='unreviewed'`
+until a nl-NL native reviewer signs it off.
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=scope-error; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+The engine gave a province and a municipality the class important, on the
+directive's sentences, while this file and the public-administration configuration
+gave essential. Art. 8 lid 1 onder g en h settles it: all three levels are essential
+by operation of law, with no size test.

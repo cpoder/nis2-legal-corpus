@@ -339,7 +339,7 @@ piece of work.
 
 ## Art. 23 verbatim + MSP-A review « final remarks on PSSI » (2026-08-27)
 
-<!-- meta: theme=governance,documents; type=reference; date=2026-08-27; surfaces=data,prompt,doc-gen; guard=packages/shared/src/legal-citation-lint.test.ts -->
+<!-- meta: theme=governance,documents; type=reference; date=2026-10-29; surfaces=data,prompt,doc-gen; guard=packages/shared/src/legal-citation-lint.test.ts -->
 
 **Trigger:** mail from Reviewer-A (MSP-A) of 27/08: 9 remarks on the
 Client-A PSSI. Verification of art. 23 read in the Gazzetta (fetch-articles-menu script,
@@ -350,11 +350,35 @@ retrieved 2026-08-27) + ACN requisiti in misure-acn.yaml (verbatim XLSX).
 | **Art. 23 contains ONLY commi 1, 2, 3**: « comma 4 » does not exist | art. 23 | structure read in full | ✅ |
 | Approval of the implementation modalities | art. 23 c. 1 lett. a) | "approvano le modalità di implementazione delle misure di gestione dei rischi" | ✅ |
 | Sovrintendenza + responsibility | art. 23 c. 1 lett. b)-c) | "sovrintendono all'implementazione" / "sono responsabili delle violazioni" | ✅ |
-| Training of the bodies: **« sono tenuti a seguire una formazione »**, WITHOUT « non delegabile », WITHOUT a frequency | art. 23 c. 2 lett. a) | "sono tenuti a seguire una formazione in materia di sicurezza informatica" | ✅ |
-| Employee training: promoted, « periodica » (not annual) | art. 23 c. 2 lett. b) | "promuovono l'offerta periodica di una formazione coerente" | ✅ |
+| Training of the bodies: **« sono tenuti a seguire una formazione »**, WITHOUT « non delegabile », WITHOUT a frequency | art. 23 c. 2 lett. a) | "2. Gli organi di amministrazione e gli organi direttivi dei soggetti essenziali e dei soggetti importanti: a) sono tenuti a seguire una formazione in materia di sicurezza informatica;" | verified (GU Serie Generale n. 230 del 1-10-2024, 2026-10-29) |
+| Employee training: promoted, « periodica » (not annual); the purpose clause (« per favorire … ») is part of this letter | art. 23 c. 2 lett. b) | "b) promuovono l’offerta periodica di una formazione coerente a quella di cui alla lettera a) ai loro dipendenti, per favorire l’acquisizione di conoscenze e competenze sufficienti al fine di individuare i rischi e valutare le pratiche di gestione dei rischi per la sicurezza informatica e il loro impatto sulle attività del soggetto e sui servizi offerti." | verified (GU Serie Generale n. 230 del 1-10-2024, 2026-10-29) |
 | Informativa on incidents to the bodies | art. 23 c. 3 | "sono informati su base periodica o, se opportuno, tempestivamente" | ✅ |
-| PR.AT-01 requires an approved/documented training plan, **without an annual frequency** | misure-acn.yaml PR.AT-01.R1-R2 | plan « definito, attuato, aggiornato e documentato », « approvato dagli organi » | ✅ |
+| PR.AT-01: a documented training plan that includes the bodies, approved by them, and a register of the employees trained, **without an annual frequency**; the same three requirements for important (Allegato 1) and essential (Allegato 2) entities | Determinazione ACN n. 379907/2025, Allegati 1 and 2, PR.AT-01, requisiti 1 to 3 | "È definito, attuato, aggiornato e documentato un piano di formazione in materia di sicurezza informatica del personale, ivi inclusi gli organi di amministrazione e direttivi, che comprende almeno: a) la pianificazione delle attività di formazione previste con l’indicazione dei contenuti della formazione fornita; b) le eventuali modalità di verifica dell'acquisizione dei contenuti." / "Il piano di formazione di cui al punto 1 è approvato dagli organi di amministrazione e direttivi." / "È mantenuto un registro aggiornato recante l'elenco dei dipendenti che hanno ricevuto la formazione di cui al punto 1, i relativi contenuti e l'elenco delle verifiche svolte laddove previste." | verified (ACN, official XLSX of both annexes, 2026-10-29) |
+| Who the « organi di amministrazione e direttivi » are, for ACN | Determinazione ACN n. 379907/2025, art. 1, lett. i) | "i) “organi di amministrazione e direttivi”, gli organi di amministrazione e direttivi di cui all’articolo 23 del decreto NIS, ivi incluso, laddove presente, il consiglio di amministrazione dei soggetti NIS;" | verified (ACN, signed PDF, 2026-10-29) |
 | Punto di contatto NIS + sostituto + Referente CSIRT + sostituti in the security organisation | misure-acn.yaml GV.RR-02.R3 (art. 7 c. 6 decreto) | "sono inclusi il punto di contatto e il suo sostituto, il referente CSIRT e gli eventuali suoi sostituti" | ✅ |
+
+Re-read 2026-10-29. Art. 23 in the Gazzetta Ufficiale, Serie Generale n. 230
+del 1-10-2024, https://www.gazzettaufficiale.it/eli/gu/2024/10/01/230/sg/pdf
+(88 pages, sha256 `056dfbb1ddd34c163585250ae5631270ed8d27ce16ac5b30576cff4e88169e36`),
+and on Normattiva,
+https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-09-04;138~art23,
+which shows art. 23 « Testo in vigore dal: 16-10-2024 », version 1, with the
+same words (Normattiva prints straight apostrophes, the Gazzetta typographic
+ones; the quotes follow the Gazzetta). ACN:
+https://www.acn.gov.it/portale/documents/d/guest/modalita-e-specifiche-di-base-nis-soggetti-importanti
+(sha256 `ce695c2f8ed5fb424767749cc1f2d62b5243f877b839f11b74e3f6a9abb80e67`),
+https://www.acn.gov.it/portale/documents/d/guest/modalita-e-specifiche-di-base-nis-soggetti-essenziali
+(sha256 `79534e97dd7d2160f2ffa497b4d7c22c155aa639448ba9f8ef3bf8d065c169c3`) and
+the signed determination,
+https://www.acn.gov.it/portale/documents/d/guest/detacn_obblighi_2511-v3_signed
+(sha256 `dfb9d02bb11de75bc14f913d768eeece1e4f5ca7ef9d72ff939bf445c3979127`).
+
+**For a training record (2026-10-29).** Art. 23 c. 2 lett. a) is the provision
+an Italian attestation cites. It binds the « organi » of essential and
+important entities to follow training, and sets no frequency, certificate,
+provider or duration. Chapter IV, art. 23 included, does not apply to the
+entities of Allegato I sectors 3 and 4, which DORA governs (art. 3 c. 14, in
+the scope section of 2026-10-23).
 
 **Corrections applied (2026-08-27):** « formazione non delegabile » removed
 from 6 places (IT_PREAMBLE, PSSI + formazione prompts, board deck, Quadro
@@ -674,3 +698,165 @@ What the product does with it (2026-10-28): the IT incident config, the ACN
 adapter, the incident draft prompt and the Italian fiche use "pre-notifica"
 and name CSIRT Italia. The monthly cadence is stated in the progress label; the
 engine still models one progress report, so monthly reminders are not sent.
+
+## The ACN incident PDF missed the 2026-10-28 correction (fixed 2026-10-29)
+
+<!-- meta: theme=incident; type=surface-inconsistency,deadline-model; date=2026-10-29; surfaces=doc-gen,prompt,marketing; guard=apps/doc-gen/test/incident-forms-statute-terms.test.ts -->
+
+The section above corrected the data, the adapter, the prompt and the fiche.
+It did not reach the document an entity actually hands CSIRT Italia: doc-gen's
+ACN incident form (`apps/doc-gen/src/templates/incident-acn.ts`) still headed
+the 24-hour stage "Preallarme di incidente significativo", ran both clocks
+"dalla rilevazione" (from detection, where art. 25, c. 5, lett. a) and b) run
+them "da quando sono venuti a conoscenza dell'incidente significativo"), and
+its cover read "NIS2 Art. 23 — Preallarme ACN" over an English "ACN Incident
+Report". The tabletop prompt and the Italian getting-started line also said
+"preallarme".
+
+Now, with the verbatim of the table above:
+
+- the form says "Pre-notifica", runs both clocks from awareness and prints
+  that instant under its own label (core-api sends `becameAwareAt`, falling
+  back to the detection time as the deadlines do);
+- it cites art. 25, comma 5, lett. a), b) and d) of the decree, with the
+  directive in parentheses;
+- the final report runs "entro un mese dalla trasmissione della notifica
+  dell'incidente di cui alla lettera b)" and names the monthly progress report
+  of lett. e);
+- the cover is the stage's own title over "Incidente significativo (articolo
+  25 del D.lgs. 138/2024)".
+
+The guard renders each stage through the real route.
+
+## The normative-anchor token reached delivered documents (found and fixed 2026-11-05)
+
+<!-- meta: theme=documents; type=surface-inconsistency; date=2026-11-05; surfaces=data,prompt,test; guard=apps/ai-service/test/template-token-never-delivered.test.ts -->
+
+Not a legal fact: a defect in how a verified block reaches the document. It
+is recorded here because this file is where the corpus of the generated
+Italian documents is described (sections of 2026-08-25 and after), and because
+the block concerned is the one that carries the measures of the Determinazione
+ACN.
+
+Since 2026-09-08 the « Ancoraggio normativo (Misure ACN) » section of five
+document types is computed from the official catalogue, not written by the
+model (`packages/regulatory-data/src/doc-corpus/it-normative-anchors.ts`). The
+prompt asks the model for a section whose only content is the token
+`{{ANCORAGGIO_NORMATIVO}}`, and the service puts the block in its place.
+
+What was found: delivered documents in which the section the model wrote
+still read `{{ANCORAGGIO_NORMATIVO}}`, while the verified block sat in a
+second, unnumbered section of the same name inserted near the top.
+
+Two defects, each harmless without the other:
+
+1. The function that inserts a block (`apps/ai-service/src/lib/legal-frame.ts`)
+   looked for the legal-frame token `{{QUADRO_LEGALE}}` whatever block it was
+   given. The anchor went through it with a token of its own, so it never
+   took the first path and always landed through the fallback on the heading.
+2. The anchor's heading pattern did not accept a numbered heading, which the
+   patterns of the legal frames all did. The model numbers its headings
+   ("## 3. Ancoraggio Normativo (Misure ACN)"), the fallback missed, the block
+   was appended after the first section and the token stayed where it was.
+
+The only trace was an information-level log line
+(`generate.document.normative_anchor_fallback_splice`), emitted for every
+anchored document whether it went well or not. The on-demand audit
+(`tools/doc-audit`) did not look for generation tokens.
+
+Now:
+
+- each block names the token it replaces (`placeholder`, on the legal frames
+  and on the anchor) and the insertion reads it from the block, so a block
+  cannot be inserted with another's token;
+- the anchor's pattern accepts a numbered heading;
+- a token still present when the document leaves the service is reported as
+  an error with its name, in the log and to the error tracker. It is not yet
+  a reason to refuse the document: the generation is not failed on it;
+- `tools/doc-audit` flags a generation token as a high finding.
+
+The guard drives the real route with the model replaced: for each of the five
+anchored types under each of the three headings found, and for every
+framework and document type with a model that returns every token it was
+asked for. Before the correction it fails on the 15 anchored cases with the
+raw token in the returned document.
+
+
+
+## The sentence on individual fines had survived on three surfaces (found and fixed 2026-11-05)
+
+<!-- meta: theme=sanctions,governance; type=law-misread,surface-inconsistency; date=2026-11-05; surfaces=data,mcp,marketing; guard=apps/web/test/fines-pages-articles-32-34.test.ts,packages/regulatory-data/test/transpositions-fines-follow-the-record.test.ts -->
+
+The correction of 2026-07-26 above removed "ACN may impose individual fines on
+members of the management body" from the reference line. The same statement
+was still served from three other places, none of which that correction read:
+
+- the deviation table (`packages/regulatory-data/src/transpositions.ts`,
+  entry `it-individual-fines`), which the training slides print and which the
+  MCP scope-check tool returns: "Italian transposition explicitly authorises
+  the regulator (ACN) to impose individual administrative fines on members of
+  the management body. As with France, this is a Member-State option the
+  directive permits and Italy has exercised.";
+- the English country page, twice: "Italy explicitly authorises individual
+  administrative fines on members of the management body (Capo VI)" and, as
+  the answer on sanctions, "ACN can additionally impose individual
+  administrative fines on members of the management body.";
+- the comment that heads the Italian reference in
+  `transposition-references.ts`.
+
+Why it was wrong: the rows of art. 38 above. Commi 9 and 11 fine the soggetto;
+comma 6 aims at natural persons an accessory incapacity to hold management
+functions, conditional on a diffida not complied with. The directive gives no
+"option" to fine a person either (`eu.md`, "Articles 32 and 34 on
+enforcement").
+
+What they say now: the entry keeps its id and states the incapacity of
+art. 38 c. 6 and that the fines hit the entity; the country page says the
+same in both places. Neither says whether the incapacity reaches a soggetto
+importante, which the row on the tension between commi 5 and 6 leaves open.
+
+
+
+## Defect: three surfaces gave ACN a threshold of users and hours for a significant incident (found and fixed 2026-11-05)
+
+<!-- meta: theme=incident; type=fabrication,surface-inconsistency; date=2026-11-05; surfaces=marketing,data,doc-gen,ui,mcp; guard=packages/regulatory-data/test/it-significant-incidents-are-types.test.ts -->
+
+ACN defines the basic significant incidents by type of evidence: the four rows
+of the section "Allegati 3–4" above, IS-1 to IS-3 for important entities and
+IS-1 to IS-4 for essential ones. The annexes carry no percentage of users and
+no number of hours.
+
+Three surfaces stated a threshold all the same, each next to a correct
+description of the four types:
+
+| Surface | What it stated | Who read it |
+|---|---|---|
+| `packages/regulatory-data/src/country-configs/transposition-references.ts`, the national requirements of Italy, in English, French, Italian, German and Portuguese | "ACN publishes quantitative thresholds (e.g. > 25% of users affected, > 4 hours of downtime on a critical service) that operationalise the Article 23 'significant incident' trigger" | the national requirements panel of the application, and the fallback documents of Italian organisations, which print the list |
+| `packages/regulatory-data/src/transpositions.ts`, deviation row `it-acn-thresholds` | "ACN publishes indicative thresholds for what counts as a significant incident" with the same two figures, cited as "ACN, soglie di significatività" | the MCP scope check and the national block of the training slides |
+| `apps/web/src/lib/countries-seo.ts`, the public English page on Italy | the same sentence, with the advice to "benchmark your incident-classification logic against those published soglie di significativita" | anyone |
+
+No ACN text on record carries those figures. The training courses gave the
+same two figures to ACN in four languages, to the BSI in German and to INCIBE
+in Spanish (`eu.md`, the defect section on the training courses), which is how
+the invention was noticed.
+
+The harm is specific: an entity that believes in a threshold does not notify
+an incident below it, and IS-1 has no size at all. A loss of confidentiality
+towards the outside is notifiable whatever the number of users.
+
+Corrected the same day: the entry is removed from the national requirements,
+where the entry on IS-1 to IS-4 already says what applies; the deviation row
+becomes `it-acn-incident-types` and describes the four types and who each
+applies to; the public page describes them as well.
+
+
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=scope-error; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+The class of each level did not change. The sentences were the directive's. A
+regional body is now said to be in scope under art. 3 c. 6 and Allegato III c. 1
+lett. b, and a local one under Allegato III c. 1 lett. c, a listed body being
+assumed because the inputs do not say. A municipality that is not listed is
+outside art. 3 c. 6, so the local verdict can overstate.

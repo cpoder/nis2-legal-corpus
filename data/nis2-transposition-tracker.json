@@ -2,7 +2,7 @@
   "_about": "NIS2 transposition status per EU and EEA country, as rendered by the public tracker at https://reglyze.com/en/nis2-tracker. Stages: not_transposed, draft, adopted, in_force, enforcing. `tier` says how a row was established: `verified` rows carry a statute identity verified at the official publication; `provisional` rows are either honest first drafts (lastVerifiedAt null) or sourced records (lastVerifiedAt and sources set) that still await a native reviewer. Every dated fact of a sourced or verified row traces to legal-sources/<country>.md. This file is the curated base layer shipped in the product's code; the live page merges on top of it a database overlay written by a weekly automated sweep of the official sources and by operator verifications, each change carrying its own citation. Dates are ISO 8601. Greece is EL.",
   "_licence": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
   "_source": "https://github.com/cpoder/nis2-legal-corpus",
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-11-05",
   "directiveDeadline": "2024-10-17",
   "summary": {
     "total": 30,
@@ -99,7 +99,7 @@
       "signals": {
         "directiveDeadline": "2024-10-17",
         "nationalLawDate": "2026-02-13",
-        "enforcementDate": "2026-02-13",
+        "enforcementDate": "2026-02-17",
         "infringementOpen": false,
         "registrationLive": false,
         "nationalFrameworkPublished": false
@@ -110,14 +110,19 @@
       "competentAuthority": null,
       "sources": [
         {
-          "label": "Държавен вестник бр. 17/2026 — Закон за киберсигурност (изм.)",
+          "label": "Държавен вестник, бр. 17 от 13.02.2026: Закон за изменение и допълнение на Закона за киберсигурност",
           "url": "https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=241234",
-          "retrievedAt": "2026-06-07"
+          "retrievedAt": "2026-11-05"
+        },
+        {
+          "label": "Конституционен съд: Решение № 7 от 11 август 1994 г., how the three days of Article 5(5) of the Constitution are counted",
+          "url": "https://www.constcourt.bg/bg/dl-62079ee3f37a75eded6f9f3ccce88a5dd232bfa9",
+          "retrievedAt": "2026-11-05"
         }
       ],
       "verified": false,
-      "lastVerifiedAt": "2026-06-07",
-      "notes": "In force 2026-02-13 — amendment to the Cybersecurity Act, State Gazette (ДВ) бр. 17 of 2026-02-13. The act is silent on entry into force, so it takes effect on the promulgation date (ZNA default; the old 3-day rule was repealed in 2007); secondary '17 Feb' claims misapply the repealed rule."
+      "lastVerifiedAt": "2026-11-05",
+      "notes": "In force since 2026-02-17: the act amending the Cybersecurity Act was promulgated in the State Gazette (ДВ) бр. 17 of 2026-02-13 and sets no date of its own, so it took effect three days after promulgation under Article 5(5) of the Constitution, counted as the Constitutional Court counts them (Decision No 7 of 1994: promulgated on 22 July, in force on 26 July). Commission infringement case closed 2026-10-01."
     },
     {
       "country": "CY",
@@ -138,14 +143,24 @@
       "competentAuthority": null,
       "sources": [
         {
-          "label": "CyLaw — Ν. 60(Ι)/2025 (Επίσημη Εφημερίδα Αρ. 5036)",
-          "url": "https://www.cylaw.org/nomoi/arith/2025_1_060.pdf",
-          "retrievedAt": "2026-06-07"
+          "label": "Government Printing Office: Official Gazette, Παρ. Ι(Ι), Αρ. 5036, 25.4.2025 (Ν. 60(Ι)/2025)",
+          "url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf",
+          "retrievedAt": "2026-10-30"
+        },
+        {
+          "label": "Digital Security Authority: laws and decisions",
+          "url": "https://dsa.cy/legislation/laws",
+          "retrievedAt": "2026-10-30"
+        },
+        {
+          "label": "European Commission: infringement decisions register (NIS2 non-transposition cases)",
+          "url": "https://ec.europa.eu/implementing-eu-law/search-infringement-decisions/",
+          "retrievedAt": "2026-10-28"
         }
       ],
       "verified": false,
-      "lastVerifiedAt": "2026-06-07",
-      "notes": "In force 2025-04-25 (Art. 57(1)) — Ν. 60(Ι)/2025 amending the NIS law Ν. 89(Ι)/2020; the Art. 7 registration mechanism is deferred to a Council-of-Ministers date."
+      "lastVerifiedAt": "2026-10-30",
+      "notes": "In force since 2025-04-25 (art. 57(1)): Ν. 60(Ι)/2025, amending the NIS law Ν. 89(Ι)/2020 (Official Gazette, Παρ. Ι(Ι), Αρ. 5036). Only the deletion of the Authority's staffing board waits for a Council of Ministers date (art. 57(2), as corrected on 25.6.2025); every duty of the entities applies. The Digital Security Authority (Αρχή Ψηφιακής Ασφάλειας) supervises, keeps the list of entities and receives the incident notifications, which it forwards to CSIRT-CY; its decision Κ.Δ.Π. 281/2026 sets the notification, with a first notice within six hours. The Commission closed its infringement case INFR(2024)0259 on 2025-10-08."
     },
     {
       "country": "CZ",
@@ -225,20 +240,30 @@
         "registrationLive": true,
         "nationalFrameworkPublished": false
       },
-      "lawShortName": "NIS2-loven (LOV nr 434 af 06/05/2025)",
+      "lawShortName": "NIS 2-loven (LOV nr 434 af 06/05/2025)",
       "lawCitation": null,
       "targetDate": null,
       "competentAuthority": null,
       "sources": [
         {
-          "label": "Styrelsen for Samfundssikkerhed — NIS2 i dansk ret",
-          "url": "https://samsik.dk/nis2/implementering-af-nis-2-i-dansk-ret/",
-          "retrievedAt": "2026-06-07"
+          "label": "Retsinformation: LOV nr 434 af 06/05/2025 (NIS 2-loven)",
+          "url": "https://www.retsinformation.dk/eli/lta/2025/434",
+          "retrievedAt": "2026-10-30"
+        },
+        {
+          "label": "Retsinformation: BEK nr 620 af 02/06/2025 (competent authorities, Virk.dk)",
+          "url": "https://www.retsinformation.dk/eli/lta/2025/620",
+          "retrievedAt": "2026-10-30"
+        },
+        {
+          "label": "European Commission: infringement decisions register (NIS2 non-transposition cases)",
+          "url": "https://ec.europa.eu/implementing-eu-law/search-infringement-decisions/",
+          "retrievedAt": "2026-10-28"
         }
       ],
       "verified": false,
-      "lastVerifiedAt": "2026-06-07",
-      "notes": "In force 2025-07-01 — NIS2-loven (LOV nr 434 af 06/05/2025); entity registration deadline 2025-10-01."
+      "lastVerifiedAt": "2026-10-30",
+      "notes": "In force since 2025-07-01: NIS 2-loven (LOV nr 434 af 06/05/2025), registration due by 2025-10-01 (§ 33). Energy, telecommunications and designated financial entities are under their own acts (§ 1, stk. 2). One competent authority per sector (BEK nr 620/2025): Styrelsen for Samfundssikkerhed, Digitaliseringsstyrelsen for digital infrastructure and providers, Sundhedsdatastyrelsen, Trafikstyrelsen and others. Incidents go to the competent authority and the CSIRT, the Danish Defence Intelligence Service, through Virk.dk. The Commission closed its infringement case INFR(2024)0265 on 2026-01-30."
     },
     {
       "country": "EE",
@@ -671,26 +696,36 @@
       "maturityLevel": 3,
       "signals": {
         "directiveDeadline": "2024-10-17",
-        "nationalLawDate": "2026-01-23",
+        "nationalLawDate": "2025-04-08",
         "enforcementDate": "2026-01-23",
         "infringementOpen": false,
         "registrationLive": false,
         "nationalFrameworkPublished": false
       },
-      "lawShortName": "S.L. 460.41 (L.N. 22 of 2026)",
+      "lawShortName": "S.L. 460.41 (L.N. 71 of 2025)",
       "lawCitation": null,
       "targetDate": null,
       "competentAuthority": null,
       "sources": [
         {
-          "label": "Legislation Malta — L.N. 22 of 2026 (S.L. 460.41)",
+          "label": "Legislation Malta: S.L. 460.41, as amended by L.N. 89 of 2026",
+          "url": "https://legislation.mt/eli/sl/460.41/eng",
+          "retrievedAt": "2026-10-29"
+        },
+        {
+          "label": "Legislation Malta: L.N. 22 of 2026, Commencement Notice",
           "url": "https://legislation.mt/eli/ln/2026/22/eng",
-          "retrievedAt": "2026-06-07"
+          "retrievedAt": "2026-10-29"
+        },
+        {
+          "label": "European Commission: infringement decisions register (NIS2 non-transposition cases)",
+          "url": "https://ec.europa.eu/implementing-eu-law/search-infringement-decisions/",
+          "retrievedAt": "2026-10-28"
         }
       ],
       "verified": false,
-      "lastVerifiedAt": "2026-06-07",
-      "notes": "In force 2026-01-23 — Measures for a High Common Level of Cybersecurity (Malta) Order (S.L. 460.41), commenced by L.N. 22 of 2026."
+      "lastVerifiedAt": "2026-10-29",
+      "notes": "In force since 2026-01-23: the Measures for a High Common Level of Cybersecurity across the European Union (Malta) Order, S.L. 460.41 (L.N. 71 of 2025, of 2025-04-08), brought into force by L.N. 22 of 2026 and amended by L.N. 89 of 2026. The CIP Department is the national supervisory authority and single point of contact (art. 7), the Malta Communications Authority supervises digital infrastructure, digital providers and postal services, and the national CSIRT sits within the Malta Information Technology Agency (art. 8). The Commission closed its infringement case INFR(2024)0286 on 2025-10-08."
     },
     {
       "country": "NL",
@@ -765,7 +800,12 @@
         {
           "label": "Sejm — Dz.U. 2026 poz. 252 (ELI)",
           "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/252",
-          "retrievedAt": "2026-06-12"
+          "retrievedAt": "2026-11-05"
+        },
+        {
+          "label": "Dziennik Urzędowy Ministra Cyfryzacji 2026 poz. 7: komunikat z 8 kwietnia 2026 r. (harmonogram wpisów do wykazu)",
+          "url": "https://www.gov.pl/web/cyfryzacja/du-mc-poz-7",
+          "retrievedAt": "2026-11-05"
         },
         {
           "label": "gov.pl — Narodowe Standardy Cyberbezpieczeństwa",
@@ -774,8 +814,8 @@
         }
       ],
       "verified": true,
-      "lastVerifiedAt": "2026-06-12",
-      "notes": "KSC amendment (Dz.U. 2026 poz. 252) published 2026-03-02, in force 2026-04-03 (art. 49); wykaz KSC registration open 2026-05-07 with window to 2026-10-03; art. 8 ust. 1 security-measures catalogue + NSC methodological standards."
+      "lastVerifiedAt": "2026-11-05",
+      "notes": "KSC amendment (Dz.U. 2026 poz. 252) published 2026-03-02, in force 2026-04-03 (art. 49); wykaz KSC registration: six months from the day an entity meets the criteria (art. 7c ust. 1); the entities already in scope on 2026-04-03 filed from 2026-05-07 to 2026-10-03 under the Minister's schedule (art. 33 ust. 3 and art. 34 ust. 3 of the amending act; Dz. Urz. Min. Cyf. 2026 poz. 7), a window now closed, and have until 2027-04-03 for the chapter 3 duties (art. 33 ust. 1); art. 8 ust. 1 security-measures catalogue + NSC methodological standards."
     },
     {
       "country": "PT",

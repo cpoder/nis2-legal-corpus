@@ -5,7 +5,9 @@ Union-level provisions that decide whether an entity is covered by Directive
 together with the SME definition the Directive borrows from Commission
 Recommendation 2003/361/EC. The key `eu` stands for Union law. National
 transpositions may depart from these rules (see the per-country files); for its
-own country, a national file wins over this one.
+own country, a national file wins over this one. The last two sections record
+the wording of Articles 20 and 21(2) that the auditor pack cites, in the
+eleven languages the product ships.
 
 Conventions for every table below:
 
@@ -491,11 +493,15 @@ listed above; the tests that carried the old wording are re-pinned.
 Still open after #760 (declared, not forgotten):
 
 - The five national diagnostic widgets
-  (`apps/web/src/components/diagnostic/{de,fr,it,pt,pl}-config.ts`) and the
-  public checker (`scope-checker-tool.tsx`) ask for turnover but not for the
-  balance sheet, so their lower bound is turnover-only: a 30-person company
-  with EUR 12 M turnover and a EUR 5 M balance sheet is told it is medium. The
-  missing input is disclosed only on the large branch.
+  (`apps/web/src/components/diagnostic/{de,fr,it,pt,pl}-config.ts`) ask for
+  turnover but not for the balance sheet, so their lower bound is
+  turnover-only: a 30-person company with EUR 12 M turnover and a EUR 5 M
+  balance sheet is told it is medium. The missing input is disclosed only on
+  the large branch. The public checker (`scope-checker-tool.tsx`) asks no
+  balance sheet either, but since 2026-10-30 it runs the engine and, on every
+  branch where a balance sheet would change its verdict, names the classes one
+  could give: that company is told it is out of scope or important depending
+  on its balance sheet.
 - The national scope trees
   `packages/regulatory-data/src/nis2-mappings/scope/{de,fr,it,pt,be}.yaml`
   still encode the old lists; `getScope()` in the mappings loader is exercised
@@ -618,3 +624,531 @@ The sentence replaced one that equated Annex I with essential and Annex II
 with important (#760); it corrected that error by overstating the opposite.
 All three now say that the class depends on the annex and the size together,
 and the guard fails on the old wording anywhere under `apps/web/src`.
+
+## Articles 20 and 21(2) as the auditor pack cites them, in eleven languages (read 2026-10-29)
+
+<!-- meta: theme=governance,supply-chain; type=reference; date=2026-10-29; surfaces=doc-gen; guard=apps/doc-gen/test/auditor-pack-locales.test.ts -->
+
+The auditor pack (`apps/doc-gen/src/templates/auditor-pack.ts`) is three PDFs
+an organisation hands to its management body and its auditor: a board report
+anchored on Article 20(1), a gap assessment on Article 21(2), a supplier
+register on Article 21(2)(d). It speaks the eleven product languages, and each
+one uses the terms and the citation form of its own language version of the
+Directive, not a translation of the English.
+
+Source: the Official Journal PDF of each language version, OJ L 333,
+27.12.2022, CELEX 32022L2555, at
+`https://eur-lex.europa.eu/legal-content/<LANG>/TXT/PDF/?uri=CELEX:32022L2555`.
+Article 20(1) is on page L 333/126, Article 20(2) and Article 21(1) to (4) on
+L 333/127, in every version. EN, ES, PL, HR, EL and SL were downloaded on
+2026-10-29 through the browser route of the access note above and read with
+`pdftotext -layout`; DE, FR, IT, NL and PT are the extractions of the same PDFs
+kept in `docs/research/eur-lex/`. The quotes are verbatim; "…" marks an
+elision.
+
+| Fact | Where | Verbatim (official, EN) | Verdict |
+|---|---|---|---|
+| The management bodies approve the measures and oversee them | Art. 20(1), p. 126 | "Member States shall ensure that the management bodies of essential and important entities approve the cybersecurity risk-management measures taken by those entities in order to comply with Article 21, oversee its implementation and can be held liable for infringements by the entities of that Article." | verified |
+| Paragraph 2 is about training, not oversight | Art. 20(2), p. 127 | "Member States shall ensure that the members of the management bodies of essential and important entities are required to follow training, and shall encourage essential and important entities to offer similar training to their employees on a regular basis, …" | verified |
+| Article 20 sets no frequency for the oversight | Art. 20 | the article has two paragraphs and neither names a period; "quarter" occurs nowhere in the Directive | verified (absence) |
+| The title of Article 21 | Art. 21, p. 127 | "Cybersecurity risk-management measures" | verified |
+| Point (d), the supplier register's anchor | Art. 21(2)(d), p. 127 | "(d) supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers;" | verified |
+| Point (f), the effectiveness assessment | Art. 21(2)(f), p. 127 | "(f) policies and procedures to assess the effectiveness of cybersecurity risk-management measures;" | verified |
+| The Directive defines no tiers of suppliers | whole text | "classif" occurs twelve times, for classified information, the two classes of entity and classification schemes, never for suppliers | verified (absence) |
+
+The same provisions in each language version, verbatim. The last column is how
+the version cites a point of a paragraph of its own Article 21 (Art. 21(3)),
+which is the form the pack uses for the article column of its tables.
+
+| | Art. 20(1): who approves and oversees | Art. 21: title | Art. 21(2)(d) | Art. 21(2)(f) | A point, as the text cites it |
+|---|---|---|---|---|---|
+| en | "the management bodies of essential and important entities approve … oversee its implementation" | "Cybersecurity risk-management measures" | "supply chain security" | "policies and procedures to assess the effectiveness of cybersecurity risk-management measures" | "paragraph 2, point (d), of this Article" |
+| fr | "les organes de direction des entités essentielles et importantes approuvent … supervisent sa mise en œuvre" | "Mesures de gestion des risques en matière de cybersécurité" | "la sécurité de la chaîne d'approvisionnement" | "des politiques et des procédures pour évaluer l'efficacité des mesures de gestion des risques en matière de cybersécurité" | "paragraphe 2, point d), du présent article" |
+| it | "gli organi di gestione dei soggetti essenziali e importanti approvino … sovraintendano alla sua attuazione" | "Misure di gestione dei rischi di cibersicurezza" | "sicurezza della catena di approvvigionamento" | "strategie e procedure per valutare l'efficacia delle misure di gestione dei rischi di cibersicurezza" | "paragrafo 2, lettera d), del presente articolo" |
+| de | "die Leitungsorgane wesentlicher und wichtiger Einrichtungen … billigen, ihre Umsetzung überwachen" | "Risikomanagementmaßnahmen im Bereich der Cybersicherheit" | "Sicherheit der Lieferkette" | "Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen im Bereich der Cybersicherheit" | "Absatz 2 Buchstabe d des vorliegenden Artikels" |
+| pt | "os órgãos de direção das entidades essenciais e importantes aprovam … supervisionam a sua aplicação" | "Medidas de gestão dos riscos de cibersegurança" | "Segurança da cadeia de abastecimento" | "Políticas e procedimentos para avaliar a eficácia das medidas de gestão dos riscos de cibersegurança" | "n.º 2, alínea d), do presente artigo" |
+| nl | "de bestuursorganen van essentiële en belangrijke entiteiten … goedkeuren … toezien op de uitvoering ervan" | "Maatregelen voor het beheer van cyberbeveiligingsrisico's" | "de beveiliging van de toeleveringsketen" | "beleid en procedures om de effectiviteit van maatregelen voor het beheer van cyberbeveiligingsrisico's te beoordelen" | "lid 2, punt d), van dit artikel" |
+| pl | "organy zarządzające podmiotów kluczowych i ważnych zatwierdzały … nadzorowały ich wdrażanie" | "Środki zarządzania ryzykiem w cyberbezpieczeństwie" | "bezpieczeństwo łańcucha dostaw" | "polityki i procedury służące ocenie skuteczności środków zarządzania ryzykiem w cyberbezpieczeństwie" | "ust. 2 lit. d) niniejszego artykułu" |
+| es | "los órganos de dirección de las entidades esenciales e importantes aprueben … supervisen su puesta en práctica" | "Medidas para la gestión de riesgos de ciberseguridad" | "la seguridad de la cadena de suministro" | "las políticas y los procedimientos para evaluar la eficacia de las medidas para la gestión de riesgos de ciberseguridad" | "apartado 2, letra d), del presente artículo" |
+| hr | "upravljačka tijela ključnih i važnih subjekata odobravaju … nadgledaju njegovu provedbu" | "Mjere upravljanja kibersigurnosnim rizicima" | "sigurnost lanca opskrbe" | "politike i postupke za procjenu djelotvornosti mjera upravljanja kibersigurnosnim rizicima" | "stavka 2. točke (d) ovog članka" |
+| el | "η ανώτατη διοίκηση των βασικών και σημαντικών οντοτήτων εγκρίνει … επιβλέπει την εφαρμογή τους" | "Μέτρα διαχείρισης κινδύνων στον τομέα της κυβερνοασφάλειας" | "ασφάλεια της αλυσίδας εφοδιασμού" | "πολιτικές και διαδικασίες για την αξιολόγηση της αποτελεσματικότητας των μέτρων διαχείρισης κινδύνων στον τομέα της κυβερνοασφάλειας" | "παράγραφο 2 στοιχείο δ) του παρόντος άρθρου" |
+| sl | "upravljalni organi bistvenih in pomembnih subjektov odobrijo … nadzorujejo njihovo izvajanje" | "Ukrepi za obvladovanje tveganj za kibernetsko varnost" | "varnost dobavne verige" | "politike in postopke za oceno učinkovitosti ukrepov za obvladovanje tveganj za kibernetsko varnost" | "odstavka 2, točka (d), tega člena"; and "s členom 22(1)" |
+
+Readings, not quotations:
+
+- The Greek version letters the points of Article 21(2) α) to ι), with στ) for
+  (f), so the pack cites "στοιχείο στ)", never "στοιχείο f)". The Slovenian
+  version writes a paragraph the English way ("členom 22(1)"), so the pack
+  cites "člen 21(2)(d)".
+- The Greek version says "η ανώτατη διοίκηση" where the Greek NIS2 law speaks
+  of "όργανα διοίκησης" (greece.md). The pack cites the Directive, so it uses
+  the Directive's term.
+- The supplier tiers of the pack (critical, important, standard) are the
+  organisation's own. The pack says so and never presents them as a
+  classification under Article 21(2)(d).
+- The training attestation and the effectiveness audit paraphrase Article
+  20(2) and quote Article 21(2)(f), each in its language's own version
+  (2026-10-29). Their English said more than the text until then: that the
+  members of the management bodies follow training "regularly", where the
+  English version puts "on a regular basis" on the employees' training only
+  (the Polish version is the one that puts it on the members: "mieli obowiązek
+  odbywać regularne szkolenia"), and that point (f) includes "regular testing
+  and auditing", which no version says.
+
+## Articles 20 and 21 in the PL, ES, HR, EL and SL versions: the OJ text is current (read 2026-10-29)
+
+<!-- meta: theme=governance,supply-chain,sanctions; type=reference; date=2026-10-29; surfaces=data,ui,doc-gen; guard=packages/regulatory-data/test/nis2-catalogue-locales.test.ts -->
+
+The NIS2 control catalogue (`packages/regulatory-data/src/controls.ts`) quotes
+Articles 20 and 21 of these five versions verbatim: each parent name is a span
+of its point of Article 21(2), each description opens with that point, and the
+two Article 20 descriptions are the paragraphs. Source: the EUR-Lex HTML of
+each version, `https://eur-lex.europa.eu/legal-content/<LANG>/TXT/HTML/?uri=CELEX:32022L2555`,
+read on 2026-10-29 through the browser route of the access note above and kept
+as plain text in `docs/research/eur-lex/nis2-{pl,es,hr,el,sl}.txt`. Two
+retrievals made independently that day are byte-identical.
+
+That page is the text as published in OJ L 333 of 27.12.2022, so it was read
+against every corrigendum the document information page lists ("Corrected
+by", 32022L2555R(01) to R(09)). The ones that cover one of the five versions:
+
+| Corrigendum | Versions it covers | What it changes in the versions read here | Articles 20 and 21 |
+|---|---|---|---|
+| 32022L2555R(03), OJ L 239, 28.9.2023, p. 48 | SL | Art. 6(7): "incident velikih razsežnosti" becomes "kibernetski incident velikih razsežnosti" | untouched |
+| 32022L2555R(05), OJ L, 2024/90349, 12.6.2024 | HR, MT, RO, SK, SL, SV | SL: Art. 34(4) and (5), "naložijo upravne globe v višini najmanj 10 000 000 EUR" (and 7 000 000) becomes "predpisana zgornja meja upravne globe najmanj 10 000 000 EUR"; HR: Art. 28(5), first sentence, "legitimnih tražitelja pristupa" becomes "zakonitih tražitelja pristupa" | untouched |
+| 32022L2555R(09), OJ L, 2025/90884, 6.11.2025 | ET, PL | PL: recital 33, first subparagraph, last sentence (on-demand self-service of cloud computing resources) | untouched |
+
+No corrigendum covers ES or EL.
+
+Readings, not quotations:
+
+- Articles 20 and 21 as published are the current text in all five versions,
+  so the catalogue may quote them as they stand.
+- The extracts are the OJ text and nothing else. For the provisions in the
+  table, a reader of `nis2-sl.txt`, `nis2-hr.txt` or `nis2-pl.txt` takes the
+  corrigendum's wording. The Slovenian one is substantive: as published,
+  Art. 34(4) and (5) read as fines of at least EUR 10 million (7 million),
+  and the corrigendum makes them a maximum of at least that amount, which is
+  what the English text says ("administrative fines of a maximum of at least
+  EUR 10 000 000"). No Reglyze surface quotes the uncorrected wording
+  (searched 2026-10-29).
+- A point of Article 21(2) is the object of "shall include at least the
+  following", so the Polish, Croatian, Slovenian and Greek versions put some
+  head nouns in the accusative ("politykę", "obsługę", "postupke",
+  "postopke", "χειρισμό"). The catalogue's names put them back in the
+  nominative, as a heading needs, and the guard maps each one back to the
+  Directive's form before matching.
+
+## Defect: the board report anchored oversight on the training paragraph, and called it quarterly (found and fixed 2026-10-29)
+
+<!-- meta: theme=governance; type=wrong-citation,overclaim,test-pinned; date=2026-10-29; surfaces=doc-gen,test; guard=apps/doc-gen/test/auditor-pack-locales.test.ts -->
+
+Found while writing the pack in nine more languages. The English and
+Portuguese board reports, the only two that existed, carried:
+
+- a subtitle pairing "Article 20(2)" with "Management body oversight"
+  ("Artigo 20.º, n.º 2" with "Supervisão pelo órgão de direção");
+- an introduction placing the report under "the management body's quarterly
+  oversight obligation under Article 20(2)";
+- a footnote that prepared the report "for the management body under NIS2
+  Article 20(2)" for the "approval of risk-management measures and oversight
+  of their implementation", and a gap-assessment footnote citing "Article
+  20(2) board minutes";
+- an introduction to the supplier register describing "the security
+  classification under NIS2 Article 21(2)(d)".
+
+Approval and oversight are Article 20(1); Article 20(2) is the training of the
+members of the management body (first table above). No paragraph of Article
+20 sets a cadence, so "quarterly" was a product convention stated as a legal
+duty, and core-api reinforced it by labelling every board report's period
+"Quarter" followed by the date, in English for six of the eleven languages.
+The Directive
+defines no supplier classification. `apps/doc-gen/test/auditor-pack.test.ts`
+pinned the wrong paragraph twice (`toContain("Artigo 20.º, n.º 2")`, "renders
+the Article 20(2) footnote in PT").
+
+Every language now anchors the board report on Article 20(1), words no
+cadence, and describes the supplier tiers as the organisation's own. The
+period is the span of the compliance snapshots in the trend, worded by the
+template. The guard fails on a citation of Article 20(2) in any language's
+table, on a quarterly cadence in any of the eleven languages, and on a subtitle
+that does not open on the pack's own provision in that language's citation
+form.
+
+## Five catalogue texts said more than the directive (corrected 2026-10-29)
+
+<!-- meta: theme=governance,incident,supply-chain; type=overclaim; date=2026-10-29; surfaces=data,i18n; guard=packages/regulatory-data/test/nis2-catalogue-says-no-more.test.ts -->
+
+The NIS2 control catalogue (`packages/regulatory-data/src/controls.ts`) holds
+Reglyze-authored sub-control texts. Five of them stated more than the
+directive, and their translations carried the error into every language.
+The passages below were read in the extracts of `docs/research/eur-lex/`.
+
+| Entry | What it said | What the directive says | Where |
+|---|---|---|---|
+| 20.1.a.4 | the management body reviews cybersecurity "at least quarterly" | no frequency: the members "are required to follow training" and approve and oversee the measures | Art. 20(1) and (2) |
+| 21.2.b | "notification obligations under Articles 23 and 30" | Article 30 is "Voluntary notification of relevant information"; the obligations are Article 23's | Art. 23, Art. 30 |
+| 21.2.b.4 | reports to "the competent authority and CSIRT", final report "within one month" | the entities submit "to the CSIRT or, where applicable, the competent authority"; early warning and notification "within 24 hours" / "72 hours of becoming aware", final report "not later than one month after the submission of the incident notification" | Art. 23(1), 23(4)(a), (b), (d) |
+| 21.2.d.5 | "Participate in coordinated security risk assessments" | entities "are required to take into account the results of the coordinated security risk assessments of critical supply chains carried out in accordance with Article 22(1)" | Art. 21(3) |
+| 21.2.g.2 (found 2026-10-29, the same day) | members of the management bodies undertake "regular" cybersecurity training | the members "are required to follow training"; "on a regular basis" qualifies the similar training entities are encouraged to offer their employees | Art. 20(2) |
+
+The five entries now say what the directive says, in each language's
+official terms:
+- the review cadence is the organisation's to set (quarterly as common
+  practice, never as a requirement);
+- Article 30 is the voluntary notification;
+- each deadline carries its anchor;
+- Article 21(3) asks for the results to be taken into account.
+
+
+## Article 34(4) and (5): the directive fixes how high the national maximum must at least be, not the fines (read 2026-11-05)
+
+<!-- meta: theme=sanctions; type=reference; date=2026-11-05; surfaces=data,doc-gen,ui; guard=apps/core-api/test/document-fallback-sanctions.test.ts,packages/regulatory-data/test/article-34-maximum-of-at-least.test.ts -->
+
+Read on 2026-11-05 in the English HTML edition
+(`https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555`)
+and in the Official Journal PDF, both through the browser route of the access
+note above. Article 34 is on page L 333/139. The English text is current: no
+amending act exists, and the one English corrigendum concerns Article 19(1)
+(section "Sources read").
+
+| Fact | Where | Verbatim (official, EN) | Verdict |
+|---|---|---|---|
+| Essential entities: the Member State provides a maximum, and the directive says how high it must at least be | Art. 34(4), p. 139 | "Member States shall ensure that where they infringe Article 21 or 23, essential entities are subject, in accordance with paragraphs 2 and 3 of this Article, to administrative fines of a maximum of at least EUR 10 000 000 or of a maximum of at least 2 % of the total worldwide annual turnover in the preceding financial year of the undertaking to which the essential entity belongs, whichever is higher." | verified |
+| Important entities: the same rule, lower figures | Art. 34(5), p. 139 | "Member States shall ensure that where they infringe Article 21 or 23, important entities are subject, in accordance with paragraphs 2 and 3 of this Article, to administrative fines of a maximum of at least EUR 7 000 000 or of a maximum of at least 1,4 % of the total worldwide annual turnover in the preceding financial year of the undertaking to which the important entity belongs, whichever is higher." | verified |
+| The fines sanction two articles, not non-compliance with the directive at large | Art. 34(4) and (5) | "where they infringe Article 21 or 23" | verified |
+| What the management bodies answer for | Art. 20(1), p. 126 | "… can be held liable for infringements by the entities of that Article." (full sentence in the section "Articles 20 and 21(2) as the auditor pack cites them") | verified |
+
+Readings, not quotations:
+
+- The directive sets no fine and no ceiling. It obliges each Member State to
+  provide a maximum, and fixes the level that maximum must at least reach. A
+  national act may set a higher maximum, and may structure the fine
+  differently below it: Slovenia's ZInfV-1 gives ranges with a cap in euros
+  (`slovenia.md`), Croatia's act a percentage floor (`croatia.md`), Germany's
+  § 65 BSIG six bands by offence (`germany.md`).
+- "Up to EUR 10 000 000 or 2 %" is therefore a statement about one national
+  act, true or false act by act. It is never a statement about the directive.
+- Article 20(1) does not say "personal". What liability a member of the
+  management body bears is national law.
+
+The same words in the five other languages a reference line is written in,
+each from its own language version (`docs/research/eur-lex/nis2-<lang>.txt`,
+Article 34(4)). For Slovenian, see the corrigendum in the section "Articles 20
+and 21 in the PL, ES, HR, EL and SL versions".
+
+| Language | Verbatim, Art. 34(4) |
+|---|---|
+| FR | "des amendes administratives d’un montant maximal s’élevant à au moins 10 000 000 EUR ou à au moins 2 %" |
+| IT | "sanzioni pecuniarie amministrative pari a un massimo di almeno 10 000 000 EUR o a un massimo di almeno il 2 %" |
+| DE | "Geldbußen mit einem Höchstbetrag von mindestens 10 000 000 EUR oder mit einem Höchstbetrag von mindestens 2 %" |
+| PT | "coimas num montante máximo não inferior a 10 000 000 EUR ou num montante máximo não inferior a 2 %" |
+| HR | "upravnim novčanim kaznama u najvećem iznosu od najmanje 10 000 000 EUR ili u najvećem iznosu od najmanje 2 %" |
+
+## Defect: the fallback documents printed the directive's figures as every country's fine, and two reference lines read Article 34 as a ceiling (found and fixed 2026-11-05)
+
+<!-- meta: theme=sanctions,documents; type=law-misread,surface-inconsistency; date=2026-11-05; surfaces=doc-gen,data,ui,test; guard=apps/core-api/test/document-fallback-sanctions.test.ts,packages/regulatory-data/test/article-34-maximum-of-at-least.test.ts -->
+
+Found while re-reading, for Bulgaria, the deterministic fallback
+(`apps/core-api/src/lib/document-generator.ts`): the document an organisation
+on the NIS2 substrate receives when AI generation fails. The sentences dated
+from the first commit of the template (2026-04-05).
+
+What it said, for every country:
+
+- the information security policy, section 12: "Penalties for non-compliance
+  with NIS2 may include administrative fines of up to EUR 10,000,000 or 2% of
+  total worldwide annual turnover (for essential entities) or EUR 7,000,000 or
+  1.4% (for important entities), whichever is higher.";
+- the board briefing, section 2: "Significant fines: up to EUR 10M or 2% of
+  worldwide turnover for essential entities.", and section 8, the same amounts
+  under "Up to";
+- the board briefing, twice: the "personal liability" of the management body
+  "for oversight failures (Article 20)".
+
+Why it was wrong:
+
+- the figures are the level Article 34(4) and (5) require the NATIONAL maximum
+  to reach at least (section above), not fines the directive sets. Printed as
+  "up to", they were a claim about each national act, and the same document
+  printed the act's own regime a few lines lower under "National
+  Requirements". For Slovenia that regime is a range "not less than EUR 10,000
+  and not more than EUR 10,000,000", under a sentence that said "whichever is
+  higher";
+- Article 34 sanctions infringements "of Article 21 or 23", not
+  "non-compliance with NIS2";
+- Article 20(1) says the management bodies "can be held liable for
+  infringements by the entities" of Article 21, and does not say "personal".
+
+The same reading, corrected in the same change, in two reference lines shown
+in the product's national requirements panel:
+
+- Croatia, six languages: "NIS 2 art. 34 caps the percentage but sets no
+  minimum". Article 34 caps nothing. The line now says what the article
+  requires, in each language's own words of the directive (table above).
+  `croatia.md` carried the same wording ("sets only ceilings") and is
+  corrected.
+- Greece, six languages: "Beyond the directive's ceilings (€10m/2% essential,
+  €7m/1.4% important)". The two ceilings are those of art. 26 §§4 and 5 of
+  ν. 5160/2024, each "κατ' ανώτατο όριο" (`greece.md`), and the line now
+  cites them there. No other reference line, in any language, pairs the
+  directive with a ceiling (every string scanned 2026-11-05).
+
+What the documents say now: the directive's rule as a requirement on Member
+States, with both figures, then one sentence on whose amounts apply. That
+sentence names the national act by its reviewed short name once the reference
+says the directive is transposed ("ZInfV-1 (Uradni list RS, št. 40/2025) and
+the texts adopted under it"), and otherwise "the national law that transposes
+the directive in" the country. It never names a draft, and the template states
+no national amount of its own.
+
+Wording, same change: "under applicable Bulgaria law" and "Bulgaria employment
+and data protection legislation" used the country's name as an adjective. The
+sentences now say "the applicable law of Bulgaria", and "the Netherlands"
+takes its article.
+
+Not changed in that change: the fine calculator and the Slovenian country page
+called the same figures "the directive's ceilings". A wider scan the same day
+found more, on the two public pages about fines and in the data. They are the
+defect recorded below, "the public fines pages read Article 34 as a ceiling".
+
+
+
+## Articles 32 and 34 on enforcement: who is fined, what an authority must weigh, what a manager risks (read 2026-11-05)
+
+<!-- meta: theme=sanctions,governance; type=reference; date=2026-11-05; surfaces=marketing,mcp,data; guard=apps/web/test/fines-pages-articles-32-34.test.ts,packages/regulatory-data/test/transpositions-fines-follow-the-record.test.ts -->
+
+Read on 2026-11-05 in the Official Journal PDF (OJ L 333, 27.12.2022), reached
+as the section above says. Each quotation is whole: a paragraph, a point or a
+sentence, as printed.
+
+| Fact | Where | Verbatim (official, EN) | Verdict |
+|---|---|---|---|
+| The fine is one enforcement power among others, and comes on top of them | Art. 32(4)(i), p. 136 | "impose, or request the imposition by the relevant bodies, courts or tribunals, in accordance with national law, of an administrative fine pursuant to Article 34 in addition to any of the measures referred to in points (a) to (h) of this paragraph." | verified |
+| Same rule, in the article on fines | Art. 34(2), p. 139 | "Administrative fines shall be imposed in addition to any of the measures referred to in Article 32(4), points (a) to (h), Article 32(5) and Article 33(4), points (a) to (g)." | verified |
+| Who is fined: the entity | Art. 34(1), p. 139 | "Member States shall ensure that the administrative fines imposed on essential and important entities pursuant to this Article in respect of infringements of this Directive are effective, proportionate and dissuasive, taking into account the circumstances of each individual case." | verified |
+| What an authority must weigh: Article 34 lists nothing itself, it refers to Article 32(7) | Art. 34(3), p. 139 | "When deciding whether to impose an administrative fine and deciding on its amount in each individual case, due regard shall be given, as a minimum, to the elements provided for in Article 32(7)." | verified |
+| The elements, as a minimum | Art. 32(7), p. 137 | "When taking any of the enforcement measures referred to in paragraph 4 or 5, the competent authorities shall comply with the rights of the defence and take account of the circumstances of each individual case and, as a minimum, take due account of: (a) the seriousness of the infringement and the importance of the provisions breached, the following, inter alia, constituting serious infringement in any event: (i) repeated violations; (ii) a failure to notify or remedy significant incidents; (iii) a failure to remedy deficiencies following binding instructions from competent authorities; (iv) the obstruction of audits or monitoring activities ordered by the competent authority following the finding of an infringement; (v) providing false or grossly inaccurate information in relation to cybersecurity risk-management measures or reporting obligations laid down in Articles 21 and 23; (b) the duration of the infringement; (c) any relevant previous infringements by the entity concerned; (d) any material or non-material damage caused, including any financial or economic loss, effects on other services and the number of users affected; (e) any intent or negligence on the part of the perpetrator of the infringement; (f) any measures taken by the entity to prevent or mitigate the material or non-material damage; (g) any adherence to approved codes of conduct or approved certification mechanisms; (h) the level of cooperation of the natural or legal persons held responsible with the competent authorities." | verified |
+| The temporary prohibition from managerial functions: essential entities only, after a missed remedy deadline, through the relevant bodies or courts, until the remedy, never for a public administration entity | Art. 32(5), p. 136 | "Where enforcement measures adopted pursuant to paragraph 4, points (a) to (d) and (f), are ineffective, Member States shall ensure that their competent authorities have the power to establish a deadline by which the essential entity is requested to take the necessary action to remedy the deficiencies or to comply with the requirements of those authorities. If the requested action is not taken within the deadline set, Member States shall ensure that their competent authorities have the power to: (a) suspend temporarily, or request a certification or authorisation body, or a court or tribunal, in accordance with national law, to suspend temporarily a certification or authorisation concerning part or all of the relevant services provided or activities carried out by the essential entity; (b) request that the relevant bodies, courts or tribunals, in accordance with national law, prohibit temporarily any natural person who is responsible for discharging managerial responsibilities at chief executive officer or legal representative level in the essential entity from exercising managerial functions in that entity. Temporary suspensions or prohibitions imposed pursuant to this paragraph shall be applied only until the entity concerned takes the necessary action to remedy the deficiencies or comply with the requirements of the competent authority for which such enforcement measures were applied. The imposition of such temporary suspensions or prohibitions shall be subject to appropriate procedural safeguards in accordance with the general principles of Union law and the Charter, including the right to an effective remedy and to a fair trial, the presumption of innocence and the rights of the defence. The enforcement measures provided for in this paragraph shall not be applicable to public administration entities that are subject to this Directive." | verified |
+| A natural person who represents or controls the entity can be held liable for breach of duty | Art. 32(6), pp. 136 and 137 | "Member States shall ensure that any natural person responsible for or acting as a legal representative of an essential entity on the basis of the power to represent it, the authority to take decisions on its behalf or the authority to exercise control of it has the power to ensure its compliance with this Directive. Member States shall ensure that it is possible to hold such natural persons liable for breach of their duties to ensure compliance with this Directive. As regards public administration entities, this paragraph shall be without prejudice to national law as regards the liability of public servants and elected or appointed officials." | verified |
+| The same for important entities | Art. 33(5), p. 138 | "Article 32(6), (7) and (8) shall apply mutatis mutandis to the supervisory and enforcement measures provided for in this Article for important entities." | verified |
+| Periodic penalty payments are an option for the Member State | Art. 34(6), p. 139 | "Member States may provide for the power to impose periodic penalty payments in order to compel an essential or important entity to cease an infringement of this Directive in accordance with a prior decision of the competent authority." | verified |
+| Fines on public administration entities are for each Member State to decide | Art. 34(7), p. 139 | "Without prejudice to the powers of the competent authorities pursuant to Articles 32 and 33, each Member State may lay down the rules on whether and to what extent administrative fines may be imposed on public administration entities." | verified |
+| "Undertaking" in Article 34(4) and (5) is the undertaking of competition law | Recital 130, p. 105 | "Where an administrative fine is imposed on an essential or important entity that is an undertaking, an undertaking should be understood to be an undertaking in accordance with Articles 101 and 102 TFEU for those purposes." | verified |
+| Telling the recipients of the services | Art. 23(1), first subparagraph, second sentence, p. 128 | "Where appropriate, entities concerned shall notify, without undue delay, the recipients of their services of significant incidents that are likely to adversely affect the provision of those services." | verified |
+
+Readings, not quotations:
+
+- No provision of the directive puts an administrative fine on a member of a
+  management body. Article 34 fines "essential and important entities".
+  Whether a person can be fined is national law: Poland provides it
+  (`poland.md`, art. 73a), Italy provides an accessory incapacity and no fine
+  (`italy.md`, art. 38 c. 6).
+- "Liable for damages" is not the directive's wording. Article 20(1) says
+  liable "for infringements by the entities", Article 32(6) liable "for breach
+  of their duties". Liability towards the company for damage is German law
+  (`germany.md`, § 38 Abs. 2 BSIG).
+- The elements an authority weighs are the eight of Article 32(7). Neither
+  "financial benefits gained or losses avoided" nor "the financial situation
+  of the entity" is one of them, and no element says that a compliance
+  programme is "the single strongest mitigating factor".
+- Because of recital 130, the turnover of Article 34(4) and (5) can be a
+  group's. National acts word the base differently (`romania.md` and
+  `sweden.md`, sections on the departures from the directive), so a page that
+  says "the group's turnover counts" states a reading of the directive, not
+  the law of every country.
+
+## Defect: the public fines pages read Article 34 as a ceiling and fined directors under the directive (found and fixed 2026-11-05)
+
+<!-- meta: theme=sanctions,governance; type=law-misread,surface-inconsistency; date=2026-11-05; surfaces=marketing,mcp,data,ui; guard=apps/web/test/fines-pages-articles-32-34.test.ts,packages/regulatory-data/test/transpositions-fines-follow-the-record.test.ts -->
+
+Found while closing the previous defect: the scan that had covered the
+reference lines was run again over the pages, the data and the record. The
+two public pages on fines contradicted each other, and one of them
+contradicted itself.
+
+What the surfaces said:
+
+- `/en/nis2-fines`: "The directive sets the ceilings", "The maximum amounts
+  are harmonised", German fines "mirror the directive ceilings", France
+  "follows the same NIS2 ceilings", and, as the answer to "How much are NIS2
+  fines?", "NIS2 sets maximum fines of up to EUR 10 million". On directors:
+  "Can company directors be personally fined under NIS2? Yes", "Supervisory
+  authorities can hold directors personally liable for damages", and a list
+  under "NIS2 Article 20 holds management personally accountable" that ended
+  with "Fined individually in addition to organizational penalties". Among the
+  triggers of a fine: "Failure to report incidents affecting supply chain
+  partners", a duty the directive does not word, and "Failure to train
+  management on cybersecurity risks", a duty of Article 20(2) that
+  Article 34(4) and (5) do not sanction.
+- `/en/tools/nis2-fine-calculator`: one answer said, correctly, "a maximum
+  fine of at least", and the next "Each EU member state sets its own fine
+  amounts within the directive's maximum limits"; lower down, "The NIS2
+  Directive (EU 2022/2555) sets maximum fines that EU member states must
+  apply for non-compliance". The page gave "Article 34, which lists the
+  factors", then "the factors in Article 34(2) of the directive", and listed
+  among them "Financial benefits gained or losses avoided through the
+  non-compliance", "the financial situation of the entity" and a compliance
+  programme as "the single strongest mitigating factor". On directors it
+  answered "Not under the directive itself", the opposite of the other page,
+  and then, in its own body, "Under Article 20, management can be held
+  personally liable and temporarily banned from management positions": the
+  prohibition is in Article 32(5)(b), not in Article 20.
+- The calculator's note for a country with no act in force, the Slovenian
+  country page and the Austrian one: "the directive's ceilings", "the main
+  NIS2 penalty ceilings".
+- The German country page ("seven severity tiers", "seven severity
+  levels") and the deviation table read by the training slides and by the MCP
+  scope-check tool ("7 severity tiers", "SEVEN levels of severity"), about
+  § 65 BSIG, where `germany.md` holds six bands since 2026-07-26. The
+  calculator had been corrected on 2026-10-29; these had not.
+- The same deviation table, for Germany: "the non-bis-in-idem rule is not
+  statutorily codified", served to assistants through the MCP tool.
+  `germany.md` quotes § 65 Abs. 11 BSIG, which codifies it, and the fines page
+  cited that paragraph. The entry came from a working note in the German
+  mapping file, which called it a "lacune" on the strength of commentaries,
+  not of the act.
+- `romania.md` and `sweden.md`, in their lists of departures: "the
+  directive's caps". Two Bulgarian mapping summaries: "the directive's
+  ceiling". The Portuguese deviation entry: "Outcome on ceilings matches
+  NIS2".
+- On who is sanctioned, the same deviation table: for Italy, "individual
+  administrative fines on members of the management body", "a Member-State
+  option the directive permits" (`italy.md` holds since 2026-07-26 that the
+  decree fines the entity); for France, "the directive's option for personal
+  fines under art. 32(6)"; for Germany, "personal civil liability", without
+  saying to whom. The Italian and German country pages said the same:
+  "directors can be held personally liable for non-compliance".
+
+Why it was wrong: the directive sets neither a fine nor a ceiling (section
+"Article 34(4) and (5)" above), harmonises a minimum for the national maximum
+and nothing else, fines the entity, and refers the weighing to Article 32(7)
+(section above). The amounts differ by country, which the calculator page
+itself said of Poland two paragraphs lower.
+
+What they say now: each page states the directive's rule as a requirement on
+Member States and the amounts as national maxima; the answer on directors is
+the same on both pages; the factors are the elements of Article 32(7); the
+German schedule has six bands everywhere; the deviation entry states
+§ 65 Abs. 11; the record lines say "maxima at the level Art. 34(4) and (5)
+require". The Italian entry and country page state the incapacity of art. 38
+c. 6 and that the fines hit the entity; the French entry says what
+Article 32(6) requires; the German ones say the liability of § 38 Abs. 2 is
+owed to the entity, under company law, and that no fine sanctions § 38. In the list of triggers, three lines changed: the duty towards the
+recipients of the services is worded as Article 23(1) words it, "where
+appropriate"; staff training is cited as the measure of Article 21(2)(g), in
+place of "Failure to train management", which Article 34(4) and (5) do not
+sanction and which § 65 BSIG does not fine (`germany.md`); registration is
+said to be fined "where the national act fines it", with § 65 Abs. 2 Nr. 6
+BSIG as the example read.
+
+Not changed here:
+
+- The fines page's title, description and opening line keep "up to EUR 10M or
+  2%" and "personal liability" as shorthand. They are search copy, and whether
+  public copy cites fines at all is a decision that is still open.
+- `/de/nis2-bussgelder` says "Zwei Obergrenzen nach § 65 BSIG" where the
+  record has six bands. It attributes them to the German act, not to the
+  directive, and was not re-read against the Bundesgesetzblatt today.
+- The German mapping file now maps Article 35 to § 65 Abs. 11, its notes no
+  longer speak of a gap, and its summary of § 65 Abs. 2 gives the bands as
+  Abs. 5 sets them (`germany.md`, § 65 read in full). Whether another
+  country's mapping file carries a note of the same kind was not checked.
+- Whether a national act other than the German one fines a management body
+  that does not train was not read. The page no longer says any does.
+- "Personally accountable", said of the management body under Article 20, on
+  the Article 20 training page, the MSP page, the Italian country page and in
+  one fallback document. The directive's words are "approve", "oversee" and
+  "can be held liable"; "personally" is not among them.
+- The training curriculum (one quiz explanation says the amounts "are set out
+  in Article 34") has its own versioned hash and opinion; it is left for a
+  curriculum release.
+
+## Defect: the training courses taught invented statutes, an invented fine and sanctions the directive does not contain (found and fixed 2026-11-05)
+
+<!-- meta: theme=sanctions,governance,incident,statute; type=fabrication,law-misread,status-error,surface-inconsistency; date=2026-11-05; surfaces=marketing,ui,docs,test; guard=apps/web/test/training-follows-the-texts.test.ts -->
+
+The courses under `marketing/training/` had never been read against the
+directive or against the national records. On 2026-11-05 the three families an
+organisation meets first were read line by line in their six languages
+(English, French, German, Spanish, Italian, Portuguese): the lead magnet, which
+is served without a login, Foundations (four modules) and Management Body
+(four modules). The same day the corrections were carried into the six
+languages, each sentence written from the official wording of that language.
+
+### What the courses stated, and what the texts say
+
+| The courses stated | Where | What the text says | Source |
+|---|---|---|---|
+| "The first significant NIS2 fine in Europe was EUR 850 000 against a German cloud provider in early 2026" | lead magnet, six languages | No NIS2 fine has been corroborated at an official source. The same sentence left the fines pages on 2026-07-27. | `germany.md` |
+| France transposed by "loi n° 2024-1039 du 21 mai 2024" | lead magnet, Foundations 1, 2 and 4, Management Body 1 and 2, the manufacturing track | That number is a law on furnished tourist rentals. France has promulgated no transposition: a bill is before Parliament. | `france.md` |
+| Portugal transposed by amending Decreto-Lei n.º 65/2021 | the same modules, and a whole paragraph of the Portuguese Foundations 1 | Decreto-Lei n.º 125/2025 approves a new regime in annex. It amends other laws, not Decreto-Lei n.º 65/2021. | `portugal.md` |
+| Spain transposed by a "Real Decreto-ley NIS2" | Foundations 1 and 4 and Management Body 4 in Spanish, the country table in six languages | Spain has a draft only. The one decree-law on record is Real Decreto-ley 12/2018, the NIS1 act, which names INCIBE-CERT and CCN-CERT. | `spain.md` |
+| "Each Member State has transposed it" | lead magnet, Foundations 1, Management Body 1 | The deadline was 17 October 2024 and several Member States missed it. | the tracker, `packages/regulatory-data/src/nis2-transposition-status.ts` |
+| Fines "up to EUR 10M or 2 %" | the three families | Article 34(4) and (5): each Member State provides a maximum of at least that amount. The national act sets the amounts. | section "Article 34(4) and (5)" above |
+| Individual administrative fines on directors "in France, Italy and Germany" | the three families, quizzes and course descriptions included | The directive fines the entity. Italy's decree carries an accessory incapacity and no fine on the person, Poland fines the head of the entity, Germany makes managers liable to their own company, Portugal makes the holders of management bodies answer for wilful misconduct or gross negligence. | `italy.md`, `poland.md`, `germany.md`, `portugal.md` |
+| A ban from "executive roles in any in-scope entity in that Member State", decided by the regulator | the three families | Article 32(5)(b): essential entities only, once a deadline is missed, requested from the relevant bodies or courts, for the chief executive or the legal representative, in that entity, until the entity complies, with procedural safeguards. | section "Articles 32 and 34 on enforcement" above |
+| "Publicity: your name on the regulator's enforcement page" | Foundations 2, Management Body 1, 2 and 4 | Article 32(4)(h): the authority may order the entity to make public aspects of the infringement. | same section |
+| An enforcement history: "2026 fines", "the 2026 enforcement wave", "boards have been fined under Article 34", "the most frequent finding in 2026 enforcement actions in France, Italy and Germany" | Foundations 2, 3 and 4, Management Body 2, 3 and 4, the course descriptions | Nothing on record documents an enforcement action, and France has no act in force. | `germany.md`, `france.md` |
+| "National regulators publish indicative thresholds (ACN: more than 25 % of users affected or more than 4 hours of downtime)" | Foundations 4, Management Body 4, the IT track | The same two figures were given to ACN in four languages, to the BSI in German and to INCIBE in Spanish. No record holds them. Austria and Slovakia do set thresholds of their own by regulation. | `austria.md`, `slovakia.md` |
+| "National regulators state explicitly in their guidance that filing a notification is not an admission of liability" | Foundations 4, Management Body 4 | The directive says it itself, in Article 23(1). | below |
+| Refusing to file brings "an aggravated finding for non-cooperation in most jurisdictions" | the same slides | Article 32(7)(a)(ii): a failure to notify a significant incident is a serious infringement in any event. | below |
+| A group present in two Member States files in each "on the same clock", with no exception | Foundations 4 | Each act has its own deadlines, and Article 26(1)(b) puts a list of digital providers under the Member State of their main establishment. | below |
+
+### Article 23(1), last sentence, in the six languages of the courses
+
+Read on 2026-11-05 in the language versions of the Official Journal text
+(OJ L 333, 27.12.2022) kept under `docs/research/eur-lex/`.
+
+| Language | Verbatim |
+|---|---|
+| EN | "The mere act of notification shall not subject the notifying entity to increased liability." |
+| FR | "Le simple fait de notifier un incident n’accroît pas la responsabilité de l’entité qui est à l’origine de la notification." |
+| DE | "Mit der bloßen Meldung wird keine höhere Haftung der meldenden Einrichtung begründet." |
+| ES | "El mero acto de notificar no elevará la responsabilidad de la entidad notificante." |
+| IT | "La sola notifica non espone il soggetto che la effettua a una maggiore responsabilità." |
+| PT | "A mera notificação não sujeita a entidade notificadora a responsabilidades acrescidas." |
+
+### Article 32(7)(a): "in any event" is not in every language version
+
+| Language | Verbatim |
+|---|---|
+| EN | "the seriousness of the infringement and the importance of the provisions breached, the following, inter alia, constituting serious infringement in any event: (i) repeated violations; (ii) a failure to notify or remedy significant incidents;" |
+| IT | "la gravità della violazione e l'importanza delle disposizioni violate, essendo le violazioni seguenti, tra l'altro, da considerarsi gravi: i) le violazioni ripetute; ii) la mancata notifica di incidenti significativi o il mancato rimedio a tali incidenti;" |
+
+The Italian version carries no equivalent of "in any event". The Italian
+courses therefore say "da considerarsi gravi" and never "in ogni caso".
+
+### Article 26(1): where an entity answers
+
+| Fact | Where | Verbatim (official, EN) |
+|---|---|---|
+| The rule and its three exceptions | Art. 26(1) | "Entities falling within the scope of this Directive shall be considered to fall under the jurisdiction of the Member State in which they are established, except in the case of: (a) providers of public electronic communications networks or providers of publicly available electronic communications services, which shall be considered to fall under the jurisdiction of the Member State in which they provide their services; (b) DNS service providers, TLD name registries, entities providing domain name registration services, cloud computing service providers, data centre service providers, content delivery network providers, managed service providers, managed security service providers, as well as providers of online marketplaces, of online search engines or of social networking services platforms, which shall be considered to fall under the jurisdiction of the Member State in which they have their main establishment in the Union under paragraph 2; (c) public administration entities, which shall be considered to fall under the jurisdiction of the Member State which established them." |
+| An entity established in several Member States | Recital 113 | "If the entity provides services or is established in more than one Member State, it should fall under the separate and concurrent jurisdiction of each of those Member States." |
+
+The courses name three of the providers of point (b) and say they are "among
+the exceptions". They do not list the others.
+
+### Root cause
+
+`marketing/training/AUTHORING.md` is the guide every author reads before
+writing a course. Its paragraph on national examples gave the invented French
+law number and a Portuguese decree "as amended" as the citations to follow. It
+now sends authors to this directory and says that France has promulgated no
+transposition.
+
+### What this correction does not cover
+
+- The quizzes and the course descriptions are database rows. The corrected
+  files reach a learner only after the courses are seeded again.
+- The IT track, the three sector tracks and the Portuguese national course
+  were not read. They still carry an enforcement history or a ceiling reading.
+  The guard lists them and refuses any new family in that state.
+- Wording left as it was, because no text contradicts it and none was read to
+  confirm it: "most national authorities expect at least annual refreshers".
+- Terms left as they were: the Italian courses say "entità" where the Italian
+  directive and the decree say "soggetti", and "preallerta" for the early
+  warning. The German courses mix "Einheit" with the legal term "Einrichtung".
+  New sentences use the legal term in German.
+
+

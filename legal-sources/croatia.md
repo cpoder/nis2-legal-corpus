@@ -110,16 +110,24 @@
 
 ## Supply chain, governance and incidents — ZKS čl. 29, 30, 37
 
-<!-- meta: theme=supply-chain,governance,incident; type=reference; date=2026-07-26; surfaces=data; guard=none -->
+<!-- meta: theme=supply-chain,governance,incident; type=reference; date=2026-10-29; surfaces=data; guard=none -->
 
 - **Source read:** full-text HTML of NN 14/2024 dok. 254 (same URL as above).
 - **Retrieved + read:** 2026-07-25 (čl. 29, 30, 37 quoted verbatim).
+- **Re-read 2026-10-29:** čl. 29 in full, in the full-text HTML and in the
+  gazette PDF, https://narodne-novine.nn.hr/eli/sluzbeni/2024/14/254/pdf (33
+  pages, sha256 `c062098aa4db45ecf5a13ea0e80e573b9211a2212773fbd9dfd12155f7f4fc38`);
+  the two carry the same words. Uredba NN 135/2024, Prilog II, measure 1 and
+  its level table, and čl. 44, from its full-text HTML,
+  https://narodne-novine.nn.hr/clanci/sluzbeni/full/2024_11_135_2217.html.
 
 | Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
-| Governance: the management body must APPROVE the measures and CONTROL their implementation | čl. 29. st. 2. | "Osobe odgovorne za upravljanje mjerama dužne su odobravati mjere upravljanja kibernetičkim sigurnosnim rizicima … te kontrolirati njihovu provedbu." | ✅ |
-| Training duty is TWO-SIDED — attend, and enable employees to attend | čl. 29. st. 3. | "– pohađati odgovarajuća osposobljavanja – zaposlenicima subjekta omogućiti pohađanje odgovarajućih osposobljavanja." | ✅ |
-| **Personal scope is WIDER than the directive** — reaches anyone with supervisory, representation or decision powers over the measures | čl. 29. st. 4. | "Odredbe ovoga članka odnose se i na druge fizičke osobe koje na temelju ovlasti za provođenje nadzora … ili u svojstvu pravnog predstavnika subjekta … sudjeluju u donošenju odluka o mjerama …" | ✅ |
+| Who the "osobe odgovorne za upravljanje mjerama" are: the members of the management bodies of essential and important entities, the heads of state administration bodies and other state bodies, and the executive bodies of local and regional self-government units | čl. 29. st. 1. | "(1) Za provedbu mjera upravljanja kibernetičkim sigurnosnim rizicima sukladno ovom Zakonu odgovorni su članovi upravljačkih tijela ključnih i važnih subjekata odnosno čelnici tijela državne uprave, drugih državnih tijela i izvršna tijela jedinica lokalne i područne (regionalne) samouprave (u daljnjem tekstu: osobe odgovorne za upravljanje mjerama)." | verified (NN 14/2024, 2026-10-29) |
+| Governance: the management body must APPROVE the measures and CONTROL their implementation | čl. 29. st. 2. | "(2) Osobe odgovorne za upravljanje mjerama dužne su odobravati mjere upravljanja kibernetičkim sigurnosnim rizicima koje će subjekt primjenjivati radi usklađivanja s obvezama utvrđenim ovim Zakonom i provedbenim propisom o zahtjevima kibernetičke sigurnosti te kontrolirati njihovu provedbu." | verified (NN 14/2024, narodne-novine.nn.hr/eli/sluzbeni/2024/14/254, read in full 2026-10-29) |
+| Training duty is TWO-SIDED — attend, and enable employees to attend. No frequency, certificate, provider or duration | čl. 29. st. 3. | "(3) U svrhu stjecanja znanja i vještina u pitanjima upravljanja kibernetičkim sigurnosnim rizicima i njihova učinka na usluge koje subjekt pruža odnosno djelatnost koju obavlja, osobe odgovorne za upravljanje mjerama dužne su: – pohađati odgovarajuća osposobljavanja – zaposlenicima subjekta omogućiti pohađanje odgovarajućih osposobljavanja." | verified (NN 14/2024, 2026-10-29) |
+| **Personal scope is WIDER than the directive** — reaches anyone with supervisory, representation or decision powers over the measures | čl. 29. st. 4. | "(4) Odredbe ovoga članka odnose se i na druge fizičke osobe koje na temelju ovlasti za provođenje nadzora nad vođenjem poslova subjekta ili u svojstvu pravnog predstavnika subjekta na temelju punomoći ili druge ovlasti za zastupanje ili punomoći ili druge ovlasti za donošenje odluka u ime subjekta sudjeluju u donošenju odluka o mjerama upravljanja kibernetičkim sigurnosnim rizicima i/ili njihovoj provedbi." | verified (NN 14/2024, 2026-10-29) |
+| The Uredba adds awareness activities (workshops, seminars, other forms of education) for the persons responsible for implementing the measures: **mandatory** (« A ») at the srednja and napredna levels, **voluntary** (« C ») at the osnovna level | Uredba NN 135/2024, Prilog II, measure 1, podskup 1.9, and its level table; čl. 44. st. 1. and 3. | "1.9. osigurati odgovarajuće aktivnosti nužne za podizanje svijesti osoba odgovornih za provedbu mjera o kibernetičkoj sigurnosti, a osobito u pitanjima upravljanja kibernetičkim sigurnosnim rizicima i mogućeg učinka tih rizika na usluge koje subjekt pruža, odnosno djelatnost koju obavlja. Ove aktivnosti uključuju edukativne radionice, seminare i druge oblike edukacija o aktualnim kibernetičkim prijetnjama, najboljim kibernetičkim sigurnosnim praksama, te o važnosti poduzimanja proaktivnih mjera upravljanja kibernetičkim sigurnosnim rizicima. Ovim podskupom mjera upravljanja kibernetičkim sigurnosnim rizicima potrebno je osigurati da upravljačko tijelo subjekta bude informirano i kontinuirano angažirano u postizanju i održavanju visoke razine kibernetičke sigurnosti" / level table, column 1.9: osnovna « C », srednja « A », napredna « A » / "(1) Podskupovi mjera upravljanja kibernetičkim sigurnosnim rizicima čija je provedba u okviru određene razine mjera iz članka 38. ove Uredbe obvezujuća, označeni su u tabličnom prikazu iz članka 43. podstavka 5. ove Uredbe oznakom »A«." / "(3) Podskupovi mjera upravljanja kibernetičkim sigurnosnim rizicima čija je provedba u okviru određene razine mjera iz članka 38. ove Uredbe dobrovoljna, označeni su u tabličnom prikazu iz članka 43. podstavka 5. ove Uredbe oznakom »C«." | verified (NN 135/2024, 2026-10-29) |
 | The ten risk-management measures = NIS 2 art. 21(2)(a)–(j), verbatim | čl. 30. st. 1. | ten indents, incl. "sigurnost lanca opskrbe, uključujući sigurnosne aspekte u pogledu odnosa između subjekta i njegovih izravnih dobavljača ili pružatelja usluga" | ✅ |
 | **Art. 21(3) IS transposed, and scoped to the supply-chain indent** | čl. 30. st. 2. | "Pri procjeni proporcionalnosti primijenjenih mjera iz stavka 1. podstavka 4. … dužni su uzeti u obzir ranjivosti specifične za svakog izravnog dobavljača i pružatelja usluge te opću kvalitetu proizvoda i kibernetičku sigurnosnu praksu svojih dobavljača …" | ✅ |
 | Measures + how to implement them are DELEGATED to the Uredba | čl. 30. st. 3. | "Mjere upravljanja kibernetičkim sigurnosnim rizicima i način njihove provedbe uredit će se uredbom iz članka 24. ovoga Zakona." | ✅ |
@@ -280,9 +288,11 @@ a Croatian addition, and it targets an entire population of software SMEs.
 **Two departures from the directive.**
 
 1. **Croatia sets a percentage FLOOR** (0.5 % for ključni,
-   0.2 % for važni) where NIS 2 art. 34 sets only ceilings. The
-   Croatian regulator cannot go below it if it chooses the turnover
-   basis.
+   0.2 % for važni) where NIS 2 art. 34 sets no minimum fine: it fixes
+   only how high the national maximum must at least be ("a maximum of at
+   least", `eu.md`). The Croatian regulator cannot go below the floor if
+   it chooses the turnover basis. (Corrected 2026-11-05: this line said
+   that art. 34 "sets only ceilings". It sets none.)
 2. **Personal liability is capped low**: €6 000 at most
    for an executive of an essential entity. Compare with Poland, where
    art. 73a ust. 4 allows **300 % of the executive's remuneration**. For an
@@ -481,3 +491,49 @@ and document 254. The act was published on 2024-02-07 and is in force since
 said so ("07-02-2024 (na snazi od 15. veljače 2024.)"), the data did not. Both
 surfaces now carry 2024-02-07, and the tracker row, generic until now, cites the
 gazette page.
+
+## Defect: the print date was shown as the entry into force (found 2026-11-05)
+
+<!-- meta: theme=statute; type=status-error,surface-inconsistency,test-pinned; date=2026-11-05; surfaces=data,marketing,test; guard=apps/web/test/country-in-force-date.test.ts -->
+
+The correction of 2026-10-28 above replaced a date that was not in the gazette
+by the gazette's print date, 2024-02-07, on "both surfaces". One of the two was
+the wrong place for it.
+
+`COUNTRIES_SEO.croatia.transpositionDate` is printed after the words "in
+force". /llms-full.txt said "transposed (Zakon o kibernetičkoj sigurnosti […],
+in force 2024-02-07)" and /en/eu/croatia "Adopted / in force: 2024-02-07". The
+act entered into force on 2024-02-15 (čl. 116., quoted above: "osmoga dana od
+dana objave"), and the same page said so a few lines lower in its own prose.
+/hr/eu/croatia was right ("Na snazi od: 2024-02-15"): it reads another field.
+
+The test written on 2026-10-28 pinned the wrong value. It checked that the date
+was the gazette's print date, not which date the page's label promised.
+
+- `transpositionDate` is now 2024-02-15. The print date stays where a
+  publication date belongs: `hr.yaml` (`law.publication.date`) and
+  `TRANSPOSITION_REFERENCES_HR.transposedAt`.
+- The page's label and the rule for every country: docs/legal-sources/poland.md,
+  section of the same day (Poland had the same defect), and
+  `apps/web/test/country-in-force-date.test.ts`.
+
+## What the scope check says on public administration (2026-11-05)
+
+<!-- meta: theme=scoping; type=scope-error; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/national-size-tests.test.ts,apps/ai-service/test/auto-scoping-national-rules.test.ts -->
+
+This file had no row on the public sector, and the engine read the directive's
+sentences. Read on 2026-11-05 at the source of this file, the full text of NN
+14/2024.
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| State administration bodies are essential at any size | čl. 12. st. 1. | "(1) U kategoriju ključnih subjekata razvrstavaju se, neovisno o njihovoj veličini: – tijela državne uprave i – druga državna tijela i pravne osobe s javnim ovlastima, ovisno o rezultatima provedene procjene njihove važnosti za nesmetano obavljanje ključnih društvenih ili gospodarskih djelatnosti." | ✅ |
+| Self-government units are important, after an assessment | čl. 12. st. 3. | "(3) Jedinice lokalne i područne (regionalne) samouprave razvrstavaju se, neovisno o njihovoj veličini, u kategoriju važnih subjekata, ovisno o rezultatima provedene procjene njihove važnosti za nesmetano obavljanje ključnih društvenih ili gospodarskih djelatnosti." | ✅ |
+
+| Level stated | Verdict | Basis |
+|---|---|---|
+| Central, or not stated | essential, whatever the size | čl. 12. st. 1. |
+| Regional or local | important, a positive assessment being assumed | čl. 12. st. 3. |
+
+**Open.** The quick diagnostic says it cannot determine a unit's position. It stays
+that way: the assessment is the authority's.

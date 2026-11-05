@@ -155,6 +155,7 @@ yardstick, in both directions (last rows of the table).
 | The directive's yardstick is the medium-sized enterprise of Recommendation 2003/361/EC | Directive (EU) 2022/2555, Art. 2(1), Slovenian version (EUR-Lex) | "Ta direktiva se uporablja za javne ali zasebne subjekte vrste iz Priloge I ali II, ki izpolnjujejo pogoje za srednja podjetja iz člena 2 Priloge k Priporočilu 2003/361/ES, ali presegajo zgornje meje za srednja podjetja, določene v odstavku 1 navedenega člena" | The directive applies to Annex I or II entities that qualify as medium-sized enterprises under Art. 2 of the Annex to Recommendation 2003/361/EC, or exceed the medium-sized ceilings. | verified |
 | The Recommendation's small-enterprise ceiling | Recommendation 2003/361/EC, Annex, Art. 2(2) (EUR-Lex, English; no Slovenian HTML version exists on EUR-Lex) | "Within the SME category, a small enterprise is defined as an enterprise which employs fewer than 50 persons and whose annual turnover and/or annual balance sheet total does not exceed EUR 10 million." | | verified |
 | Reading: Art. 6(1) is narrower than the directive in both directions | Art. 6(1) ZInfV-1 against Recommendation Annex Art. 2(2) | (no new quote; reading of the two quoted texts) | An entity with 40 employees, EUR 12 M turnover and EUR 12 M balance sheet is not small under the Recommendation (both financial ceilings exceeded) but fails "vsaj 50 zaposlenih". An entity with 60 employees and EUR 5 M on both measures cannot be small (not fewer than 50 persons) but fails the EUR 10 M limb of Art. 6(1). Both are out under ZInfV-1. | reading of verified texts |
+| Reading: an entity obliged at any size is classed by Art. 7(2) pt 1 without the general test | Art. 7(1) with Art. 6(2) pt 1 and Art. 7(2) pts 1 and 3 | (no new quote; reading of the quoted texts) | Art. 7(1) divides every obliged entity into essential and important, and Art. 6(2) pt 1 obliges public e-communications and trust service providers whatever their size. Both are Annex 1 types (row 8), so Art. 7(2) pt 1 makes them essential from 250 employees or EUR 50 M turnover or EUR 43 M balance sheet, even with fewer than 50 employees or under EUR 10 M: Art. 6(1) only decides which entities are obliged by size. An e-communications provider of 10 employees and EUR 60 M turnover is essential; one of 300 employees and EUR 5 M on both figures is essential. An e-communications provider is also essential from 50 employees and EUR 10 M (pt 3); a qualified trust service provider at any size (pt 2). | reading of verified texts |
 
 ### Small digital-infrastructure providers (the five-person case)
 
@@ -237,16 +238,18 @@ under Art. 22(2) point 10 (see the governance section).
 
 ## Governance, risk-management measures and supply chain
 
-<!-- meta: theme=governance,supply-chain; type=reference; date=2026-10-22; surfaces=data,ui,marketing; guard=none -->
+<!-- meta: theme=governance,supply-chain; type=reference; date=2026-10-29; surfaces=data,ui,marketing; guard=none -->
 
 | Fact | Article / source | Verbatim quote (Slovenian) | English gloss | Status |
 |---|---|---|---|---|
 | Who is accountable: heads of public bodies and the "odgovorne osebe" of legal persons | Art. 20(1) | "Za izvajanje ukrepov iz 21. in 22. člena tega zakona so odgovorni predstojniki subjektov javne uprave, in odgovorne osebe pravnih oseb, to so fizične osebe, ki vodijo, nadzorujejo ali upravljajo poslovanje pravne osebe" | Heads of public administration bodies and the natural persons who manage, supervise or run the legal person are responsible for implementing Arts. 21 and 22. | verified |
 | Management approves the measures and supervises them | Art. 20(2) | "Odgovorne osebe iz prejšnjega odstavka odobrijo ukrepe za obvladovanje tveganj iz 22. člena tega zakona, ki jih subjekt izvaja zaradi izpolnjevanja obveznosti, določenih s tem zakonom, in nadzirajo njihovo izvajanje." | The responsible persons approve the Art. 22 measures and supervise their implementation. | verified |
-| Management training **at least every four years** | Art. 20(3) | "Odgovorne osebe iz prvega odstavka tega člena se najmanj vsaka štiri leta izobražujejo oziroma usposabljajo na področju obvladovanja tveganj informacijske in kibernetske varnosti" | Responsible persons are trained at least every four years. | verified |
-| Regular staff training; **annual** training for every ICT system administrator | Art. 20(4) and (5) | "Odgovorne osebe zagotavljajo redno usposabljanje zaposlenih" / "Odgovorne osebe zagotavljajo, da vsi skrbniki informacijsko-komunikacijskih sistemov zavezanca opravijo redno letno usposabljanje" | Regular training for all staff; yearly training for all ICT system administrators. | verified |
-| Management training is organised by URSIV | Art. 20(6) | "Pristojni nacionalni organ je pristojen za organiziranje usposabljanja odgovornih oseb iz prvega odstavka tega člena." | The competent authority organises the responsible persons' training. | verified |
-| The training regulation: free, at least eight teaching hours, certificate valid four years, given by URSIV staff | Uredba o usposabljanju odgovornih oseb …, Uradni list RS, št. 78/2025, Arts. 4(1), 5(1), 6(2) | "Usposabljanje izvajajo uslužbenci pristojnega nacionalnega organa za informacijsko varnost" / "Usposabljanje, ki je za udeležence brezplačno, traja najmanj osem pedagoških ur in se izvaja v obliki predavanja oziroma delavnice." / "Potrdilo iz prejšnjega odstavka velja štiri leta. Po štirih letih je treba znova opraviti usposabljanje." | Delivered by the authority's staff; free; at least eight teaching hours as lecture or workshop; certificate valid four years. | verified |
+| Management training **at least every four years** | Art. 20(3) | "(3) Odgovorne osebe iz prvega odstavka tega člena se najmanj vsaka štiri leta izobražujejo oziroma usposabljajo na področju obvladovanja tveganj informacijske in kibernetske varnosti ter njihovega vpliva na dejavnosti ali storitve, ki jih izvaja subjekt." | Responsible persons are educated or trained at least every four years in managing information and cyber security risks and their impact on the activities or services the entity performs. | verified (Uradni list RS, št. 40/2025, 2026-10-29) |
+| Regular staff training; URSIV publishes the recommended contents | Art. 20(4) | "(4) Odgovorne osebe zagotavljajo redno usposabljanje zaposlenih, da pridobijo dovolj znanj in spretnosti, s katerimi se usposobijo za prepoznavanje tveganj za informacijsko in kibernetsko varnost ter njihovega vpliva na storitve, ki jih opravlja subjekt. Pristojni nacionalni organ objavi na osrednjem spletnem mestu državne uprave priporočene vsebine rednega usposabljanja zaposlenih." | The responsible persons ensure regular staff training; the authority publishes the recommended contents of that training on the central government website. | verified (Uradni list RS, št. 40/2025, 2026-10-29) |
+| **Annual** training for every ICT system administrator | Art. 20(5) | "(5) Odgovorne osebe zagotavljajo, da vsi skrbniki informacijsko-komunikacijskih sistemov zavezanca opravijo redno letno usposabljanje, da pridobijo in ohranijo raven znanj in spretnosti ter so usposobljeni za prepoznavanje in ocenjevanje tveganj ter za oceno praks obvladovanja tveganj za informacijsko in kibernetsko varnost ter njihovega vpliva na storitve, ki jih opravlja subjekt." | The responsible persons ensure that every ICT system administrator of the obliged entity completes regular yearly training. | verified (Uradni list RS, št. 40/2025, 2026-10-29) |
+| Management training is organised by URSIV; the Government sets its programme and method | Art. 20(6) | "(6) Pristojni nacionalni organ je pristojen za organiziranje usposabljanja odgovornih oseb iz prvega odstavka tega člena. Program in način izvajanja usposabljanja odgovornih oseb na področju informacijske in kibernetske varnosti določi vlada na predlog pristojnega nacionalnega organa." | The competent authority organises the training of the responsible persons; the Government sets its programme and method on the authority's proposal. | verified (Uradni list RS, št. 40/2025, 2026-10-29) |
+| URSIV keeps the list of the responsible persons who completed **its** training | Art. 20(7) | "(7) Pristojni nacionalni organ vodi seznam odgovornih oseb iz prvega odstavka tega člena, ki so opravile usposabljanje iz prejšnjega odstavka. Seznam obsega ime in priimek osebe, enotno matično številko občana in datum opravljenega usposabljanja." | The authority keeps a list of the responsible persons who completed the training of paragraph 6: name and surname, personal identification number (EMŠO) and date. | verified (Uradni list RS, št. 40/2025, 2026-10-29) |
+| The training regulation: given by URSIV staff, free, at least eight teaching hours, full attendance for the certificate; URSIV issues an electronic certificate valid four years and keeps a register of them | Uredba o usposabljanju odgovornih oseb na področju obvladovanja tveganj informacijske in kibernetske varnosti, Uradni list RS, št. 78/2025, Arts. 4(1), 5(1), 5(4), 6(1) and (2), 7(1) | "(1) Usposabljanje izvajajo uslužbenci pristojnega nacionalnega organa za informacijsko varnost (v nadaljnjem besedilu: izvajalec usposabljanja), ki imajo ustrezne strokovne kompetence in jih s sklepom imenuje predstojnik izvajalca usposabljanja." / "(1) Usposabljanje, ki je za udeležence brezplačno, traja najmanj osem pedagoških ur in se izvaja v obliki predavanja oziroma delavnice. Del usposabljanja se lahko izvede tudi na daljavo." / "(4) Pogoj za uspešno opravljeno usposabljanje in pridobitev potrdila o usposobljenosti je prisotnost na celotnem predpisanem usposabljanju." / "(1) Potrdilo o usposobljenosti izda izvajalec usposabljanja praviloma v tridesetih delovnih dneh po končanem usposabljanju. Potrdilo se izda v elektronski obliki. (2) Potrdilo iz prejšnjega odstavka velja štiri leta. Po štirih letih je treba znova opraviti usposabljanje." / "(1) Izvajalec usposabljanja vodi elektronsko evidenco izdanih potrdil o usposobljenosti, ki vsebuje podatke o udeležencih, datum usposabljanja ter številko in veljavnost potrdila." | Delivered by the authority's staff named by its head; free; at least eight teaching hours as lecture or workshop, part of it possibly remote; attendance at the whole training is the condition for the certificate; the authority issues it electronically, as a rule within thirty working days, valid four years, then the training is repeated; the authority keeps an electronic register of the certificates. | verified (Uradni list RS, št. 78/2025, 2026-10-29) |
 | Management support and security in the annual business plan is itself a measure | Art. 22(2) pt 1 | "podporo vodstva subjekta pri zagotavljanju informacijske in kibernetske varnosti ter vključitev področja informacijske in kibernetske varnosti v letni načrt poslovanja ali letni program dela," | Management support, and inclusion of cybersecurity in the annual business plan or work programme. | verified |
 | Personal sanction: temporary ban on management functions (essential entities, not state-level administration) | Art. 46(3) pt 2; Art. 46(5) | "zahteva začasno prepoved opravljanja vodstvenih funkcij vsem osebam, ki za bistveni subjekt opravljajo poslovodne naloge na ravni glavnega izvršnega direktorja ali pravnega zastopnika." / "Ukrepi iz tretjega odstavka tega člena se ne uporabljajo za subjekte javne uprave na državni ravni." | The inspector may request a temporary prohibition on managerial functions for CEO-level managers or legal representatives of an essential entity; not applicable to state-level administration. | verified |
 | The responsible person answers for breaches | Art. 46(15); Art. 47(6) | "je odgovorna oseba za zagotavljanje skladnosti delovanja bistvenega subjekta po tem zakonu (v nadaljnjem besedilu: odgovorna oseba bistvenega subjekta) in odgovarja za kršitve svojih dolžnosti v skladu s tem zakonom." / "je odgovorna oseba za zagotavljanje skladnosti delovanja pomembnega subjekta po tem zakonu (v nadaljnjem besedilu: odgovorna oseba pomembnega subjekta) in odgovarja za kršitve svojih dolžnosti v skladu s tem zakonom." | The head or responsible person is responsible for the entity's compliance and liable for breaches of their duties. | verified |
@@ -261,6 +264,23 @@ under Art. 22(2) point 10 (see the governance section).
 | Essential entities: conformity assessment (audit) at least every two years | Art. 25(1) | "Bistveni subjekti morajo oceno skladnosti izvajati najmanj enkrat na dve leti ali v primeru pojava pomembnega incidenta." | Essential entities carry out a conformity assessment at least every two years or after a significant incident. | verified |
 | Important entities: self-assessment every two years and a declaration | Art. 25(3) and (4) | "Pomembni subjekti izvedejo samooceno skladnosti najmanj enkrat na dve leti ali v primeru pojava pomembnega incidenta." / "ta sestavi izjavo o skladnosti" | Important entities self-assess at least every two years or after a significant incident and draw up a declaration of conformity (or of non-conformity, Art. 25(5)). | verified |
 | Measures are checked at least yearly | Art. 22(5) | "Bistveni ali pomembni subjekti morajo najmanj enkrat letno ali v rednih obdobjih, ki jih opredelijo v politiki in postopkih za presojo učinkovitosti ukrepov za obvladovanje tveganj za kibernetsko varnost, in ob zaznanih ranljivostih preverjati izpolnjevanje varnostnih ukrepov iz drugega odstavka tega člena." | Compliance with the measures is verified at least once a year, at defined intervals and when vulnerabilities are found. | verified |
+
+Art. 20(3) to (7) and the training regulation re-read 2026-10-29 in the signed
+gazette PDFs, https://pisrs.si/api/uradni-list/objava/u2025040.pdf (sha256
+`52597e6549f078ec54ce3f2103b4e78ce609bc84bde0035f204a1075b207a29f`, PDF pages
+22 to 56) and https://pisrs.si/api/uradni-list/objava/u2025078.pdf (sha256
+`747a571ad9534604d633fdb0a2524ab34cba32927b31504ab4d4bbd5f8430fe8`), both
+"Signature is Valid." under `pdfsig`. The PISRS record, rendered the same day,
+https://pisrs.si/pregledPredpisa?id=ZAKO8934, still cites the act as "Uradni
+list RS, št. 40/25" alone.
+
+**For a training record.** The provision on the management's training is Art.
+20(3), at least every four years; Art. 20(2), which `si.yaml` also maps to Art.
+20 of the directive, is the approval and supervision of the measures. The act
+and the regulation describe one route for that training, URSIV's: URSIV
+organises it (Art. 20(6)), its staff deliver it, it issues the "potrdilo o
+usposobljenosti" and lists who completed it (Art. 20(7)). Neither text names
+another provider or another certificate.
 
 ## Penalties: misdemeanour fines and coercive fines
 
@@ -402,6 +422,25 @@ is shown SIGOV-CERT as a condition to check. The channel is unchanged: e-mail to
 cert@gov.si or cert@cert.si, as URSIV's guidance of 2026-06-03 says. The legal
 basis shown for the national recipient is Art. 30(1) and Art. 59.
 
+## The fallback documents sent reports to URSIV (corrected 2026-11-05)
+
+<!-- meta: theme=incident; type=surface-inconsistency,test-pinned; date=2026-11-05; surfaces=data,doc-gen,ui,test; guard=packages/regulatory-data/test/incident-authority-receives.test.ts,apps/core-api/test/document-fallback-national-recipients.test.ts,apps/web/test/incidents-page.test.tsx -->
+
+The configuration named the right recipient (rows above: Art. 29(1), Art. 59,
+URSIV's instruction). The documents produced when AI generation fails did not
+follow it. They printed the competent authority next to the recipient in every
+recipient cell, "Initial notification to URSIV / SI-CERT", sent the final
+report "to URSIV", and told the board that significant incidents "must be
+reported to" URSIV. A test held the first of these as right ("Two bodies stay
+two"). The incident page named URSIV for a moment, while its list of
+recipients loaded.
+
+Since 2026-11-05 the incident configuration says that the competent authority
+receives no report (`competentAuthorityReceives: false`), on the words of
+Art. 29(1) and of URSIV's instruction quoted above, and the documents name the
+competent CSIRT alone: SI-CERT, or SIGOV-CERT for public administration.
+URSIV is still named as the competent authority.
+
 ## Open items: not read in a primary source
 
 <!-- meta: theme=statute,incident,registration,sanctions; type=lead; date=2026-10-22; surfaces=docs; guard=none -->
@@ -432,3 +471,51 @@ None of these may feed a configuration until read.
 - **The Cybersecurity Strategy (Art. 9, due within one year).** Not read.
 - **The 23 or 24 May 2025 bracket on the DZ procedure page.** Not resolved; the
   binding date is 23 May 2025 (decree, signature block).
+
+## The Foundations course in Slovenian (delivered 2026-10-29)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance,sanctions; type=delivery; date=2026-10-29; surfaces=ui; guard=apps/web/test/si-training-course.test.ts,apps/core-api/test/training-substrate-country.test.ts -->
+
+`marketing/training/foundations-sl/`: four modules in Slovenian, seeded with
+`framework_key` NULL and locale `sl` by
+`apps/core-api/scripts/seed-foundations-course.ts --locale sl`. Slovenia is a
+substrate country, so the course is the generic Foundations family (the four
+topic directories of `foundations-en/`) written in Slovenian, with this
+file's facts in place of the other countries' examples. Because it teaches
+Slovenian law, the catalogue offers it to Slovenian organisations only
+(`substrateCourseCountry` in `packages/regulatory-data/src/native-content.ts`).
+Every legal fact of the course rests on a line of this file, and the guard
+asserts each key fact twice, on the slide and as its verbatim line here.
+
+| Module | What it teaches | Sections of this file that carry it |
+|---|---|---|
+| 1. ZInfV-1 | gazette, entry into force (Art. 70), transposition (Art. 2(2)), repeal of ZInfV and transitional periods (Arts. 61, 62, 69); the cumulative size test as URSIV reads it, with the two worked cases; any-size categories and national additions (Art. 6); essential and important entities (Art. 7); URSIV, SI-CERT and SIGOV-CERT (Arts. 10, 13, 59); self-registration (Art. 8, URSIV's form and dates); the deadlines URSIV computes; the fine bands (Arts. 52, 53, 58) | "Statute", "Repeal of ZInfV and transitional provisions", "Scope", "Registration", "Competent authority and CSIRTs", "Implementing acts adopted under ZInfV-1", "Penalties" |
+| 2. The responsible persons | Art. 20 (who, approval and supervision, training every four years, URSIV organises it, staff and ICT administrators), the training regulation (Uradni list RS, št. 78/2025), Art. 22(2) pt 1, the temporary ban (Art. 46(3) pt 2 and (5)), liability (Arts. 46(15), 47(6)), the responsible persons' fines | "Governance, risk-management measures and supply chain", "Penalties" |
+| 3. The measures | Art. 21(1); Art. 22(2) pts 1, 10 and 15, Art. 22(4), (5) and (6) with URSIV's list of applicable legislation; Art. 3(1); logs (Art. 24(4) to (6)); conformity assessment and self-assessment (Art. 25); Art. 62 | "Governance, risk-management measures and supply chain", "Scope" (Art. 3), "Implementing acts adopted under ZInfV-1", "Repeal of ZInfV and transitional provisions" |
+| 4. Incident notification | significance (Art. 29(1), (3), (4)); the recipient (Art. 59) and the e-mail channel (Art. 60(6), URSIV's instruction of 2026-06-03); the acts of Art. 30(1) and (2), the CSIRT's reply (Art. 30(3)); detection against awareness; Art. 37(6) pt 5; informing users (Art. 29(6)) | "Incident reporting" |
+
+What the course leaves out, and why:
+
+- **A single fine maximum.** The course quotes the bands of Arts. 52 and 53,
+  "vendar ne manj kot ... in ne več kot ...", and leaves out the closing words
+  "odvisno od tega, kateri znesek je višji", whose combination with the
+  ceiling the act does not explain ("Penalties"). The guard fails on them.
+- **The high threat level and the URSIV order of 2026-10-21**: time-limited,
+  valid until revoked ("Live on 2026-10-22"); not in a course that outlives
+  them.
+- **ursiv.si**, which did not answer on 2026-10-22 ("Registration"): the
+  course names the official form and the e-mail route only.
+- **Art. 6(2) points 2 to 5 without a Government decision**, **who imposes the
+  misdemeanour fines**, **the national response plan's methodology**, **the
+  Government designation of the CSIRTs** and **the dedicated incident
+  platform**: open items ("Open items"). The course names designation by
+  Government decision only, names no misdemeanour authority, quotes Art. 29(4)
+  without describing the plan, and routes under the transitional Art. 59 by
+  e-mail.
+- **The severity scale C6 to C1** of Art. 36(1): its Slovenian level names are
+  not quoted in this file.
+- **The Commission's infringement case**: closed on 2026-01-30, not a duty of
+  the entity.
+
+The review blocks of the four modules are unticked: the course ships
+`review_status='unreviewed'` until a sl-SI native reviewer signs it off.

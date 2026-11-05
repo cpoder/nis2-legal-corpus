@@ -347,3 +347,49 @@ lines, and it fails again when "attendue courant été 2026" is put back.
 
 The pages now say that no date can be announced, and the FAQ answers carry the
 Court of Justice referral of 8 July 2026 (see `eu.md`).
+
+## Incident stages as the French version of the directive names them (verified 2026-10-29)
+
+<!-- meta: theme=incident; type=law-misread,deadline-model; date=2026-10-29; surfaces=doc-gen; guard=apps/doc-gen/test/incident-forms-statute-terms.test.ts -->
+
+- **Source:** the French version of Directive (EU) 2022/2555 on EUR-Lex,
+  `https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32022L2555`,
+  retrieved 2026-10-29 with headless Chromium (a plain fetch returned an empty
+  page).
+- **Legislative status re-read the same day** on the Assemblée nationale's
+  dossier DLR5L17N50731. Its last step is the special committee's text of
+  2025-09-10. There has been no plenary vote and no promulgation.
+- **Consequence:** France has no transposition, so the ANSSI incident form
+  follows the directive, and must use the directive's French terms.
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| The notion is "incident important" | art. 23, par. 1 | "tout incident ayant un impact important sur leur fourniture des services visés au paragraphe 3 (ci-après dénommé «incident important»)" | ✅ |
+| 24 h, from awareness: "alerte précoce" | art. 23, par. 4, point a) | "sans retard injustifié et en tout état de cause dans les 24 heures après avoir eu connaissance de l’incident important, une alerte précoce" | ✅ |
+| 72 h, from awareness: "notification d'incident" | art. 23, par. 4, point b) | "sans retard injustifié et en tout état de cause dans les 72 heures après avoir eu connaissance de l’incident important, une notification d’incident qui, le cas échéant, met à jour les informations visées au point a) et fournit une évaluation initiale de l’incident important, y compris de sa gravité et de son impact, ainsi que des indicateurs de compromission, lorsqu’ils sont disponibles" | ✅ |
+| On request: "rapport intermédiaire" | art. 23, par. 4, point c) | "à la demande d’un CSIRT ou, selon le cas, de l’autorité compétente, un rapport intermédiaire sur les mises à jour pertinentes de la situation" | ✅ |
+| One month from the notification: "rapport final" | art. 23, par. 4, point d) | "un rapport final au plus tard un mois après la présentation de la notification d’incident visée au point b)" | ✅ |
+| Still running: "rapport d'avancement" | art. 23, par. 4, point e) | "en cas d’incident en cours au moment de la présentation du rapport final visé au point d), les États membres veillent à ce que les entités concernées fournissent à ce moment-là un rapport d’avancement puis un rapport final dans un délai d’un mois à compter du traitement de l’incident." | ✅ |
+
+### What was wrong until 2026-10-29
+
+The ANSSI form (`apps/doc-gen/src/templates/incident-anssi.ts`) headed its
+three stages "Alerte préliminaire d'incident significatif", "Notification
+d'incident significatif" and "Rapport final d'incident significatif". The
+note under the early warning ran the 72 hours "à compter de la détection".
+The cover read "NIS2 Art. 23 — Alerte préliminaire ANSSI" over an English
+"ANSSI Incident Report".
+
+### What it says now
+
+- **Stage names:** "Alerte précoce d'incident important", "Notification
+  d'incident important" and "Rapport final d'incident important".
+- **Clocks:** both run from awareness. The form prints that instant under its
+  own label, from the `becameAwareAt` core-api sends.
+- **Final report:** its contents and the progress report of point e) are
+  stated in the directive's words.
+- **Cover:** "Incident important (article 23 de la directive (UE) 2022/2555)".
+
+The Italian rendering of the French regime on the ReCyF dashboard ("un
+preallarme") is the directive's Italian wording, which is right for France,
+and is left as it is.
