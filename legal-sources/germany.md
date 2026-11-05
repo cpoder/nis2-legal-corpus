@@ -628,3 +628,21 @@ acts write their own size tests.
   entity operates a critical installation "im Sinne der BSI-KritisV oder der
   KRITIS-Schwellenwerte des § 31 BSIG". § 2 Nr. 22 defines it by the
   KRITIS-Dachgesetz. Not corrected here: the KRITIS-Dachgesetz is not read.
+
+## Where a report is filed (read 2026-11-05)
+
+<!-- meta: theme=incident; type=reference; date=2026-11-05; surfaces=data; guard=packages/regulatory-data/test/country-configs-incident-reporting.test.ts -->
+
+`https://www.bsi.bund.de/meldung`, the portal our configuration named, answered 404.
+
+- **Source read:** BSI, "NIS-2-Meldepflicht",
+  https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-Infopakete/NIS-2-Meldepflicht/NIS-2-Meldepflicht_node.html,
+  retrieved 2026-11-05.
+
+| Fact | Where | Verbatim | Status |
+|---|---|---|---|
+| The portal has a guide for reporting | BSI, NIS-2-Meldepflicht | "Eine Anleitung zur Meldung über das BSI-Portal finden Sie hier." | ✅ |
+| Before registration, a form in the MIP | BSI, NIS-2-Meldepflicht | "Einrichtungen, die vom BSI -Gesetz betroffen sind und vor Registrierung im BSI -Portal einen erheblichen Sicherheitsvorfall erleiden, melden diesen dem BSI über ein Online-Formular im Melde- und Informationsportal (MIP)." | ✅ |
+| KRITIS and federal bodies keep their channels for now | BSI, NIS-2-Meldepflicht | "KRITIS und Bundesbehörden nutzen vorübergehend ihre bisherigen Meldewege." | ✅ |
+
+The configuration now points at https://portal.bsi.bund.de/.

@@ -160,7 +160,7 @@
       ],
       "verified": false,
       "lastVerifiedAt": "2026-10-30",
-      "notes": "In force since 2025-04-25 (art. 57(1)): Ν. 60(Ι)/2025, amending the NIS law Ν. 89(Ι)/2020 (Official Gazette, Παρ. Ι(Ι), Αρ. 5036). Only the deletion of the Authority's staffing board waits for a Council of Ministers date (art. 57(2), as corrected on 25.6.2025); every duty of the entities applies. The Digital Security Authority (Αρχή Ψηφιακής Ασφάλειας) supervises, keeps the list of entities and receives the incident notifications, which it forwards to CSIRT-CY; its decision Κ.Δ.Π. 281/2026 sets the notification, with a first notice within six hours. The Commission closed its infringement case INFR(2024)0259 on 2025-10-08."
+      "notes": "In force since 2025-04-25 (art. 57(1)): Ν. 60(Ι)/2025, amending the NIS law Ν. 89(Ι)/2020 (Official Gazette, Παρ. Ι(Ι), Αρ. 5036). Only the deletion of the Authority's staffing board waits for a Council of Ministers date (art. 57(2), as corrected on 25.6.2025), and that binds no entity. The Digital Security Authority (Αρχή Ψηφιακής Ασφάλειας) supervises, keeps the list of entities and receives the incident notifications, which it forwards to CSIRT-CY; its decision Κ.Δ.Π. 281/2026 sets the notification, with a first notice within six hours. The Commission closed its infringement case INFR(2024)0259 on 2025-10-08."
     },
     {
       "country": "CZ",
@@ -1005,8 +1005,8 @@
           "retrievedAt": "2026-06-07"
         },
         {
-          "label": "ENISA — National CSIRTs by country",
-          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "label": "CSIRTs Network: members",
+          "url": "https://csirtsnetwork.eu/",
           "retrievedAt": "2026-06-07"
         }
       ],
@@ -1038,8 +1038,8 @@
           "retrievedAt": "2026-06-07"
         },
         {
-          "label": "ENISA — National CSIRTs by country",
-          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "label": "CSIRTs Network: members",
+          "url": "https://csirtsnetwork.eu/",
           "retrievedAt": "2026-06-07"
         }
       ],
@@ -1071,8 +1071,8 @@
           "retrievedAt": "2026-06-07"
         },
         {
-          "label": "ENISA — National CSIRTs by country",
-          "url": "https://www.enisa.europa.eu/topics/incident-response/csirt-inventory/certs-by-country-interactive-map",
+          "label": "CSIRTs Network: members",
+          "url": "https://csirtsnetwork.eu/",
           "retrievedAt": "2026-06-07"
         }
       ],

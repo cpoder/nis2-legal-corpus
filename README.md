@@ -19,7 +19,7 @@ welcome as issues or pull requests and are ported back to the source. Last gener
 
 | path | content |
 |---|---|
-| `legal-sources/<country>.md` | One file per jurisdiction (28 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 362 annotated sections, 97 of which record a defect we found in our own product and the test that now prevents it. |
+| `legal-sources/<country>.md` | One file per jurisdiction (28 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 377 annotated sections, 103 of which record a defect we found in our own product and the test that now prevents it. |
 | `legal-sources/INDEX.md` | Generated cross-cutting view: by theme, by type of defect, open items. |
 | `legal-sources/TAXONOMY.md` | The meta-line vocabulary and why it exists. |
 | `data/nis2-transposition-tracker.json` | The dataset behind the public [transposition tracker](https://reglyze.com/en/nis2-tracker): stage, dates, statute, authority, sources, for 30 EU and EEA countries, each row saying how it was established. |
@@ -33,31 +33,31 @@ welcome as issues or pull requests and are ported back to the source. Last gener
 | [austria](legal-sources/austria.md) | NISG 2026 (BGBl. I Nr. 94/2025) | 12 | 7 | 0 | 2026-11-05 |
 | [belgium](legal-sources/belgium.md) | Loi NIS2 — 26 avril 2024 | 12 | 9 | 0 | 2026-11-05 |
 | [bulgaria](legal-sources/bulgaria.md) | Cybersecurity Act amendment (ДВ бр. 17/2026) | 20 | 2 | 1 | 2026-11-05 |
-| [croatia](legal-sources/croatia.md) | Zakon o kibernetičkoj sigurnosti (NN 14/2024) | 13 | 4 | 0 | 2026-11-05 |
-| [cyprus](legal-sources/cyprus.md) | N. 60(I)/2025 (amends N. 89(I)/2020) | 15 | 1 | 1 | 2026-11-05 |
+| [croatia](legal-sources/croatia.md) | Zakon o kibernetičkoj sigurnosti (NN 14/2024) | 14 | 5 | 0 | 2026-11-05 |
+| [cyprus](legal-sources/cyprus.md) | N. 60(I)/2025 (amends N. 89(I)/2020) | 16 | 1 | 1 | 2026-11-05 |
 | [czechia](legal-sources/czechia.md) | Zákon č. 264/2025 Sb., o kybernetické bezpečnosti (read 2026-10-28) | 17 | 2 | 1 | 2026-11-05 |
-| [denmark](legal-sources/denmark.md) | NIS 2-loven (LOV nr 434 af 06/05/2025) | 13 | 1 | 1 | 2026-11-05 |
-| [estonia](legal-sources/estonia.md) | Küberturvalisuse seaduse ja teiste seaduste muutmise seadus, RT I, 30.12.2025, 4 (read 2026-10-28) | 11 | 1 | 1 | 2026-10-30 |
+| [denmark](legal-sources/denmark.md) | NIS 2-loven (LOV nr 434 af 06/05/2025) | 14 | 1 | 1 | 2026-11-05 |
+| [estonia](legal-sources/estonia.md) | Küberturvalisuse seaduse ja teiste seaduste muutmise seadus, RT I, 30.12.2025, 4 (read 2026-10-28) | 12 | 1 | 1 | 2026-11-05 |
 | [eu](legal-sources/eu.md) | Directive (EU) 2022/2555 Arts. 2 and 3, Annexes I and II; Recommendation 2003/361/EC | 24 | 9 | 0 | 2026-11-05 |
-| [finland](legal-sources/finland.md) | Kyberturvallisuuslaki 124/2025 (read 2026-10-28) | 8 | 3 | 0 | 2026-11-05 |
-| [france](legal-sources/france.md) | Projet de loi Résilience (en cours d'examen) | 9 | 4 | 0 | 2026-10-29 |
-| [germany](legal-sources/germany.md) | NIS2UmsuCG | 11 | 6 | 0 | 2026-11-05 |
+| [finland](legal-sources/finland.md) | Kyberturvallisuuslaki 124/2025 (read 2026-10-28) | 9 | 3 | 0 | 2026-11-05 |
+| [france](legal-sources/france.md) | Projet de loi Résilience (en cours d'examen) | 10 | 5 | 0 | 2026-11-05 |
+| [germany](legal-sources/germany.md) | NIS2UmsuCG | 12 | 6 | 0 | 2026-11-05 |
 | [greece](legal-sources/greece.md) | Ν. 5160/2024 (ΦΕΚ Α΄ 195/27.11.2024) | 21 | 4 | 2 | 2026-11-05 |
 | [hungary](legal-sources/hungary.md) | 2024. évi LXIX. törvény Magyarország kiberbiztonságáról (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
 | [ireland](legal-sources/ireland.md) | National Cyber Security Bill: a General Scheme, no bill in the Oireachtas (read 2026-10-28) | 1 | 1 | 0 | 2026-10-28 |
-| [italy](legal-sources/italy.md) | D.lgs. 138/2024 | 17 | 6 | 1 | 2026-11-05 |
+| [italy](legal-sources/italy.md) | D.lgs. 138/2024 | 18 | 7 | 1 | 2026-11-05 |
 | [latvia](legal-sources/latvia.md) | Nacionālās kiberdrošības likums, Latvijas Vēstnesis 128A, 2024-07-04 (read 2026-10-28) | 12 | 0 | 3 | 2026-10-30 |
 | [lithuania](legal-sources/lithuania.md) | Kibernetinio saugumo įstatymo pakeitimo įstatymas Nr. XIV-2902: located, NOT read (2026-10-28) | 1 | 0 | 1 | 2026-10-28 |
 | [luxembourg](legal-sources/luxembourg.md) | Statute: loi du 5 mai 2026 concernant des mesures destinées à assurer un niveau élevé de cybersécurité | 14 | 3 | 1 | 2026-11-05 |
 | [malta](legal-sources/malta.md) | S.L. 460.41 (L.N. 71 of 2025) | 14 | 2 | 1 | 2026-11-05 |
-| [netherlands](legal-sources/netherlands.md) | Cyberbeveiligingswet (Stb. 2026, 187) | 10 | 6 | 1 | 2026-11-05 |
+| [netherlands](legal-sources/netherlands.md) | Cyberbeveiligingswet (Stb. 2026, 187) | 11 | 7 | 1 | 2026-11-05 |
 | [poland](legal-sources/poland.md) | KSC amendment (Dz.U. 2026 poz. 252) | 17 | 9 | 0 | 2026-11-05 |
-| [portugal](legal-sources/portugal.md) | DL 125/2025 (RJC) | 18 | 8 | 0 | 2026-11-05 |
+| [portugal](legal-sources/portugal.md) | DL 125/2025 (RJC) | 20 | 10 | 0 | 2026-11-05 |
 | [romania](legal-sources/romania.md) | OUG nr. 155/2024, approved by Legea nr. 124/2025 (read 2026-10-28) | 18 | 1 | 1 | 2026-11-05 |
-| [slovakia](legal-sources/slovakia.md) | Zákon č. 366/2024 Z. z., amending zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti (read 2026-10-28) | 15 | 1 | 2 | 2026-11-05 |
+| [slovakia](legal-sources/slovakia.md) | Zákon č. 366/2024 Z. z., amending zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti (read 2026-10-28) | 17 | 1 | 3 | 2026-11-05 |
 | [slovenia](legal-sources/slovenia.md) | ZInfV-1 (Uradni list RS, št. 40/2025) | 15 | 2 | 1 | 2026-11-05 |
 | [spain](legal-sources/spain.md) | Real Decreto 311/2022 — Esquema Nacional de Seguridad (ENS) | 8 | 4 | 0 | 2026-10-28 |
-| [sweden](legal-sources/sweden.md) | Cybersäkerhetslag (SFS 2025:1506) | 15 | 1 | 1 | 2026-11-05 |
+| [sweden](legal-sources/sweden.md) | Cybersäkerhetslag (SFS 2025:1506) | 17 | 1 | 1 | 2026-11-05 |
 
 Depth differs by country and the files say so. Some statutes were read in full from the signed
 gazette PDF; some facts are recorded from a secondary reading and typed `needs-check`; some are

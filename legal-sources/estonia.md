@@ -284,3 +284,15 @@ Estonian, unlike Swedish, is read in one country only.
 "korrapäraselt" is quoted where the training attestation quotes the directive;
 the catalogue's sub-control 21.2.g.2 and the training page do not turn it into
 an interval, and neither the directive nor the act sets one.
+
+## The national reference (written 2026-11-05)
+
+<!-- meta: theme=statute; type=delivery; date=2026-11-05; surfaces=data,ui; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,apps/web/test/dk-fi-national-reference-surfaces.test.tsx -->
+
+`TRANSPOSITION_REFERENCES_EE` is written from the sections above and adds no
+source. It carries six requirements in English, French, Italian, German,
+Portuguese and Estonian: the cumulative size test, registration and the three
+years to comply, incidents, local government, the measures and outsourcing, the
+designated board member. By house rule it states no fine amount. The size test's
+figures are not fines. The Estonian training sentence said "juhtorgani"; the act
+binds the designated board member, and it now says "juhatuse liikme".

@@ -393,3 +393,57 @@ The cover read "NIS2 Art. 23 — Alerte préliminaire ANSSI" over an English
 The Italian rendering of the French regime on the ReCyF dashboard ("un
 preallarme") is the directive's Italian wording, which is right for France,
 and is left as it is.
+
+## Public administration in the bill, read in the committee's text (2026-11-05)
+
+<!-- meta: theme=scoping; type=law-misread; date=2026-11-05; surfaces=data,ui,marketing; guard=packages/regulatory-data/test/public-admin-fr-follows-the-bill.test.ts -->
+
+- **Source read:** Assemblée nationale, texte de la commission spéciale n° 1779,
+  registered on 10 September 2025,
+  https://www.assemblee-nationale.fr/dyn/17/textes/l17b1779_texte-adopte-commission.pdf
+  (`pdftotext -layout`), retrieved 2026-11-05, arts. 8 to 10. The Sénat's text
+  n° 78 was read the same day for the differences.
+- **Status:** the bill is not adopted, and every row is the committee's text. It
+  can change in plenary. Nothing here is law.
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| Essential: régions, départements, communes above 30 000 inhabitants | art. 8, 7°, b) | "b) Les régions, les départements, les communes d’une population supérieure à 30 000 habitants, ainsi que leurs établissements publics administratifs dont les activités s’inscrivent dans un des secteurs d’activité hautement critiques ou critiques ;" | ✅ |
+| Essential: the three larger groupings | art. 8, 7°, e) | "e) Les communautés urbaines, les communautés d’agglomération et les métropoles ainsi que leurs établissements publics administratifs dont les activités s’inscrivent dans un des secteurs d’activité hautement critiques ou critiques ;" | ✅ |
+| Essential: public hospitals, added by the committee | art. 8, 7°, g bis) | "g) bis (nouveau) Les établissements publics de santé au sens de l’article L. 6141-1 du code de la santé publique ;" | ✅ |
+| Essential: social and medico-social establishments, added by the committee | art. 8, 7°, g ter) | "g) ter (nouveau) Les établissements et services sociaux et médico-sociaux au sens de l’article L. 312-1 du code de l’action sociale et des familles ;" | ✅ |
+| Essential: a research establishment, if designated | art. 8, 10° | "10° Les établissements d’enseignement menant des activités de recherche, désignés par arrêté du Premier ministre dans des conditions précisées par décret en Conseil d’État, qui remplissent l’un des critères mentionnés à l’article 10 de la présente loi." | ✅ |
+| Article 9 applies to what is not essential | art. 9, opening words | "Sont des entités importantes, lorsqu’ils ne sont pas des entités essentielles :" | ✅ |
+| Important: communautés de communes | art. 9, 4° | "4° Les communautés de communes et leurs établissements publics administratifs dont les activités s’inscrivent dans un des secteurs d’activité hautement critiques ou critiques ;" | ✅ |
+| Important: research establishments, with an exemption by arrêté | art. 9, 5° | "5° Les établissements d’enseignement menant des activités de recherche. Le Premier ministre désigne par arrêté les établissements qui, compte tenu du faible impact économique et social de leur activité, ne sont pas soumis à la présente loi, dans des conditions précisées par décret en Conseil d’État ;" | ✅ |
+| Public hospitals are listed in article 9 as well | art. 9, 6° bis | "6° bis (nouveau) Les établissements publics de santé au sens de l’article L. 6141-1 du code de la santé publique ;" | ✅ |
+| Designation at any size | art. 10, I | "le Premier ministre, après avis des ministres compétents pour les secteurs d’activité mentionnés à l’article 7, peut désigner par arrêté comme entité essentielle ou comme entité importante une entité exerçant une activité relevant d’un secteur d’activité hautement critique ou critique, quelle que soit sa taille" | ✅ |
+
+The threshold is in the bill, at 30 000 inhabitants. It is not left to a decree,
+and pages saying it was unknown were wrong about the text. A commune of 30 000
+inhabitants or fewer appears in neither article; art. 10 can still reach it.
+
+**Reading, not text.** Art. 8 lists public hospitals with no condition, and art. 9
+lists them too, for those that are not essential. Read together, the row of art. 9
+has nothing left to catch. We class a public hospital as essential on art. 8 and
+keep this open until the plenary text.
+
+**The Sénat's text differs on two points.** Its art. 8, 7°, e) keeps only the
+communautés d'agglomération "comprenant au moins une commune de plus de 30 000
+habitants", and its art. 9, 4° takes the others. It has no g bis), g ter), 6° bis or
+6° ter.
+
+**What the configuration said, in five languages:**
+
+| It said | The committee's text says |
+|---|---|
+| Communes above a threshold "set by décret", which "may differ by service type" | More than 30 000 inhabitants, written in art. 8, 7°, b) |
+| A hospital is essential by Annex I and its size | Art. 8, 7°, g bis) names it, with no size |
+| A university comes in by the research and education classification, or the public-administration extension | Important under art. 9, 5°, essential if designated under art. 8, 10° |
+| "~34 800 communes", 101 départements, 18 régions, "~70 public universities + ~100 grandes écoles" | No official count was read. Removed |
+| The Cour des comptes, the CRTC and the IGAS inspect NIS 2 evidence | Nothing read says so. Removed |
+
+The class page, the French fiche and the quick diagnostic said the threshold
+depended on the promulgated text, and the diagnostic called local bodies important.
+Each now gives the committee's text as what it is.
+

@@ -225,3 +225,15 @@ country page gained a fact.
 - **Not read:** the government bill HE 57/2024 on chapter 4 a; the Swedish text
   of the act; Traficom's channel for the public-administration register;
   § 3(6) on Åland beyond its first sentence.
+
+## The national reference (written 2026-11-05)
+
+<!-- meta: theme=statute; type=delivery; date=2026-11-05; surfaces=data,ui; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,apps/web/test/dk-fi-national-reference-surfaces.test.tsx -->
+
+`TRANSPOSITION_REFERENCES_FI` is written from the sections above and adds no
+source. It carries six requirements in English, French, Italian, German,
+Portuguese and Finnish: the clocks, the recipient, public administration in its
+second act, registration, the one class, the management. By house rule it states
+no fine amount. `managementBodyTrainingDuty` is false: the act does not word a
+training duty, so the training page names no duty in its name. It has no Swedish
+text: the Swedish version of the act is not read, and its terms are not guessed.

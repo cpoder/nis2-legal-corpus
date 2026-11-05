@@ -867,3 +867,39 @@ have. Each verdict now says that, and says what it stands for: essential at Stat
 level, which can overstate, and important at regional and local level, where the
 public-administration configuration gives a municipality Grupo A. Scoping a
 Portuguese public body is the MyCiber procedure of art. 8.º, not this check.
+
+## The public-administration configuration said what the page was corrected for (fixed 2026-11-05)
+
+<!-- meta: theme=scoping; type=law-misread; date=2026-11-05; surfaces=data,ui; guard=packages/regulatory-data/test/public-admin-it-follows-the-decree.test.ts -->
+
+The page `/pt/administracao-publica-municipios` was corrected earlier for putting
+IPSS and foundations in Grupo B. The onboarding block `PUBLIC_ADMIN_PT` still said
+it, with three other points, in five languages.
+
+| It said | The decree says |
+|---|---|
+| An IPSS is a relevant public entity, Grupo B | Art. 7.º n.º 1 opens on "As entidades públicas". An IPSS is private |
+| A municipality is Grupo A if larger, Grupo B if smaller | The groups go by workers: above 250, and 75 to 249 (art. 7.º n.º 2 and n.º 3). Below 75 no group is named |
+| A public university is Grupo A, under art. 7.º and Anexo I | Higher education is in scope by art. 3.º n.º 6, and a public institution follows the rule for public administration |
+| 308 municipalities, 14 universities, 14 polytechnics | No official count was read. Removed |
+| A hospital is essential by Annex I and its size, large hospitals "comfortably" above 250 | Above the medium-enterprise ceilings a hospital is essential, a medium one important (art. 6.º), and only if neither is it a relevant public entity (art. 7.º) |
+| The Tribunal de Contas and the IGF inspect NIS 2 evidence, and an IPSS signs as a relevant public entity | Nothing read says the first, and art. 7.º excludes the second. Removed |
+
+The classification of these types is `threshold_dependent`, since the class comes
+from the size rows and the art. 8.º procedure.
+
+## Ten other surfaces still said what the public-administration page was corrected for (fixed 2026-11-05)
+
+<!-- meta: theme=scoping; type=surface-inconsistency; date=2026-11-05; surfaces=marketing,ui; guard=apps/web/test/pt-article-7-every-page.test.ts -->
+
+The corrected page is `/pt/administracao-publica-municipios`. The landing, the
+quick diagnostic, the FAQ and the pages on classes, registration, QNRCS and hosting
+went on saying: some IPSS are in Grupo B; the groups go by kind of body, with the
+central State, the Armed Forces and municipalities in Grupo A; Grupo A is under ex
+ante supervision; the operational duties are those of essential entities; and the
+measures are those of art. 27.º. The class page also carried "308 + 11" municipalities.
+
+Each now says what the rows of the section on relevant public entities say: art.
+7.º is for public entities that are neither essential nor important, the groups go
+by workers, supervision is the one of important entities, and the measures are the
+ones CNCS sets per group.

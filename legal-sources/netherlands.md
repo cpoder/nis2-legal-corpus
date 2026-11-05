@@ -805,3 +805,22 @@ The engine gave a province and a municipality the class important, on the
 directive's sentences, while this file and the public-administration configuration
 gave essential. Art. 8 lid 1 onder g en h settles it: all three levels are essential
 by operation of law, with no size test.
+
+## Generated documents named the wrong authority (fixed 2026-11-05)
+
+<!-- meta: theme=statute,incident; type=law-misread; date=2026-11-05; surfaces=data,prompt; guard=packages/regulatory-data/test/nis2-mappings-loader.test.ts -->
+
+A Dutch document was told "Competent authority: Min. J&V" and "National CSIRT:
+NCSC", the two lines `formatCountryPromptContext` prints for a country. Art. 15 Cbw
+makes a minister competent per sector, and the Minister of Justice and Security is
+not one of them. Z-CERT and CERT-WM are CSIRTs too. The correct sentences were in
+the national reference and on the fiche, and neither reaches the document prompt.
+
+`nl.yaml` now has a `document_context`, every fact from the section of 2026-10-29:
+the sector ministers, the CSIRTs, the two recipients, the act's stage names, the
+register, the Cbb minimum, the board's certificate, the fines. Its first line no
+longer names one authority.
+
+Stored documents keep what they said. A Dutch organisation that regenerates gets
+the corrected text.
+

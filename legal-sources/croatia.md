@@ -375,10 +375,9 @@ obligations do not exist upstream.
 
 ### What is left empty
 
-`competentCsirtName`. The NCSC-HR covers public and critical entities, the
-Nacionalni CERT the other private entities, and we do not hold that
-allocation per organisation. The template therefore names the obligation rather than a
-possibly wrong CSIRT: the same rule as for the Polish sectoral CSIRT.
+`competentCsirtName`, at the time. The reason this section gave was wrong: see
+"Who is competent, and which CSIRT" below. Prilog III allocates the CSIRT by sector,
+and the form now names it wherever the sector settles it.
 
 ### The Croatian hint rewritten
 
@@ -537,3 +536,62 @@ sentences. Read on 2026-11-05 at the source of this file, the full text of NN
 
 **Open.** The quick diagnostic says it cannot determine a unit's position. It stays
 that way: the assessment is the authority's.
+
+## Who is competent, and which CSIRT (read 2026-11-05)
+
+<!-- meta: theme=statute,incident,registration; type=law-misread,surface-inconsistency; date=2026-11-05; surfaces=data,ui,marketing,doc-gen; guard=packages/regulatory-data/test/hr-authority-follows-prilog-iii.test.ts -->
+
+- **Source read:** Zakon o kibernetičkoj sigurnosti, NN 14/2024,
+  https://narodne-novine.nn.hr/clanci/sluzbeni/full/2024_02_14_254.html, retrieved
+  2026-11-05: čl. 4, 22, 37, 50, 63, 70 and Prilog III.
+- **Why it was opened:** a comparison of each country's reference with its YAML.
+  The reference said ZSIS / NCSC-HR, the YAML said the central state body.
+
+| Fact | Where | Verbatim | Status |
+|---|---|---|---|
+| Five bodies apply the act | čl. 4. t. 28. | "nadležna tijela za provedbu zahtjeva kibernetičke sigurnosti su središnje državno tijelo za kibernetičku sigurnost, središnje državno tijelo za informacijsku sigurnost, regulatorno tijelo za mrežne djelatnosti, tijelo državne uprave nadležno za razvoj digitalnog društva i tijelo državne uprave nadležno za znanost i obrazovanje" | ✅ |
+| Three more under special laws | čl. 4. t. 27. | "nadležna tijela za provedbu posebnih zakona su Hrvatska narodna banka, Hrvatska agencija za nadzor financijskih usluga i Hrvatska agencija za civilno zrakoplovstvo" | ✅ |
+| Two CSIRTs | čl. 4. t. 29. | "nadležni CSIRT je CSIRT pri središnjem državnom tijelu za kibernetičku sigurnost ili CSIRT pri Hrvatskoj akademskoj i istraživačkoj mreži – CARNET (u daljnjem tekstu: CARNET), ovisno o podjeli nadležnosti utvrđenoj ovim Zakonom" | ✅ |
+| The central body for information security | čl. 4. t. 49. | "središnje državno tijelo za informacijsku sigurnost je Ured Vijeća za nacionalnu sigurnost" | ✅ |
+| The central body for cybersecurity is SOA | čl. 4. t. 50. | "središnje državno tijelo za kibernetičku sigurnost je Sigurnosno-obavještajna agencija" | ✅ |
+| ZSIS has another role, and is not in t. 28 | čl. 4. t. 51. | "središnje državno tijelo za obavljanje poslova u tehničkim područjima informacijske sigurnosti je Zavod za sigurnost informacijskih sustava" | ✅ |
+| The NCSC-HR sits in SOA | čl. 63. | "u Sigurnosno-obavještajnoj agenciji ustrojava se Nacionalni centar za kibernetičku sigurnost" | ✅ |
+| The CSIRT follows Prilog III | čl. 70. st. 1. | "Središnje državno tijelo za kibernetičku sigurnost, kroz Nacionalni centar za kibernetičku sigurnost i CARNET, kroz Nacionalni CERT, obavljaju zadaće CSIRT-a na nacionalnoj razini, prema podjeli nadležnosti iz Priloga III. ovoga Zakona." | ✅ |
+| The split by kind of body is for voluntary reports only | čl. 70. st. 2. with čl. 50. st. 1. | "U smislu članka 50. stavka 1. podstavka 2. ovoga Zakona, središnje državno tijelo za kibernetičku sigurnost obavlja zadaće CSIRT-a za državna tijela, pravne osobe s javnim ovlastima i jedinice lokalne i područne (regionalne) samouprave, a CARNET obavlja zadaće CSIRT-a za javne i privatne subjekte, uključujući građanstvo." | ✅ |
+| The notification goes to the competent CSIRT | čl. 37. st. 1. | "Ključni i važni subjekti dužni su nadležni CSIRT obavijestiti o svakom incidentu" | ✅ |
+| The special register is for digital providers | čl. 22. st. 1. | "Središnje državno tijelo za kibernetičku sigurnost uspostavlja i vodi poseban registar sljedećih subjekata: – pružatelja usluga DNS-a – registra naziva vršne nacionalne internetske domene – registrara – pružatelja usluga računalstva u oblaku – pružatelja usluga podatkovnog centra – pružatelja mreža za isporuku sadržaja – pružatelja upravljanih usluga – pružatelja upravljanih sigurnosnih usluga – pružatelja internetskih tržišta – pružatelja internetskih tražilica i – pružatelja platformi za usluge društvenih mreža." | ✅ |
+
+**Prilog III, by row:**
+
+| Rows | Sector | Competent authority | CSIRT |
+|---|---|---|---|
+| 1, 3, 6, 7, 8, 13, 15 to 21 | Energy, rail, water and road transport, health, drinking water, waste water, ICT service management, space, post, waste, chemicals, food, manufacturing, digital providers | Central state body for cybersecurity | Nacionalni centar za kibernetičku sigurnost |
+| 2 | Air transport | Hrvatska agencija za civilno zrakoplovstvo, special law | Nacionalni centar za kibernetičku sigurnost |
+| 4 | Banking | Hrvatska narodna banka, special law | Nacionalni CERT |
+| 5 | Financial market infrastructure | Hrvatska agencija za nadzor financijskih usluga, special law | Nacionalni CERT |
+| 9 | Trust service providers | Ministry for the digital society | Nacionalni centar za kibernetičku sigurnost |
+| 10 | Public electronic communications | Hrvatska regulatorna agencija za mrežne djelatnosti | Nacionalni centar za kibernetičku sigurnost |
+| 11 | IXP, DNS, cloud, data centre, CDN | Central state body for cybersecurity | Nacionalni centar za kibernetičku sigurnost |
+| 12 | Registry of the .hr domain | Ministry for science and education | Nacionalni CERT |
+| 14 | Public sector | Central state body for information security | Nacionalni centar za kibernetičku sigurnost |
+| 22, 23 | Research, education system | Ministry for science and education | Nacionalni CERT |
+
+**What the surfaces said.** The national reference, the country pages, the landing,
+the FAQ and five other Croatian pages called "ZSIS / NCSC-HR" the competent authority.
+One page said "NCSC-HR je ujedno i ZSIS". They split the CSIRTs by kind of body:
+"tijela javne vlasti i kritične subjekte" against "ostale privatne subjekte". That
+is the split of čl. 70. st. 2., which serves voluntary reports. For a categorised
+subject the split is by sector. One page told SMEs that the Nacionalni CERT was
+their CSIRT, where a private manufacturer or digital provider reports to the NCSC-HR.
+
+The product held the sector all along and said it could not name the CSIRT.
+`INCIDENT_REPORTING_HR` now routes each whole sector, and the .hr registry comes back
+as a note, since an organisation records no entity type. The Croatian form names
+the CSIRT wherever the sector settles it.
+
+The Izjava o sukladnosti goes to the competent authority (čl. 35. st. 5.), not to
+ZSIS, as one page said.
+
+**Not established:** no surface above needed the addresses of the ministries, whose
+names change with the government, so the rows keep the act's description.
+

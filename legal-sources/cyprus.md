@@ -2,7 +2,7 @@
 
 ## Statute: Ο περί Ασφάλειας Δικτύων και Συστημάτων Πληροφοριών (Τροποποιητικός) Νόμος του 2025
 
-<!-- meta: theme=statute,registration; type=reference,law-misread; date=2026-10-30; surfaces=data,docs; guard=packages/regulatory-data/test/cy-incident-reporting.test.ts,packages/regulatory-data/test/nis2-transposition-status.test.ts -->
+<!-- meta: theme=statute,registration; type=reference,law-misread; date=2026-10-30; surfaces=data,docs,marketing; guard=packages/regulatory-data/test/cy-incident-reporting.test.ts,packages/regulatory-data/test/nis2-transposition-status.test.ts,apps/web/test/country-cyprus-fiche.test.tsx -->
 
 | Field | Value |
 |---|---|
@@ -54,12 +54,11 @@ four of its claims do not survive the full reading:
   "likely targeted this deferred article 7") was a guess and is withdrawn; the
   register only records the dates, and the case is closed.
 
-The first error also lives on two other surfaces. The CY row of the
+The first error also lived on two other surfaces. The CY row of the
 transposition tracker (`packages/regulatory-data/src/nis2-transposition-status.ts`)
-says in its note "the Art. 7 registration mechanism is deferred to a
-Council-of-Ministers date"; it is product data, not touched by this record, and
-is handed over for correction. The CY row of `docs/legal-sources/README.md`
-said "Art.7 registration deferred to CoM date" and is corrected with this
+said in its note "the Art. 7 registration mechanism is deferred to a
+Council-of-Ministers date", and was corrected on 2026-10-30. The CY row of
+`docs/legal-sources/README.md` said "Art.7 registration deferred to CoM date" and is corrected with this
 record.
 
 ## Sources read in full on 2026-10-30: the law, its amendment and its correction, the DSA's decisions, and how they were reached
@@ -747,7 +746,7 @@ it adds no source.
 
 ## Time-limited facts: re-check before rendering
 
-<!-- meta: theme=statute,registration,incident; type=reference; date=2026-10-30; surfaces=docs; guard=none -->
+<!-- meta: theme=statute,registration,incident; type=reference; date=2026-10-30; surfaces=docs,marketing; guard=apps/web/test/country-cyprus-fiche.test.tsx -->
 
 | Fact | Where | Verbatim (official) | English gloss | Status |
 |---|---|---|---|---|
@@ -816,3 +815,63 @@ None of these may feed a configuration until read or resolved.
   the incident is still ongoing when the one-month final report falls due;
   whether the first one is due at that date or at the next 15-day mark is not
   said, and no authority statement on it was read.
+
+## The Greek country page and signup: /el/eu/cyprus and /el-cy/eggrafi (2026-11-05)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance; type=delivery; date=2026-11-05; surfaces=marketing,i18n; guard=apps/web/test/country-cyprus-fiche.test.tsx,apps/web/test/register-funnel-guard.test.ts,apps/web/test/register-redirect-keeps-query.test.ts -->
+
+- **Why:** a Cypriot reader had the product in Greek and the country page in
+  English only, and a Cypriot browser on `/register` reached the Greek landing,
+  which names Greece's law and records Greece for the onboarding.
+- **Source:** this record, and no fact outside it; nothing outside the repository
+  was opened for the page. So the page is dated 2026-10-30, the night the texts
+  were read, and every "not found" on it says that date. The "re-check before
+  rendering" rows of the time-limited section were not re-checked: the platform,
+  the measures decision and CSIRT-CY's channels stand as of that night. The
+  fiche test cuts this section off before it reads the record, so nothing
+  written here can corroborate the page.
+- **Market:** Greek is Greece's locale, so Cyprus takes a pair (ADR 0040): the
+  market `el-cy`, its landing `/el-cy/eggrafi` in `MARKET_LANDINGS`, which records
+  CY, and `el/cyprus` in `FICHE_MARKET_LANDINGS`. An explicit `el-CY` browser
+  reaches the landing through the `/register` redirect; a plain `el` or `el-GR`
+  browser keeps Greece's landing, and Greece's static pages carry a link for that
+  reader to pick (`cy-market-notice.tsx`). A link, never a redirect.
+- **Chrome:** the Greek chrome stays Greece's. Cyprus has its own lead, closing
+  line and labels in `COUNTRY_CHROME`: the closing line promises no policies
+  aligned with a national framework, and the labels use the Authority's word for
+  transposition, not Greece's.
+- **The framework slot is art. 35 of the law**, which restates the ten measures.
+  The page says that no Decision under the amended law was found, and that
+  Reglyze assesses on the requirements of the directive.
+- **The second button opens the Authority's page of laws.** The page template
+  always renders a second, outbound button, and there is nothing to register on.
+  Its label says what it opens.
+- **Left open, and said to be:** when the duties start for an entity not yet
+  designated; the criticality criteria; a self-registration mechanism and the
+  incident platform; where the first progress report falls; whether the audit
+  decision reaches the entities designated since 2025.
+- **Left out on purpose:** every fine, the criminal offences of art. 44 and the
+  officers' liability of art. 54(5), which the page would have to word as a
+  sanction (house rule); the EUR amount of Annex III point 1 of Κ.Δ.Π. 281/2026;
+  CSIRT-CY's addresses and hotline; any date computed from the 20 working days;
+  the financing of the Authority, whose new Regulations were not found published;
+  and the texts this record did not read, which are not described.
+- **What the page says about the product** is tied to what it reports: the
+  assessment runs on the directive; the three computed clocks are named and the
+  progress reports are said to be stated, not computed; a central body comes out
+  essential, the wider public sector and the local level important unless
+  designated. The test runs the engine on the three levels.
+- **Measured** in Chromium on 2026-11-05, the two pages and Greece's three at 360,
+  390 and 1280 px: none scrolls sideways. A click on the fiche's CTA reached the
+  landing with its source and stored CY.
+
+Found while writing the page, and corrected the same day after it:
+
+- The statute section above said the tracker row's note carried the false
+  reading of art. 7 and was handed over for correction. The row had been
+  corrected on 2026-10-30, and the section now says so.
+- `/en/eu/cyprus`, the tracker row and `cy.yaml` said every duty of the entities
+  applies from 25 April 2025. The provisions are in force from that date;
+  whether they bind an entity before its Decision is served is the first open
+  item below. Each now says the deferred provision binds no entity, and the
+  English page says the point is open, as the Greek page does.

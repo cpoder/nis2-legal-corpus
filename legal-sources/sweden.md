@@ -2,7 +2,7 @@
 
 ## Statute: Cybersäkerhetslag (SFS 2025:1506)
 
-<!-- meta: theme=statute; type=reference; date=2026-10-29; surfaces=docs; guard=none -->
+<!-- meta: theme=statute; type=reference; date=2026-10-29; surfaces=docs,marketing; guard=apps/web/test/country-sweden-fiche.test.tsx -->
 
 | Field | Value |
 |---|---|
@@ -808,3 +808,80 @@ None of these may feed a configuration until read or resolved.
   it from them; whether it has been amended to name FRA was not checked.
 - **Prop. 2025/26:28** was read only in the sections listed; the explanatory
   sections on supervision and fees were not read in full.
+
+## The national reference (written 2026-11-05)
+
+<!-- meta: theme=statute; type=delivery; date=2026-11-05; surfaces=data,ui; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,apps/web/test/se-national-reference-surfaces.test.tsx -->
+
+`TRANSPOSITION_REFERENCES_SE` is written from the sections above and adds no
+source. It carries six requirements in English, French, Italian, German,
+Portuguese and Swedish: registration, incidents, public administration, measures,
+the management, supervision. By house rule it states no fine amount. The short
+name is the citation form "cybersäkerhetslagen (2025:1506)", which reads right
+after "enligt".
+
+The same day the Swedish training sentence lost "ledningsorganet", the directive's
+word: the bill and the act say "ledningen", and the duty is training on security
+measures (2 kap. 4 §).
+
+## The Swedish country page and signup: /sv/eu/sweden and /sv/skapa-konto (2026-11-05)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance; type=delivery; date=2026-11-05; surfaces=marketing,i18n; guard=apps/web/test/country-sweden-fiche.test.tsx,apps/web/test/register-funnel-guard.test.ts,apps/web/test/register-redirect-keeps-query.test.ts -->
+
+- **Why:** a Swedish reader had the product in Swedish and the country page in
+  English only, and a Swedish browser on `/register` stayed on the form written
+  for no country.
+- **Source:** this record, and no fact outside it. The page's Swedish is the
+  act's, reused from the rows above and from the shipped reference and incident
+  configuration. Its test holds each fact, each legal phrase, each quotation,
+  provision, date and length of time against this file.
+- **The framework slot is MCFFS 2026:11,** the national catalogue. The page says
+  that Reglyze does not carry it as a checklist and assesses on the requirements
+  of the directive. The title names the act, not the catalogue's code.
+- **The signup landing is shared with Finland.** Swedish is a national language
+  of Finland, which has no landing of its own, and a language header cannot tell
+  the two countries apart. `/sv/skapa-konto` names both, Sweden first, records a
+  country only when the source names one, and otherwise leaves the choice to the
+  onboarding. Finland's act has the same name in Swedish (finland.md: "Sw.
+  Cybersäkerhetslag", 124/2025), so each act is cited with its number, and no
+  clock is promised for Finland, which counts from detection. The fiche keeps
+  Sweden's name for the act and is about Sweden alone.
+- **The act governs where the guidance departs from it,** and the page says so
+  for the two a reader will meet: NCSC's 14 days for a first registration, and
+  the Cyberportal's clock from the occurrence for trust services. It follows the
+  bill's "och" on medium size, and the act on private education providers.
+- **Readings stay readings:** a registrar's class (no authority states it), an
+  IXP as a public electronic communications network (the bill and the guidance,
+  not the act's text), who "ledningen" is (the bill).
+- **As read on their date, from the time-limited section:** the Commission's
+  case, the föreskrifter's MCF name, the Cyberportal's address, PTS's aim for
+  spring 2027, the SFS register, the CER bill (not adopted on 2026-10-29). The
+  button opens NCSC's page, never the registration form's file, whose name
+  carries a date.
+- **Left out, and said to be where a reader would look:** how a municipality's
+  size is counted, and the content of Implementing Regulation (EU) 2024/2690 and
+  of the repealed security rules. Left out without a word: the Cyberportal's
+  fields and the questions of PTS's e-service (not seen), the list of the
+  sectors of the directive's Annexes, every amount but the bill's size test and
+  the word for a fine. The measures section gives four § of MCFFS 2026:11 for
+  five themes ("Logging, analysis, time, DNSSEC, patching"), so the page cites
+  DNSSEC by its chapter.
+- **What the page says about the product** is tied to what it reports: the
+  verdict uses the directive's words; a state authority comes out essential; a
+  region or a municipality is in at any size and essential on the figures
+  entered. The questionnaire does not ask about domain name registration
+  services, IXPs, the operators of MCFFS 2026:1 4 kap. or partner and linked
+  enterprises, and does not tell a kommunalförbund from a municipality, so the
+  page warns that the verdict can mislead: a small registrar comes out of scope.
+  The test runs the engine on these cases.
+- **A shipped string differs from the act's word.** The Swedish reference says
+  "Förbud att utöva ledningsroll", NCSC's wording. The act says "förbud att
+  inneha ledningsfunktion", which the page uses. The two mean the same, and the
+  reference was left as it is.
+- **Clock:** the CER bill would apply from 2027-01-01, so the page's
+  `reverifyAfter` is 2026-12-31. Its test fails from 2027-01-01 until the page
+  is read again.
+- **Measured** in Chromium on 2026-11-05, both pages at 360, 390 and 1280 px:
+  neither scrolls sideways. "cybersäkerhetslagen?" at `text-3xl` is 371 px wide,
+  which scrolled the page below 390 px until the closing heading dropped the
+  word; the title keeps it first, with soft hyphens at the joints.

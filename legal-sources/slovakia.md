@@ -2,7 +2,7 @@
 
 ## Zákon č. 366/2024 Z. z., amending zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti (read 2026-10-28)
 
-<!-- meta: theme=statute,registration; type=reference; date=2026-10-28; surfaces=data,prompt; guard=packages/regulatory-data/test/nis2-transposition-status.test.ts,packages/regulatory-data/test/nis2-mappings-loader.test.ts -->
+<!-- meta: theme=statute,registration; type=reference; date=2026-10-28; surfaces=data,prompt,marketing; guard=packages/regulatory-data/test/nis2-transposition-status.test.ts,packages/regulatory-data/test/nis2-mappings-loader.test.ts,apps/web/test/country-slovakia-fiche.test.tsx -->
 
 - **Official citation:** Zákon č. 366/2024 Z. z. z 28. novembra 2024, which
   amends the Cybersecurity Act No. 69/2018 Coll. (it does not replace it).
@@ -531,3 +531,79 @@ critical essential service (§ 18(1)(a)). A higher territorial unit and a town a
 said to be under the act on a significance test (§ 17(1)(d) and (f)), which is
 assumed and can overstate. The class important is the engine's word: the act has
 none.
+
+## The Slovak country page and signup: /sk/eu/slovakia and /sk/registracia (2026-11-05)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance; type=delivery; date=2026-11-05; surfaces=marketing,i18n; guard=apps/web/test/country-slovakia-fiche.test.tsx,apps/web/test/register-redirect-keeps-query.test.ts -->
+
+- **Why:** a Slovak reader had the product in Slovak and the country page in
+  English only, and a Slovak browser on `/register` stayed on the form written
+  for no country.
+- **Source:** this record, and no fact outside it. The page's Slovak is the
+  act's, reused from the rows above and from the shipped reference and incident
+  configuration. Its test holds each fact, each legal phrase, each quotation,
+  provision, date and length of time against this file.
+- **The framework slot is § 20 of the act**, which lists the eighteen areas. The
+  page says that their content is in a decree of NBÚ, names the decree only as
+  Slov-Lex lists it, and says that Reglyze does not carry it and assesses on
+  the requirements of the directive.
+- **The second button opens the act.** The page template always renders a second,
+  outbound button. This file gives no channel for the notification of § 17(2),
+  and the JISKB is for whoever has been given access, so the button opens the
+  act on Slov-Lex and its label says so. The page names no channel, and says
+  that it does not.
+- **The statutory body:** the page says that the act words neither a training
+  duty for its members nor an approval duty for it (governance section above),
+  and states the duties the act does word.
+- **Left out, and said to be:** the audit interval, with NBÚ's news item on the
+  audit decree in NBÚ's name (never vyhláška č. 436/2019 Z. z. of footnote 31),
+  how NBÚ applies the two deadlines for changes, and the list of the sectors
+  of Annexes 1 and 2. Also left out: every amount but the EUR 250,000 of the
+  decree's point 6, a loss to a user, so the two figures of § 125(1) of the
+  Criminal Code are not repeated; and the word for a fine.
+- **What the page says about the product** is tied to what it reports: the
+  verdict uses the directive's words, which the act does not use; a central
+  body comes out essential; a regional or local level comes out important on
+  an assumed significance test, which can overstate; the questionnaire has no
+  answer for a town apart from another municipality, and no question on a third
+  party. The test runs the engine on the three levels.
+- **Clock:** the transition of § 34b(5) ends on 2026-12-31, and that is the
+  page's `reverifyAfter`. Its test fails from 2027-01-01 until the page is read
+  again, as the tracker row's does.
+- **Measured** in Chromium on 2026-11-05, both pages at 360, 390 and 1280 px:
+  neither scrolls sideways.
+
+## Leads from writing the Slovak page, not used by it (2026-11-05)
+
+<!-- meta: theme=statute,scoping,registration; type=lead; date=2026-11-05; surfaces=docs; guard=none -->
+
+The signed PDF of the act (the file above, same SHA-256,
+`3d4e83a73bcdabe8276374c52089bf148f389c759856ba6df29837798f86f058`) was opened
+on 2026-11-05 to check the page's Slovak against the text. It answers four
+things the page leaves open. They are leads for the next reading, each quoted
+from that file, and none of them is on the page.
+
+- **How the notification is filed.** § 33(2): "Informácie, údaje a hlásenia podľa
+  tohto zákona sa predkladajú úradu v elektronickej podobe prostredníctvom
+  elektronického formulára, ktorého vzor zverejní úrad prostredníctvom
+  jednotného informačného systému kybernetickej bezpečnosti a na ústrednom
+  portáli verejnej správy v module elektronických formulárov." Read with
+  § 17(2), it is the page's missing channel. Whether a person not yet entered
+  in the register reaches the form, and where, was not checked.
+- **The rest of the transition.** § 34b(1): "Prevádzkovateľ základnej služby podľa
+  tohto zákona v znení účinnom do 31. decembra 2024 sa považuje za
+  prevádzkovateľa kritickej základnej služby podľa tohto zákona v znení účinnom
+  od 1. januára 2025." § 34b(3) does the same for a digital service provider,
+  as an operator of an essential service. § 34b(2) and (4) let NBÚ decide
+  otherwise until 31 December 2026, § 34b(7) keeps the earlier audit rules until
+  then, and § 34b(8) and (9) deal with audits due in 2024 to 2026. The operator
+  of § 34b(5) is the one of § 34b(1), and the "…" in the statute section's quote
+  stands for "podľa predpisov účinných od 1. januára 2025 aj prijímaním a
+  realizovaním bezpečnostných opatrení".
+- **§ 17(1)(b)**, "b) kritický subjekt,", which the scope table above skips.
+- **What § 2(2) lists.** This file calls them the digital types and does not list
+  them: "službu DNS, službu registrácie názvu domény, službu cloud computingu,
+  službu dátového centra, sieť na sprístupňovanie obsahu, riadenú službu,
+  bezpečnostnú službu, službu online trhu, službu internetového vyhľadávača
+  alebo platformu služieb sociálnej siete". So the page cannot say which
+  services follow Implementing Regulation (EU) 2024/2690, and does not.

@@ -342,3 +342,13 @@ The document context and the country page say the same since that day.
 - Sundhedsdatastyrelsen's and SAMSIK's guidance on regions is not read.
 - § 4, stk. 2 (a municipality or a region as a commercial e-communications
   provider) is not modelled by the level of government.
+
+## The national reference (written 2026-11-05)
+
+<!-- meta: theme=statute; type=delivery; date=2026-11-05; surfaces=data,ui; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,apps/web/test/dk-fi-national-reference-surfaces.test.tsx -->
+
+`TRANSPOSITION_REFERENCES_DK` is written from the sections above and adds no
+source. It carries six requirements in English, French, Italian, German,
+Portuguese and Danish: the sectors under their own acts, registration, incidents,
+public administration, the absence of a national catalogue, the management body.
+By house rule it states no fine amount.

@@ -135,6 +135,32 @@ Sources: ACN FAQ NIS (https://www.acn.gov.it/portale/faq/nis/), Gazzetta Ufficia
 
 Note: sweep TARGETED at the load-bearing citations, not an exhaustive line-by-line re-read of every string.
 
+### Registration: the calendar and the portal (read 2026-11-05)
+
+- **Sources read:** D.lgs. 138/2024 arts. 7, 30 and 38 (`docs/research/eur-lex/it-dlgs-138-2024.txt`); Determinazione ACN 314287/2026, signed on 20 October 2026, in application from 25 October 2026, which "aggiorna e sostituisce la Determinazione ACN n. 127437 del 13 aprile 2026" (art. 24), https://www.acn.gov.it/portale/documents/d/guest/detacn_piattaforma_314287-2026_signeddg; ACN, "Registrazione", https://www.acn.gov.it/portale/nis/registrazione. Retrieved 2026-11-05.
+
+| Fact | Where | Verbatim | Status |
+|---|---|---|---|
+| The subject registers first, from 1 January to 28 February | art. 7 c. 1 | "Dal 1° gennaio al 28 febbraio di ogni anno successivo alla data di entrata in vigore del presente decreto, i soggetti di cui all’articolo 3, si registrano o aggiornano la propria registrazione sulla piattaforma digitale" | ✅ |
+| The list follows, by 31 March | art. 7 c. 2 | "Entro il 31 marzo di ogni anno successivo alla data di entrata in vigore del presente decreto, l’Autorità nazionale competente NIS, redige" | ✅ |
+| The communication goes to subjects already registered | art. 7 c. 3 | "l’Autorità nazionale competente NIS comunica ai soggetti registrati di cui al comma 2: a) l’inserimento nell’elenco dei soggetti essenziali o importanti" | ✅ |
+| Second window, 15 April to 31 May | art. 7 c. 4 | "Dal 15 aprile al 31 maggio di ogni anno successivo alla data di entrata in vigore del presente decreto, tramite la piattaforma digitale di cui al comma 1, i soggetti che hanno ricevuto la comunicazione di cui al comma 3, lettere a) e b), forniscono o aggiornano almeno le informazioni seguenti" | ✅ |
+| Third window, 1 May to 30 June, for the list of activities | art. 30 c. 1 | "dal 1° maggio al 30 giugno di ogni anno a partire dalla ricezione della prima comunicazione di cui all’articolo 7, comma 3, lettera a), i soggetti essenziali e i soggetti importanti comunicano e aggiornano, tramite la piattaforma digitale di cui all’articolo 7, comma 1, un elenco delle proprie attività e dei propri servizi" | ✅ |
+| The fourteen days are for a change, and run from it | art. 7 c. 7 | "qualsiasi modifica delle informazioni trasmesse ai sensi del presente articolo tempestivamente e, in ogni caso, entro quattordici giorni dalla data della modifica" | ✅ |
+| A listed subject with no change does not redeclare | Det. 314287/2026, art. 11 c. 1 | "I soggetti già presenti nell’elenco dei soggetti NIS non procedono a tale adempimento esclusivamente nel caso in cui non siano intervenute modifiche" | ✅ |
+| Late declarations | Det. 314287/2026, art. 11 c. 8 | "Le dichiarazioni sottomesse o modificate oltre i termini di cui al comma 1 sono considerate tardive" ; "Le dichiarazioni tardive sottomesse entro il primo settembre sono trattate ai fini della registrazione nell’annualità di riferimento." | ✅ |
+| Late registration: 30 days for the annual update | Det. 314287/2026, art. 16 c. 11 | "in caso di registrazione tardiva, il termine per completare l’aggiornamento annuale è fissato in 30 giorni dalla ricezione della comunicazione di cui all’articolo 7, comma 3, lettera a)" | ✅ |
+| A subject ACN identifies: 30 days, or the next window | Det. 314287/2026, art. 13 c. 2 | "procedono alla registrazione entro 30 giorni dalla ricezione della notifica. Qualora la notifica sia ricevuta successivamente al 31 luglio, i soggetti procedono alla registrazione dal 1° gennaio al 28 febbraio dell’anno solare seguente." | ✅ |
+| Referente CSIRT by 31 December | Det. 314287/2026, art. 7 c. 1 | "entro il 31 dicembre dell’anno in cui il soggetto NIS è stato inserito" | ✅ |
+| Failing to register is a violation | art. 38 c. 10 lett. a) | "mancata registrazione, comunicazione o aggiornamento delle informazioni ai sensi dell’articolo 7, commi 1, 3, 4, 5 e 7" | ✅ |
+| The portal | ACN, "Registrazione" | "Dal primo gennaio di ogni anno si potrà avviare la registrazione tramite il Portale dei servizi." The link is https://portale.acn.gov.it/ | ✅ |
+
+**What the surfaces said.** `/it/registrazione-piattaforma-acn`, its title included, the diagnostic, the landing, the FAQ and four other Italian pages said a subject has 14 days to register from ACN's communication. The decree has no such term. The communication comes after the registration, and the fourteen days of art. 7 c. 7 are for a change. The same pages put the annual update on 1 May to 30 June under art. 7 c. 1, which is the third window, for the list of activities, under art. 30 c. 1. The reminder e-mails said the same. The document corpus and `it.yaml` had the calendar right all along.
+
+**The host.** `servizi.acn.gov.it`, in about 45 places, answers NXDOMAIN on public resolvers (Cloudflare DNS, 2026-11-05). `portale.acn.gov.it` answers, and ACN links it.
+
+**The determination.** Det. 314287/2026 replaced n. 127437 of 13 April 2026, itself an update of n. 379887 of 19 December 2025 (recitals and art. 24). Our configuration called the act "n. 127437 del 18 dicembre 2025", a number and a date of two different acts. Every citation now names n. 314287. The internal id `det-127437-2026` stays, because stored scores read it.
+
 ## Sanctions — D.Lgs 138/2024, art. 38 (verified 2026-07-26)
 
 <!-- meta: theme=sanctions; type=reference; date=2026-07-26; surfaces=data; guard=none -->
@@ -860,3 +886,28 @@ regional body is now said to be in scope under art. 3 c. 6 and Allegato III c. 1
 lett. b, and a local one under Allegato III c. 1 lett. c, a listed body being
 assumed because the inputs do not say. A municipality that is not listed is
 outside art. 3 c. 6, so the local verdict can overstate.
+
+## The public-administration configuration said otherwise (fixed 2026-11-05)
+
+<!-- meta: theme=scoping; type=wrong-citation,law-misread; date=2026-11-05; surfaces=data,ui; guard=packages/regulatory-data/test/public-admin-it-follows-the-decree.test.ts -->
+
+The onboarding form for a public body reads `PUBLIC_ADMIN_IT`
+(`packages/regulatory-data/src/country-configs/public-admin.ts`). Read against
+the rows above, it was wrong on five points, in five languages.
+
+| It said | The decree says |
+|---|---|
+| "art. 3 c. 8" brings public administration into scope | Art. 3 c. 6, with Allegato III. Art. 3 c. 8 is Allegato IV, once identified |
+| Comuni come in above a population threshold "set by ACN determinazione" | Allegato III c. 1 lett. c) writes it: above 100,000 inhabitants, or a regional capital. ACN sets nothing |
+| Every region is essential | A region is important unless ACN identifies it as essential (Art. 6 c. 2 and c. 3). Only the central administrations of lett. a) are essential by the decree (Art. 6 c. 1 lett. e)) |
+| Provinces, metropolitan cities and universities are `public_relevant_a` | That class is Portuguese. It does not exist in the decree. An ordinary provincia is not listed; a metropolitan city is, as important; a university falls under Allegato IV n. 2, once identified |
+| An ASL or an AO is essential because of the health sector | Allegato III c. 1 lett. c) n. 4 lists the Aziende sanitarie locali, as important unless designated. Allegato III does not name the aziende ospedaliere |
+
+Two sentences had no source and are gone: that NIS 2 evidence is "increasingly
+part of the Corte's programmed controls", and that ANAC "increasingly inspects"
+cybersecurity posture.
+
+**Open.** The configuration's identifier notes (codice IPA, codice fiscale) and
+the sentences on the Portale Servizi are not read against an official source in
+this file. An azienda ospedaliera is assessed on the health sector of Allegato
+I, whose row this file does not quote.
