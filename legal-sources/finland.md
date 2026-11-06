@@ -105,6 +105,19 @@ law's.
 | The register: what each entity reports | § 41(2) | "tieto siitä, onko se keskeinen toimija;" | (with name, contacts, IP ranges, sector, Member States, information-sharing) | ✅ |
 | Changes: two weeks, three months for the digital types | § 41(4) | "Muutoksesta 2 momentissa tarkoitettuihin tietoihin on ilmoitettava valvovalle viranomaiselle kahden viikon kuluessa ja 3 momentissa tarkoitettuihin tietoihin kolmen kuukauden kuluessa muutoshetkestä." | | ✅ |
 
+### What the English page and the configuration say, read against the act (2026-11-06)
+
+The Finnish page's delivery note listed four shipped sentences that went beyond this file. Each was read in the consolidated act, `https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2025/124/fin@20250997`, retrieved 2026-11-06.
+
+| Sentence | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| A significant incident, first subsection | § 11(1) | "Merkittävällä poikkeamalla tarkoitetaan poikkeamaa, joka on aiheuttanut tai voi aiheuttaa vakavan palvelujen toimintahäiriön tai huomattavia taloudellisia tappioita asianomaiselle toimijalle, sekä poikkeamaa, joka on vaikuttanut tai voi vaikuttaa muihin luonnollisiin henkilöihin tai oikeushenkilöihin aiheuttamalla huomattavaa aineellista tai aineetonta vahinkoa." | ✅ |
+| A significant incident, the Commission's implementing act | § 11(7) | "Edellä 1 momentissa tarkoitetun lisäksi merkittävällä poikkeamalla tarkoitetaan NIS 2 -direktiivin 23 artiklan 11 kohdan nojalla annetussa Euroopan komission täytäntöönpanosäädöksessä täsmennettyä tilannetta, jossa poikkeama katsotaan merkittäväksi." | ✅ |
+| Trust services, and only where their provision is affected | § 11(6) | "luottamuspalvelun tarjoajan on tehtävä jatkoilmoitus 24 tunnin kuluessa merkittävän poikkeaman havaitsemisesta, jos merkittävä poikkeama vaikuttaa sen luottamuspalvelujen tarjontaan." | ✅ |
+| The act sets no channel | § 11 | The section says to whom and when. It leaves the content, form and procedure of a notification to the supervising authority's technical rules: "Valvova viranomainen voi toimialallaan antaa tarkempia teknisiä määräyksiä, joilla tarkennetaan 11–15 §:n nojalla tehtävän ilmoituksen, tiedotuksen tai raportin tietosisältöä, teknistä muotoa ja menettelyä." | ✅ |
+
+"Training is a way to reach the familiarity of § 10(1)" is our reading. § 10(1) requires "riittävä perehtyneisyys" and names no means. The sentence stands as a reading, and the Finnish page does not make it.
+
 ## Language: Finnish and Swedish, and the act names three acts otherwise than the directive
 
 <!-- meta: theme=statute,incident; type=reference; date=2026-10-30; surfaces=i18n,data,doc-gen; guard=packages/regulatory-data/test/config-official-languages.test.ts,packages/regulatory-data/test/fi-incident-reporting.test.ts,packages/regulatory-data/test/act-stage-names.test.ts -->
@@ -237,3 +250,71 @@ second act, registration, the one class, the management. By house rule it states
 no fine amount. `managementBodyTrainingDuty` is false: the act does not word a
 training duty, so the training page names no duty in its name. It has no Swedish
 text: the Swedish version of the act is not read, and its terms are not guessed.
+
+## The Finnish country page and signup: /fi/eu/finland and /fi/luo-tili (2026-11-06)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance; type=delivery; date=2026-11-06; surfaces=marketing,i18n; guard=apps/web/test/country-finland-fiche.test.tsx,apps/web/test/register-funnel-guard.test.ts,apps/web/test/register-redirect-keeps-query.test.ts -->
+
+- **Why:** a Finnish reader had the product in Finnish and the country page in
+  English only, and a Finnish browser on `/register` stayed on the form written
+  for no country.
+- **Source:** this record, and no fact outside it. The page's Finnish is the
+  act's, reused from the rows above and from the shipped reference and incident
+  configuration. Where a row gives a fact as an English gloss, the Finnish word
+  comes from the text this record keeps as read
+  (`docs/research/eur-lex/fi-906-2019-public-administration.txt`). Its test holds
+  each fact, each legal phrase, each quotation, provision, date and length of
+  time against this file, and keeps the two acts apart where they share a
+  number.
+- **Finnish is read in one country,** so the chrome speaks the act directly, the
+  title says "Suomessa" itself, the landing records Finland whatever the source,
+  and no market entry is needed. Swedish was left as it was: there is no Swedish
+  version of this page, and a Swedish reader in Finland signs up on
+  `/sv/skapa-konto`.
+- **The framework slot is the risk-management model of § 8,** the one duty on the
+  measures this file names, through § 47(3). The page says that Reglyze assesses
+  on the requirements of the directive. It does not say that Finland has no
+  national catalogue: this file does not quote the act's provision on the
+  measures, so it cannot say what that provision holds.
+- **The authority is the reference's:** Traficom and the sector supervising
+  authorities. The hero button opens the act on Finlex, and the page names no
+  channel: this file gives the Kyberturvallisuuskeskus page by its domain, for
+  Traficom's sectors only.
+- **Readings stay readings:** that a wellbeing services county is the regional
+  level is said to be Reglyze's reading.
+- **As read on their date:** the Commission's case (2026-10-28), the Traficom
+  page (updated 2026-10-13) and the act 906/2019 (consolidated 2026-06-16, read
+  2026-11-05). § 26 and Annex I change on 2027-01-01 (785/2026): the seven
+  authorities are stated, with Säteilyturvakeskus from that day, so the page's
+  `reverifyAfter` is 2026-12-31.
+- **Left out, and said to be where a reader would look:** the sectors of the annexes and which annex points each
+  authority other than Traficom holds, the Recommendation's figures, the wording
+  of § 8 and of the provision on the measures, the end of § 47(3), the
+  authorities' technical rules under § 11(5), every channel but Traficom's, the
+  regional council's position under § 3(3) point 4, and the government bill on
+  "havaitsemisesta".
+- **Left out without a word:** § 38 and all of § 18 l of the act 906/2019, whose
+  list ends on a word for a fine; the previous regime, which this file does not
+  name; § 3(6) of the act 906/2019 on Åland; and, of the same act, what the kept
+  text holds and this file does not quote, §§ 18 b, 18 c, 18 e to 18 g and 18 i to
+  18 k. The act 906/2019 has no link on the page: this file gives it as a Finlex
+  open-data path, not an address. Nor does the page say that the incident
+  configuration cites the cyber act for a public body: this file says only the
+  citation differs, and a reader of the page does not meet it.
+- **What the page says about the product** is tied to what it reports: a state
+  body comes out essential and a wellbeing services county important, each with
+  no size test, and a municipality out of scope unless it declares an Annex
+  sector. The questionnaire has no word for the City of Helsinki or for a state
+  body that § 3(3) of the act 906/2019 leaves out, and does not ask about
+  occasional and minor activity, and the page says so. The verdict uses
+  the directive's classes, so the page says what "tärkeä toimija" means under the
+  cyber act. The test runs the engine on these cases.
+- **Four shipped sentences went further than this file** when the page was
+  written. They are read in the act since: see "What the English page and the
+  configuration say", and the page now gives the definition of a significant
+  incident word for word.
+- **Measured** in Chromium on 2026-11-06, both pages at 360, 390 and 1280 px:
+  neither scrolls sideways. At 360 px the act's name in the fiche's title was
+  wider than its column and broke inside the word, so the title carries a soft
+  hyphen at the seam of the compound, and a no-break space in "NIS 2".
+- **No native Finnish speaker has read the page yet.**

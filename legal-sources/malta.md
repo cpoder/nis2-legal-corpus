@@ -320,3 +320,37 @@ The class of each level did not change. The sentences were the directive's. A
 local council is now said to be in scope after a risk assessment (art. 3(3)(f)), a
 positive one being assumed, which can overstate. The Order names no regional level,
 and the regional input reads as a local council.
+
+## The Maltese signup: /en-mt/register (2026-11-06)
+
+<!-- meta: theme=statute,registration,incident; type=delivery; date=2026-11-06; surfaces=marketing,i18n; guard=apps/web/test/country-malta-signup.test.tsx,apps/web/test/register-funnel-guard.test.ts,apps/web/test/register-redirect-keeps-query.test.ts -->
+
+- **Why:** a reader of `/en/eu/malta` signed up on the bare `/register`, which
+  names no country and records none, so the onboarding asked again which country
+  they were in.
+- **Source:** this record, and no fact outside it; nothing outside the repository
+  was opened for the page. Its test holds each legal phrase against the sections
+  above this one and cuts this section off, so that a sentence here cannot be the
+  source of the sentence it describes.
+- **English spans several markets,** so Malta is a `lang-REGION` pair (ADR 0040)
+  and `en` keeps its behaviour. An `en-MT` browser on `/register` reaches the
+  landing with its query; a plain `en`, `en-GB` or `en-IE` browser stays on
+  `/register`. The English Malta page links the landing, and no other English
+  page's call to action moved. No Maltese-language page was added ("Language"
+  above).
+- **"Create your account", never "register".** Next to the Order that word reads
+  as the national self-registration mechanism of art. 7(4), which no signup gives,
+  so only the address keeps it. Nothing on the page promises help with that
+  mechanism: Malta has no registration kit.
+- **The authority is the reference's:** the CIP Department, called the national
+  supervisory authority as art. 7(1) calls it, next to the Malta Communications
+  Authority for its sectors. Its link is the Order on Legislation Malta, as in
+  `mt.yaml` and on the English page: this record holds no page of the department.
+- **The recipient is the national CSIRT within MITA,** never the CIP Department,
+  which hears of an incident from the CSIRT (art. 20(1)). The page keeps the word
+  "immediately" and counts the early warning from becoming aware (art. 20(5)).
+- **Left out because this record does not hold it:** the self-registration portal
+  and the reporting channel (see "Open items"), so the page gives no address for
+  either. By house rule it cites no fine.
+
+Added the same day: a browser asking for Maltese (`mt`) reaches the landing, as `lb` does for Luxembourg, since Maltese is spoken in Malta alone and Reglyze has no Maltese. A verdict for Malta in the English scope checker leads to the landing too.

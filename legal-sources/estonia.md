@@ -53,6 +53,7 @@ register shows case INFR(2024)0267 still active at the reasoned-opinion stage
 | First notice to RIA within 24 hours of becoming aware | § 8(1) | "esitab Riigi Infosüsteemi Ametile esmase teate viivitamata, kuid hiljemalt 24 tundi pärast teada saamist küberintsidendist" | ✅ |
 | Also when the significant impact is not obvious | § 8(1)(2) | "mille oluline mõju süsteemi turvalisusele või teenuse toimepidevusele ei ole ilmne, kuid seda võib mõistlikult eeldada" | ✅ |
 | An outsourced administrator or host must tell the entity within 24 hours | § 8(1¹) | "vastutab teenuseosutaja selle eest, et teine isik teavitab teenuseosutajat hiljemalt 24 tundi pärast" | ✅ |
+| The six conditions of significant impact, any one of which is enough | § 8(2) | "Küberintsidendil on oluline mõju, kui on täidetud vähemalt üks järgmistest tingimustest: 1) küberintsidendi mõju on käesoleva seaduse § 7 lõike 1 punkti 1 alusel koostatud süsteemi riskianalüüsis määratud tagajärgede raskusastme kohaselt vähemalt raske; 2) küberintsidendi tõttu ei ole teenuse osutamist võimalik jätkata teenustaseme kokkuleppes või teenuse toimepidevuse nõuetes sätestatud teenuse maksimaalse lubatud katkestuse aja möödumisel; 3) küberintsidendi tõttu on häiritud teise teenuseosutaja teenuse toimepidevus; 4) küberintsidendi lahendamiseks tuleb rakendada käesoleva seaduse § 7 lõike 1 punkti 1 alusel koostatud süsteemi riskianalüüsis või selle olemasolul muus teenuse toimepidevuse või süsteemi turvalisuse taastamist kirjeldavas dokumendis toodud erakorralisi abinõusid; 5) teenuseosutajale, teisele teenuseosutajale või teenuse kasutajatele on küberintsidendi tõttu tekkinud või võib tekkida märkimisväärne kahju; 6) tegemist on Euroopa Parlamendi ja nõukogu direktiivi (EL) 2022/2555 artikli 23 lõike 11 alusel vastu võetud Euroopa Komisjoni rakendusaktis sätestatud olulise intsidendiga." | ✅ |
 | Disruption in another Member State is always significant | § 8(3) | "loetakse küberintsident alati olulise mõjuga küberintsidendiks" | ✅ |
 | Incident report within 72 hours of becoming aware | § 8(4¹) | "edastab Riigi Infosüsteemi Ametile viivitamata, kuid hiljemalt 72 tundi pärast olulise mõjuga küberintsidendist teada saamist intsidenditeate" | ✅ |
 | Trust services: 24 hours | § 8(4²) | "intsidenditeate viivitamata, kuid hiljemalt 24 tundi pärast olulise mõjuga küberintsidendist teada saamist" | ✅ |
@@ -190,7 +191,7 @@ doctors, the named bodies), which no question asks.
 
 The directive (Art. 20(2)) binds every member of the management body to
 follow training; the act binds the designated member, every member only when
-none is designated, and adds "korrapäraselt".
+none is designated, and says "korrapäraselt", as the Estonian text of the directive does.
 
 ## Supervision and sanctions
 
@@ -296,3 +297,80 @@ years to comply, incidents, local government, the measures and outsourcing, the
 designated board member. By house rule it states no fine amount. The size test's
 figures are not fines. The Estonian training sentence said "juhtorgani"; the act
 binds the designated board member, and it now says "juhatuse liikme".
+
+## The Estonian country page and signup: /et/eu/estonia and /et/loo-konto (2026-11-06)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance; type=delivery; date=2026-11-06; surfaces=marketing,i18n; guard=apps/web/test/country-estonia-fiche.test.tsx,apps/web/test/register-funnel-guard.test.ts,apps/web/test/register-redirect-keeps-query.test.ts -->
+
+- **Why:** an Estonian reader had the product in Estonian and the country page in
+  English only, and an Estonian browser on `/register` stayed on the form written
+  for no country.
+- **Source:** this record, and no fact outside it. The page's Estonian is the
+  act's, reused from the rows above and from the shipped reference and incident
+  configuration. Where a row gives a fact as an English gloss, the test holds the
+  Estonian phrase next to that gloss. Its test holds each fact, each legal phrase,
+  each quotation, provision, date and length of time against this file, and keeps
+  the amending act's § 11 apart from the consolidated text's numbers.
+- **Estonian is read in one country,** so the chrome speaks the act directly, the
+  title says "Eestis" itself, the landing records Estonia whatever the source, and
+  no market entry is needed.
+- **The framework slot is § 7 of the act.** The page says that Reglyze assesses on
+  the requirements of the directive and not on the Eesti infoturbestandard: the
+  regulations under § 7(5) are named by their titles, and their content is not on
+  this file.
+- **The authority is the reference's:** Riigi Infosüsteemi Amet, with the act on
+  Riigi Teataja as its address, as in `ee.yaml` and on the English page. The hero
+  button opens RIA's notification page, the one RIA address this file holds. The
+  page names eesti.ee as that page does and links it nowhere: this file gives it
+  by its name. No incident channel is named.
+- **Readings stay readings:** the comparison of the size test with the
+  Recommendation's is said to be Reglyze's reading. That a healthcare provider
+  comes in through another point of § 3 is stated as this file reads the 42 points.
+- **The three years are stated in the act's words,** as `ee.yaml` asks: the page
+  says that it does not say which duty they defer, that the notification keeps its
+  own three months, and that Reglyze's incident deadlines do not use the window.
+- **As read on their date:** the Commission's case (2026-10-28), RIA's page
+  (updated 15.06.2026) and the consolidated text (read 2026-10-30). So the page's
+  `reverifyAfter` is 2027-01-28, three months after the first two were read. The
+  two dates of § 28¹, about 2026-04-01 and about 2029-01-01, are this file's
+  computed ones: the page gives them with "umbes", says that they are computed, and
+  keeps them out of its timeline.
+- **Left out, and said to be where a reader would look:** the conditions of a
+  significant-impact incident (§ 8(2)), the content of the regulations under
+  § 7(5) and § 8(8), the reporting channel, the vital-service deadline of
+  § 4¹(4), and the full lists of § 3(3) and § 3(5).
+- **Left out without a word:** every sanction amount and the word for one, so
+  §§ 17¹, 18², 18³ and 19; the exclusions of § 1(2) and § 1(2¹), which this file
+  gives as an English gloss with no Estonian word for them; the date consultation
+  papers give the minister's regulation no 7, which this file calls unread; the
+  decision number of the promulgation; and the four other regulations listed under
+  the act, on the strategy, peer review, the coordination unit and the incident
+  register.
+- **Written without the act's own words:** § 3(2) point 5 is given here in English
+  only, so the page says "§ 3 lõike 2 punktis 5 nimetatud sideteenuste osutaja", and
+  no term is coined for it. "Maanteeamet" is the directive's Estonian word
+  (`docs/research/eur-lex/nis2-et.txt`, Annex I).
+- **What the page says about the product** is tied to what it reports: the scope
+  check applies the cumulative tests of § 3 with their bounds, makes a local
+  government unit essential and a non-qualified trust service provider important at
+  any size, decides public e-communications by § 3(2) point 8 and § 3(4) point 9,
+  adds its note on health, transport and food, and assumes a missing balance sheet
+  above both limbs. It asks nothing about the other any-size types, and the page
+  says so. The verdict uses the directive's words, so the page says what "elutähtis
+  üksus" means under the act. The test runs the engine on these cases.
+- **One sentence of this file is not followed.** The governance section says that
+  the act "adds 'korrapäraselt'" to the directive. That holds of the English text
+  only: the Estonian text of Article 20(2) has the word (Language section). The
+  page quotes the Estonian text and says that the difference is who is bound.
+- **Shipped sentences go further than this file,** and the page follows this file.
+  `INCIDENT_REPORTING_EE` carries the six conditions of § 8(2), which this file
+  does not quote, and says what the incident report updates, which it does not
+  quote either. `TRANSPOSITION_REFERENCES_EE` writes "kohalike omavalitsuste liit"
+  where the act writes "kohaliku omavalitsuse üksuste liit", and stops its Estonian
+  sentence on § 8(1¹) at "hiljemalt 24 tundi pärast". The page completes it as this
+  file's prose does, "of becoming aware". `ee.yaml` still says that the scoping
+  engine has no Estonian layer, which ended on 2026-10-30. These were left as they
+  are.
+- **Measured** in Chromium on 2026-11-06, both pages at 360, 390 and 1280 px:
+  neither scrolls sideways, and neither logs an error.
+- **No native Estonian speaker has read the page yet.**

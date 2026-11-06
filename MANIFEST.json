@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05",
-  "sourceCommit": "60699370",
+  "generatedAt": "2026-11-06",
+  "sourceCommit": "309b58b2",
   "legalSourceFiles": [
     "austria.md",
     "belgium.md",
@@ -31,7 +31,7 @@
     "spain.md",
     "sweden.md"
   ],
-  "annotatedSections": 377,
+  "annotatedSections": 381,
   "defectSections": 103,
   "trackerCountries": 30,
   "scopingCases": 134

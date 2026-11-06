@@ -2,12 +2,12 @@
 
 ## Statute: NIS 2-loven (LOV nr 434 af 06/05/2025)
 
-<!-- meta: theme=statute; type=reference; date=2026-10-30; surfaces=data; guard=packages/regulatory-data/test/nis2-transposition-status.test.ts -->
+<!-- meta: theme=statute; type=reference; date=2026-10-30; surfaces=data,marketing; guard=packages/regulatory-data/test/nis2-transposition-status.test.ts,apps/web/test/country-denmark-fiche.test.tsx -->
 
 | Field | Value |
 |---|---|
 | Official citation | LOV nr 434 af 06/05/2025 — Lov om foranstaltninger til sikring af et højt cybersikkerhedsniveau |
-| Short name | NIS2-loven (LOV nr 434 af 06/05/2025) |
+| Short name | NIS 2-loven (LOV nr 434 af 06/05/2025) |
 | Transposes | Directive (EU) 2022/2555 (NIS2) |
 | Official URL (competent authority) | https://samsik.dk/nis2/implementering-af-nis-2-i-dansk-ret/ |
 | Retrieval date | 2026-06-07 |
@@ -121,10 +121,12 @@ establishment, § 2, stk. 2), under the NIS 2-loven:
 IN SCOPE of the NIS 2-loven (not the energy, telecom or § 333 financial acts):
   Annex 1/2 type AND (persons >= 50 OR (turnover > 10M AND balance > 10M))      -> in
   QTSP | TSP | TLD | DNS                                                        -> in, any size
-  central government entity | regional entity (Annex 1, pt. 10)                 -> in
+  central government entity                                                     -> in
+  regional entity (Annex 1, pt. 10)                                             -> by size, a reading (last section)
   municipality/region as commercial e-comms provider of medium size             -> in, essential (§ 4(2))
   CER critical entity | NIS1 OES | sole provider / significant impact cases     -> in, any size
-  local public administration, education                                        -> only if an executive order says so (§ 1(7))
+  municipality carrying out an Annex activity                                   -> in, as a whole (last section)
+  other local public administration, education                                  -> only if an executive order says so (§ 1(7))
 EXCEPT security/defence/law-enforcement bodies; ministerial exemption (never for a TSP)
 CLASS essential: Annex 1 AND (persons >= 250 OR (turnover > 50M AND balance > 43M))
       | QTSP | TLD | DNS | central government | CER | NIS1 OES | national importance
@@ -188,6 +190,7 @@ with the directive's Danish text in the Language section below.
 | Still ongoing: a status report, then one month after handling | § 13, stk. 1, nr. 5 | "skal den underrettende enhed indsende en statusrapport på det pågældende tidspunkt og en endelig rapport, senest 1 måned efter at hændelsen er håndteret." | | ✅ |
 | Trust services: 24 hours | § 13, stk. 2 | "Tillidstjenesteudbydere skal i tilfælde af væsentlige hændelser afgive underretningen efter stk. 1, nr. 2, uden unødigt ophold og senest inden for 24 timer efter at være blevet bekendt med den væsentlige hændelse." | | ✅ |
 | Significant incident | § 12, stk. 2 | "1) Hændelsen har forårsaget eller er i stand til at forårsage alvorlige driftsforstyrrelser af tjenesterne eller økonomiske tab for den berørte enhed." | | ✅ |
+| Significant incident, the second limb | § 12, stk. 2 | "2) Hændelsen har påvirket eller er i stand til at påvirke andre fysiske eller juridiske personer ved at forårsage betydelig fysisk eller ikkefysisk skade." | | ✅ |
 | Channel: Virk.dk | BEK 620, § 14 | (quoted in the registration section) | | ✅ |
 | The national CSIRT is the Defence Intelligence Service | SAMSIK, NIS 2 page | "Indberetninger håndteres af Forsvarets Efterretningstjeneste (FE), som varetager opgaven som national CSIRT." | Reports are handled by the Danish Defence Intelligence Service, the national CSIRT. | ✅ (authority page; the act says "CSIRT’en") |
 | Informing recipients | § 15, stk. 1 | "Væsentlige og vigtige enheder underretter uden unødigt ophold modtagerne af deres tjenester om væsentlige hændelser, der sandsynligvis vil påvirke leveringen af deres tjenester negativt." | | ✅ |
@@ -352,3 +355,62 @@ source. It carries six requirements in English, French, Italian, German,
 Portuguese and Danish: the sectors under their own acts, registration, incidents,
 public administration, the absence of a national catalogue, the management body.
 By house rule it states no fine amount.
+
+## The Danish country page and signup: /da/eu/denmark and /da/opret-konto (2026-11-06)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance; type=delivery; date=2026-11-06; surfaces=marketing,i18n; guard=apps/web/test/country-denmark-fiche.test.tsx,apps/web/test/register-funnel-guard.test.ts,apps/web/test/register-redirect-keeps-query.test.ts -->
+
+- **Why:** a Danish reader had the product in Danish and the country page in
+  English only, and a Danish browser on `/register` stayed on the form written
+  for no country.
+- **Source:** this record, and no fact outside it. The page's Danish is the
+  act's, reused from the rows above and from the shipped reference and incident
+  configuration. Its test holds each fact, each legal phrase, each quotation,
+  provision, date and length of time against this file, and keeps BEK 620 and
+  the act apart when they share a number.
+- **Danish is read in one country** (the Language section above), so the chrome
+  speaks the act directly, the landing records Denmark whatever the source, and
+  no market entry is needed.
+- **The framework slot is § 6 of the act.** Denmark has no national catalogue, so
+  the page says that § 6 restates the directive's ten measures and that Reglyze
+  assesses on the requirements of the directive. The title names the act.
+- **The authority is the reference's:** SAMSIK and the competent authority of
+  each sector. One channel carries everything, Virk.dk, and the hero button opens
+  the address SAMSIK's page links.
+- **Readings stay readings:** a region's class and a registrar's class are said
+  to be Reglyze's reading of the text. A municipality is stated on the bill's
+  words, and the act's size test as the entity's own, with the group question
+  open.
+- **The act governs where the guidance departs from it,** and the page says so
+  for SAMSIK's three months for every change.
+- **As read on their date:** the list of executive orders, and through it the
+  absence of rules under § 1, stk. 7, § 6, stk. 3 and § 12, stk. 3, all
+  2026-10-30, and the address of the Virk.dk link, read the same day. So the
+  page's `reverifyAfter` is 2027-01-30.
+- **Left out, and said to be where a reader would look:** the whole of § 12,
+  stk. 2 (this file quotes its first point), the sectors of Annexes 1 and 2, the
+  content of the three sector acts, SAMSIK's guidance on incidents and on regions,
+  the Virk.dk form, and Implementing Regulation (EU) 2024/2690. Left out without a
+  word: every sanction amount and the word for one, the ministerial exemption of
+  § 1, stk. 5 and 6, and the two SAMSIK pages this file gives without their full
+  address. § 32 is stated as a criminal provision, as on the English page, with
+  the liability of companies, and nothing more.
+- **What the page says about the product** is tied to what it reports: a central
+  body comes out essential, a region by size, a municipality out of scope unless
+  it declares an Annex sector. The questionnaire does not know the three sector
+  acts, registrars or § 4, stk. 2, so the page warns that the verdict for such an
+  entity is the directive's: a Danish energy company of 300 persons comes out
+  essential, in the directive's words. The test runs the engine on these cases.
+- **Three shipped sentences go further than this file,** and the page follows
+  this file. `INCIDENT_REPORTING_DK` and the English page say that the two
+  recipients get one filing ("i én indberetning"): this file reads one channel,
+  and the form is on the open list. `INCIDENT_REPORTING_DK` carries the second
+  limb of § 12, stk. 2, which this file does not quote. And the Danish reference
+  writes "underrettes til", where the act's verb takes the recipient as its object
+  ("skal underrette den relevante kompetente myndighed"). The three were left as
+  they are.
+- **Measured** in Chromium on 2026-11-06, both pages at 360, 390 and 1280 px:
+  neither scrolls sideways. The fiche's title carries no-break spaces, the
+  landing's says "NIS 2" alone and the closing heading "lovens krav": "NIS 2-loven"
+  broke at its hyphen in a narrow column.
+- **No native Danish speaker has read the page yet.**
