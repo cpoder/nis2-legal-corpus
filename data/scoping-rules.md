@@ -294,7 +294,32 @@ sector 10). Neither annex lists another level, so a regional or local body with 
 out of scope. The Romanian size test stays outside the suite: Legea nr. 346/2004 leaves a gap its
 record says a classifier must flag.
 
-## 26. Not modelled
+## 26. A national class of public administration: Lithuania
+
+Central, regional and municipal administration entities are essential at any size, as the Public
+Administration Law defines them (Kibernetinio saugumo įstatymas, Art. 11(3)(5); Annex 1, sector 10).
+This departs from the directive at both the regional and the local level. Status and duties start
+with registration in KSIS (Art. 11(1), (2)), which the suite does not model, and neither does it
+model the act's size test, which refers to the national SME Development Law.
+
+## 27. A national class of medium enterprises and of public administration: Hungary
+
+The Kiberbiztonsági tv. (2024. évi LXIX. törvény) keeps the Recommendation's numbers: its own test
+(at least 50 staff, or a net turnover and a balance sheet total both above EUR 10 million,
+§ 1(1)(d)(da) and (db)) is met by exactly the enterprises that are not small under the SME act
+(2004. évi XXXIV. törvény, § 3(2)). What departs is the class. An organisation of the act's Annex 2,
+its high-risk sectors, is essential when it is **medium-sized** or larger (§ 1(4)(f)), where the
+directive makes a medium-sized Annex I entity important. The same paragraph decides an electronic
+communications provider and a non-qualified trust service provider, in scope at any size
+(§ 1(1)(e)(ea), (eb)): essential from medium size, important below (§ 1(5)(c)). An organisation of
+Annex 3 is important (§ 1(5)(d)). Annexes 2 and 3 list **neither banking nor financial market
+infrastructures**: those two sectors bring nobody into the act. Every organisation of Annex 1,
+public administration, is essential, except the office of the representative body of a settlement
+of 20,000 inhabitants or fewer, which is important (§ 1(4)(a), (5)(a)). The suite does not model
+the company under majority state control, which is essential in any sector from the same
+thresholds (§ 1(1)(b), (4)(b)), nor the population of a settlement.
+
+## 28. Not modelled
 
 Domain-name registrars (Art. 2(4)), critical entities under Directive (EU) 2022/2557 (Art. 2(3)),
 the aggregation of partner and linked enterprises (Recommendation Annex Art. 6), Member-State
@@ -303,7 +328,7 @@ Länder, the service rows of the Czech decree other than row 1.1, and national s
 as the Polish MSSP rule (UKSC art. 5 ust. 1 pkt 3) are outside the suite. A classifier that handles any of these goes beyond
 the suite, not against it.
 
-## 27. Conformance cases
+## 29. Conformance cases
 
 | id | country | case | expected | basis |
 |---|---|---|---|---|
@@ -440,4 +465,17 @@ the suite, not against it.
 | ro-01 | RO | ministry, 60 staff | essential | OUG nr. 155/2024, Art. 5(1)(a) with Annex 1, sector 10. |
 | ro-02 | RO | county council, 900 staff, no other sector | out_of_scope | OUG nr. 155/2024, Art. 5(1)(a) and Annex 1, sector 10: the central level only. |
 | ro-03 | RO | municipality, 900 staff, no other sector | out_of_scope | OUG nr. 155/2024, Art. 5(1)(a) and Annex 1, sector 10: the central level only. |
+| lt-01 | LT | ministry, 60 staff | essential | Art. 11(3)(5) of the Kibernetinio saugumo įstatymas, Annex 1, sector 10. |
+| lt-02 | LT | regional administration entity, 30 staff | essential | Art. 11(3)(5) of the Kibernetinio saugumo įstatymas: no size condition, where the directive leaves the regional level to a risk assessment. |
+| lt-03 | LT | municipal administration, 12 staff | essential | Art. 11(3)(5) of the Kibernetinio saugumo įstatymas: no size condition, where the directive leaves the local level to the member state. |
+| hu-01 | HU | electricity company, 120 staff, EUR 20M turnover, EUR 8M balance sheet | essential | § 1(4)(f) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény): an organisation of Annex 2 that is medium-sized under the SME act, or exceeds the medium thresholds, is essential. The directive makes a medium-sized Annex I entity important (Article 3(2)). |
+| hu-02 | HU | machinery manufacturer, 120 staff, EUR 20M turnover, EUR 8M balance sheet | important | § 1(5)(d) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény): an organisation of Annex 3 is important. |
+| hu-03 | HU | health provider, 30 staff, EUR 12M turnover, EUR 5M balance sheet | out_of_scope | § 1(1)(d)(da) and (db) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény): under 50 staff, the own test needs a turnover and a balance sheet total both above EUR 10 million; and the enterprise is small under § 3(2) of the SME act (2004. évi XXXIV. törvény), so not medium-sized. |
+| hu-04 | HU | health provider, 30 staff, EUR 12M turnover, EUR 11M balance sheet | essential | § 1(1)(d)(db): both figures above EUR 10 million bring it in whatever the headcount, and the enterprise is medium-sized under the SME act, so essential by § 1(4)(f). The directive makes it important. |
+| hu-05 | HU | bank, 500 staff, no other sector | out_of_scope | Annexes 2 and 3 of the Kiberbiztonsági tv. (2024. évi LXIX. törvény) list neither banking nor financial market infrastructures, and an entity under Regulation (EU) 2022/2554 cannot be identified (§ 1(1)(c)); the incident handling provisions reach it with deviations (§ 1(10)(b), § 71). Outside the act, not outside DORA. |
+| hu-06 | HU | electronic communications provider, 12 staff | important | § 1(1)(e)(ea) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény): in scope whatever the size; an Annex 2 organisation that is not essential is important (§ 1(5)(c)). |
+| hu-07 | HU | electronic communications provider, 120 staff, EUR 14M turnover, EUR 11M balance sheet | essential | § 1(4)(f) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény): an electronic communications provider is an Annex 2 type (row 15), essential from medium size. |
+| hu-08 | HU | non-qualified trust service provider, 80 staff, EUR 9M turnover, EUR 5M balance sheet | essential | § 1(4)(f) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény): a trust service provider is an Annex 2 type (row 16), essential from medium size. The directive makes a medium-sized non-qualified one important (Article 3(2)). |
+| hu-09 | HU | county government office, 300 staff | essential | § 1(4)(a) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény); Annex 1, point 11: the capital and county government offices and the offices of the county assemblies. |
+| hu-10 | HU | office of the representative body of a town of 60,000 inhabitants, 40 staff | essential | § 1(4)(a) of the Kiberbiztonsági tv. (2024. évi LXIX. törvény); Annex 1, point 13. The office of a settlement of 20,000 inhabitants or fewer is important instead (§ 1(5)(a)): the suite's answers carry no population, so a classifier that asks it may answer important for such a settlement. |
 | cz-04 | CZ | central state administration body, 60 staff | essential | Row 1.1, part I, letter a: a central state administration body is in the regime of higher obligations, the class the directive also gives central government (Art. 3(1)(d)). |

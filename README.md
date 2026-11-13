@@ -13,17 +13,17 @@ got wrong are recorded next to the facts we got right.
 Maintained by [Reglyze](https://reglyze.com), the NIS2 compliance platform for European SMEs and
 MSPs. This repository is a generated mirror of the corpus that drives the product. Corrections are
 welcome as issues or pull requests and are ported back to the source. Last generated
-2026-11-06.
+2026-11-13.
 
 ## What is in here
 
 | path | content |
 |---|---|
-| `legal-sources/<country>.md` | One file per jurisdiction (28 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 381 annotated sections, 103 of which record a defect we found in our own product and the test that now prevents it. |
+| `legal-sources/<country>.md` | One file per jurisdiction (28 files, including `eu.md` for Union law). Each `##` section carries a machine-readable `<!-- meta: -->` line and, for facts, a table: fact, article, verbatim quote, English gloss, status. 434 annotated sections, 108 of which record a defect we found in our own product and the test that now prevents it. |
 | `legal-sources/INDEX.md` | Generated cross-cutting view: by theme, by type of defect, open items. |
 | `legal-sources/TAXONOMY.md` | The meta-line vocabulary and why it exists. |
 | `data/nis2-transposition-tracker.json` | The dataset behind the public [transposition tracker](https://reglyze.com/en/nis2-tracker): stage, dates, statute, authority, sources, for 30 EU and EEA countries, each row saying how it was established. |
-| `data/scoping-rules.md`, `data/scoping-conformance-cases.json` | The NIS2 scope rules as written (the size ceilings with their "and/or", the closed list of size-independent types, the essential/important ladder, the national size tests of Slovenia, Estonia and Latvia, the classes of public administration of Bulgaria, Sweden and Czechia) and 134 conformance cases a classifier can be tested against. |
+| `data/scoping-rules.md`, `data/scoping-conformance-cases.json` | The NIS2 scope rules as written (the size ceilings with their "and/or", the closed list of size-independent types, the essential/important ladder, the national size tests of Slovenia, Estonia and Latvia, the classes of public administration of Bulgaria, Sweden and Czechia) and 147 conformance cases a classifier can be tested against. |
 | `tools/` | The index builder and the validator that CI runs. |
 
 ## Countries
@@ -38,16 +38,16 @@ welcome as issues or pull requests and are ported back to the source. Last gener
 | [czechia](legal-sources/czechia.md) | Zákon č. 264/2025 Sb., o kybernetické bezpečnosti (read 2026-10-28) | 17 | 2 | 1 | 2026-11-05 |
 | [denmark](legal-sources/denmark.md) | NIS 2-loven (LOV nr 434 af 06/05/2025) | 15 | 1 | 1 | 2026-11-06 |
 | [estonia](legal-sources/estonia.md) | Küberturvalisuse seaduse ja teiste seaduste muutmise seadus, RT I, 30.12.2025, 4 (read 2026-10-28) | 13 | 1 | 1 | 2026-11-06 |
-| [eu](legal-sources/eu.md) | Directive (EU) 2022/2555 Arts. 2 and 3, Annexes I and II; Recommendation 2003/361/EC | 24 | 9 | 0 | 2026-11-05 |
+| [eu](legal-sources/eu.md) | Directive (EU) 2022/2555 Arts. 2 and 3, Annexes I and II; Recommendation 2003/361/EC | 30 | 13 | 0 | 2026-11-13 |
 | [finland](legal-sources/finland.md) | Kyberturvallisuuslaki 124/2025 (read 2026-10-28) | 10 | 3 | 0 | 2026-11-06 |
 | [france](legal-sources/france.md) | Projet de loi Résilience (en cours d'examen) | 10 | 5 | 0 | 2026-11-05 |
 | [germany](legal-sources/germany.md) | NIS2UmsuCG | 12 | 6 | 0 | 2026-11-05 |
 | [greece](legal-sources/greece.md) | Ν. 5160/2024 (ΦΕΚ Α΄ 195/27.11.2024) | 21 | 4 | 2 | 2026-11-05 |
-| [hungary](legal-sources/hungary.md) | 2024. évi LXIX. törvény Magyarország kiberbiztonságáról (read 2026-10-28) | 1 | 0 | 0 | 2026-10-28 |
-| [ireland](legal-sources/ireland.md) | National Cyber Security Bill: a General Scheme, no bill in the Oireachtas (read 2026-10-28) | 1 | 1 | 0 | 2026-10-28 |
+| [hungary](legal-sources/hungary.md) | 2024. évi LXIX. törvény Magyarország kiberbiztonságáról, as in force on 2026-11-12: read in full (2026-11-12) | 25 | 1 | 1 | 2026-11-13 |
+| [ireland](legal-sources/ireland.md) | National Cyber Security Bill: a General Scheme, no bill in the Oireachtas (read 2026-10-28) | 3 | 1 | 0 | 2026-11-13 |
 | [italy](legal-sources/italy.md) | D.lgs. 138/2024 | 18 | 7 | 1 | 2026-11-05 |
-| [latvia](legal-sources/latvia.md) | Nacionālās kiberdrošības likums, Latvijas Vēstnesis 128A, 2024-07-04 (read 2026-10-28) | 12 | 0 | 3 | 2026-10-30 |
-| [lithuania](legal-sources/lithuania.md) | Kibernetinio saugumo įstatymo pakeitimo įstatymas Nr. XIV-2902: located, NOT read (2026-10-28) | 1 | 0 | 1 | 2026-10-28 |
+| [latvia](legal-sources/latvia.md) | Nacionālās kiberdrošības likums, Latvijas Vēstnesis 128A, 2024-07-04 (read 2026-10-28) | 16 | 0 | 3 | 2026-11-11 |
+| [lithuania](legal-sources/lithuania.md) | Kibernetinio saugumo įstatymas Nr. XII-1428, as worded by Nr. XIV-2902 and amended in 2026: read in full (2026-11-12) | 18 | 0 | 1 | 2026-11-12 |
 | [luxembourg](legal-sources/luxembourg.md) | Statute: loi du 5 mai 2026 concernant des mesures destinées à assurer un niveau élevé de cybersécurité | 14 | 3 | 1 | 2026-11-05 |
 | [malta](legal-sources/malta.md) | S.L. 460.41 (L.N. 71 of 2025) | 15 | 2 | 1 | 2026-11-06 |
 | [netherlands](legal-sources/netherlands.md) | Cyberbeveiligingswet (Stb. 2026, 187) | 11 | 7 | 1 | 2026-11-05 |

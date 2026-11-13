@@ -50,6 +50,7 @@ before the deadline, but the Commission still issued a reasoned opinion on
 | Fact | Where | Verbatim (official) | Status |
 |---|---|---|---|
 | On detecting an incident, act and inform at once | Art. 34(1) | "Konstatējot kiberincidentu, subjekts nekavējoties veic visas kiberincidenta novēršanai nepieciešamās darbības, kā arī nekavējoties par kiberincidentu informē kompetento kiberincidentu novēršanas institūciju" | ✅ |
+| ICT critical infrastructure also informs the state security institution | Art. 34(1), second sentence | "Informācijas un komunikācijas tehnoloģiju kritiskās infrastruktūras īpašnieks vai tiesiskais valdītājs kiberincidenta gadījumā nekavējoties par to informē arī kompetento valsts drošības iestādi." | the sentence does not name the institution; Regulation No. 397, point 121, sends the reports to SAB | ✅ (read 2026-11-11, OP 2024/128A.1; not amended by OP 2026/115.1) |
 | Early warning within 24 hours, from no stated instant | Art. 34(2) | "Nozīmīga kiberincidenta gadījumā subjekts nekavējoties, bet ne vēlāk kā 24 stundu laikā elektroniski iesniedz kompetentajai kiberincidentu novēršanas institūcijai agrīno brīdinājumu par nozīmīgo kiberincidentu." | ✅ |
 | Initial report within 72 hours, 24 for trust services | Art. 34(3) | "ne vēlāk kā 72 stundu laikā (uzticamības pakalpojumu sniedzējs — 24 stundu laikā)" | ✅ |
 | Final report a month after the initial report; an interim one on request | Art. 34(5) | "Subjekts mēneša laikā pēc šā panta trešajā daļā minētā ziņojuma iesniegšanas iesniedz kompetentajai kiberincidentu novēršanas institūcijai galaziņojumu" ; "Pēc kompetentās kiberincidentu novēršanas institūcijas pieprasījuma subjekts iesniedz tai arī starpposma ziņojumu" | ✅ |
@@ -66,12 +67,14 @@ The Cabinet regulation under (7) was found later the same day: Regulation No.
 (section on the regulation under Art. 34(7), below). The ministry's guidance
 reads the hours from establishing the incident; guidance is not law.
 
-Latvia has no incident config, so it runs on DEFAULT, and since 2026-10-30 a
-recorded awareness time does not move DEFAULT's clocks (`awarenessTimeCounts`
-in packages/regulatory-data/src/country-configs/incident-reporting.ts): the
+Until 2026-11-11 Latvia had no incident config and ran on DEFAULT; since
+2026-10-30 a recorded awareness time does not move DEFAULT's clocks
+(`awarenessTimeCounts` in
+packages/regulatory-data/src/country-configs/incident-reporting.ts): the
 clocks run from detection, the reading that can only be early. A Latvian
 config should not count from awareness: no Latvian text read so far counts
-from becoming aware.
+from becoming aware. The config of 2026-11-11 counts from detection (section
+"The incident config", at the end).
 
 ## Sources read in full on 2026-10-30: the act, its correction and amendment, and Cabinet Regulation No. 397
 
@@ -108,7 +111,9 @@ registration database. Regulation No. 397's own page lists no amendment.
 | Fact | Where | Verbatim (official) | English gloss | Status |
 |---|---|---|---|---|
 | Regulation No. 397, issued under the act's incident provisions | Reg. 397, preamble | "Minimālās kiberdrošības prasības" ; "34. panta pirmo, septīto un desmito daļu," ; "36. panta pirmo daļu" | issued under Art. 34(1), (7) and (10) and Art. 36(1), among others | ✅ |
+| Regulation No. 397: adopted on 25 June 2025, published on 1 July 2025 | OP 2025/123.1, heading and publication line | "Rīgā 2025. gada 25. jūnijā" ; `Publicēts oficiālajā izdevumā "Latvijas Vēstnesis", 1.07.2025., Nr. 123` | | ✅ (read 2026-11-12) |
 | The amendment is in force the day after proclamation | OP 2026/115.1 | "Likums stājas spēkā nākamajā dienā pēc tā izsludināšanas." ; "Rīgā 2026. gada 17. jūnijā" | in force on 18 June 2026 | ✅ |
+| The amendment renames domain names in the whole act | OP 2026/115.1, item 1 | "Aizstāt visā likumā vārdus "domēnu nosaukumi" (attiecīgā locījumā) ar vārdiem "domēnu vārdi" (attiecīgā locījumā)." | so the act's term since 18 June 2026 is "augstākā līmeņa domēnu vārdu reģistra uzturētājs" (Art. 1, point 1; Art. 20, point 1), where the 2024 text and the directive's Latvian text say "nosaukumu" | ✅ |
 | The size test: "and" becomes "or" | OP 2026/115.1, point 2 | `aizstāt 16. punkta "b" apakšpunktā vārdu "un" ar vārdu "vai"` | in Art. 1(16)(b), the turnover and the balance sheet become alternatives | ✅ |
 | Delegated private-law bodies leave Arts. 3 and 20(5) | OP 2026/115.1, points 3 and 5 | "kā arī privāto tiesību juridiskajām personām, kas pilda valsts pārvaldes deleģētu uzdevumu" | the words are deleted | ✅ |
 | National-security bodies essential from 2026-10-01 | OP 2026/115.1, points 5 and 15 | "tai skaitā nacionālajai drošībai nozīmīga komercsabiedrība, nodibinājums un biedrība" ; "stājas spēkā 2026. gada 1. oktobrī" | added to Art. 20(11), with an exception for owners of at least 10,000 ha of forest land or 4,000 ha of agricultural land in Latvia | ✅ |
@@ -146,6 +151,8 @@ derived public person, and the public electronic media.
 | Important: a medium operator of the Art. 20(8) list | Art. 21(1), point 1 | "1) vidējs saimnieciskās darbības veicējs, kurš veic saimniecisko darbību vismaz vienā no šā likuma 20. panta 8. punktā minētajām jomām;" | | ✅ |
 | Important: medium or large operators of the Art. 21(1)(2) list | Art. 21(1), point 2 | "2) vidējs vai liels saimnieciskās darbības veicējs, kurš ir:" ; "p) apsardzes pakalpojumu sniedzējs;" | postal, waste, chemicals, food, manufacturing, online marketplaces, search engines, social media, research, and security services (a national addition) | ✅ |
 | Important at any size: education information systems, non-qualified trust services | Art. 21(1), points 5 and 6 | "5) izglītības informācijas sistēmas uzturētājs;" ; "6) uzticamības pakalpojumu sniedzējs, kurš nav kvalificēts uzticamības pakalpojumu sniedzējs." | the first is a national addition (Art. 21(2) defines the system) | ✅ |
+| Research institutions and security services, by their letters | Art. 21(1), point 2, letters o and p | "o) zinātniskā institūcija," ; "p) apsardzes pakalpojumu sniedzējs;" | research institutions are letter o, providers of security services letter p; OP 2026/115.1 names neither Art. 21 nor a word of it | ✅ (read 2026-11-12) |
+| What an education information system is | Art. 21(2) | "Izglītības informācijas sistēma šā likuma izpratnē ir tāda informācijas sistēma, kurā tiek veikta Latvijas Republikā akreditētas izglītības iestādes izglītojamo personas datu elektroniskā apstrāde." | an information system in which the personal data of the learners of an education institution accredited in Latvia are processed electronically | ✅ (read 2026-11-12) |
 | Out: e-communications undertakings not active in Latvia | Art. 3(10) | "Likums neattiecas uz elektronisko sakaru komersantiem, kuri nenodrošina elektronisko sakaru tīklu un nesniedz elektronisko sakaru pakalpojumus Latvijas Republikā." | | ✅ |
 | DORA financial entities, as far as DORA governs | Art. 3(3), as corrected | "ciktāl regula 2022/2554 vai citi normatīvie akti nenosaka citas prasības" | correction OP 2024/144.1 replaces "18. pantam" with "20. pantam" | ✅ |
 | One status, the higher | NKDC FAQ (28.07.2026), Q2 | "kā atbilstošo nosaka augstāko" | an entity that meets both lists is essential | ✅ (guidance) |
@@ -227,8 +234,9 @@ the entry rests on against this file.
 | The list is restricted | Art. 22(4) | "Būtisko pakalpojumu un svarīgo pakalpojumu sniedzēju saraksts ir ierobežotas pieejamības informācija." | NKDC compiles and, since 18 June 2026, approves it (above) | ✅ |
 | NKDC can decide the status, and correct a wrong self-assessment | Art. 22(5) and (5¹), as amended | "ja tas konstatē, ka persona savu atbilstību būtisko pakalpojumu sniedzēja vai svarīgo pakalpojumu sniedzēja statusam ir noteikusi neatbilstoši" | the person then gives its information within a month | ✅ |
 | Within a month of NKDC's notice | Art. 22(5) | "ne vēlāk kā mēneša laikā pēc paziņojuma saņemšanas sniegt Nacionālajam kiberdrošības centram šā panta pirmajā daļā minēto informāciju" | | ✅ |
-| NKDC may take a public body or a former entity off the list | Art. 22(4¹), added by OP 2026/115.1 | "Nacionālais kiberdrošības centrs var pieņemt lēmumu izslēgt no būtisko pakalpojumu un svarīgo pakalpojumu sniedzēju saraksta" | | ✅ |
+| NKDC may take a public body or a former entity off the list | Art. 22(4¹), added by OP 2026/115.1 | "Nacionālais kiberdrošības centrs var pieņemt lēmumu izslēgt no būtisko pakalpojumu un svarīgo pakalpojumu sniedzēju saraksta tiešās pārvaldes iestādi, pastarpinātās pārvaldes iestādi, atvasinātu publisku personu un citu valsts institūciju, kuras darbības traucējums nevar būtiski ietekmēt sabiedrības drošību, valsts aizsardzību, sabiedrības veselību vai nevar radīt būtisku sistēmisku risku, kā arī privāto tiesību juridisko personu, ja tā vairs neatbilst būtisko pakalpojumu sniedzēja vai svarīgo pakalpojumu sniedzēja statusam." | a direct or indirect administration institution, a derived public person or another state institution whose disruption cannot significantly affect public security, national defence or public health or cannot create a significant systemic risk; and a private-law legal person that no longer meets either status | ✅ (the whole provision read 2026-11-12) |
 | Registrars notify NKDC within a month | Art. 23(1) | "kura lēmumi saistībā ar kiberdrošību tiek pieņemti Latvijas Republikā vai kuram Latvijas Republikā ir vislielākais darbinieku skaits, ne vēlāk kā mēneša laikā par to paziņo Nacionālajam kiberdrošības centram" | | ✅ |
+| The registrars' first notification, by 1 April 2025 | Pārejas noteikumi 9 | "Šā likuma 23. panta pirmajā daļā minēto informāciju par personas atbilstību domēnu vārdu reģistrācijas pakalpojumu sniedzēja statusam paziņo Nacionālajam kiberdrošības centram ne vēlāk kā līdz 2025. gada 1. aprīlim." | the day transitional point 7 sets for essential and important service providers | ✅ (read 2026-11-12) |
 | Channel: a signed form to the Ministry of Defence's official e-address | Reg. 397, point 7 | "nosūtot uz Aizsardzības ministrijas oficiālo elektronisko adresi elektroniski aizpildītu un ar drošu elektronisko parakstu parakstītu būtisko vai svarīgo pakalpojumu sniedzēja statusa paziņojuma veidlapu (1. pielikums)" | | ✅ |
 | ICT critical infrastructure also notifies SAB | Reg. 397, point 8 | "tas šo noteikumu 7. punktā minēto statusa paziņojumu iesniedz arī Satversmes aizsardzības birojam" | | ✅ |
 | The cybersecurity manager is notified within five working days | Art. 25(2) | "Subjekts nekavējoties, bet ne vēlāk kā piecu darbdienu laikā paziņo Nacionālajam kiberdrošības centram un Satversmes aizsardzības birojam par kiberdrošības pārvaldnieka noteikšanu." | first notifications by 1 October 2025 (transitional point 10) | ✅ |
@@ -257,7 +265,11 @@ Regulation No. 397 sets them in detail.
 | Multi-factor authentication | Reg. 397, point 52 | "Subjekts nodrošina obligātu daudzfaktoru autentifikācijas izmantošanu" | for A-class accounts, B-class administrator accounts and B-class remote access without an MFA VPN | ✅ |
 | Logs kept by class | Reg. 397, point 57 | "vismaz 18 mēnešus pēc ieraksta izdarīšanas" | 18 months for A, 12 for B, 6 for C | ✅ |
 | Staff briefings | Reg. 397, point 76 | "ne vēlāk kā viena mēneša laikā no fiziskās personas lietotāja konta reģistrācijas brīža" ; "vismaz reizi kalendāra gadā" | an initial briefing within a month of a new account, then every calendar year | ✅ |
-| No ICT outsourcing to Russia, Belarus or a state sponsor of terrorism | Reg. 397, point 86.1 | "ja ārpakalpojuma sniedzējs ir juridiska persona, kas reģistrēta Krievijas Federācijā, Baltkrievijas Republikā vai valstī, kuru Eiropas Parlaments vai Latvijas Republikas Saeima ir atzinusi par terorismu atbalstošu valsti" | nor where an owner, beneficial owner, board member or person on the contract is a citizen of such a state, or the resource's manufacturer is from there (points 86.2 to 86.5) | ✅ |
+| No ICT outsourcing to Russia, Belarus or a state sponsor of terrorism | Reg. 397, point 86.1 | "ja ārpakalpojuma sniedzējs ir juridiska persona, kas reģistrēta Krievijas Federācijā, Baltkrievijas Republikā vai valstī, kuru Eiropas Parlaments vai Latvijas Republikas Saeima ir atzinusi par terorismu atbalstošu valsti" | a legal person registered there; the four other grounds are the rows below (points 86.2 to 86.5) | ✅ |
+| Nor where the provider or one of its owners is a citizen of such a state | Reg. 397, point 86.2 | "ja ārpakalpojuma sniedzējs, tā dalībnieks, kapitāla daļu īpašnieks vai patiesais labuma guvējs" ; "ir šo noteikumu 86.1. apakšpunktā minētās valsts pilsonis" | the provider itself, a member, a holder of capital shares or a beneficial owner, the last where the anti-money-laundering act lets it be established | ✅ |
+| Nor where its board and its council consist of such citizens | Reg. 397, point 86.3 | "ja ārpakalpojuma sniedzēja juridiskās personas valde un padome sastāv no fiziskām personām, kuras ir šo noteikumu 86.1. apakšpunktā minētās valsts pilsoņi" | "sastāv no": the board and the council are made up of them. The point does not say that one such member is enough | ✅ |
+| Nor where such a citizen is involved in providing the service | Reg. 397, point 86.4 | "ja ārpakalpojuma sniegšanā ir iesaistīts šo noteikumu 86.1. apakšpunktā minētās valsts pilsonis" | involvement in the provision, whatever the contract names | ✅ |
+| Nor where the resource's manufacturer is registered there or is such a citizen | Reg. 397, point 86.5 | "ja iegādājamā IKT resursa ražotājs ir šo noteikumu 86.1. apakšpunktā minētajā valstī reģistrēta juridiska persona vai šīs valsts pilsonis" | | ✅ |
 | Contract clauses | Reg. 397, point 87.3.2 | "ārpakalpojuma sniedzēja pienākumu nekavējoties ziņot subjektam par konstatēto kiberincidentu" | with monitoring rights, subcontractor disclosure and confidentiality | ✅ |
 | Supply-chain risks assessed before buying | Reg. 397, point 89 | "Pirms ārpakalpojuma iegādes subjekts apzina un novērtē ar ārpakalpojuma iegādi saistītos riskus, tostarp piegādes ķēdes drošības riskus" | | ✅ |
 | The cybersecurity manager clears each outsourcing contract | Reg. 397, point 92 | "Subjekts nodrošina, ka pirms ārpakalpojuma līguma slēgšanas tas tiek saskaņots ar subjekta kiberdrošības pārvaldnieku." | | ✅ |
@@ -309,7 +321,7 @@ persons is CERT.LV.
 | The forms say 24 and 72 hours, from no instant | Reg. 397, Annexes 10 and 11 | "IESNIEDZAMS 24 STUNDU LAIKĀ" ; "IESNIEDZAMS 72 STUNDU LAIKĀ" ; "Kiberincidenta datums un laiks (ja zināms):" | the forms ask for the incident's own date and time, if known | ✅ |
 | Final report within a month; progress report if unresolved | Reg. 397, Annexes 14 and 12 | "IESNIEDZAMS 1 MĒNEŠA LAIKĀ, JA KIBERINCIDENTS NAV ATRISINĀTS" | | ✅ |
 | An incident that is not significant: free form, by e-mail | Reg. 397, point 120 | "Par kiberincidentu, kurš nav uzskatāms par nozīmīgu kiberincidentu, subjekts ziņo kompetentajai kiberincidentu novēršanas institūcijai, nosūtot uz tās elektroniskā pasta adresi kiberincidenta aprakstu brīvā formā." | | ✅ |
-| Essential entities also report to SAB | Reg. 397, point 121 | "IKT kritiskās infrastruktūras īpašnieks vai tiesiskais valdītājs un būtiskā pakalpojuma sniedzējs šo noteikumu 119. un 120. punktā minētos ziņojumus nosūta arī Satversmes aizsardzības birojam." | the Constitution Protection Bureau receives the same reports | ✅ |
+| Essential entities and ICT critical infrastructure also report to SAB | Reg. 397, point 121 | "IKT kritiskās infrastruktūras īpašnieks vai tiesiskais valdītājs un būtiskā pakalpojuma sniedzējs šo noteikumu 119. un 120. punktā minētos ziņojumus nosūta arī Satversmes aizsardzības birojam." | the Constitution Protection Bureau receives the same reports | ✅ |
 | Significance: the Implementing Regulation, or national criteria | Reg. 397, point 118 | "tas atbilst būtiska kiberincidenta definīcijai regulas 2024/2690 3. panta 1. punkta izpratnē;" ; "tas atbilst vismaz vienai no šādām pazīmēm:" | the regulation puts no "un" or "vai" between 118.1 and 118.2; CERT.LV's page reads them as alternatives | ✅ |
 | A loss threshold | Reg. 397, point 118.2.2 | "vismaz 500 000 euro vai 5 % apmērā no subjekta pēdējā finanšu gada apgrozījuma (atkarībā no tā, kura summa ir mazāka)" | at least EUR 500,000 or 5 % of the last year's turnover, whichever is smaller | ✅ |
 | Disruption of a service, harm to a person | Reg. 397, points 118.2.3 and 118.2.5 | "kiberincidents rada vai var radīt kaitējumu fiziskās personas dzīvībai vai veselībai;" ; "kiberincidents ir izraisījis vai var izraisīt būtiskā vai svarīgā pakalpojuma saņemšanas vai IKT kritiskās infrastruktūras funkcionēšanas traucējumus;" | (and threats to public health or safety, state or economic security, reputation, foreign relations, civil liberties or fundamental rights; restricted or classified information; a cross-border incident) | ✅ |
@@ -350,8 +362,13 @@ Recorded as facts. Marketing never cites fines.
 |---|---|---|---|---|
 | NKDC supervises essential and important entities | Art. 41, point 1 | "attiecībā uz būtisko pakalpojumu un svarīgo pakalpojumu sniedzējiem, izņemot informācijas un komunikācijas tehnoloģiju kritisko infrastruktūru" | | ✅ |
 | SAB supervises ICT critical infrastructure | Art. 41, point 2 | "attiecībā uz informācijas un komunikācijas tehnoloģiju kritisko infrastruktūru" | the Satversmes aizsardzības birojs | ✅ |
+| What supervision covers | Art. 42(1) | "Subjektu uzraudzība ietver kiberdrošības prasību ievērošanas kontroli, informācijas un komunikācijas tehnoloģiju klātienes pārbaudes un attālinātu pārraudzību, datu un dokumentu pārbaudes, tostarp attiecībā uz risku vadību un auditos vai atbilstības novērtējumos konstatēto nepilnību novēršanu, kā arī subjekta elektronisko sakaru tīklu un informācijas sistēmu drošības skenēšanu." | compliance checks, on-site inspections and remote monitoring, data and document checks, security scanning | ✅ (read 2026-11-11; not amended by OP 2026/115.1) |
+| A self-assessment report, to NKDC or to SAB by the supervision split | Art. 43(1), as amended by OP 2026/115.1, point 13 | 2024 text: "iesniedz Nacionālajam kiberdrošības centram un Satversmes aizsardzības birojam subjekta atbilstības pašvērtējuma ziņojumu" ; amendment: "Aizstāt 43. panta pirmajā daļā vārdu "un" ar vārdu "vai"." | form, content, deadline and frequency by Cabinet regulation (Art. 43(2)), hence Regulation No. 397, points 141 and 142 | ✅ (read 2026-11-11) |
+| The external auditor | Art. 44(2), as worded by OP 2026/115.1, point 14 | "(2) Ārējo auditu veic neatkarīgs kiberdrošības auditors, kuram ar subjektu nav interešu konflikta un kurš atbilst kiberdrošības auditoram izvirzāmajām prasībām. Kiberdrošības auditoram izvirzāmās prasības nosaka Ministru kabinets." | independent, without a conflict of interest, meeting the Cabinet's requirements; the 2024 wording also required a listing approved by the Digitālās drošības uzraudzības komiteja | ✅ (read 2026-11-11) |
 | A self-assessment report by 1 October | Reg. 397, points 141 and 142 | "subjekts, kura īpašumā un valdījumā nav nevienas A klases informācijas sistēmas, ja vien Nacionālais kiberdrošības centrs nav noteicis citādāk" ; "līdz attiecīgā kalendāra gada 1. oktobrim pašvērtējuma ziņojuma veidlapu (16. pielikums) iesniedz" | every year for ICT critical infrastructure or an entity with an A-class system, every three years otherwise; the first by 1 October 2025 (transitional point 12) | ✅ |
 | Audit on suspicion or finding of a breach | Art. 44(1) | "ja ir aizdomas par kiberdrošības pārkāpumiem vai tie ir konstatēti" | by NKDC or SAB, or an external audit at the entity's cost (44(4)) | ✅ |
+| A warning, or an order | Art. 45(1), points 1 and 2 | "ir tiesīgi izteikt subjektam brīdinājumu vai uzdot subjektam:" ; "1) veikt noteiktas darbības neatbilstības novēršanai, nosakot samērīgu termiņu neatbilstības novēršanai un kārtību ziņošanai par neatbilstības novēršanas gaitu;" ; "2) nekavējoties pārtraukt un turpmāk nepieļaut rīcību, kas pārkāpj šajā likumā noteiktās prasības;" | NKDC or SAB, by the supervision split of Art. 41, may warn the entity or order it to remedy within a time limit, or to stop; points 3 and 4 are orders to inform the recipients of its services or to publish | ✅ (read 2026-11-12) |
+| Suspension, where the entity does not do what was ordered | Art. 45(5), points 1 and 2 | "Ja subjekts nepilda saskaņā ar šā panta pirmo daļu uzliktos tiesiskos pienākumus" ; "1) uzdot subjektam apturēt tā informācijas sistēmas, resursa vai elektroniskā pakalpojuma darbību līdz konstatētās neatbilstības novēršanai;" ; "2) uzdot subjektam apturēt informācijas un komunikācijas tehnoloģiju produkta tirdzniecību vai pakalpojuma sniegšanu līdz konstatētās neatbilstības novēršanai;" | an order to suspend an information system, a resource or an electronic service, or the sale of an ICT product or the provision of a service, until the non-compliance is remedied; point 3 is the temporary ban (governance section, with Art. 45(8) and (11)) | ✅ (read 2026-11-12) |
 | Fines for an essential entity | Art. 46(1) | "piemērot būtisko pakalpojumu sniedzējam soda naudu līdz 10 miljoniem euro" ; "līdz diviem procentiem no būtisko pakalpojumu sniedzēja pēdējā finanšu gada kopējā neto apgrozījuma" | the percentage applies where that turnover exceeds EUR 500 million | ✅ |
 | Fines for an important entity | Art. 46(2) | "piemērot svarīgo pakalpojumu sniedzējam soda naudu līdz septiņiem miljoniem euro" ; "līdz 1,4 procentiem no svarīgo pakalpojumu sniedzēja pēdējā finanšu gada kopējā neto apgrozījuma" | idem | ✅ |
 | Only for a material non-compliance, of three kinds | Art. 46(5) | "1) subjekts neveic piemērotus un samērīgus tehniskos un organizatoriskos pasākumus kiberapdraudējuma vai kiberincidenta ietekmes mazināšanai;" ; "3) subjekts šajā likumā noteiktajā termiņā nepaziņo kompetentajai kiberincidentu novēršanas institūcijai par nozīmīgu kiberincidentu vai apzināti sniedz tai nepatiesu informāciju." | (and repeatedly refusing NKDC's or SAB's lawful requests for information, point 2) | ✅ |
@@ -382,11 +399,16 @@ Recorded as facts. Marketing never cites fines.
 | The instant | Art. 34(1): "Konstatējot kiberincidentu" ; Art. 34(2) and (3): none | Art. 23(4)(a): "no brīža, kad uzzinājušas par būtisku incidentu" ; (b): "pēc tam, kad uzzinājušas par būtisko incidentu" | no instant in the act's clocks |
 | Who is trained | Art. 25(5), point 3: the cybersecurity manager | Art. 20(2): "pārvaldības struktūru locekļiem" | no |
 
-The act and Regulation No. 397 are published in Latvian only. Latvian is not a
-product locale and Latvia has no incident config, so no product surface names
-these acts in Latvian today. A Latvian config would carry `actStageNames` for
-the 72-hour act ("sākotnējais ziņojums") and the final report
-("galaziņojums"), which differ from the directive's Latvian words.
+The act and Regulation No. 397 are published in Latvian only. Since
+2026-11-11 the incident config and the national reference name the acts in
+Latvian, in brackets, and Latvian is a product locale (`feat/lv-locale`): its
+generic strings keep the directive's Latvian words, and the getting-started
+incident line, read in Latvia alone, takes the act's. The config and the
+reference were written before the locale, and took their Latvian strings the
+same day, with `actStageNames` for the 72-hour act ("sākotnējais ziņojums")
+and the final report ("galaziņojums"), which differ from the directive's
+Latvian words (section "The Latvian strings of the reference and of the
+incident config", below).
 
 ## Departures from the directive, read in Latvian
 
@@ -412,8 +434,9 @@ the 72-hour act ("sākotnējais ziņojums") and the final report
   significant for national security (Art. 20(11) as amended).
 - **Every incident goes to the CSIRT at once** (Art. 34(1)): a significant one
   on the forms of Regulation No. 397, any other in free form (point 120). An
-  essential entity sends the same reports to the Satversmes aizsardzības
-  birojs (point 121).
+  essential entity, and an owner or legal possessor of ICT critical
+  infrastructure, sends the same reports to the Satversmes aizsardzības birojs
+  (point 121).
 - **The 24 and 72 hours run from no stated instant** (Art. 34(2), (3)), where
   the directive counts from becoming aware; the 72-hour act is an initial
   report ("sākotnējais ziņojums"), not a notification.
@@ -449,8 +472,10 @@ the 72-hour act ("sākotnējais ziņojums") and the final report
 
 - **The instant of the 24 and 72 hours.** Neither the act nor Regulation No.
   397 states one; the ministry's FAQ reads "pēc incidenta konstatēšanas".
-  Latvia stays on DEFAULT, which counts from detection; a Latvian incident
-  config is a decision for later, and it should not count from awareness.
+  Settled for the product on 2026-11-11: Latvia's incident config counts from
+  detection, the FAQ's reading and DEFAULT's, and never from awareness
+  (section "The incident config", at the end). The texts still state no
+  instant.
 - **Incidents that are not significant.** Art. 34(1) and point 120 make every
   incident reportable, in free form for the minor ones; the ministry's FAQ says
   minor ones are only logged. The act and the regulation govern.
@@ -472,3 +497,200 @@ the 72-hour act ("sākotnējais ziņojums") and the final report
   rather than quotes, so no sector carries a note on a type the act leaves out;
   and the types no question asks (Art. 20(7), (9), (11); 21(1)(2)(p), (3),
   (5)).
+
+## The national reference (written 2026-11-11)
+
+<!-- meta: theme=statute; type=delivery; date=2026-11-11; surfaces=data,ui; guard=packages/regulatory-data/test/country-configs-transposition-references.test.ts,apps/web/test/lv-national-reference-surfaces.test.tsx -->
+
+`TRANSPOSITION_REFERENCES_LV` is written from the sections above and adds no
+source. It carries six requirements in English, French, Italian, German and
+Portuguese: the act's size test, the types essential at any size and the
+national additions, registration by self-assessment, incidents, the head of
+the entity and the cybersecurity manager, the minimum requirements and the
+supplier rules of Regulation No. 397. By house rule it states no fine amount;
+the size test's figures are not fines. On the hours it says what the act and
+the regulation say, that they state no starting point, and names the
+ministry's reading as guidance.
+
+- **The short name** is "NKDL (Nacionālās kiberdrošības likums)": NKDL is the
+  abbreviation of the ministry's FAQ (Q8, above), and an abbreviation does not
+  decline, so a Latvian sentence built on it will need no case of the act's
+  name.
+- **The authority** is NKDC, with the page this record cites; the reference
+  says that incident reports go to the incident-response institution (Art.
+  34), CERT.LV for state and municipal institutions and private-law legal
+  persons (Art. 9(2), point 2), and never names NKDC as a recipient.
+- **`managementBodyTrainingDuty` is false**: the act words no training duty for
+  a management body (governance, above), so the training page names no duty
+  in its name.
+- **Latvian text**: written before Latvian became a product locale
+  (2026-11-11, `feat/lv-locale`), in five languages; the Latvian strings, in
+  the act's words, came the same day (section "The Latvian strings of the
+  reference and of the incident config", below).
+- **Dates**: published on 2024-07-04 and in force on 2024-09-01, the tracker
+  row's two dates.
+
+## The incident config (written 2026-11-11)
+
+<!-- meta: theme=incident; type=delivery; date=2026-11-11; surfaces=data,ui; guard=packages/regulatory-data/test/lv-incident-reporting.test.ts,packages/regulatory-data/test/incident-authority-receives.test.ts,apps/core-api/test/document-fallback-national-recipients.test.ts -->
+
+`INCIDENT_REPORTING_LV` is written from the sections above and adds no
+source. What it does with each fact:
+
+- **The instant.** `deadlineAnchor` is detection: the act and Regulation No.
+  397 state no instant for the 24 and 72 hours, and the ministry's FAQ (Q47)
+  reads both from establishing the incident, which the detection time recorded
+  on an incident stands for, and which can only be early. Every basis says
+  so, in English, French, Italian, German and Portuguese. Nothing counts from
+  awareness.
+- **The recipient.** CERT.LV for every sector (Art. 9(2), point 2; Art. 34),
+  with its page on what to do in an incident as the channel, the e-mail
+  address that page gives, and the signed forms of point 119. The Militārās
+  izlūkošanas un drošības dienests, for the Ministry of Defence and the
+  National Armed Forces (Art. 9(2), point 1), is named in the description and
+  not routed. `competentAuthorityReceives` is false: Art. 34 names the
+  incident-response institution, never NKDC, so the fallback documents name
+  CERT.LV alone.
+- **SAB's copy** (point 121) follows the class, essential, or ICT critical
+  infrastructure, which no organisation record holds: it is said in the
+  recipient's description, its short name and every label, and never routed.
+  Point 121 names two senders, the owner or legal possessor of ICT critical
+  infrastructure and the essential service provider. On 2026-11-12 the labels
+  of this configuration named both, and every other surface still named the
+  essential one alone: the national reference in its six languages, the
+  document context in three passages, `/en/eu/latvia` in three, one sentence
+  of `/lv/eu/latvia` and the Latvian line of the NIS2 start page. The incident
+  response plan written from the reference said the same. An important
+  entity that owns ICT critical infrastructure read that the copy was not its
+  duty. All of them name both since that day.
+- **The acts.** The early warning in 24 hours (Annex 10), the initial report
+  in 72 (Annex 11), 24 for trust services, the final report a calendar month
+  after the initial report (Annex 14), the interim report on request, and the
+  progress report (Annex 12) for an incident not resolved by then. Art. 34(6)
+  sets no period for the final report after the resolution, where the
+  directive's Latvian text sets one ("viena mēneša laikā pēc incidenta
+  risināšanas iesniedz galīgo ziņojumu", Art. 23(4)(e),
+  `docs/research/eur-lex/nis2-lv.txt`): the product shows the directive's
+  month as a guide, and the label says it is not the act's limit. Until
+  2026-11-12 the label said that date "can only be early": with no period in
+  the act, nothing in the texts read here says how soon after the resolution
+  CERT.LV expects the report, so the claim could not be held to a source.
+- **Incidents that are not significant** still go to CERT.LV (Art. 34(1),
+  point 120), and the label says so, against the FAQ's narrower reading.
+- **Latvian strings.** Written before Latvian became a product locale
+  (2026-11-11, `feat/lv-locale`), so the labels of the five other languages
+  carry the act's names in brackets (agrīnais brīdinājums, sākotnējais
+  ziņojums, galaziņojums, nozīmīgs kiberincidents). The interim and progress
+  reports keep the directive's names, as the act does. The Latvian strings and
+  `actStageNames` came the same day (next section).
+
+## The Latvian strings of the reference and of the incident config (2026-11-11)
+
+<!-- meta: theme=incident,statute,registration,governance,scoping; type=delivery; date=2026-11-11; surfaces=data,i18n; guard=packages/regulatory-data/test/lv-incident-reporting.test.ts,packages/regulatory-data/test/country-configs-transposition-references.test.ts,packages/regulatory-data/test/config-official-languages.test.ts,packages/regulatory-data/test/act-stage-names.test.ts,apps/web/test/lv-national-reference-surfaces.test.tsx -->
+
+`TRANSPOSITION_REFERENCES_LV` and `INCIDENT_REPORTING_LV` were written in
+English, French, Italian, German and Portuguese before Latvian became a
+product locale. They took their Latvian strings the same day, written from
+this record and from nothing else.
+
+- **The act's words, not the directive's.** Each Latvian string takes its
+  legal wording from the verbatim quotes above: the act's two classes, its
+  significant incident, its early warning, initial report, interim report,
+  progress report and final report, its incident-response institution, and
+  Regulation No. 397's forms, e-mail channel and copy to SAB. The tests hold
+  each legal fragment of the Latvian strings against this record, as the
+  getting-started line's are (`apps/web/test/nis2-start-incident-terms.test.ts`).
+- **Citations in the Latvian form.** An article is cited as Latvian legal
+  writing cites it, the article then its part as an ordinal word or its
+  point as a number; never in the English form of the other languages.
+- **No instant for the hours.** Every Latvian basis says, as the five other
+  languages do, that the act and the regulation state no starting point,
+  that the directive counts from becoming aware (in the directive's own
+  Latvian words, in quotation marks), that the ministry's guidance counts from
+  establishing the incident, and that the product counts from the detection
+  time recorded on the incident, which can only be early.
+- **The reminder's names.** `actStageNames` for lv names the 72-hour act
+  "sākotnējais ziņojums" and the final report "galaziņojums", the two acts
+  the "Language" table finds named otherwise than the directive's Latvian
+  text. The early warning takes no name: the table finds the act's and the
+  directive's words the same ("yes"), so a reminder keeps the stage's name
+  the locale gives it.
+- **The recipient's mention** reads after "Saņēmējs:" in the reminder, in the
+  nominative: CERT.LV with its address, and SAB for a provider of essential
+  services.
+- **No fine, no amount but a size or a significance threshold.** The size
+  test's figures (Art. 1(16) and (25)) and point 118's loss threshold are not
+  fines.
+
+## The Latvian country page and signup: /lv/eu/latvia and /lv/izveidot-kontu (2026-11-11)
+
+<!-- meta: theme=statute,scoping,registration,incident,governance,supply-chain; type=delivery; date=2026-11-11; surfaces=marketing,i18n; guard=apps/web/test/country-latvia-fiche.test.tsx,apps/web/test/country-pages-lv.test.tsx -->
+
+- **Why:** a Latvian reader had the product in Latvian and the country page
+  in English only, and a Latvian browser on `/register` stayed on the form
+  written for no country.
+- **Source:** this record, read up to this section, and no new reading. The
+  page's Latvian legal wording is the act's and the regulation's, taken from
+  the verbatim quotes above; the act itself is not saved in the repository,
+  so its test holds every legal fragment, every span between Latvian
+  quotation marks, every provision cited, every date, every length of time
+  and every negation of the page against this record
+  (`apps/web/test/country-latvia-fiche.test.tsx`).
+- **What it states:** the act, its correction and its amendment, and their
+  dates; NKDC as the national competent authority (Art. 4) and SAB for ICT
+  critical infrastructure; the two classes in the act's words and the act's
+  own size test, with "vai" since 18 June 2026; every public body and every
+  electronic communications undertaking essential at any size; the status
+  notification by self-assessment, signed, to the Ministry of Defence's
+  e-address; every incident to CERT.LV at once, the acts, their Annexes and
+  SAB's copy; the hours from no instant the act states, the product counting
+  from detection; the head of the entity, the cybersecurity manager and no
+  training duty for the management; Regulation No. 397's measures and supplier
+  rules; supervision, the self-assessment report and the auditor.
+- **What it says the record does not hold:** the full lists of Art. 20(8) and
+  Art. 21(1)(2), which the record glosses; whether group figures count; the
+  consolidated text, which was not read.
+- **Left out on purpose:** every amount of Art. 46 and the article itself;
+  the telephone number of CERT.LV and NKDC's NIS2 address; the loss threshold
+  of point 118 (a figure in euro stays in sentences about size). Six
+  statements of `/en/eu/latvia` were not on this record on 2026-11-11 and
+  stayed off the page: transitional point 9, the date Regulation No. 397 was
+  published, the letter of the research type in Art. 21(1)(2), what the
+  education information system processes (Art. 21(2) was cited, not
+  described), the warnings, binding orders and suspension it reads in Art.
+  45 (this record quoted the temporary ban of Art. 45(5), point 3, with (8)
+  and (11)), and the condition it reads in Art. 22(4¹) (this record quoted
+  the power to take an entity off the list, not when it applies). The
+  English page's "points 86 to 92" becomes the four points this record
+  reads: 86, 87, 89 and 92. The English page was not changed then.
+- **The six statements, read at the source on 2026-11-12.** The act (OP
+  2024/128A.1), its amendment (OP 2026/115.1) and Regulation No. 397 (OP
+  2025/123.1) were read again on vestnesis.lv, and the rows marked "read
+  2026-11-12" hold each of the six, word for word. Five were exact on the
+  English page. The sixth left a ground out: Art. 22(4¹) and Art. 20, point
+  11, both name four, public security, national defence, public health and
+  a significant systemic risk, and the English page gave three, twice, as did
+  one answer of the Latvian page and one note of the scoping engine. All four
+  sentences name the systemic risk since that day. The Latvian page now gives
+  Art. 22(4¹) whole, in the act's words, where it said "publisku institūciju
+  vai bijušu subjektu"; it still states none of the five others. OP
+  2026/115.1 names neither Art. 21, nor Art. 45, nor transitional point 9.
+- **The authority card** takes the act's "nacionālā kompetentā institūcija"
+  (Art. 4). The hero's second button opens NKDC's page on the status
+  notification, which this record cites; no portal is named, because none
+  exists.
+- **The signup landing** promises what the product keeps: documents with the
+  Latvian legal context (`lv.yaml`), a gap analysis on the requirements of the
+  directive, and the deadlines of the early warning and the initial report to
+  CERT.LV, counted from detection, with the sentence that the act states no
+  instant. It names no NKDC, no channel and no regulation. Its copy says
+  "Izveidot kontu" and never "reģistrēties", which next to the act reads as
+  the status notification to NKDC.
+- **Measured** in headless Chromium on 2026-11-11, against the local app: on
+  `/lv/eu/latvia` and `/lv/izveidot-kontu`, at 320, 390 and 1280 px, nothing
+  scrolls sideways and nothing overflows the header; the landing's header
+  carries the logo alone; a Latvian browser on `/` lands on `/lv`, and on a
+  bare `/register?intent=pro_1` it is sent by a 302 to `/lv/izveidot-kontu`,
+  the plan kept.
+- **Due again** on 1 December 2026, when the transitional auditor
+  requirements lapse and the Cabinet's regulation under Art. 44(2) is due.

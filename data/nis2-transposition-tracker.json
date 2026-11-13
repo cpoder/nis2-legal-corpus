@@ -2,13 +2,13 @@
   "_about": "NIS2 transposition status per EU and EEA country, as rendered by the public tracker at https://reglyze.com/en/nis2-tracker. Stages: not_transposed, draft, adopted, in_force, enforcing. `tier` says how a row was established: `verified` rows carry a statute identity verified at the official publication; `provisional` rows are either honest first drafts (lastVerifiedAt null) or sourced records (lastVerifiedAt and sources set) that still await a native reviewer. Every dated fact of a sourced or verified row traces to legal-sources/<country>.md. This file is the curated base layer shipped in the product's code; the live page merges on top of it a database overlay written by a weekly automated sweep of the official sources and by operator verifications, each change carrying its own citation. Dates are ISO 8601. Greece is EL.",
   "_licence": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
   "_source": "https://github.com/cpoder/nis2-legal-corpus",
-  "generatedAt": "2026-11-06",
+  "generatedAt": "2026-11-13",
   "directiveDeadline": "2024-10-17",
   "summary": {
     "total": 30,
     "inForce": 24,
     "verified": 6,
-    "sourcedProvisional": 20
+    "sourcedProvisional": 21
   },
   "countries": [
     {
@@ -507,13 +507,13 @@
         },
         {
           "label": "Nemzeti Jogszabálytár: 2024. évi LXIX. törvény (hatályos szöveg)",
-          "url": "https://njt.jog.gov.hu/eli/TV/2024/69",
-          "retrievedAt": "2026-10-28"
+          "url": "https://njt.jog.gov.hu/jogszabaly/2024-69-00-00",
+          "retrievedAt": "2026-11-12"
         }
       ],
       "verified": false,
-      "lastVerifiedAt": "2026-10-28",
-      "notes": "In force since 2025-01-01: Act LXIX of 2024 on the cybersecurity of Hungary, adopted 2024-12-17 and published 2024-12-20, replaced Act L of 2013 and Act XXIII of 2023. In-scope businesses register with the SZTFH within 30 days of starting operations or coming into scope (§ 8(5)); the first cybersecurity audit was due by 2026-06-30 (§ 89(2)). Commission infringement case INFR(2024)0277 closed on 2026-10-01."
+      "lastVerifiedAt": "2026-11-12",
+      "notes": "In force since 2025-01-01: Act LXIX of 2024 on the cybersecurity of Hungary, adopted 2024-12-17 and published 2024-12-20, replaced Act L of 2013 and Act XXIII of 2023. In-scope businesses register with the SZTFH within 30 days of starting operations or coming into scope (§ 8(5)) and, micro-enterprises excepted, have a cybersecurity audit every two years (§ 16(1)): those already operating before 2025 owed the first one by 2026-06-30 (§ 89(1a), (2)), the others owe it within two years of registration (§ 16(2)). Commission infringement case INFR(2024)0277 closed on 2026-10-01. On 2026-08-31 the Government ordered a review of the SZTFH (Government resolution 1277/2026); its outcome is not on Reglyze's record."
     },
     {
       "country": "IE",
@@ -536,17 +536,22 @@
         {
           "label": "Oireachtas Library & Research Service: National Cyber Security Bill 2024 (briefing paper, 2025-06-12)",
           "url": "https://data.oireachtas.ie/ie/oireachtas/libraryResearch/2025/2025-06-12_briefing-paper-national-cyber-security-bill-2024_en.pdf",
-          "retrievedAt": "2026-10-28"
+          "retrievedAt": "2026-11-13"
         },
         {
           "label": "NCSC Ireland: NIS2",
           "url": "https://www.ncsc.gov.ie/nis2/",
-          "retrievedAt": "2026-10-28"
+          "retrievedAt": "2026-11-13"
+        },
+        {
+          "label": "NCSC Ireland: Cyber Fundamentals (CyFun)",
+          "url": "https://www.ncsc.gov.ie/CyFun/",
+          "retrievedAt": "2026-11-13"
         },
         {
           "label": "Houses of the Oireachtas: bills",
           "url": "https://www.oireachtas.ie/en/bills/",
-          "retrievedAt": "2026-10-28"
+          "retrievedAt": "2026-11-13"
         },
         {
           "label": "European Commission: Ireland, Spain, France and the Netherlands referred to the Court of Justice (2026-07-08)",
@@ -555,8 +560,8 @@
         }
       ],
       "verified": false,
-      "lastVerifiedAt": "2026-10-28",
-      "notes": "Draft: the General Scheme of the National Cyber Security Bill was published on 2024-08-30 and went through pre-legislative scrutiny on 2024-10-17, but no bill had been introduced in the Oireachtas by 2026-10-28. The NIS1 regulations (S.I. No. 360 of 2018) remain in effect and the NCSC's NIS2 registration and reporting portals are not open. On 2026-07-08 the Commission referred Ireland to the Court of Justice (case C-1076/26) and asked for a lump sum and daily penalties."
+      "lastVerifiedAt": "2026-11-13",
+      "notes": "Draft: the General Scheme of the National Cyber Security Bill was published on 2024-08-30 and went through pre-legislative scrutiny on 2024-10-17, but no bill had been introduced in the Oireachtas by 2026-11-13. The NIS1 regulations (S.I. No. 360 of 2018) remain in effect and the NCSC's NIS2 registration and reporting portals are not open. Meanwhile the NCSC has published draft Risk Management Measures and recommends the Cyber Fundamentals framework (CyFun), which Ireland co-owns with Belgium, as a voluntary way to show compliance. On 2026-07-08 the Commission referred Ireland to the Court of Justice (case C-1076/26) and asked for a lump sum and daily penalties."
     },
     {
       "country": "IT",
@@ -597,17 +602,32 @@
       "maturityLevel": 3,
       "signals": {
         "directiveDeadline": "2024-10-17",
-        "nationalLawDate": null,
-        "enforcementDate": null,
+        "nationalLawDate": "2024-07-24",
+        "enforcementDate": "2024-10-18",
         "infringementOpen": false,
         "registrationLive": false,
         "nationalFrameworkPublished": false
       },
-      "lawShortName": null,
+      "lawShortName": "Kibernetinio saugumo įstatymas Nr. XII-1428 (nauja redakcija Nr. XIV-2902, TAR 2024-13535)",
       "lawCitation": null,
       "targetDate": null,
       "competentAuthority": null,
       "sources": [
+        {
+          "label": "TAR (e-tar.lt): Kibernetinio saugumo įstatymo Nr. XII-1428 pakeitimo įstatymas Nr. XIV-2902",
+          "url": "https://www.e-tar.lt/portal/lt/legalAct/1261a35049bd11efbdaea558de59136c",
+          "retrievedAt": "2026-11-12"
+        },
+        {
+          "label": "TAR (e-tar.lt): Vyriausybės 2024 m. lapkričio 6 d. nutarimas Nr. 945 (Kibernetinio saugumo reikalavimų aprašas)",
+          "url": "https://www.e-tar.lt/portal/lt/legalAct/c8e268a0a00011efa605b9842742bf37",
+          "retrievedAt": "2026-11-12"
+        },
+        {
+          "label": "EUR-Lex: national measures notified for Directive (EU) 2022/2555",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32022L2555",
+          "retrievedAt": "2026-11-12"
+        },
         {
           "label": "European Commission: infringement decisions register (NIS2 non-transposition cases)",
           "url": "https://ec.europa.eu/implementing-eu-law/search-infringement-decisions/",
@@ -615,8 +635,8 @@
         }
       ],
       "verified": false,
-      "lastVerifiedAt": null,
-      "notes": "Provisional: reported in force since 2024-10-18 as notified to the Commission (Law No. XIV-2902 amending the Cybersecurity Law, TAR 2024-13535); the act itself has not been read in the gazette. The Commission closed infringement case INFR(2024)0280 on 2025-02-12."
+      "lastVerifiedAt": "2026-11-12",
+      "notes": "In force since 2024-10-18: Law No. XIV-2902 of 2024-07-11 (TAR 2024-13535) set out the Cybersecurity Law No. XII-1428 in new wording to transpose NIS2; Laws No. XV-894 (2026-05-12) and No. XV-1076 (2026-06-25) amended it, the second among other things in its size test (Art. 11). Entities take their status and their duties only once registered in the Cybersecurity Information System (Art. 11(1), (2)); NKSC was to identify them by 2025-04-17. Significant incidents go to NKSC within 24 and 72 hours of becoming aware of them (Art. 18(4)). The Commission closed infringement case INFR(2024)0280 on 2025-02-12."
     },
     {
       "country": "LU",

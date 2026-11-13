@@ -1152,3 +1152,170 @@ transposition.
   New sentences use the legal term in German.
 
 
+
+## Eight app sentences said more than the directive (corrected 2026-11-12)
+
+<!-- meta: theme=sanctions,supply-chain,incident,governance; type=overclaim,surface-inconsistency; date=2026-11-12; surfaces=ui,marketing,i18n,doc-gen; guard=apps/web/test/app-sentences-say-what-the-law-says.test.ts -->
+
+Interface sentences written once in English and translated as they stood, so
+each was wrong in the 21 languages. The Lithuanian translation pass listed
+them (PR #1084). The passages were read in `docs/research/eur-lex/nis2-en.txt`,
+and, for the name of the early warning, in the twenty other language versions
+beside it.
+
+| Where | What it said | What the directive says | Article |
+|---|---|---|---|
+| Scoping wizard (`app.scoping.guidance.body2`, `body3`) | "potential penalties (up to 10M EUR or 2% of global turnover)", for every organisation | the two paragraphs quoted once, in the section of 2026-11-05 above: one for essential entities and one, with lower figures, for important entities, each setting how high the national maximum must at least be. One figure of two, and a floor shown as a ceiling. That section had corrected the same reading on other surfaces and not this one | Art. 34(4), 34(5) |
+| Vendor risk dashboard (`app.vendorRisk.riskDashboard.subtitle`) | "Required artefact for NIS2 Article 21(2)(d) board review" | "supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers": a measure, with no document and no review by a board required | Art. 21(2)(d) |
+| Tabletop page (`app.tabletop.cadence.never`) | "{framework} recommends a quarterly cadence" | no rhythm of exercises for an entity; the one three-month rhythm of the text is the single point of contact's summary report to ENISA | Art. 23(9) |
+| Tabletop page (`app.tabletop.cadence.bannerHint`) | "Compliance gap", "Auditors expect at least annual rehearsal" | nothing makes twelve months without an exercise a breach; the second sentence quoted nobody | none |
+| Incident, first step (`app.incidents.detail.earlyWarningBody`, `earlyWarningBodyDetection`) | "Initial warning", under a title that said "Early Warning", in fifteen languages | "an early warning": "alerte précoce", "Frühwarnung", "wczesne ostrzeżenie", "ankstyvasis perspėjimas" in the versions read | Art. 23(4)(a) |
+| Training page (`app.training.expiredHint.body`) | "{framework} requires that all members of the management body hold valid cybersecurity training", "schedule renewals" | the members "are required to follow training": no validity, no renewal | Art. 20(2) |
+| Home page (`home.responsibility.you4`) | "NIS2 makes this accountability personal and non-delegable" | "Member States shall ensure that it is possible to hold such natural persons liable for breach of their duties", for essential entities and, mutatis mutandis, for important ones. Nothing on delegation: the eighteen "deleg…" of the text are the Commission's delegated acts | Art. 32(6), 33(5) |
+| Portuguese tabletop, public page and PDF | "relógio do RJC art. 42.º (24h alerta inicial / 72h notificação)" | not the directive's but Portugal's act, misnamed: see `portugal.md`, RJC art. 42.º n.º 1 ("notificação inicial") and n.º 3 (its update, "Quando necessário") | RJC art. 42.º |
+
+Each false clause was cut the same way in every language, so that no new
+translation was needed; the early warning took the word of each language's own
+step title. The country's dashboard and page still give its law's amounts, by
+class.
+
+Still open from the same list, each needing a rewritten sentence rather than a
+cut: the tabletop page's two softer hints, which state Reglyze's own rhythm
+without saying whose it is; the incidents list's "30d" label for the directive's
+one month; and the Portuguese vocabulary for the early warning, split between
+"alerta precoce" (the interface), "alerta rápido" (the directive's Portuguese
+version) and "notificação inicial" (the RJC, for Portugal).
+
+## Implementing Regulation (EU) 2024/2690: whom it binds, and what point 8 of its annex asks on staff awareness (read 2026-11-13)
+
+<!-- meta: theme=governance,scoping; type=reference; date=2026-11-13; surfaces=marketing; guard=apps/web/test/staff-awareness-page-follows-the-texts.test.tsx -->
+
+- **Source read on 2026-11-13:** Commission Implementing Regulation (EU)
+  2024/2690 of 17 October 2024, Official Journal L series, 2024/2690,
+  18.10.2024, CELEX 32024R2690, in English, French and Polish
+  (`https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R2690`).
+  Stored as `docs/research/eur-lex/implementing-regulation-2024-2690-{en,fr,pl}.txt`.
+- **Read:** Articles 1 and 2, and point 8 of the annex, whole. **Not read:**
+  the rest of the annex, and Article 3 beyond its first lines. Nothing below
+  says what those parts contain.
+- **The directive's two provisions** are quoted from
+  `docs/research/eur-lex/nis2-en.txt`.
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| The regulation binds eleven kinds of provider, not every entity | Regulation, Article 1 | "This Regulation, with regard to DNS service providers, TLD name registries, cloud computing service providers, data centre service providers, content delivery network providers, managed service providers, managed security service providers, providers of online market places, of online search engines and of social networking services platforms, and trust service providers (the relevant entities) lays down the technical and the methodological requirements of the measures referred to in Article 21(2) of Directive (EU) 2022/2555" | ✅ |
+| Who is made aware | Annex, point 8.1.1 | "the relevant entities shall ensure that their employees, including members of management bodies, as well as direct suppliers and service providers are aware of risks, are informed of the importance of cybersecurity and apply cyber hygiene practices." | ✅ |
+| To whom the programme is offered | Annex, point 8.1.2 | "the relevant entities shall offer to their employees, including members of management bodies, as well as to direct suppliers and service providers where appropriate in accordance with point 5.1.4, an awareness raising programme" | ✅ |
+| Repeated, and for new employees | Annex, point 8.1.2(a) | "be scheduled over time, so that the activities are repeated and cover new employees;" | ✅ |
+| The four subjects | Annex, point 8.1.2(c) | "cover relevant cyber threats, the cybersecurity risk-management measures in place, contact points and resources for additional information and advice on cybersecurity matters, as well as cyber hygiene practices for users." | ✅ |
+| Tested where appropriate, offered at planned intervals | Annex, point 8.1.3 | "The awareness raising programme shall, where appropriate, be tested in terms of effectiveness. The awareness raising programme shall be updated and offered at planned intervals taking into account changes in cyber hygiene practices, and the current threat landscape and risks posed to the relevant entities." | ✅ |
+| The directive's measure is seven words | Directive, Article 21(2)(g) | "basic cyber hygiene practices and cybersecurity training;" | ✅ |
+| It is the Member States that encourage staff training | Directive, Article 20(2) | "Member States shall ensure that the members of the management bodies of essential and important entities are required to follow training, and shall encourage essential and important entities to offer similar training to their employees on a regular basis" | ✅ |
+| An authority may ask for evidence | Directive, Articles 32(2)(g) and 33(2)(f) | "requests for evidence of implementation of cybersecurity policies, such as the results of security audits carried out by a qualified auditor and the respective underlying evidence." | ✅ |
+
+**What these texts do not contain.** No number of days after which a new
+employee must be trained, no yearly interval, no list of evidence, no size of
+a sample, and no topic beyond the four subjects of point 8.1.2(c). Point 8.2
+of the annex is about another thing: the training of employees whose roles
+require security skills.
+
+## Defect: the staff awareness page quoted an Article 20(2) the directive does not contain, and reported inspections in four countries (found and fixed 2026-11-13)
+
+<!-- meta: theme=governance; type=fabrication,law-misread,overclaim; date=2026-11-13; surfaces=marketing; guard=apps/web/test/staff-awareness-page-follows-the-texts.test.tsx -->
+
+Found while reading the board-training page as rendered, the same night as
+the correction of that page: the two pages are sisters, in English, French
+and Polish, and neither had been read against a text.
+
+`/nis2-staff-awareness-training` carried:
+
+| Statement | Why it could not stay |
+|---|---|
+| Between quotation marks, attributed to Article 20(2): the members of the management bodies "are required to follow training and shall encourage essential and important entities to offer similar training to their employees" | The article begins with the words Member States shall ensure, and they are the subject of the encouragement. The cut made it a duty of the board, which the page then stated as such |
+| "Across early NIS2 inspections in Germany, France, Italy and Portugal, a small number of mistakes account for most Article 21(2)(g) findings" | No such finding is on any record here, and France has no act in force |
+| "Several national authorities, including ANSSI and BSI, flag onboarding gaps as the most common audit finding"; "the single most common audit finding"; "expected by mature supervisors"; "supervisory practice converges on the rhythm below"; "national guidance is converging" | Attributed to authorities or to their practice, with no source |
+| "ENISA's implementing guidance and the Commission's Implementing Regulation (EU) 2024/2690 spell out" the measure for "every essential and important entity"; "ENISA's awareness syllabus" | The regulation binds eleven kinds of provider (Article 1). No ENISA document was read here, so none is cited |
+| The baseline "must be delivered" within 30 days; "auditors typically pull a 5 to 10 person sample"; "coverage at 88% is acceptable" | Numbers that no text carries, stated as rules |
+
+The page now says what the two texts say, in their own words in each
+language, and marks the rest as what Reglyze recommends: who to train, the
+seven topics, the rhythm, the evidence, the six mistakes. The quotation is the
+directive's, word for word, and the test holds it against the stored texts.
+
+**The same family** as the enforcement cases removed from the board-training
+page the same night, and as the enforcement action removed from three
+surfaces in July: a precise statement about what authorities do, with no
+source, on a page that a search engine can quote back as one.
+
+**Not read against a text yet:** `/nis2-training-records` and
+`/nis2-training`, the other two pages of the training cluster.
+
+## GDPR Article 5(1)(e): how long a record that names a person is kept (read 2026-11-13)
+
+<!-- meta: theme=governance; type=reference; date=2026-11-13; surfaces=marketing; guard=apps/web/test/training-records-page-follows-the-texts.test.tsx -->
+
+- **Source read on 2026-11-13:** Regulation (EU) 2016/679, CELEX 32016R0679,
+  in English, French and Polish
+  (`https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679`).
+  Article 5(1)(e) only; the text is not stored in this repository.
+- **Why it is here:** NIS2 sets no retention period for training records, a
+  training record names a person, and a public page of ours stated periods of
+  5 and 10 years as a standard (next section).
+
+| Fact | Where | Verbatim (official) | Status |
+|---|---|---|---|
+| Storage limitation, English | GDPR, Article 5(1)(e) | "kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed" | ✅ |
+| Storage limitation, French | RGPD, article 5(1)(e) | "conservées sous une forme permettant l'identification des personnes concernées pendant une durée n'excédant pas celle nécessaire au regard des finalités pour lesquelles elles sont traitées" | ✅ |
+| Storage limitation, Polish | RODO, art. 5(1)(e) | "przechowywane w formie umożliwiającej identyfikację osoby, której dane dotyczą, przez okres nie dłuższy, niż jest to niezbędne do celów, w których dane te są przetwarzane" | ✅ |
+| No retention period for training records in the directive | Directive, Articles 20 and 21, read whole | no period, no register, no record format | ✅ (absence) |
+| None in the regulation's point on awareness and training | Implementing Regulation (EU) 2024/2690, annex, point 8, read whole | no period | ✅ (absence) |
+| Article 21(4) is about corrective measures | Directive, Article 21(4) | "Member States shall ensure that an entity that finds that it does not comply with the measures provided for in paragraph 2 takes, without undue delay, all necessary, appropriate and proportionate corrective measures." | ✅ |
+
+**Not read:** any national rule on how long training records are kept, and
+any limitation period for sanctions. The page sends the reader to their own
+act for both.
+
+## Defect: the training records page stated retention periods and cited three guidance documents that no source carries (found and fixed 2026-11-13)
+
+<!-- meta: theme=governance; type=fabrication,wrong-citation,overclaim; date=2026-11-13; surfaces=marketing; guard=apps/web/test/training-records-page-follows-the-texts.test.tsx -->
+
+The third page of the training cluster, in English, French and Polish, read
+against the texts and against the product's own code the night its two
+sisters were corrected.
+
+| Statement | Why it could not stay |
+|---|---|
+| "Retention rules: 5 years (staff), 10+ years (management body)", with "five years [...] is the de facto standard across France, Germany, and Italy" and "an audit cycle is typically 3 years" | No text carries any of these periods. The directive sets none, and the GDPR asks for the opposite reasoning: no longer than necessary |
+| "ANSSI's NIS2 implementation note, BSI's BSI-CS 134 reference, and ACN's D.lgs. 138/2024 application notes all list training records as a mandatory artifact for inspection" | Three documents cited by name. None was read, none is on record, and France has no act in force |
+| "Article 21(4) requires organizations to demonstrate the proportionality and effectiveness of their measures" | Article 21(4) is about corrective measures (row above) |
+| "From the first eighteen months of NIS2 inspections in the EU, a handful of record-level mistakes account for the bulk of findings"; "several early enforcement cases have flagged"; what "auditors prefer" and "specifically test" | No inspection finding is on record |
+
+The page now says that no text asks for a register or sets a period, quotes
+the GDPR's principle in each language, and sends the reader to their national
+act.
+
+**Outside this record.** The same page also misdescribed the product. That is
+not a matter of law: it was corrected with the page, and the same test holds
+it against the code.
+
+**Left as it was:** the indexed title of the English page ends with "What
+Auditors Export". Like "What Auditors Check" on the board-training page, a
+title is a marketing decision.
+
+## Defect: the training catalogue and the partner page credited authorities with requests, curricula and a role as "transpositions" (found and fixed 2026-11-13)
+
+<!-- meta: theme=governance,supply-chain; type=fabrication,overclaim,surface-inconsistency; date=2026-11-13; surfaces=marketing; guard=apps/web/test/training-catalogue-and-partner-pages.test.tsx -->
+
+The last two pages read the night the training cluster was corrected:
+`/nis2-training` in its five languages (English, Polish, French, Italian,
+German), and on `/nis2-msp` the one sentence that carried the same list of
+four authorities, in four languages.
+
+| Statement | Why it could not stay | Now |
+|---|---|---|
+| Partner page: "National authorities (ANSSI, BSI, ACN, CNCS) are now asking MSPs to produce per-client evidence on demand" | No record carries such a request | Article 21(2)(d), in each language's words: each client answers for the security of its relationships with "its direct suppliers or service providers", and the MSP is one |
+| Catalogue: content aligned "against the directive text and national transpositions (ANSSI, BSI, ACN, CNCS)" | Four authorities listed as if they were acts | "from the directive's text and from the national acts on Reglyze's record" |
+| Catalogue: a training "designed to satisfy NIS2 Article 20(2)" | A course cannot, where a national act reserves the training to a registered provider (`hungary.md`: "By a registered adult-education provider, with a certificate") | "written for" the two provisions, and the Hungarian case named |
+| Catalogue: "curricula mandated by national regulators (e.g., ANSSI for OIVs/OSEs in France, BaFin/BSI for German finance)" | Nobody read such curricula | "a training that your national act or your sector's rules require" |
+| Catalogue: "There is no NIS2 training certification authority" | True of the directive, said of every country | "The directive creates no certification of NIS2 training" |
+| Catalogue: a board track on "who is personally liable and when"; Article 21(2) as "ten minimum cybersecurity hygiene measures" | Article 20(1): the members "can be held liable"; Article 21(2) lists cybersecurity risk-management measures | "what the management body risks"; the directive's term in each language |
